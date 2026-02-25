@@ -3,14 +3,14 @@ import Link from 'next/link';
 export const Footer = () => {
     return (
         <footer className="relative bg-[#121010] overflow-hidden">
-            <div className="mx-auto max-w-[1920px] relative px-[88px] py-[80px]">
-                <div className="flex flex-col lg:flex-row gap-16 lg:gap-0">
+            <div className="mx-auto max-w-[1920px] relative px-[20px] md:px-[40px] lg:px-[88px] py-[60px] lg:py-[80px]">
+                <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-0">
 
                     {/* Left Column - Description Text */}
-                    <div className="lg:w-[700px] lg:flex-shrink-0 flex items-end lg:pr-16">
+                    <div className="w-full lg:w-[700px] lg:flex-shrink-0 flex items-start lg:items-end lg:pr-16">
                         <p
-                            className="text-white/80 leading-[36px] tracking-[-0.48px] max-w-[702px]"
-                            style={{ fontFamily: "'Inter', sans-serif", fontSize: '23.78px' }}
+                            className="text-white/80 leading-normal md:leading-[36px] tracking-[-0.48px] max-w-[702px]"
+                            style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(16px, 3.5vw, 23.78px)' }}
                         >
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
                         </p>
@@ -20,60 +20,60 @@ export const Footer = () => {
                     <div className="hidden lg:block w-[1px] bg-[#B79F9F] self-stretch mx-[60px]" />
 
                     {/* Right Content */}
-                    <div className="flex flex-col sm:flex-row gap-12 sm:gap-[120px] flex-1">
+                    <div className="flex flex-col md:flex-row gap-[40px] md:gap-[60px] lg:gap-[120px] flex-1">
 
                         {/* Navigation Links Column */}
-                        <div className="flex flex-col gap-[18px]">
+                        <div className="flex flex-col gap-[12px] md:gap-[18px]">
                             <Link
                                 href="/"
-                                className="text-white leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: '23.78px' }}
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
                             >
                                 Home
                             </Link>
                             <Link
                                 href="#solutions"
-                                className="text-white leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: '23.78px' }}
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
                             >
                                 Solutions
                             </Link>
                             <Link
                                 href="#contact"
-                                className="text-white leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: '23.78px' }}
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
                             >
                                 Contact
                             </Link>
                             <Link
                                 href="#resources"
-                                className="text-white leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: '23.78px' }}
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
                             >
                                 Resources
                             </Link>
                             <Link
                                 href="/404"
-                                className="text-white leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: '23.78px' }}
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
                             >
                                 404
                             </Link>
                             <Link
                                 href="/terms"
-                                className="text-white leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: '23.78px' }}
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
                             >
                                 Terms and Conditions
                             </Link>
                         </div>
 
                         {/* Contact Info & Social Column */}
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-[20px] md:gap-6 mt-[20px] md:mt-0">
                             {/* Address */}
                             <p
-                                className="text-white/80 leading-[31px] tracking-[-0.42px] max-w-[328px]"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: '20.8px' }}
+                                className="text-white/80 leading-normal md:leading-[31px] tracking-[-0.42px] max-w-[328px]"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3.5vw, 20.8px)' }}
                             >
                                 Königsallee 92, Green Energy<br />
                                 Tower 40212 Düsseldorf, Germany
@@ -83,15 +83,15 @@ export const Footer = () => {
                             <div className="flex flex-col gap-2">
                                 <Link
                                     href="mailto:hello@energymax.com"
-                                    className="text-white/80 leading-[31px] tracking-[-0.42px] underline hover:text-white transition-colors"
-                                    style={{ fontFamily: "'Inter', sans-serif", fontSize: '20.8px' }}
+                                    className="text-white/80 leading-normal md:leading-[31px] tracking-[-0.42px] underline hover:text-white transition-colors"
+                                    style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3.5vw, 20.8px)' }}
                                 >
                                     hello@energymax.com
                                 </Link>
                                 <Link
                                     href="tel:+492118765420"
-                                    className="text-white/80 leading-[31px] tracking-[-0.42px] underline hover:text-white transition-colors"
-                                    style={{ fontFamily: "'Inter', sans-serif", fontSize: '20.8px' }}
+                                    className="text-white/80 leading-normal md:leading-[31px] tracking-[-0.42px] underline hover:text-white transition-colors"
+                                    style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3.5vw, 20.8px)' }}
                                 >
                                     +49 211 8765 4200
                                 </Link>
