@@ -4,7 +4,7 @@ export const SaveOnBills = () => {
             <div className="mx-auto max-w-[1920px] relative">
 
                 {/* Top Content: Title & Description */}
-                <div className="w-full max-w-[1125px] ml-[86px] pt-[80px] flex flex-col gap-[23px]">
+                <div className="w-full max-w-[1125px] ml-[86px] pt-[160px] flex flex-col gap-[23px]">
                     <h2
                         className="text-[#121010] font-semibold leading-[49px] w-full"
                         style={{ fontFamily: "'Montserrat', sans-serif", fontSize: '40px' }}
@@ -21,22 +21,10 @@ export const SaveOnBills = () => {
 
                 {/* Solar Panel Image Area */}
                 <div className="relative w-full h-[500px] mt-[40px]">
-                    {/* Green gradient background to mimic the field */}
-                    <div className="absolute bottom-0 left-0 right-0 h-[250px] bg-gradient-to-t from-green-100/60 via-green-50/40 to-transparent" />
-
-                    {/* Solar Panel Image */}
-                    <div className="absolute right-[100px] top-[0px] w-[700px] h-[500px]">
-                        <img
-                            src="/solar-hero-bg.png"
-                            alt="Solar Panels"
-                            className="w-full h-full object-cover rounded-lg shadow-2xl"
-                            style={{ clipPath: 'polygon(15% 10%, 95% 0%, 100% 85%, 5% 95%)' }}
-                        />
-                    </div>
 
                     {/* Monthly Bill Savings Card */}
                     <div className="absolute left-[66px] bottom-[20px] w-[735px] bg-white/90 backdrop-blur-sm rounded-lg shadow-lg">
-                        <div className="px-[39px] py-[38px]">
+                        <div className="px-[39px] py-[50px]">
                             <div className="flex flex-col gap-[19px]">
                                 {/* Decorative Lines */}
                                 <div className="flex items-center gap-[30px]">
