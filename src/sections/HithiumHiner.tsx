@@ -57,7 +57,7 @@ export const HithiumHiner = () => {
                 </div>
 
                 {/* BESS Facility Image */}
-                <FadeIn delay={400} direction="up" className="relative w-full aspect-[1562/500] rounded-[20px] overflow-hidden group shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                <FadeIn delay={400} direction="up" className="relative w-full aspect-[1562/636] rounded-[20px] overflow-hidden group shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                     <Image
                         src="/about-bess-facility.jpg"
                         alt="Aerial view of battery energy storage system facility with solar panels"

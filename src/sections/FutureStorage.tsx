@@ -3,7 +3,7 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const FutureStorage = () => {
     return (
-        <section className="relative w-full bg-white overflow-hidden">
+        <section className="relative w-full bg-white overflow-hidden pb-16 md:pb-24">
             {/* Text Content - sits on top of image */}
             <div className="relative z-10 max-w-[1391px] mx-auto px-6 md:px-10 pt-8 md:pt-12 pb-6 md:pb-8 flex flex-col items-center gap-[12px]">
                 {/* Title */}
@@ -23,11 +23,11 @@ export const FutureStorage = () => {
                 {/* Subtitle */}
                 <FadeIn delay={300} direction="up">
                     <p
-                        className="w-full text-center font-medium text-black max-w-[1200px]"
+                        className="w-full text-center font-medium text-black max-w-[1391px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(16px, 1.8vw, 24px)',
-                            lineHeight: '1.4',
+                            fontSize: 'clamp(16px, 1.8vw, 28px)',
+                            lineHeight: '34px',
                         }}
                     >
                         As renewable penetration increases, energy storage is becoming

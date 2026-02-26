@@ -56,7 +56,7 @@ export const CustomBatteryPacks = () => {
                 </div>
 
                 {/* Custom Battery Image */}
-                <FadeIn delay={400} direction="up" className="relative w-full aspect-[1562/500] rounded-[20px] overflow-hidden group shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                <FadeIn delay={400} direction="up" className="relative w-full aspect-[1562/636] rounded-[20px] overflow-hidden group shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                     <Image
                         src="/about-custom-battery.png"
                         alt="Customized battery pack container with solar panels and orange battery modules"

@@ -3,13 +3,13 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const EnergyStorage = () => {
     return (
-        <section className="relative w-full bg-white pt-[150px] md:pt-[180px] pb-8 md:pb-12 lg:pb-16 overflow-hidden">
+        <section className="relative w-full bg-white pt-[32px] md:pt-[48px] pb-8 md:pb-12 lg:pb-16 overflow-hidden">
             <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-16">
 
                 {/* Title */}
                 <FadeIn delay={100} direction="up">
                     <h2
-                        className="text-center font-semibold text-black mb-6"
+                        className="text-center font-semibold text-black mb-10 md:mb-14"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
                             fontSize: 'clamp(24px, 3vw, 40px)',
@@ -39,8 +39,8 @@ export const EnergyStorage = () => {
 
                 {/* Image */}
                 <FadeIn delay={400} direction="up">
-                    <div className="relative w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 mb-6 md:mb-10 group">
-                        <div className="relative w-full rounded-[23px] overflow-hidden aspect-[1540/500] shadow-lg transition-transform duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
+                    <div className="relative w-full max-w-[1540px] mx-auto mb-6 md:mb-10 group">
+                        <div className="relative w-full rounded-[23px] overflow-hidden aspect-[1540/637] shadow-lg transition-transform duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
                             <Image
                                 src="/wind-solar-energy.jpg"
                                 alt="Wind turbines and solar panels in a renewable energy field at sunset"
@@ -59,8 +59,8 @@ export const EnergyStorage = () => {
                         className="text-center font-medium text-black max-w-[1596px] mx-auto"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(16px, 1.8vw, 24px)',
-                            lineHeight: '1.4',
+                            fontSize: 'clamp(18px, 1.8vw, 32px)',
+                            lineHeight: '39px',
                         }}
                     >
                         We deliver end-to-end battery energy storage projects—from engineering

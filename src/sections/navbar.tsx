@@ -42,7 +42,7 @@ export const Navbar = () => {
                         <Link href="/" className="nav-link text-[20px] 2xl:text-[24px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Home
                         </Link>
-                        <Link href="#about" className="nav-link text-[20px] 2xl:text-[24px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/about" className="nav-link text-[20px] 2xl:text-[24px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             About Us
                         </Link>
                         <Link href="#partners" className="nav-link text-[20px] 2xl:text-[24px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
@@ -91,7 +91,7 @@ export const Navbar = () => {
                         <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[20px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Home
                         </Link>
-                        <Link href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[20px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[20px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             About Us
                         </Link>
                         <Link href="#partners" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[20px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
