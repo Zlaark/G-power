@@ -1,3 +1,5 @@
+import { FadeIn } from '@/components/FadeIn';
+
 export const SolarHome = () => {
     return (
         <section className="relative w-full">
@@ -13,11 +15,13 @@ export const SolarHome = () => {
                             animation: cinematicBreathing 24s ease-in-out infinite;
                         }
                     `}} />
-                    <img
-                        src="/home8.png"
-                        alt="Modern Home with Solar Panels and Electric Vehicle"
-                        className="w-full h-auto object-cover animate-cinematic-breathing"
-                    />
+                    <FadeIn delay={200} direction="up" className="w-full h-full">
+                        <img
+                            src="/home8.png"
+                            alt="Modern Home with Solar Panels and Electric Vehicle"
+                            className="w-full h-auto object-cover animate-cinematic-breathing"
+                        />
+                    </FadeIn>
 
                     {/* Optional subtle gradient overlay for premium feel */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />

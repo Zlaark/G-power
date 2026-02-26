@@ -26,6 +26,69 @@ const solutions = [
 export const BessSolutions = () => {
     return (
         <section className="relative w-full bg-white py-6 md:py-8 lg:py-10 overflow-hidden">
+            <style dangerouslySetInnerHTML={{
+                __html: `
+                .elegant-card {
+                    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+                .elegant-card:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+                }
+                .elegant-card .card-img {
+                    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+                .elegant-card:hover .card-img {
+                    transform: scale(1.05);
+                }
+                .elegant-line {
+                    position: relative;
+                    width: 100%;
+                    height: 4px;
+                    background-color: #000;
+                    overflow: hidden;
+                    margin-top: 8px;
+                    margin-bottom: 4px;
+                }
+                .elegant-line::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, #EF3C38, transparent);
+                    transform: translateX(-100%);
+                    transition: transform 0.6s ease;
+                }
+                .elegant-card:hover .elegant-line::after {
+                    transform: translateX(100%);
+                }
+                .btn-sweep {
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    transition: color 0.4s ease;
+                }
+                .btn-sweep::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    background-color: #000;
+                    z-index: -1;
+                    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+                .btn-sweep:hover::before {
+                    width: 100%;
+                }
+                .btn-sweep:hover {
+                    color: #fff;
+                    border-color: #000;
+                }
+            `}} />
             <div className="max-w-[1100px] mx-auto px-10 md:px-16 lg:px-24">
 
                 {/* Top Text */}
@@ -44,27 +107,24 @@ export const BessSolutions = () => {
                 {/* 2x2 Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-10 gap-y-4 lg:gap-y-6 mb-4 md:mb-6">
                     {solutions.map((item, index) => (
-                        <div key={index} className="flex flex-col items-start">
+                        <div key={index} className="flex flex-col items-start elegant-card rounded-[16px] cursor-pointer">
                             {/* Image */}
                             <div className="relative w-full aspect-[605/220] rounded-[16px] overflow-hidden">
                                 <Image
                                     src={item.image}
                                     alt={item.alt}
                                     fill
-                                    className="object-cover"
+                                    className="object-cover card-img"
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             </div>
 
                             {/* Divider Line */}
-                            <div
-                                className="w-full mt-2 mb-1"
-                                style={{ borderTop: '4px solid #000000' }}
-                            />
+                            <div className="elegant-line" />
 
                             {/* Label */}
                             <p
-                                className="font-medium text-black"
+                                className="font-medium text-black transition-colors duration-300 group-hover:text-[#EF3C38]"
                                 style={{
                                     fontFamily: "'Montserrat', sans-serif",
                                     fontSize: 'clamp(16px, 1.8vw, 22px)',
@@ -91,14 +151,13 @@ export const BessSolutions = () => {
                 </p>
 
                 {/* Explore Impact Button */}
-                <div className="flex justify-center">
+                <div className="flex justify-center mt-6">
                     <button
-                        className="flex items-center justify-center w-[273px] h-[57px] border-2 border-black rounded-[5px] text-black font-semibold transition-all hover:bg-black hover:text-white"
+                        className="btn-sweep flex items-center justify-center w-[273px] h-[57px] border-2 border-black rounded-[5px] text-black font-semibold shadow-sm cursor-pointer"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
                             fontSize: '18px',
                             lineHeight: '22px',
-                            backgroundColor: 'rgba(0, 0, 0, 0.004)',
                         }}
                     >
                         Explore Impact

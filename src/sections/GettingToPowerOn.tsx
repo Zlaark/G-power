@@ -1,3 +1,5 @@
+import { FadeIn } from '@/components/FadeIn';
+
 export const GettingToPowerOn = () => {
     return (
         <section className="relative w-full bg-white pt-[60px] md:pt-[100px] lg:pt-[140px] pb-[80px] md:pb-[140px] lg:pb-[200px]">
@@ -30,16 +32,6 @@ export const GettingToPowerOn = () => {
                         0%, 100% { text-shadow: 0 0 0px rgba(239,60,56,0); }
                         50% { text-shadow: 0 0 10px rgba(239,60,56,0.3); }
                     }
-                    .animate-title-reveal {
-                        animation: splitReveal 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-                    }
-                    .animate-desc-reveal {
-                        animation: slideFadeBlur 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
-                    }
-                    .animate-pop-in-column {
-                        opacity: 0;
-                        animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-                    }
                     .animate-continuous-elegant {
                         animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, elegantFloat 6s ease-in-out infinite 0.8s;
                         transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -60,40 +52,41 @@ export const GettingToPowerOn = () => {
                         animation: pulseGlowRed 3s ease-in-out infinite;
                     }
                     .delay-node { animation-delay: 0.8s; }
-                    .delay-col-1 { animation-delay: 0.4s; }
-                    .delay-col-2 { animation-delay: 0.6s; }
-                    .delay-col-3 { animation-delay: 0.8s; }
                 `}} />
 
                 {/* Header Row: Title left + Description right */}
                 <div className="flex flex-col lg:flex-row lg:items-start gap-[16px] lg:gap-[23px] mb-[40px] md:mb-[60px] lg:mb-[140px]">
-                    <h2
-                        className="text-[#121010] font-semibold leading-tight md:leading-[49px] flex-shrink-0 w-full lg:w-[512px] opacity-0 animate-title-reveal"
-                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(32px, 6vw, 40px)', transformOrigin: 'left center' }}
-                    >
-                        Getting to Power On
-                    </h2>
-                    <p
-                        className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full lg:max-w-[1240px] opacity-0 animate-desc-reveal"
-                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(16px, 3.5vw, 28px)' }}
-                    >
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more
-                    </p>
+                    <FadeIn delay={100} direction="up" className="w-[100%] lg:w-[512px]">
+                        <h2
+                            className="text-[#121010] font-semibold leading-tight md:leading-[49px] flex-shrink-0"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(32px, 6vw, 40px)', transformOrigin: 'left center' }}
+                        >
+                            Getting to Power On
+                        </h2>
+                    </FadeIn>
+                    <FadeIn delay={300} direction="up" className="w-full">
+                        <p
+                            className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full lg:max-w-[1240px]"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(16px, 3.5vw, 28px)' }}
+                        >
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more
+                        </p>
+                    </FadeIn>
                 </div>
 
                 {/* Centered Card with Image */}
-                <div className="flex justify-center mb-[40px] lg:mb-[60px] px-0 lg:px-[200px]">
+                <FadeIn delay={500} direction="up" className="flex justify-center mb-[40px] lg:mb-[60px] px-0 lg:px-[200px]">
                     <div
-                        className="relative w-full h-[300px] md:h-[450px] lg:h-[582px] rounded-[16px] lg:rounded-[20px] overflow-hidden"
+                        className="relative w-full h-[300px] md:h-[450px] lg:h-[582px] rounded-[16px] lg:rounded-[20px] overflow-hidden group cursor-pointer"
                         style={{ background: '#3E2727' }}
                     >
                         <img
                             src="/home9.png"
                             alt="Solar Panel Installation"
-                            className="absolute left-0 top-0 lg:top-[-67px] w-full h-full lg:h-[700px] object-cover"
+                            className="absolute left-0 top-0 lg:top-[-67px] w-full h-full lg:h-[700px] object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                     </div>
-                </div>
+                </FadeIn>
 
                 {/* Progress Line */}
                 <div className="relative w-full max-w-[1460px] mx-auto hidden lg:block mt-[100px] mb-[28px]">
@@ -118,7 +111,7 @@ export const GettingToPowerOn = () => {
                 <div className="flex flex-col lg:flex-row justify-between gap-[32px] lg:gap-[40px] max-w-[1460px] mx-auto">
 
                     {/* Column 1 */}
-                    <div className="flex flex-col items-center lg:items-start w-full lg:w-[443px] opacity-0 animate-continuous-elegant delay-col-1 cursor-pointer">
+                    <FadeIn delay={200} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[443px] animate-continuous-elegant cursor-pointer">
                         <h3
                             className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[80px] transition-colors duration-500"
                             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 5vw, 28px)' }}
@@ -131,10 +124,10 @@ export const GettingToPowerOn = () => {
                         >
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
-                    </div>
+                    </FadeIn>
 
                     {/* Column 2 */}
-                    <div className="flex flex-col items-center lg:items-start w-full lg:w-[432px] opacity-0 animate-continuous-elegant delay-col-2 cursor-pointer">
+                    <FadeIn delay={400} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[432px] animate-continuous-elegant cursor-pointer">
                         <h3
                             className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[80px] transition-colors duration-500"
                             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 5vw, 28px)' }}
@@ -147,10 +140,10 @@ export const GettingToPowerOn = () => {
                         >
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
-                    </div>
+                    </FadeIn>
 
                     {/* Column 3 */}
-                    <div className="flex flex-col items-center lg:items-start w-full lg:w-[428px] opacity-0 animate-continuous-elegant delay-col-3 cursor-pointer">
+                    <FadeIn delay={600} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[428px] animate-continuous-elegant cursor-pointer">
                         <h3
                             className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[80px] transition-colors duration-500"
                             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 5vw, 28px)' }}
@@ -163,7 +156,7 @@ export const GettingToPowerOn = () => {
                         >
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
-                    </div>
+                    </FadeIn>
 
                 </div>
 

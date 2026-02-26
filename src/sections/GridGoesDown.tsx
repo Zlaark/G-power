@@ -1,3 +1,5 @@
+import { FadeIn } from '@/components/FadeIn';
+
 export const GridGoesDown = () => {
     return (
         <section className="relative w-full pb-[40px] md:pb-[60px] lg:pb-[20px]">
@@ -44,7 +46,7 @@ export const GridGoesDown = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
 
                     {/* Text Content - bottom left */}
-                    <div className="absolute left-[20px] md:left-[80px] bottom-[20px] md:bottom-[70px] right-[20px] md:right-[80px] max-w-[1200px] flex flex-col gap-[8px] md:gap-[16px]">
+                    <FadeIn delay={200} direction="up" className="absolute left-[20px] md:left-[80px] bottom-[20px] md:bottom-[70px] right-[20px] md:right-[80px] max-w-[1200px] flex flex-col gap-[8px] md:gap-[16px]">
                         <h2
                             className="font-semibold leading-tight md:leading-[49px] w-full animate-heading-shimmer-dark"
                             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(24px, 5vw, 40px)' }}
@@ -57,7 +59,7 @@ export const GridGoesDown = () => {
                         >
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
-                    </div>
+                    </FadeIn>
                 </div>
             </div>
         </section>

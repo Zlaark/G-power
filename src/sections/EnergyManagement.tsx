@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { FadeIn } from '@/components/FadeIn';
 
 export const EnergyManagement = () => {
     return (
@@ -6,21 +7,23 @@ export const EnergyManagement = () => {
             <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-16">
 
                 {/* Centered Top Title */}
-                <h2
-                    className="text-center font-semibold text-black mb-6 md:mb-8"
-                    style={{
-                        fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(20px, 2.5vw, 32px)',
-                        lineHeight: '1.2',
-                    }}
-                >
-                    Energy Management System (EMS)
-                </h2>
+                <FadeIn delay={100} direction="up">
+                    <h2
+                        className="text-center font-semibold text-black mb-6 md:mb-8"
+                        style={{
+                            fontFamily: "'Montserrat', sans-serif",
+                            fontSize: 'clamp(20px, 2.5vw, 32px)',
+                            lineHeight: '1.2',
+                        }}
+                    >
+                        Energy Management System (EMS)
+                    </h2>
+                </FadeIn>
 
                 {/* Two-Column: Left Heading + Right Description */}
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 mb-8 md:mb-10">
                     {/* Left Heading */}
-                    <div className="md:w-[35%] flex-shrink-0">
+                    <FadeIn delay={200} direction="right" className="md:w-[35%] flex-shrink-0">
                         <h3
                             className="font-semibold text-black"
                             style={{
@@ -31,10 +34,10 @@ export const EnergyManagement = () => {
                         >
                             Intelligent Control &amp; Optimization
                         </h3>
-                    </div>
+                    </FadeIn>
 
                     {/* Right Description */}
-                    <div className="md:w-[65%] max-w-[976px]">
+                    <FadeIn delay={300} direction="left" className="md:w-[65%] max-w-[976px]">
                         <p
                             className="font-medium text-black"
                             style={{
@@ -49,20 +52,20 @@ export const EnergyManagement = () => {
                             and system performance, the EMS ensures maximum asset
                             utilization, enhanced safety, and improved lifecycle economics.
                         </p>
-                    </div>
+                    </FadeIn>
                 </div>
 
                 {/* EMS Image */}
-                <div className="relative w-full aspect-[1562/500] rounded-[20px] overflow-hidden">
+                <FadeIn delay={400} direction="up" className="relative w-full aspect-[1562/500] rounded-[20px] overflow-hidden group shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                     <Image
                         src="/about-ems.png"
                         alt="Modern home with rooftop solar panel system and energy management"
                         fill
-                        className="object-cover"
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, 1562px"
                         priority
                     />
-                </div>
+                </FadeIn>
             </div>
         </section>
     );

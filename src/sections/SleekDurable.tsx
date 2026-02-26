@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from 'react';
+import { FadeIn } from '@/components/FadeIn';
 
 export const SleekDurable = () => {
     const sectionRef = useRef<HTMLElement>(null);
@@ -40,10 +41,6 @@ export const SleekDurable = () => {
                         50% { text-shadow: 0 0 25px rgba(239, 60, 56, 0.8); }
                         100% { background-position: 200% center; text-shadow: 0 0 10px rgba(239, 60, 56, 0.2); }
                     }
-                    @keyframes entranceSlideUp {
-                        0% { opacity: 0; transform: translateY(40px); }
-                        100% { opacity: 1; transform: translateY(0); }
-                    }
                     @keyframes continuousFloatX {
                         0%, 100% { transform: translate(0px, 0px); }
                         25% { transform: translate(5px, -5px); }
@@ -76,10 +73,10 @@ export const SleekDurable = () => {
                         color: transparent;
                         -webkit-background-clip: text;
                         background-clip: text;
-                        animation: entranceSlideUp 1.2s ease-out forwards, glowingTextPass 8s linear infinite 1.2s, continuousFloatX 15s ease-in-out infinite;
+                        animation: glowingTextPass 8s linear infinite, continuousFloatX 15s ease-in-out infinite;
                     }
                     .animate-float-paragraph {
-                        animation: entranceSlideUp 1.2s ease-out forwards 0.3s, continuousFloatY 10s ease-in-out infinite 1.5s;
+                        animation: continuousFloatY 10s ease-in-out infinite;
                         transition: text-shadow 0.3s ease;
                     }
                     .glass-panel-hover {
@@ -108,22 +105,22 @@ export const SleekDurable = () => {
                     <div className="absolute inset-x-0 bottom-0 h-full md:h-[80vh] max-h-[800px] bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none transition-opacity duration-1000 group-hover:opacity-70" />
 
                     {/* Interactive Glass Panel for Text */}
-                    <div className="absolute left-0 right-0 md:left-[30px] lg:left-[80px] md:right-[30px] lg:right-[80px] bottom-0 px-[20px] md:px-0 pb-[30px] md:pb-[70px] pt-[20px] mb-0 md:mb-[-20px] transition-all duration-500 ease-out md:glass-panel-hover" style={{ backgroundColor: 'transparent' }}>
+                    <FadeIn delay={200} direction="up" className="absolute left-0 right-0 md:left-[30px] lg:left-[80px] md:right-[30px] lg:right-[80px] bottom-0 px-[20px] md:px-0 pb-[30px] md:pb-[70px] pt-[20px] mb-0 md:mb-[-20px] transition-all duration-500 ease-out md:glass-panel-hover" style={{ backgroundColor: 'transparent' }}>
                         <div className="max-w-[1200px] flex flex-col items-start gap-[10px] md:gap-[16px] px-0 md:px-[20px] lg:px-[40px] pt-[10px]">
                             <h2
-                                className="font-semibold leading-tight md:leading-[49px] w-full opacity-0 animate-glow-heading cursor-default tracking-wide"
+                                className="font-semibold leading-tight md:leading-[49px] w-full animate-glow-heading cursor-default tracking-wide"
                                 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(28px, 6vw, 40px)' }}
                             >
                                 Sleek and Durable
                             </h2>
                             <p
-                                className="text-white/90 font-medium leading-normal md:leading-[34px] w-full md:pr-[140px] opacity-0 animate-float-paragraph cursor-default group-hover:text-white"
+                                className="text-white/90 font-medium leading-normal md:leading-[34px] w-full md:pr-[140px] animate-float-paragraph cursor-default group-hover:text-white"
                                 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 3.5vw, 28px)' }}
                             >
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </p>
                         </div>
-                    </div>
+                    </FadeIn>
                 </div>
 
             </div>

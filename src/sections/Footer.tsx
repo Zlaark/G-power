@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FadeIn } from '@/components/FadeIn';
 
 export const Footer = () => {
     return (
@@ -7,14 +8,14 @@ export const Footer = () => {
                 <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-0">
 
                     {/* Left Column - Description Text */}
-                    <div className="w-full lg:w-[700px] lg:flex-shrink-0 flex items-start lg:items-end lg:pr-16">
+                    <FadeIn delay={100} direction="up" className="w-full lg:w-[700px] lg:flex-shrink-0 flex items-start lg:items-end lg:pr-16">
                         <p
                             className="text-white/80 leading-normal md:leading-[36px] tracking-[-0.48px] max-w-[702px]"
                             style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(16px, 3.5vw, 23.78px)' }}
                         >
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
                         </p>
-                    </div>
+                    </FadeIn>
 
                     {/* Vertical Divider */}
                     <div className="hidden lg:block w-[1px] bg-[#B79F9F] self-stretch mx-[60px]" />
@@ -23,7 +24,7 @@ export const Footer = () => {
                     <div className="flex flex-col md:flex-row gap-[40px] md:gap-[60px] lg:gap-[120px] flex-1">
 
                         {/* Navigation Links Column */}
-                        <div className="flex flex-col gap-[12px] md:gap-[18px]">
+                        <FadeIn delay={300} direction="up" className="flex flex-col gap-[12px] md:gap-[18px]">
                             <Link
                                 href="/"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
@@ -66,10 +67,10 @@ export const Footer = () => {
                             >
                                 Terms and Conditions
                             </Link>
-                        </div>
+                        </FadeIn>
 
                         {/* Contact Info & Social Column */}
-                        <div className="flex flex-col gap-[20px] md:gap-6 mt-[20px] md:mt-0">
+                        <FadeIn delay={500} direction="up" className="flex flex-col gap-[20px] md:gap-6 mt-[20px] md:mt-0">
                             {/* Address */}
                             <p
                                 className="text-white/80 leading-normal md:leading-[31px] tracking-[-0.42px] max-w-[328px]"
@@ -120,7 +121,7 @@ export const Footer = () => {
                                     </svg>
                                 </Link>
                             </div>
-                        </div>
+                        </FadeIn>
 
                     </div>
                 </div>

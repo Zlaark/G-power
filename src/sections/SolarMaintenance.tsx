@@ -1,13 +1,11 @@
+import { FadeIn } from '@/components/FadeIn';
+
 export const SolarMaintenance = () => {
     return (
         <section className="relative w-full bg-white">
             <div className="mx-auto max-w-[1920px] relative">
                 <style dangerouslySetInnerHTML={{
                     __html: `
-                    @keyframes slideFromBottom {
-                        0% { opacity: 0; transform: translateY(30px); }
-                        100% { opacity: 1; transform: translateY(0); }
-                    }
                     @keyframes textShimmer {
                         0% { background-position: 0% 50%; }
                         100% { background-position: 200% 50%; }
@@ -29,10 +27,10 @@ export const SolarMaintenance = () => {
                         color: transparent;
                         -webkit-background-clip: text;
                         background-clip: text;
-                        animation: slideFromBottom 1s ease-out forwards, textShimmer 4s linear infinite, gentleBob 5s ease-in-out infinite 1s;
+                        animation: textShimmer 4s linear infinite, gentleBob 5s ease-in-out infinite 1s;
                     }
                     .animate-subtext {
-                        animation: slideFromBottom 1s ease-out forwards, gentleBob 6s ease-in-out infinite 1.2s;
+                        animation: gentleBob 6s ease-in-out infinite 1.2s;
                     }
                 `}} />
 
@@ -43,26 +41,30 @@ export const SolarMaintenance = () => {
 
                 {/* Title & Description - Centered */}
                 <div className="flex flex-col items-center gap-[16px] md:gap-[20px] py-[40px] md:py-[60px] px-6">
-                    <h2
-                        className="font-semibold text-center w-full max-w-[1197px] opacity-0 animate-title-shimmer"
-                        style={{
-                            fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(24px, 3vw, 40px)',
-                            lineHeight: '1.2'
-                        }}
-                    >
-                        Solar Maintenance Made Easy: A Homeowner&apos;s Guide
-                    </h2>
-                    <p
-                        className="text-[#121010] font-medium text-center max-w-[1301px] opacity-0 animate-subtext"
-                        style={{
-                            fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(16px, 1.8vw, 28px)',
-                            lineHeight: '1.4'
-                        }}
-                    >
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
+                    <FadeIn delay={100} direction="up" className="w-full flex justify-center">
+                        <h2
+                            className="font-semibold text-center w-full max-w-[1197px] animate-title-shimmer"
+                            style={{
+                                fontFamily: "'Montserrat', sans-serif",
+                                fontSize: 'clamp(24px, 3vw, 40px)',
+                                lineHeight: '1.2'
+                            }}
+                        >
+                            Solar Maintenance Made Easy: A Homeowner&apos;s Guide
+                        </h2>
+                    </FadeIn>
+                    <FadeIn delay={300} direction="up" className="w-full flex justify-center">
+                        <p
+                            className="text-[#121010] font-medium text-center max-w-[1301px] animate-subtext"
+                            style={{
+                                fontFamily: "'Montserrat', sans-serif",
+                                fontSize: 'clamp(16px, 1.8vw, 28px)',
+                                lineHeight: '1.4'
+                            }}
+                        >
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </FadeIn>
                 </div>
 
             </div>
