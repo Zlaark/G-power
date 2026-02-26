@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const EnergyStorage = () => {
     return (
-        <section className="relative w-full bg-white py-16 md:py-20 lg:py-24 overflow-hidden">
+        <section className="relative w-full bg-white py-8 md:py-12 lg:py-16 overflow-hidden">
             <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-16">
 
                 {/* Title */}
@@ -19,11 +19,11 @@ export const EnergyStorage = () => {
 
                 {/* Description */}
                 <p
-                    className="text-center font-medium text-black max-w-[1570px] mx-auto mb-10 md:mb-14"
+                    className="text-center font-medium text-black max-w-[1570px] mx-auto px-6 md:px-12 lg:px-20 mb-6 md:mb-10"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(18px, 2.5vw, 40px)',
-                        lineHeight: '1.22',
+                        fontSize: 'clamp(18px, 2vw, 32px)',
+                        lineHeight: '1.4',
                     }}
                 >
                     Joulecube Energy is a specialized EPC solutions and long-term service
@@ -33,8 +33,8 @@ export const EnergyStorage = () => {
                 </p>
 
                 {/* Image */}
-                <div className="relative w-full max-w-[1540px] mx-auto px-6 md:px-12 lg:px-20 mb-10 md:mb-14">
-                    <div className="relative w-full rounded-[23px] overflow-hidden aspect-[1540/637]">
+                <div className="relative w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 mb-6 md:mb-10">
+                    <div className="relative w-full rounded-[23px] overflow-hidden aspect-[1540/500]">
                         <Image
                             src="/wind-solar-energy.jpg"
                             alt="Wind turbines and solar panels in a renewable energy field at sunset"
@@ -51,8 +51,8 @@ export const EnergyStorage = () => {
                     className="text-center font-medium text-black max-w-[1596px] mx-auto"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(16px, 2vw, 32px)',
-                        lineHeight: '1.22',
+                        fontSize: 'clamp(16px, 1.8vw, 24px)',
+                        lineHeight: '1.4',
                     }}
                 >
                     We deliver end-to-end battery energy storage projects—from engineering

@@ -25,16 +25,16 @@ const solutions = [
 
 export const BessSolutions = () => {
     return (
-        <section className="relative w-full bg-white py-8 md:py-10 lg:py-12 overflow-hidden">
+        <section className="relative w-full bg-white py-6 md:py-8 lg:py-10 overflow-hidden">
             <div className="max-w-[1100px] mx-auto px-10 md:px-16 lg:px-24">
 
                 {/* Top Text */}
                 <p
-                    className="text-center font-medium text-black mb-6 md:mb-8"
+                    className="text-center font-medium text-black mb-4 md:mb-6"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(18px, 2vw, 28px)',
-                        lineHeight: '34px',
+                        fontSize: 'clamp(16px, 1.8vw, 24px)',
+                        lineHeight: '30px',
                     }}
                 >
                     At Joulecube Energy, we design and execute utility-scale and C&amp;I
@@ -42,11 +42,11 @@ export const BessSolutions = () => {
                 </p>
 
                 {/* 2x2 Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-10 gap-y-6 lg:gap-y-8 mb-6 md:mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-10 gap-y-4 lg:gap-y-6 mb-4 md:mb-6">
                     {solutions.map((item, index) => (
                         <div key={index} className="flex flex-col items-start">
                             {/* Image */}
-                            <div className="relative w-full aspect-[605/320] rounded-[16px] overflow-hidden">
+                            <div className="relative w-full aspect-[605/220] rounded-[16px] overflow-hidden">
                                 <Image
                                     src={item.image}
                                     alt={item.alt}
@@ -67,8 +67,8 @@ export const BessSolutions = () => {
                                 className="font-medium text-black"
                                 style={{
                                     fontFamily: "'Montserrat', sans-serif",
-                                    fontSize: 'clamp(16px, 1.8vw, 26px)',
-                                    lineHeight: '32px',
+                                    fontSize: 'clamp(16px, 1.8vw, 22px)',
+                                    lineHeight: '28px',
                                 }}
                             >
                                 {item.label}
@@ -79,11 +79,11 @@ export const BessSolutions = () => {
 
                 {/* Bottom Text */}
                 <p
-                    className="text-center font-medium text-black mb-6 md:mb-8"
+                    className="text-center font-medium text-black mb-4 md:mb-6"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(18px, 2vw, 28px)',
-                        lineHeight: '34px',
+                        fontSize: 'clamp(16px, 1.8vw, 24px)',
+                        lineHeight: '30px',
                     }}
                 >
                     Our EPC-driven approach ensures projects are engineered for

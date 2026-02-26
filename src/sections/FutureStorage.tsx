@@ -4,14 +4,14 @@ export const FutureStorage = () => {
     return (
         <section className="relative w-full bg-white overflow-hidden">
             {/* Text Content - sits on top of image */}
-            <div className="relative z-10 max-w-[1391px] mx-auto px-6 md:px-10 pt-12 md:pt-16 pb-10 md:pb-14 flex flex-col items-center gap-[18px]">
+            <div className="relative z-10 max-w-[1391px] mx-auto px-6 md:px-10 pt-8 md:pt-12 pb-6 md:pb-8 flex flex-col items-center gap-[12px]">
                 {/* Title */}
                 <h2
                     className="w-full text-center font-semibold text-black"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(26px, 3vw, 40px)',
-                        lineHeight: '49px',
+                        fontSize: 'clamp(24px, 2.5vw, 36px)',
+                        lineHeight: '1.2',
                     }}
                 >
                     The Future Is Storage-Led
@@ -19,11 +19,11 @@ export const FutureStorage = () => {
 
                 {/* Subtitle */}
                 <p
-                    className="w-full text-center font-medium text-black"
+                    className="w-full text-center font-medium text-black max-w-[1200px]"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(16px, 2vw, 28px)',
-                        lineHeight: '34px',
+                        fontSize: 'clamp(16px, 1.8vw, 24px)',
+                        lineHeight: '1.4',
                     }}
                 >
                     As renewable penetration increases, energy storage is becoming
@@ -32,7 +32,7 @@ export const FutureStorage = () => {
             </div>
 
             {/* Solar Panel Image */}
-            <div className="relative w-full aspect-[1933/852] mt-[-20px]">
+            <div className="relative w-full aspect-[1933/600] mt-[-10px] md:mt-[-20px]">
                 <Image
                     src="/solar-panel-future.jpg"
                     alt="Large scale solar panel installation under a blue sky with clouds"

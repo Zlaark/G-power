@@ -37,21 +37,29 @@ export const SolarMaintenance = () => {
                 `}} />
 
                 {/* Horizontal Divider Line */}
-                <div className="flex justify-center pt-[120px]">
-                    <div className="w-[1748px] max-w-[calc(100%-40px)] h-0 border-[3px] border-[#DADADA] animate-line" />
+                <div className="flex justify-center pt-[60px] md:pt-[80px]">
+                    <div className="w-[1748px] max-w-[calc(100%-40px)] h-0 border-[2px] md:border-[3px] border-[#DADADA] animate-line" />
                 </div>
 
                 {/* Title & Description - Centered */}
-                <div className="flex flex-col items-center gap-[23px] py-[106px] px-6">
+                <div className="flex flex-col items-center gap-[16px] md:gap-[20px] py-[40px] md:py-[60px] px-6">
                     <h2
-                        className="font-semibold leading-[49px] text-center w-full max-w-[1197px] opacity-0 animate-title-shimmer"
-                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: '40px' }}
+                        className="font-semibold text-center w-full max-w-[1197px] opacity-0 animate-title-shimmer"
+                        style={{
+                            fontFamily: "'Montserrat', sans-serif",
+                            fontSize: 'clamp(24px, 3vw, 40px)',
+                            lineHeight: '1.2'
+                        }}
                     >
                         Solar Maintenance Made Easy: A Homeowner&apos;s Guide
                     </h2>
                     <p
-                        className="text-[#121010] font-medium leading-[34px] text-center max-w-[1301px] opacity-0 animate-subtext"
-                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: '28px' }}
+                        className="text-[#121010] font-medium text-center max-w-[1301px] opacity-0 animate-subtext"
+                        style={{
+                            fontFamily: "'Montserrat', sans-serif",
+                            fontSize: 'clamp(16px, 1.8vw, 28px)',
+                            lineHeight: '1.4'
+                        }}
                     >
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
