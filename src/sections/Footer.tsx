@@ -126,17 +126,6 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                {/* Vector 5 - Horizontal Divider */}
-                <div
-                    style={{
-                        position: 'absolute',
-                        width: 'calc(100% - 120px)',
-                        height: '0px',
-                        left: '60px',
-                        border: '1px solid #DADADA',
-                        bottom: '0',
-                    }}
-                />
             </div>
         </footer>
     );

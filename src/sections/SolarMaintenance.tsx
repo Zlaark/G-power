@@ -15,10 +15,10 @@ export const SolarMaintenance = () => {
                 <div className="flex flex-col items-center gap-[16px] md:gap-[20px] pt-[40px] md:pt-[60px] pb-[16px] md:pb-[20px] px-6">
                     <FadeIn delay={100} direction="up" className="w-full flex justify-center">
                         <h2
-                            className="font-semibold text-center w-full max-w-[700px] text-[#121010]"
+                            className="font-semibold text-center w-full max-w-[900px] text-[#121010]"
                             style={{
                                 fontFamily: "'Montserrat', sans-serif",
-                                fontSize: 'clamp(14px, 1.6vw, 22px)',
+                                fontSize: 'clamp(20px, 2.5vw, 36px)',
                                 lineHeight: '1.2'
                             }}
                         >
@@ -27,10 +27,10 @@ export const SolarMaintenance = () => {
                     </FadeIn>
                     <FadeIn delay={300} direction="up" className="w-full flex justify-center">
                         <p
-                            className="text-[#121010] font-medium text-center max-w-[700px]"
+                            className="text-[#121010] font-medium text-center w-full max-w-[900px]"
                             style={{
                                 fontFamily: "'Montserrat', sans-serif",
-                                fontSize: 'clamp(11px, 1vw, 14px)',
+                                fontSize: 'clamp(14px, 1.8vw, 18px)',
                                 lineHeight: '1.4'
                             }}
                         >

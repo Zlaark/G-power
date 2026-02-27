@@ -1,6 +1,16 @@
+"use client";
 import { FadeIn } from '@/components/FadeIn';
+import { useState, useEffect } from 'react';
 
 export const SaveOnBills = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex((current) => (current + 1) % 3);
+        }, 3000); // Change active line every 3 seconds
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <section className="relative w-full bg-white overflow-hidden">
@@ -28,11 +38,11 @@ export const SaveOnBills = () => {
                 </div>
 
                 {/* Top Content: Title & Description */}
-                <div className="w-full max-w-[700px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[100px] flex flex-col gap-[15px] md:gap-[23px] relative z-10">
+                <div className="w-full max-w-[800px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[100px] flex flex-col gap-[15px] md:gap-[23px] relative z-10">
                     <FadeIn delay={100} direction="right">
                         <h2
                             className="font-semibold leading-tight md:leading-[49px] w-full text-[#121010]"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(17px, 2.2vw, 22px)' }}
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(24px, 3vw, 36px)' }}
                         >
                             Save On Electricity Bills
                         </h2>
@@ -40,7 +50,7 @@ export const SaveOnBills = () => {
                     <FadeIn delay={300} direction="right">
                         <p
                             className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(11px, 1.2vw, 14px)' }}
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 1.8vw, 18px)' }}
                         >
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
@@ -57,26 +67,38 @@ export const SaveOnBills = () => {
 
                                 {/* Decorative Lines */}
                                 <div className="card-lines flex items-center gap-[15px] md:gap-[30px]">
-                                    <div className="w-[40px] md:w-[66.5px] h-0 border-[3px] md:border-[3.5px] border-[#EF3C38] rounded-full" />
-                                    <div className="w-[40px] md:w-[66.5px] h-0 border-[1.5px] border-[#B1B1B1] transition-colors duration-500 group-hover:border-[#EF3C38]" />
-                                    <div className="w-[40px] md:w-[66.5px] h-0 border-[1.5px] border-[#B1B1B1] transition-colors duration-500 group-hover:border-[#EF3C38]" />
+                                    {[0, 1, 2].map((idx) => (
+                                        <div
+                                            key={idx}
+                                            className={`w-[40px] md:w-[66.5px] h-0 rounded-full transition-all duration-500 ease-in-out ${activeIndex === idx
+                                                ? 'border-[3px] md:border-[3.5px] border-[#EF3C38]'
+                                                : 'border-[1.5px] border-[#B1B1B1] group-hover:border-[#EF3C38]/50'
+                                                }`}
+                                        />
+                                    ))}
                                 </div>
 
-                                {/* Subtitle */}
-                                <h3
-                                    className="card-title text-[#121010] font-medium leading-tight md:leading-[34px] w-full max-w-[656px] transition-colors duration-500 group-hover:text-[#EF3C38]"
-                                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
-                                >
-                                    Monthly Bill Savings
-                                </h3>
+                                {/* Subtitle & Body Content */}
+                                <div className="transition-opacity duration-500 ease-in-out">
+                                    <h3
+                                        className="card-title text-[#121010] font-medium leading-tight md:leading-[34px] w-full max-w-[656px] transition-colors duration-500 group-hover:text-[#EF3C38]"
+                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
+                                    >
+                                        {activeIndex === 0 && "Monthly Bill Savings"}
+                                        {activeIndex === 1 && "Energy Independence"}
+                                        {activeIndex === 2 && "Sustainable Future"}
+                                    </h3>
 
-                                {/* Body Text */}
-                                <p
-                                    className="card-body text-[#121010]/80 font-normal leading-normal md:leading-[22px] w-full max-w-[656px]"
-                                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
-                                >
-                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </p>
+                                    {/* Body Text */}
+                                    <p
+                                        className="card-body mt-[15px] md:mt-[19px] text-[#121010]/80 font-normal leading-normal md:leading-[22px] w-full max-w-[656px]"
+                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
+                                    >
+                                        {activeIndex === 0 && "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
+                                        {activeIndex === 1 && "Generating your own solar power means you are less reliant on the traditional utility grid. You can protect yourself against unpredictable electricity rate increases and enjoy peace of mind."}
+                                        {activeIndex === 2 && "By switching to solar panels, you reduce your carbon footprint and help contribute to a much cleaner, healthier environment for future generations by utilizing completely renewable clean energy."}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </FadeIn>

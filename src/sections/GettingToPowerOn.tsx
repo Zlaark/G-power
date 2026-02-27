@@ -8,19 +8,19 @@ export const GettingToPowerOn = () => {
 
 
                 {/* Header Row: Title left + Description right */}
-                <div className="flex flex-col lg:flex-row lg:items-start gap-[16px] lg:gap-[23px] mt-[40px] md:mt-[60px] lg:mt-[80px] mb-[40px] md:mb-[60px] lg:mb-[80px]">
-                    <FadeIn delay={100} direction="up" className="w-[100%] lg:w-[512px]">
+                <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-[16px] lg:gap-[40px] mt-[40px] md:mt-[60px] lg:mt-[80px] mb-[40px] md:mb-[60px] lg:mb-[80px]">
+                    <FadeIn delay={100} direction="up" className="w-[100%] lg:w-[400px] shrink-0">
                         <h2
-                            className="text-[#121010] font-semibold leading-tight md:leading-[49px] flex-shrink-0"
+                            className="text-[#121010] font-semibold leading-tight md:leading-[49px]"
                             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(24px, 4.5vw, 32px)', transformOrigin: 'left center' }}
                         >
                             Getting to Power On
                         </h2>
                     </FadeIn>
-                    <FadeIn delay={300} direction="up" className="w-full">
+                    <FadeIn delay={300} direction="up" className="w-full lg:flex-1">
                         <p
-                            className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full lg:max-w-[1240px]"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(13px, 2.5vw, 22px)' }}
+                            className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full lg:max-w-[1000px]"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(13px, 2vw, 20px)' }}
                         >
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more
                         </p>
