@@ -8,11 +8,11 @@ export const SleekDurable = () => {
 
 
                 {/* Background Image Container */}
-                <div className="w-full h-screen md:h-[110vh] min-h-[700px] max-h-[1100px] relative overflow-hidden">
+                <div className="w-full h-screen md:h-[100vh] min-h-[700px] max-h-[1100px] relative overflow-hidden">
                     <img
                         src="/home4.png"
                         alt="Sleek and Durable Solar Panels"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-fill"
                     />
 
                     {/* Base gradient for general readability */}
