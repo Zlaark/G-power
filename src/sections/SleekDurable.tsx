@@ -3,16 +3,16 @@ import { FadeIn } from '@/components/FadeIn';
 export const SleekDurable = () => {
 
     return (
-        <section className="relative w-full overflow-hidden">
-            <div className="mx-auto max-w-[1920px] relative">
+        <section className="relative w-full overflow-hidden rounded-none">
+            <div className="relative w-full">
 
 
                 {/* Background Image Container */}
-                <div className="w-full h-screen md:h-[100vh] min-h-[700px] max-h-[1100px] relative overflow-hidden">
+                <div className="w-full h-screen md:h-[100vh] min-h-[700px] max-h-[1100px] relative overflow-hidden rounded-none">
                     <img
                         src="/home4.png"
                         alt="Sleek and Durable Solar Panels"
-                        className="w-full h-full object-fill"
+                        className="w-full h-full object-cover rounded-none"
                     />
 
                     {/* Base gradient for general readability */}

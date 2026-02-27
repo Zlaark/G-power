@@ -7,8 +7,28 @@ export const SaveOnBills = () => {
             <div className="mx-auto max-w-[1920px] relative">
 
 
+                {/* Background Image Container */}
+                <div className="absolute top-0 right-0 w-full md:w-[85%] h-full z-0 hidden md:block">
+                    <div className="absolute inset-0 w-[60%] bg-gradient-to-r from-white via-white/90 to-transparent z-10" />
+                    <img
+                        src="/home2.webp"
+                        alt="Solar Panel Field"
+                        className="w-full h-full object-cover object-right"
+                    />
+                </div>
+
+                {/* Mobile Background Image (visible only on small screens) */}
+                <div className="absolute top-0 right-0 w-full h-[50%] z-0 md:hidden opacity-30">
+                    <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-transparent z-10" />
+                    <img
+                        src="/home2.webp"
+                        alt="Solar Panel Field mobile"
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+
                 {/* Top Content: Title & Description */}
-                <div className="w-full max-w-[700px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[60px] flex flex-col gap-[15px] md:gap-[23px]">
+                <div className="w-full max-w-[700px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[100px] flex flex-col gap-[15px] md:gap-[23px] relative z-10">
                     <FadeIn delay={100} direction="right">
                         <h2
                             className="font-semibold leading-tight md:leading-[49px] w-full text-[#121010]"
@@ -28,12 +48,10 @@ export const SaveOnBills = () => {
                 </div>
 
                 {/* Solar Panel Image Area */}
-                <div className="relative w-full h-auto min-h-[300px] md:h-[500px] mt-[40px]">
+                <div className="relative w-full h-auto min-h-[300px] md:h-[400px] mt-[40px] z-10">
 
                     {/* Monthly Bill Savings Card — IntersectionObserver triggers slide-in */}
-                    <div
-                        className="relative md:absolute md:left-[66px] md:bottom-[20px] w-full md:w-[735px] max-w-[calc(100%-40px)] mx-auto md:mx-0 bg-white/90 backdrop-blur-md rounded-[20px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/40 mb-[40px] md:mb-0 z-10 group cursor-default"
-                    >
+                    <FadeIn delay={500} direction="up" className="relative md:absolute md:left-[66px] md:bottom-[20px] w-full md:w-[735px] max-w-[calc(100%-40px)] mx-auto md:mx-0 bg-white/60 backdrop-blur-md md:bg-transparent md:backdrop-blur-none rounded-[20px] md:rounded-none shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:shadow-none border border-white/40 md:border-none mb-[40px] md:mb-0 group cursor-default">
                         <div className="px-[20px] md:px-[39px] py-[30px] md:py-[50px]">
                             <div className="flex flex-col gap-[15px] md:gap-[19px]">
 
@@ -61,7 +79,7 @@ export const SaveOnBills = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </FadeIn>
                 </div>
 
             </div>

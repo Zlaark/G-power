@@ -31,7 +31,7 @@ export const FeaturesCarousel = () => {
     const [paused, setPaused] = useState(false);
 
     return (
-        <section className="relative w-full bg-white pt-4 pb-4 md:pt-[60px] md:pb-[40px] lg:pt-[80px] lg:pb-[50px] overflow-hidden">
+        <section className="relative w-full bg-white pt-8 pb-8 md:pt-[80px] md:pb-[60px] lg:pt-[100px] lg:pb-[70px] overflow-hidden">
             <div className="mx-auto max-w-[1920px] relative w-full flex flex-col gap-[30px] md:gap-[40px]">
 
                 <style dangerouslySetInnerHTML={{
@@ -61,10 +61,10 @@ export const FeaturesCarousel = () => {
                             <div
                                 key={index}
                                 className="flex-shrink-0 flex flex-col gap-3 md:gap-6 lg:gap-[30px]"
-                                style={{ width: 'clamp(260px, calc(50vw - 102px - 37px), 631px)' }}
+                                style={{ width: 'clamp(220px, calc(33vw - 102px), 480px)' }}
                             >
                                 {/* Image Card */}
-                                <div className="w-full h-[30vh] max-h-[300px] md:h-[35vh] lg:h-[45vh] lg:max-h-[450px] min-h-[200px] rounded-[16px] lg:rounded-[20px] overflow-hidden relative bg-white shadow-sm group">
+                                <div className="w-full h-[35vh] max-h-[350px] md:h-[40vh] lg:h-[50vh] lg:max-h-[500px] min-h-[220px] rounded-[16px] lg:rounded-[20px] overflow-hidden relative bg-white shadow-sm group">
                                     <img
                                         src={card.image}
                                         alt={card.title}

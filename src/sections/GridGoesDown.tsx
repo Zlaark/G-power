@@ -3,7 +3,7 @@ import { FadeIn } from '@/components/FadeIn';
 export const GridGoesDown = () => {
     return (
         <section className="relative w-full pb-[40px] md:pb-[60px] lg:pb-[20px]">
-            <div className="mx-auto max-w-[1920px] relative">
+            <div className="mx-auto relative">
                 <div className="w-full aspect-square md:aspect-[21/9] lg:h-[800px] lg:max-h-[1000px] relative overflow-hidden">
 
 

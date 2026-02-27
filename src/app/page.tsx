@@ -13,7 +13,7 @@ import { Footer } from "@/sections/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col overflow-x-hidden">
       <Navbar />
       <Hero3 />
       <SaveOnBills />
