@@ -25,7 +25,7 @@ const solutions = [
 
 export const BessSolutions = () => {
     return (
-        <section className="relative w-full bg-white py-6 md:py-8 lg:py-10 overflow-hidden">
+        <section className="relative w-full bg-white pt-[20px] md:pt-[30px] lg:pt-0 pb-[40px] md:pb-[60px] lg:pb-[60px] overflow-hidden">
             <style dangerouslySetInnerHTML={{
                 __html: `
                 .elegant-card {
@@ -89,15 +89,15 @@ export const BessSolutions = () => {
                     border-color: #000;
                 }
             `}} />
-            <div className="max-w-[1391px] mx-auto px-6 md:px-10 lg:px-16">
+            <div className="w-full max-w-[1600px] mx-auto px-[20px] md:px-[60px] lg:px-[240px]">
 
                 {/* Top Text */}
                 <p
-                    className="text-center font-medium text-black mb-8 md:mb-12"
+                    className="text-center font-medium text-black mb-[24px] md:mb-[36px] lg:mb-[20px]"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(16px, 1.8vw, 28px)',
-                        lineHeight: '34px',
+                        fontSize: 'clamp(15px, 1.8vw, 28px)',
+                        lineHeight: '1.55',
                     }}
                 >
                     At Joulecube Energy, we design and execute utility-scale and C&amp;I
@@ -105,11 +105,11 @@ export const BessSolutions = () => {
                 </p>
 
                 {/* 2x2 Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-12 gap-y-10 lg:gap-y-14 mb-10 md:mb-14">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] md:gap-x-[32px] lg:gap-x-[40px] gap-y-[32px] md:gap-y-[40px] lg:gap-y-[20px] mb-[32px] md:mb-[48px] lg:mb-[20px]">
                     {solutions.map((item, index) => (
                         <div key={index} className="flex flex-col items-start elegant-card rounded-[20px] cursor-pointer">
                             {/* Image */}
-                            <div className="relative w-full aspect-[605/410] rounded-[20px] overflow-hidden">
+                            <div className="relative w-full aspect-[605/410] lg:aspect-auto lg:h-[220px] rounded-[20px] overflow-hidden">
                                 <Image
                                     src={item.image}
                                     alt={item.alt}
@@ -127,8 +127,9 @@ export const BessSolutions = () => {
                                 className="font-medium text-black transition-colors duration-300"
                                 style={{
                                     fontFamily: "'Montserrat', sans-serif",
-                                    fontSize: 'clamp(18px, 2.2vw, 40px)',
-                                    lineHeight: '49px',
+                                    fontSize: 'clamp(16px, 1.8vw, 32px)',
+                                    lineHeight: '1.3',
+                                    marginTop: '10px',
                                 }}
                             >
                                 {item.label}
@@ -139,11 +140,11 @@ export const BessSolutions = () => {
 
                 {/* Bottom Text */}
                 <p
-                    className="text-center font-medium text-black mb-6 md:mb-8"
+                    className="text-center font-medium text-black mb-[24px] md:mb-[32px] lg:mb-[16px]"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(16px, 1.8vw, 28px)',
-                        lineHeight: '34px',
+                        fontSize: 'clamp(15px, 1.8vw, 28px)',
+                        lineHeight: '1.55',
                     }}
                 >
                     Our EPC-driven approach ensures projects are engineered for

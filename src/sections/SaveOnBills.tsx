@@ -43,7 +43,7 @@ export const SaveOnBills = () => {
                 `}} />
 
                 {/* Top Content: Title & Description */}
-                <div className="w-full max-w-[1125px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[80px] md:pt-[120px] lg:pt-[160px] flex flex-col gap-[15px] md:gap-[23px]">
+                <div className="w-full max-w-[1125px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[60px] flex flex-col gap-[15px] md:gap-[23px]">
                     <FadeIn delay={100} direction="right">
                         <h2
                             className="font-semibold leading-tight md:leading-[49px] w-full animate-continuous-title"

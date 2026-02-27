@@ -3,16 +3,16 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const EnergyStorage = () => {
     return (
-        <section className="relative w-full bg-white pt-[32px] md:pt-[48px] pb-8 md:pb-12 lg:pb-16 overflow-hidden">
-            <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-16">
+        <section className="relative w-full bg-white pt-[40px] md:pt-[60px] lg:pt-[10px] pb-[40px] md:pb-[60px] lg:pb-[80px] overflow-hidden">
+            <div className="w-full max-w-[1920px] mx-auto px-[20px] md:px-[60px] lg:px-[100px]">
 
                 {/* Title */}
                 <FadeIn delay={100} direction="up">
                     <h2
-                        className="text-center font-semibold text-black mb-10 md:mb-14"
+                        className="text-center font-semibold text-black mb-[20px] md:mb-[28px] lg:mb-[36px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(24px, 3vw, 40px)',
+                            fontSize: 'clamp(22px, 3.5vw, 40px)',
                             lineHeight: '1.22',
                         }}
                     >
@@ -23,11 +23,11 @@ export const EnergyStorage = () => {
                 {/* Description */}
                 <FadeIn delay={300} direction="up">
                     <p
-                        className="text-center font-medium text-black max-w-[1570px] mx-auto px-6 md:px-12 lg:px-20 mb-6 md:mb-10"
+                        className="text-center font-medium text-black w-full mx-auto mb-[20px] md:mb-[28px] lg:mb-[36px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(18px, 2vw, 32px)',
-                            lineHeight: '1.4',
+                            fontSize: 'clamp(14px, 2vw, 24px)',
+                            lineHeight: '1.55',
                         }}
                     >
                         Joulecube Energy is a specialized EPC solutions and long-term service
@@ -39,13 +39,14 @@ export const EnergyStorage = () => {
 
                 {/* Image */}
                 <FadeIn delay={400} direction="up">
-                    <div className="relative w-full max-w-[1540px] mx-auto mb-6 md:mb-10 group">
-                        <div className="relative w-full rounded-[23px] overflow-hidden aspect-[1540/637] shadow-lg transition-transform duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
+                    <div className="w-full mb-[20px] md:mb-[28px] lg:mb-[36px]">
+                        <div className="relative w-full rounded-[12px] md:rounded-[18px] lg:rounded-[23px] overflow-hidden shadow-lg
+                            aspect-[4/3] sm:aspect-[16/9] lg:aspect-[16/7]">
                             <Image
                                 src="/wind-solar-energy.jpg"
                                 alt="Wind turbines and solar panels in a renewable energy field at sunset"
                                 fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="object-cover"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1540px"
                                 priority
                             />
@@ -56,11 +57,11 @@ export const EnergyStorage = () => {
                 {/* Bottom Text */}
                 <FadeIn delay={600} direction="up">
                     <p
-                        className="text-center font-medium text-black max-w-[1596px] mx-auto"
+                        className="text-center font-medium text-black w-full mx-auto"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(18px, 1.8vw, 32px)',
-                            lineHeight: '39px',
+                            fontSize: 'clamp(14px, 1.8vw, 24px)',
+                            lineHeight: '1.6',
                         }}
                     >
                         We deliver end-to-end battery energy storage projects—from engineering

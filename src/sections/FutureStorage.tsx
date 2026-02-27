@@ -3,7 +3,7 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const FutureStorage = () => {
     return (
-        <section className="relative w-full bg-white overflow-hidden pb-16 md:pb-24">
+        <section className="relative w-full bg-white overflow-hidden pb-8 md:pb-10 lg:pb-0">
             {/* Text Content - sits on top of image */}
             <div className="relative z-10 max-w-[1391px] mx-auto px-6 md:px-10 pt-8 md:pt-12 pb-6 md:pb-8 flex flex-col items-center gap-[12px]">
                 {/* Title */}

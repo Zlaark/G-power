@@ -2,7 +2,7 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const GettingToPowerOn = () => {
     return (
-        <section className="relative w-full bg-white pt-[60px] md:pt-[100px] lg:pt-[140px] pb-[80px] md:pb-[140px] lg:pb-[200px]">
+        <section className="relative w-full bg-white pt-[30px] md:pt-[50px] lg:pt-[60px] pb-[20px] md:pb-[30px] lg:pb-[30px]">
             <div className="mx-auto max-w-[1920px] relative px-[20px] md:px-[40px] lg:px-[86px]">
 
                 <style dangerouslySetInnerHTML={{
@@ -55,7 +55,7 @@ export const GettingToPowerOn = () => {
                 `}} />
 
                 {/* Header Row: Title left + Description right */}
-                <div className="flex flex-col lg:flex-row lg:items-start gap-[16px] lg:gap-[23px] mb-[40px] md:mb-[60px] lg:mb-[140px]">
+                <div className="flex flex-col lg:flex-row lg:items-start gap-[16px] lg:gap-[23px] mb-[16px] md:mb-[20px] lg:mb-[20px]">
                     <FadeIn delay={100} direction="up" className="w-[100%] lg:w-[512px]">
                         <h2
                             className="text-[#121010] font-semibold leading-tight md:leading-[49px] flex-shrink-0"
@@ -113,7 +113,7 @@ export const GettingToPowerOn = () => {
                     {/* Column 1 */}
                     <FadeIn delay={200} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[443px] animate-continuous-elegant cursor-pointer">
                         <h3
-                            className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[80px] transition-colors duration-500"
+                            className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[16px] transition-colors duration-500"
                             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 5vw, 28px)' }}
                         >
                             From Order to Design
@@ -129,7 +129,7 @@ export const GettingToPowerOn = () => {
                     {/* Column 2 */}
                     <FadeIn delay={400} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[432px] animate-continuous-elegant cursor-pointer">
                         <h3
-                            className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[80px] transition-colors duration-500"
+                            className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[16px] transition-colors duration-500"
                             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 5vw, 28px)' }}
                         >
                             From Install to Power On
@@ -145,7 +145,7 @@ export const GettingToPowerOn = () => {
                     {/* Column 3 */}
                     <FadeIn delay={600} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[428px] animate-continuous-elegant cursor-pointer">
                         <h3
-                            className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[80px] transition-colors duration-500"
+                            className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[16px] transition-colors duration-500"
                             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 5vw, 28px)' }}
                         >
                             From Day One to Onward

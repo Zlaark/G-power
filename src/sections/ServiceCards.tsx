@@ -2,7 +2,7 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const ServiceCards = () => {
     return (
-        <section className="relative w-full bg-white py-[40px] md:py-[60px] lg:py-[80px]">
+        <section className="relative w-full bg-white pt-[20px] md:pt-[30px] lg:pt-[30px] pb-[40px] md:pb-[60px] lg:pb-[80px]">
             <div className="mx-auto max-w-[1920px] px-[20px] md:px-[40px] lg:px-[87px]">
 
                 <style dangerouslySetInnerHTML={{

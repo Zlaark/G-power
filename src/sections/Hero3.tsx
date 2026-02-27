@@ -1,23 +1,34 @@
 export const Hero3 = () => {
     return (
-        <section className="relative w-full h-screen min-h-[600px] max-h-[1080px] overflow-hidden">
+        <section className="relative w-full h-screen overflow-hidden">
             {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="/solar-hero-bg.png"
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    style={{ maxWidth: 'none' }}
+                />
+            </div>
+
+            {/* Overlay 1 — bottom fade */}
             <div
-                className="absolute inset-0 z-0 bg-cover bg-top lg:bg-[center_top_-50px] bg-no-repeat"
-                style={{ backgroundImage: "url('/solar-hero-bg.png')" }}
+                className="absolute z-[1] pointer-events-none inset-0"
+                style={{ background: 'linear-gradient(180deg, rgba(1, 5, 10, 0) 20%, #01050A 100%)', opacity: 0.7 }}
             />
 
-            {/* Overlays */}
-            <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#01050A] via-[#01050A]/20 to-transparent opacity-70" />
-            <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black via-black/40 to-transparent opacity-50" />
-            <div className="absolute top-0 left-0 w-full h-[400px] z-[1] bg-gradient-to-b from-black to-transparent opacity-50" />
+            {/* Overlay 2 — top black bar */}
+            <div
+                className="absolute z-[1] pointer-events-none"
+                style={{ left: 0, right: 0, top: 0, height: '35%', background: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)', opacity: 0.79 }}
+            />
 
             {/* Red accent bars on the right */}
-            <div className="absolute right-[2.71%] top-[-3.61%] h-[17%] w-[7.76%] bg-[#EF3C38] opacity-[0.37] z-[1]" />
-            <div className="absolute right-[2.71%] top-[15.19%] h-[26%] w-[7.76%] bg-[#EF3C38] opacity-[0.37] z-[1]" />
+            <div className="absolute z-[1]" style={{ left: '88.12%', right: '4.11%', top: '0%', bottom: '85.22%', background: '#EF3C38', opacity: 0.37 }} />
+            <div className="absolute z-[1]" style={{ left: '88.12%', right: '4.11%', top: '16.4%', bottom: '0%', background: '#EF3C38', opacity: 0.37 }} />
 
             {/* Content */}
-            <div className="relative z-10 w-full h-full max-w-[1920px] mx-auto">
+            <div className="absolute inset-0 z-10 w-full max-w-[1920px] mx-auto">
                 <style dangerouslySetInnerHTML={{
                     __html: `
                     @keyframes fadeUp {
