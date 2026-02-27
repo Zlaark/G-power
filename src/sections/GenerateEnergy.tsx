@@ -6,7 +6,7 @@ export const GenerateEnergy = () => {
             <div className="mx-auto max-w-[1920px]">
 
                 {/* Content Container */}
-                <div className="w-full flex flex-col lg:flex-row lg:items-center lg:gap-[60px] px-[20px] md:px-[60px] lg:pl-[80px] lg:pr-[90px] pt-[80px] pb-[60px] lg:py-[100px]">
+                <div className="w-full flex flex-col lg:flex-row lg:items-center lg:gap-[60px] px-[20px] md:px-[60px] lg:pl-[80px] lg:pr-[90px] pt-[80px] pb-[20px] lg:pt-[100px] lg:pb-[60px]">
 
                     {/* Left Side: Text Content */}
                     <div className="w-full lg:w-1/2 flex flex-col gap-[15px] md:gap-[23px] mb-[40px] lg:mb-0 z-10">
