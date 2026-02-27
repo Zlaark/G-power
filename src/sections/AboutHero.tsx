@@ -1,30 +1,62 @@
 export const AboutHero = () => {
     return (
-        <section className="relative w-full h-screen min-h-[500px] max-h-[900px] bg-white overflow-hidden flex justify-center">
-            {/* The Outer Frame */}
+        <section className="relative w-full h-screen min-h-[600px] max-h-[1080px] bg-[#01050A] overflow-hidden flex justify-center">
+            {/* hero_bg */}
             <div
-                className="absolute inset-[8px] overflow-hidden"
+                className="absolute left-0 right-0 top-[0px] md:top-[-34px] bottom-0"
                 style={{
-                    borderRadius: '16px',
-                    background: "linear-gradient(0deg, rgba(34, 79, 68, 0.3), rgba(34, 79, 68, 0.3)), url('/solar-hero-bg.png')",
+                    background: "url('/solar-hero-bg.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'
                 }}
-            >
-                {/* Dark Gradient overlay */}
-                <div
-                    className="absolute inset-0 pointer-events-none"
-                    style={{
-                        background: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)',
-                        opacity: 0.54
-                    }}
-                />
+            />
 
-                {/* Centered Content */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center px-[20px] md:px-[40px]" style={{ gap: '20px' }}>
+            {/* Header - bg_gradient */}
+            <div
+                className="absolute left-0 top-0 w-full h-full pointer-events-none"
+                style={{
+                    background: 'linear-gradient(180deg, rgba(1, 5, 10, 0) 20%, #01050A 100%)',
+                    opacity: 0.7
+                }}
+            />
+
+            {/* Rectangle 7 */}
+            <div
+                className="absolute pointer-events-none hidden lg:block"
+                style={{
+                    width: '1107px',
+                    height: '1404px',
+                    left: '-35px',
+                    top: '0px',
+                    background: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)',
+                    opacity: 0.54,
+                    transform: 'rotate(-90deg)',
+                    transformOrigin: 'top left'
+                }}
+            />
+
+            {/* Rectangle 8 */}
+            <div
+                className="absolute pointer-events-none hidden lg:block"
+                style={{
+                    width: '2022.35px',
+                    height: '300px',
+                    left: '-60px',
+                    top: '25px',
+                    background: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)',
+                    opacity: 0.54,
+                    transform: 'rotate(0.33deg)',
+                    transformOrigin: 'top left'
+                }}
+            />
+
+            {/* Centered Content Container within 1920px max-width */}
+            <div className="absolute inset-0 max-w-[1920px] mx-auto w-full">
+                {/* Text Content Block (Frame 6) */}
+                <div className="absolute left-[20px] lg:left-[86px] top-1/2 -translate-y-1/2 flex flex-col items-start gap-[20px] pr-4">
                     <h1
-                        className="text-center text-white font-bold w-full max-w-[967px]"
+                        className="text-left text-white font-bold w-full max-w-[967px]"
                         style={{
                             fontFamily: "'Outfit', sans-serif",
                             fontSize: 'clamp(26px, 4vw, 52px)',
@@ -35,7 +67,7 @@ export const AboutHero = () => {
                     </h1>
 
                     <p
-                        className="text-center text-white w-full max-w-[525px]"
+                        className="text-left text-white w-full max-w-[525px]"
                         style={{
                             fontFamily: "'Poppins', sans-serif",
                             fontWeight: 400,
@@ -45,7 +77,10 @@ export const AboutHero = () => {
                     >
                         We Customise solar solutions to fit your unique energy requirements an budget
                     </p>
+                </div>
 
+                {/* Button Block (Frame 4) - Positioned at 872px top equivalent or bottom offset */}
+                <div className="absolute left-[20px] lg:left-[86px] top-[872px] max-md:top-[auto] max-md:bottom-[100px]">
                     <button
                         className="flex flex-row items-center justify-center gap-[14px] bg-white rounded-[94px] cursor-pointer px-[16px]"
                         style={{ height: '52px', minWidth: '200px' }}
@@ -70,7 +105,6 @@ export const AboutHero = () => {
                             </svg>
                         </div>
                     </button>
-
                 </div>
             </div>
         </section>

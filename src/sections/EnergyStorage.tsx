@@ -9,7 +9,7 @@ export const EnergyStorage = () => {
                 {/* Title */}
                 <FadeIn delay={100} direction="up">
                     <h2
-                        className="text-center font-semibold text-black mb-[20px] md:mb-[28px] lg:mb-[36px]"
+                        className="text-center font-semibold text-black mb-[32px] md:mb-[48px] lg:mb-[60px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
                             fontSize: 'clamp(17px, 2.8vw, 32px)',
