@@ -19,6 +19,7 @@ export default function Home() {
       <SaveOnBills />
       <SolarMaintenance />
       <GenerateEnergy />
+      <div className="py-16 bg-white" />
       <SleekDurable />
       <FeaturesCarousel />
       <GridGoesDown />

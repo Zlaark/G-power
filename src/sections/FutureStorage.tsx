@@ -12,7 +12,7 @@ export const FutureStorage = () => {
                         className="w-full text-center font-semibold text-black"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(24px, 2.5vw, 36px)',
+                            fontSize: 'clamp(19px, 2vw, 28px)',
                             lineHeight: '1.2',
                         }}
                     >
@@ -26,7 +26,7 @@ export const FutureStorage = () => {
                         className="w-full text-center font-medium text-black max-w-[1391px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(16px, 1.8vw, 28px)',
+                            fontSize: 'clamp(13px, 1.4vw, 22px)',
                             lineHeight: '34px',
                         }}
                     >

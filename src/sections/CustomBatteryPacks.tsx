@@ -12,7 +12,7 @@ export const CustomBatteryPacks = () => {
                         className="text-center font-semibold text-black mb-4 md:mb-6 lg:mb-5"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(20px, 2.5vw, 32px)',
+                            fontSize: 'clamp(16px, 2vw, 26px)',
                             lineHeight: '1.2',
                         }}
                     >
@@ -42,7 +42,7 @@ export const CustomBatteryPacks = () => {
                             className="font-medium text-black"
                             style={{
                                 fontFamily: "'Montserrat', sans-serif",
-                                fontSize: 'clamp(14px, 1.6vw, 22px)',
+                                fontSize: 'clamp(12px, 1.3vw, 17px)',
                                 lineHeight: '1.4',
                             }}
                         >

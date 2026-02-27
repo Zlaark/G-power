@@ -2,29 +2,14 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const SolarHome = () => {
     return (
-        <section className="relative w-full">
+        <section className="relative w-full px-[20px] md:px-[40px] lg:px-[86px] py-[30px] md:py-[50px]">
             <div className="mx-auto max-w-[1920px]">
-                <div className="w-full relative overflow-hidden">
-                    <style dangerouslySetInnerHTML={{
-                        __html: `
-                        @keyframes cinematicBreathing {
-                            0%, 100% { transform: scale(1) translateY(0); filter: brightness(1); }
-                            50% { transform: scale(1.05) translateY(-1%); filter: brightness(1.05); }
-                        }
-                        .animate-cinematic-breathing {
-                            animation: cinematicBreathing 24s ease-in-out infinite;
-                        }
-                    `}} />
-                    <FadeIn delay={200} direction="up" className="w-full h-full">
-                        <img
-                            src="/home8.png"
-                            alt="Modern Home with Solar Panels and Electric Vehicle"
-                            className="w-full h-auto object-cover animate-cinematic-breathing"
-                        />
-                    </FadeIn>
-
-                    {/* Optional subtle gradient overlay for premium feel */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+                <div className="w-full h-[50vw] max-h-[700px] min-h-[260px] relative overflow-hidden rounded-[20px]">
+                    <img
+                        src="/home8.png"
+                        alt="Modern Home with Solar Panels and Electric Vehicle"
+                        className="w-full h-full object-cover object-[center_20%]"
+                    />
                 </div>
             </div>
         </section>

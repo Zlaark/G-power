@@ -27,7 +27,7 @@ export const AboutHero = () => {
                         className="text-center text-white font-bold w-full max-w-[967px]"
                         style={{
                             fontFamily: "'Outfit', sans-serif",
-                            fontSize: 'clamp(32px, 5vw, 64px)',
+                            fontSize: 'clamp(26px, 4vw, 52px)',
                             lineHeight: '1.18',
                         }}
                     >
@@ -39,7 +39,7 @@ export const AboutHero = () => {
                         style={{
                             fontFamily: "'Poppins', sans-serif",
                             fontWeight: 400,
-                            fontSize: 'clamp(14px, 1.6vw, 20px)',
+                            fontSize: 'clamp(12px, 1.3vw, 16px)',
                             lineHeight: '1.5',
                         }}
                     >

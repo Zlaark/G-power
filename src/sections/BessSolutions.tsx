@@ -96,7 +96,7 @@ export const BessSolutions = () => {
                     className="text-center font-medium text-black mb-[24px] md:mb-[36px] lg:mb-[20px]"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(15px, 1.8vw, 28px)',
+                        fontSize: 'clamp(12px, 1.4vw, 22px)',
                         lineHeight: '1.55',
                     }}
                 >
@@ -127,7 +127,7 @@ export const BessSolutions = () => {
                                 className="font-medium text-black transition-colors duration-300"
                                 style={{
                                     fontFamily: "'Montserrat', sans-serif",
-                                    fontSize: 'clamp(16px, 1.8vw, 32px)',
+                                    fontSize: 'clamp(13px, 1.4vw, 26px)',
                                     lineHeight: '1.3',
                                     marginTop: '10px',
                                 }}
@@ -143,7 +143,7 @@ export const BessSolutions = () => {
                     className="text-center font-medium text-black mb-[24px] md:mb-[32px] lg:mb-[16px]"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(15px, 1.8vw, 28px)',
+                        fontSize: 'clamp(12px, 1.4vw, 22px)',
                         lineHeight: '1.55',
                     }}
                 >

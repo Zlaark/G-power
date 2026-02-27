@@ -17,7 +17,7 @@ export const Hero2 = () => {
                     {/* Left Text Content */}
                     <div className="max-w-2xl text-left">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-800 dark:text-gray-300 text-sm font-semibold mb-6">
-                            <span className="flex h-2 w-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                            <span className="flex h-2 w-2 rounded-full bg-indigo-500"></span>
                             Introducing Version 2.0
                         </div>
 
@@ -83,8 +83,8 @@ export const Hero2 = () => {
                         </div>
 
                         {/* Floating elements */}
-                        <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl rotate-12 blur-sm opacity-50 animate-bounce" style={{ animationDuration: '3s' }} />
-                        <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-tr from-cyan-400 to-blue-500 rounded-full blur-md opacity-40 animate-pulse" style={{ animationDuration: '4s' }} />
+                        <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl rotate-12 blur-sm opacity-50" />
+                        <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-tr from-cyan-400 to-blue-500 rounded-full blur-md opacity-40" />
                     </div>
 
                 </div>

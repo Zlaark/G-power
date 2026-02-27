@@ -11,7 +11,7 @@ export const Footer = () => {
                     <FadeIn delay={100} direction="up" className="w-full lg:w-[700px] lg:flex-shrink-0 flex items-start lg:items-end lg:pr-16">
                         <p
                             className="text-white/80 leading-normal md:leading-[36px] tracking-[-0.48px] max-w-[702px]"
-                            style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(16px, 3.5vw, 23.78px)' }}
+                            style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(13px, 2.8vw, 19px)' }}
                         >
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
                         </p>
@@ -28,42 +28,42 @@ export const Footer = () => {
                             <Link
                                 href="/"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
                                 Home
                             </Link>
                             <Link
                                 href="#solutions"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
                                 Solutions
                             </Link>
                             <Link
                                 href="#contact"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
                                 Contact
                             </Link>
                             <Link
                                 href="#resources"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
                                 Resources
                             </Link>
                             <Link
                                 href="/404"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
                                 404
                             </Link>
                             <Link
                                 href="/terms"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(18px, 4vw, 23.78px)' }}
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
                                 Terms and Conditions
                             </Link>
@@ -74,7 +74,7 @@ export const Footer = () => {
                             {/* Address */}
                             <p
                                 className="text-white/80 leading-normal md:leading-[31px] tracking-[-0.42px] max-w-[328px]"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3.5vw, 20.8px)' }}
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.8vw, 17px)' }}
                             >
                                 Königsallee 92, Green Energy<br />
                                 Tower 40212 Düsseldorf, Germany
@@ -85,14 +85,14 @@ export const Footer = () => {
                                 <Link
                                     href="mailto:hello@energymax.com"
                                     className="text-white/80 leading-normal md:leading-[31px] tracking-[-0.42px] underline hover:text-white transition-colors"
-                                    style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3.5vw, 20.8px)' }}
+                                    style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.8vw, 17px)' }}
                                 >
                                     hello@energymax.com
                                 </Link>
                                 <Link
                                     href="tel:+492118765420"
                                     className="text-white/80 leading-normal md:leading-[31px] tracking-[-0.42px] underline hover:text-white transition-colors"
-                                    style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3.5vw, 20.8px)' }}
+                                    style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(12px, 2.8vw, 17px)' }}
                                 >
                                     +49 211 8765 4200
                                 </Link>
@@ -125,6 +125,18 @@ export const Footer = () => {
 
                     </div>
                 </div>
+
+                {/* Vector 5 - Horizontal Divider */}
+                <div
+                    style={{
+                        position: 'absolute',
+                        width: 'calc(100% - 120px)',
+                        height: '0px',
+                        left: '60px',
+                        border: '1px solid #DADADA',
+                        bottom: '0',
+                    }}
+                />
             </div>
         </footer>
     );

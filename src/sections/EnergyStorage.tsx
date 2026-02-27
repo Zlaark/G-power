@@ -12,7 +12,7 @@ export const EnergyStorage = () => {
                         className="text-center font-semibold text-black mb-[20px] md:mb-[28px] lg:mb-[36px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(22px, 3.5vw, 40px)',
+                            fontSize: 'clamp(17px, 2.8vw, 32px)',
                             lineHeight: '1.22',
                         }}
                     >
@@ -26,7 +26,7 @@ export const EnergyStorage = () => {
                         className="text-center font-medium text-black w-full mx-auto mb-[20px] md:mb-[28px] lg:mb-[36px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(14px, 2vw, 24px)',
+                            fontSize: 'clamp(12px, 1.6vw, 19px)',
                             lineHeight: '1.55',
                         }}
                     >
@@ -60,7 +60,7 @@ export const EnergyStorage = () => {
                         className="text-center font-medium text-black w-full mx-auto"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(14px, 1.8vw, 24px)',
+                            fontSize: 'clamp(12px, 1.4vw, 19px)',
                             lineHeight: '1.6',
                         }}
                     >
