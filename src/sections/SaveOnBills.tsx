@@ -43,11 +43,11 @@ export const SaveOnBills = () => {
                 `}} />
 
                 {/* Top Content: Title & Description */}
-                <div className="w-full max-w-[1125px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[60px] flex flex-col gap-[15px] md:gap-[23px]">
+                <div className="w-full max-w-[700px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[60px] flex flex-col gap-[15px] md:gap-[23px]">
                     <FadeIn delay={100} direction="right">
                         <h2
                             className="font-semibold leading-tight md:leading-[49px] w-full animate-continuous-title"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(32px, 5vw, 40px)' }}
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 3vw, 28px)' }}
                         >
                             Save On Electricity Bills
                         </h2>
@@ -55,7 +55,7 @@ export const SaveOnBills = () => {
                     <FadeIn delay={300} direction="right">
                         <p
                             className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full animate-continuous-text"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(16px, 3vw, 28px)' }}
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(13px, 1.5vw, 18px)' }}
                         >
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>

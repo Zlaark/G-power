@@ -40,13 +40,13 @@ export const SolarMaintenance = () => {
                 </div>
 
                 {/* Title & Description - Centered */}
-                <div className="flex flex-col items-center gap-[16px] md:gap-[20px] py-[40px] md:py-[60px] px-6">
+                <div className="flex flex-col items-center gap-[16px] md:gap-[20px] pt-[40px] md:pt-[60px] pb-[16px] md:pb-[20px] px-6">
                     <FadeIn delay={100} direction="up" className="w-full flex justify-center">
                         <h2
-                            className="font-semibold text-center w-full max-w-[1197px] animate-title-shimmer"
+                            className="font-semibold text-center w-full max-w-[700px] animate-title-shimmer"
                             style={{
                                 fontFamily: "'Montserrat', sans-serif",
-                                fontSize: 'clamp(24px, 3vw, 40px)',
+                                fontSize: 'clamp(18px, 2vw, 28px)',
                                 lineHeight: '1.2'
                             }}
                         >
@@ -55,10 +55,10 @@ export const SolarMaintenance = () => {
                     </FadeIn>
                     <FadeIn delay={300} direction="up" className="w-full flex justify-center">
                         <p
-                            className="text-[#121010] font-medium text-center max-w-[1301px] animate-subtext"
+                            className="text-[#121010] font-medium text-center max-w-[700px] animate-subtext"
                             style={{
                                 fontFamily: "'Montserrat', sans-serif",
-                                fontSize: 'clamp(16px, 1.8vw, 28px)',
+                                fontSize: 'clamp(13px, 1.2vw, 18px)',
                                 lineHeight: '1.4'
                             }}
                         >
