@@ -8,7 +8,7 @@ export const SolarMaintenance = () => {
 
                 {/* Horizontal Divider Line */}
                 <div className="flex justify-center pt-[60px] md:pt-[80px]">
-                    <div className="w-[1748px] max-w-[calc(100%-240px)] h-0 border-[1px] border-[#DADADA]" />
+                    <div className="w-[1748px] max-w-[calc(100%-40px)] md:max-w-[calc(100%-120px)] lg:max-w-[calc(100%-240px)] h-0 border-[1px] border-[#DADADA]" />
                 </div>
 
                 {/* Title & Description - Centered */}

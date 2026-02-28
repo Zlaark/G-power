@@ -3,7 +3,7 @@ export const AboutHero = () => {
         <section className="relative w-full h-screen min-h-[600px] max-h-[1080px] bg-[#01050A] overflow-hidden flex justify-center">
             {/* hero_bg */}
             <div
-                className="absolute left-0 right-0 top-0 bottom-0"
+                className="absolute left-0 right-0 top-0 bottom-0 animate-ken-burns"
                 style={{
                     background: "url('/solar-hero-bg.png')",
                     backgroundSize: 'cover',
@@ -72,7 +72,7 @@ export const AboutHero = () => {
             {/* Centered Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                 <h1
-                    className="text-white font-bold"
+                    className="animate-hero-reveal text-white font-bold"
                     style={{
                         fontFamily: "'Outfit', sans-serif",
                         fontSize: 'clamp(36px, 5vw, 72px)',
@@ -83,7 +83,7 @@ export const AboutHero = () => {
                 </h1>
 
                 <p
-                    className="text-white mt-4"
+                    className="animate-hero-reveal-delay-1 text-white mt-4"
                     style={{
                         fontFamily: "'Poppins', sans-serif",
                         fontWeight: 400,

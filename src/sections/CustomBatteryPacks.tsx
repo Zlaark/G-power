@@ -23,7 +23,7 @@ export const CustomBatteryPacks = () => {
                 {/* Two-Column: Left Heading + Right Description */}
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 mb-5 md:mb-6">
                     {/* Left Heading */}
-                    <FadeIn delay={200} direction="right" className="md:w-[35%] flex-shrink-0 pl-4 md:pl-8 lg:pl-12">
+                    <FadeIn delay={200} direction="right" className="md:w-[35%] flex-shrink-0 md:pl-8 lg:pl-12">
                         <h3
                             className="font-semibold text-black"
                             style={{

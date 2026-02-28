@@ -16,7 +16,7 @@ export const ServiceCards = () => {
                         {/* Card 1: Book Your Service (Red) */}
                         <FadeIn delay={100} direction="up" className="h-full">
                             <div
-                                className="relative bg-[#EF3C38] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
+                                className="card-shimmer relative bg-[#EF3C38] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
                             >
                                 <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent_50%)]" />
                                 {/* Bell Icon */}
@@ -46,7 +46,7 @@ export const ServiceCards = () => {
                         {/* Card 2: Get a Free Assessment (Light) */}
                         <FadeIn delay={300} direction="up" className="h-full">
                             <div
-                                className="relative bg-[#EDEDED] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
+                                className="card-shimmer relative bg-[#EDEDED] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
                             >
                                 <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(239,60,56,0.05),transparent_50%)]" />
                                 {/* Settings Icon */}
@@ -76,7 +76,7 @@ export const ServiceCards = () => {
                         {/* Card 3: We Get to Work (Light) */}
                         <FadeIn delay={500} direction="up" className="h-full">
                             <div
-                                className="relative bg-[#EDEDED] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
+                                className="card-shimmer relative bg-[#EDEDED] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
                             >
                                 <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(239,60,56,0.05),transparent_50%)]" />
                                 {/* Chat Icon */}

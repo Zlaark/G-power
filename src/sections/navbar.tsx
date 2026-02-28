@@ -6,7 +6,7 @@ export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+        <nav className="absolute top-0 inset-x-0 z-50 transition-all duration-300">
             <div className="mx-auto w-full max-w-[1920px] px-6 lg:px-12 xl:px-16">
                 <style dangerouslySetInnerHTML={{
                     __html: `
@@ -61,7 +61,7 @@ export const Navbar = () => {
 
                     {/* CTA Button */}
                     <div className="hidden xl:flex items-center">
-                        <Link href="/contact" className="btn-sweep bg-[#EF3C38] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/contact" className="btn-sweep-red bg-[#EF3C38] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Contact Us
                         </Link>
                     </div>
