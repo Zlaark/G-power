@@ -9,10 +9,10 @@ export const EnergyManagement = () => {
                 {/* Centered Top Title */}
                 <FadeIn delay={100} direction="up">
                     <h2
-                        className="text-center font-semibold text-black mb-6 md:mb-8"
+                        className="text-center font-bold text-black mb-8 md:mb-10 lg:mb-10"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(16px, 2vw, 26px)',
+                            fontSize: 'clamp(17px, 2vw, 26px)',
                             lineHeight: '1.2',
                         }}
                     >
@@ -23,12 +23,12 @@ export const EnergyManagement = () => {
                 {/* Two-Column: Left Heading + Right Description */}
                 <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 mb-8 md:mb-10">
                     {/* Left Heading */}
-                    <FadeIn delay={200} direction="right" className="md:w-[35%] flex-shrink-0">
+                    <FadeIn delay={200} direction="right" className="md:w-[35%] flex-shrink-0 pl-4 md:pl-8 lg:pl-12">
                         <h3
                             className="font-semibold text-black"
                             style={{
                                 fontFamily: "'Montserrat', sans-serif",
-                                fontSize: 'clamp(20px, 2.5vw, 32px)',
+                                fontSize: 'clamp(17px, 2vw, 26px)',
                                 lineHeight: '1.2',
                             }}
                         >
@@ -42,7 +42,7 @@ export const EnergyManagement = () => {
                             className="font-medium text-black"
                             style={{
                                 fontFamily: "'Montserrat', sans-serif",
-                                fontSize: 'clamp(12px, 1.3vw, 17px)',
+                                fontSize: 'clamp(11px, 1.1vw, 15px)',
                                 lineHeight: '1.4',
                             }}
                         >
@@ -56,7 +56,7 @@ export const EnergyManagement = () => {
                 </div>
 
                 {/* EMS Image */}
-                <FadeIn delay={400} direction="up" className="relative w-full aspect-[1562/636] rounded-[20px] overflow-hidden group shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                <FadeIn delay={400} direction="up" className="relative w-full mt-8 md:mt-10 lg:mt-10 aspect-[1562/636] rounded-[20px] overflow-hidden group shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                     <Image
                         src="/about-ems.png"
                         alt="Modern home with rooftop solar panel system and energy management"

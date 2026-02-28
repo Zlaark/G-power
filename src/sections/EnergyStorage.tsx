@@ -3,16 +3,16 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const EnergyStorage = () => {
     return (
-        <section className="relative w-full bg-white pt-[40px] md:pt-[60px] lg:pt-[10px] pb-[40px] md:pb-[60px] lg:pb-[80px] overflow-hidden">
+        <section className="relative w-full bg-white pt-[60px] md:pt-[80px] lg:pt-[80px] pb-[40px] md:pb-[60px] lg:pb-[80px] overflow-hidden">
             <div className="w-full max-w-[1920px] mx-auto px-[20px] md:px-[60px] lg:px-[100px]">
 
                 {/* Title */}
                 <FadeIn delay={100} direction="up">
                     <h2
-                        className="text-center font-semibold text-black mb-[32px] md:mb-[48px] lg:mb-[60px]"
+                        className="text-center font-bold text-black mb-[32px] md:mb-[48px] lg:mb-[60px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(17px, 2.8vw, 32px)',
+                            fontSize: 'clamp(15px, 2.2vw, 26px)',
                             lineHeight: '1.22',
                         }}
                     >
@@ -26,7 +26,7 @@ export const EnergyStorage = () => {
                         className="text-center font-medium text-black w-full mx-auto mb-[20px] md:mb-[28px] lg:mb-[36px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(12px, 1.6vw, 19px)',
+                            fontSize: 'clamp(11px, 1.2vw, 16px)',
                             lineHeight: '1.55',
                         }}
                     >
@@ -60,7 +60,7 @@ export const EnergyStorage = () => {
                         className="text-center font-medium text-black w-full mx-auto"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(12px, 1.4vw, 19px)',
+                            fontSize: 'clamp(11px, 1.1vw, 16px)',
                             lineHeight: '1.6',
                         }}
                     >

@@ -25,15 +25,15 @@ const solutions = [
 
 export const BessSolutions = () => {
     return (
-        <section className="relative w-full bg-white pt-[20px] md:pt-[30px] lg:pt-0 pb-[40px] md:pb-[60px] lg:pb-[60px] overflow-hidden">
+        <section className="relative w-full bg-white pt-[60px] md:pt-[70px] lg:pt-[70px] pb-[40px] md:pb-[60px] lg:pb-[60px] overflow-hidden">
             <style dangerouslySetInnerHTML={{
                 __html: `
                 .elegant-card {
-                    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                    transition: none;
                 }
                 .elegant-card:hover {
-                    transform: translateY(-8px);
-                    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+                    transform: none;
+                    box-shadow: none;
                 }
                 .elegant-card .card-img {
                     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -44,7 +44,7 @@ export const BessSolutions = () => {
                 .elegant-line {
                     position: relative;
                     width: 100%;
-                    height: 4px;
+                    height: 2px;
                     background-color: #000;
                     overflow: hidden;
                     margin-top: 8px;
@@ -93,10 +93,10 @@ export const BessSolutions = () => {
 
                 {/* Top Text */}
                 <p
-                    className="text-center font-medium text-black mb-[24px] md:mb-[36px] lg:mb-[20px]"
+                    className="text-center font-medium text-black mb-[44px] md:mb-[56px] lg:mb-[52px]"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(12px, 1.4vw, 22px)',
+                        fontSize: 'clamp(11px, 1.1vw, 18px)',
                         lineHeight: '1.55',
                     }}
                 >
@@ -105,11 +105,11 @@ export const BessSolutions = () => {
                 </p>
 
                 {/* 2x2 Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] md:gap-x-[32px] lg:gap-x-[40px] gap-y-[32px] md:gap-y-[40px] lg:gap-y-[20px] mb-[32px] md:mb-[48px] lg:mb-[20px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[40px] md:gap-x-[50px] lg:gap-x-[60px] gap-y-[48px] md:gap-y-[56px] lg:gap-y-[44px] mb-[44px] md:mb-[56px] lg:mb-[44px]">
                     {solutions.map((item, index) => (
                         <div key={index} className="flex flex-col items-start elegant-card rounded-[20px] cursor-pointer">
                             {/* Image */}
-                            <div className="relative w-full aspect-[605/410] lg:aspect-auto lg:h-[220px] rounded-[20px] overflow-hidden">
+                            <div className="relative w-full aspect-square lg:aspect-square lg:h-auto rounded-[20px] overflow-hidden">
                                 <Image
                                     src={item.image}
                                     alt={item.alt}
@@ -120,14 +120,14 @@ export const BessSolutions = () => {
                             </div>
 
                             {/* Divider Line */}
-                            <div className="elegant-line" style={{ height: index === 0 || index === 2 ? '9px' : '5px' }} />
+                            <div className="elegant-line" style={{ height: '1px' }} />
 
                             {/* Label */}
                             <p
-                                className="font-medium text-black transition-colors duration-300"
+                                className="font-semibold text-black transition-colors duration-300"
                                 style={{
                                     fontFamily: "'Montserrat', sans-serif",
-                                    fontSize: 'clamp(13px, 1.4vw, 26px)',
+                                    fontSize: 'clamp(13px, 1.3vw, 22px)',
                                     lineHeight: '1.3',
                                     marginTop: '10px',
                                 }}
@@ -140,10 +140,10 @@ export const BessSolutions = () => {
 
                 {/* Bottom Text */}
                 <p
-                    className="text-center font-medium text-black mb-[24px] md:mb-[32px] lg:mb-[16px]"
+                    className="text-center font-medium text-black mb-[48px] md:mb-[56px] lg:mb-[48px]"
                     style={{
                         fontFamily: "'Montserrat', sans-serif",
-                        fontSize: 'clamp(12px, 1.4vw, 22px)',
+                        fontSize: 'clamp(11px, 1.1vw, 18px)',
                         lineHeight: '1.55',
                     }}
                 >
@@ -157,7 +157,7 @@ export const BessSolutions = () => {
                         className="btn-sweep flex items-center justify-center w-[273px] h-[57px] border-2 border-black rounded-[5px] text-black font-semibold shadow-sm cursor-pointer"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: '18px',
+                            fontSize: '15px',
                             lineHeight: '22px',
                         }}
                     >

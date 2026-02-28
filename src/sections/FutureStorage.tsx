@@ -5,14 +5,14 @@ export const FutureStorage = () => {
     return (
         <section className="relative w-full bg-white overflow-hidden pb-8 md:pb-10 lg:pb-0">
             {/* Text Content - sits on top of image */}
-            <div className="relative z-10 max-w-[1391px] mx-auto px-6 md:px-10 pt-8 md:pt-12 pb-6 md:pb-8 flex flex-col items-center gap-[12px]">
+            <div className="relative z-10 max-w-[1391px] mx-auto px-6 md:px-10 pt-2 md:pt-3 pb-6 md:pb-8 flex flex-col items-center gap-[12px]">
                 {/* Title */}
                 <FadeIn delay={100} direction="up">
                     <h2
-                        className="w-full text-center font-semibold text-black"
+                        className="w-full text-center font-bold text-black"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(19px, 2vw, 28px)',
+                            fontSize: 'clamp(18px, 2vw, 28px)',
                             lineHeight: '1.2',
                         }}
                     >
@@ -26,7 +26,7 @@ export const FutureStorage = () => {
                         className="w-full text-center font-medium text-black max-w-[1391px]"
                         style={{
                             fontFamily: "'Montserrat', sans-serif",
-                            fontSize: 'clamp(13px, 1.4vw, 22px)',
+                            fontSize: 'clamp(11px, 1.1vw, 18px)',
                             lineHeight: '34px',
                         }}
                     >
@@ -37,7 +37,7 @@ export const FutureStorage = () => {
             </div>
 
             {/* Solar Panel Image */}
-            <FadeIn delay={400} direction="up" className="relative w-full aspect-[1933/600] mt-[-10px] md:mt-[-20px] group">
+            <FadeIn delay={400} direction="up" className="relative w-full aspect-[1933/600] mt-[10px] md:mt-[16px] group">
                 <Image
                     src="/solar-panel-future.jpg"
                     alt="Large scale solar panel installation under a blue sky with clouds"
