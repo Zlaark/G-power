@@ -15,8 +15,8 @@ export const SleekDurable = () => {
                         className="w-full h-full object-cover rounded-none"
                     />
 
-                    {/* Base gradient for general readability */}
-                    <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none transition-opacity duration-1000 group-hover:opacity-70" />
+                    {/* Base gradient for text readability */}
+                    <div className="absolute inset-x-0 bottom-0 h-[70%] bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none" />
 
                     {/* Interactive Glass Panel for Text */}
                     <FadeIn delay={200} direction="up" className="absolute left-0 right-0 md:left-[30px] lg:left-[80px] md:right-[30px] lg:right-[80px] bottom-0 px-[20px] md:px-0 pb-[30px] md:pb-[70px] pt-[20px] mb-0 md:mb-[-20px]" style={{ backgroundColor: 'transparent' }}>

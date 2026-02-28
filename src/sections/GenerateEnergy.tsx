@@ -17,13 +17,13 @@ export const GenerateEnergy = () => {
                         <FadeIn delay={100} direction="right" className="flex flex-col gap-[15px] md:gap-[23px] mt-[10px] lg:mt-0">
                             <h2
                                 className="text-[#121010] font-[600] leading-tight md:leading-[49px] w-full"
-                                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(26px, 3.5vw, 48px)' }}
+                                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 3vw, 38px)' }}
                             >
                                 Generate Energy
                             </h2>
                             <p
                                 className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full"
-                                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: '22px' }}
+                                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(13px, 1.5vw, 16px)' }}
                             >
                                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
                             </p>
