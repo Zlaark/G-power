@@ -35,6 +35,7 @@ export const FeaturesCarousel = () => {
     const [hasTransition, setHasTransition] = useState(true);
     const [paused, setPaused] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+    const [progressKey, setProgressKey] = useState(0); // key to restart CSS animation
 
     // Responsive visible count
     const getVisibleCount = useCallback(() => {
@@ -74,6 +75,7 @@ export const FeaturesCarousel = () => {
     const slideNext = useCallback(() => {
         setHasTransition(true);
         setPosition((prev) => prev + 1);
+        setProgressKey((k) => k + 1); // restart progress bar animation
     }, []);
 
     // Handle seamless reset when we reach the duplicate set
@@ -115,6 +117,7 @@ export const FeaturesCarousel = () => {
     const goTo = (index: number) => {
         setHasTransition(true);
         setPosition(index);
+        setProgressKey((k) => k + 1); // restart progress bar animation
     };
 
     // Which original card index is "active"
@@ -124,8 +127,28 @@ export const FeaturesCarousel = () => {
     const cardWidth = `calc((100% - ${gap * (visibleCount - 1)}px) / ${visibleCount})`;
     const translateX = `translateX(calc(-${position} * (((100% - ${gap * (visibleCount - 1)}px) / ${visibleCount}) + ${gap}px)))`;
 
+    // Determine which card indices are currently visible
+    const visibleIndices = Array.from({ length: visibleCount }, (_, i) => position + i);
+
     return (
         <section className="relative w-full bg-white pt-8 pb-8 md:pt-[80px] md:pb-[60px] lg:pt-[100px] lg:pb-[70px] overflow-hidden">
+            {/* Keyframe animations */}
+            <style>{`
+                @keyframes progressFill {
+                    from { width: 0%; }
+                    to   { width: 100%; }
+                }
+                @keyframes cardFadeSlideIn {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px) scale(0.96);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0) scale(1);
+                    }
+                }
+            `}</style>
             <div className="mx-auto max-w-[1920px] relative w-full flex flex-col gap-[30px] md:gap-[40px]">
 
                 {/* Carousel Track */}
@@ -142,59 +165,95 @@ export const FeaturesCarousel = () => {
                             transition: hasTransition ? `transform ${TRANSITION_MS}ms ease-in-out` : 'none',
                         }}
                     >
-                        {extendedCards.map((card, index) => (
-                            <div
-                                key={index}
-                                className="flex-shrink-0 flex flex-col gap-3 md:gap-6 lg:gap-[30px]"
-                                style={{ width: cardWidth }}
-                            >
-                                {/* Image Card */}
-                                <div className="w-full h-[35vh] max-h-[350px] md:h-[40vh] lg:h-[50vh] lg:max-h-[500px] min-h-[220px] rounded-[16px] lg:rounded-[20px] overflow-hidden relative bg-white shadow-sm group">
-                                    <img
-                                        src={card.image}
-                                        alt={card.title}
-                                        className="w-full h-full object-cover transition-transform duration-[800ms] group-hover:scale-110"
-                                    />
-                                    <div
-                                        className="absolute bottom-0 left-0 right-0 h-3/4 pointer-events-none"
-                                        style={{ background: 'linear-gradient(360deg, #000000 0%, rgba(0,0,0,0) 100%)' }}
-                                    />
-                                </div>
+                        {extendedCards.map((card, index) => {
+                            const isVisible = visibleIndices.includes(index);
+                            return (
+                                <div
+                                    key={index}
+                                    className="flex-shrink-0 flex flex-col gap-3 md:gap-6 lg:gap-[30px]"
+                                    style={{
+                                        width: cardWidth,
+                                        animation: isVisible
+                                            ? `cardFadeSlideIn ${TRANSITION_MS}ms ease-out forwards`
+                                            : 'none',
+                                        opacity: isVisible ? undefined : 0.5,
+                                        transition: `opacity ${TRANSITION_MS}ms ease`,
+                                    }}
+                                >
+                                    {/* Image Card */}
+                                    <div className="w-full h-[35vh] max-h-[350px] md:h-[40vh] lg:h-[50vh] lg:max-h-[500px] min-h-[220px] rounded-[16px] lg:rounded-[20px] overflow-hidden relative bg-white shadow-sm group">
+                                        <img
+                                            src={card.image}
+                                            alt={card.title}
+                                            className="w-full h-full object-cover transition-transform duration-[800ms] group-hover:scale-110"
+                                        />
+                                        <div
+                                            className="absolute bottom-0 left-0 right-0 h-3/4 pointer-events-none"
+                                            style={{ background: 'linear-gradient(360deg, #000000 0%, rgba(0,0,0,0) 100%)' }}
+                                        />
+                                    </div>
 
-                                {/* Text Content */}
-                                <div className="flex flex-col gap-1 md:gap-[12px] w-full px-2 md:px-0">
-                                    <h2
-                                        className="font-semibold text-base md:text-xl lg:text-[26px] leading-tight lg:leading-[34px] text-[#121010]"
-                                        style={{ fontFamily: "'Montserrat', sans-serif" }}
-                                    >
-                                        {card.title}
-                                    </h2>
-                                    <p
-                                        className="text-[#4A4A4A] font-medium text-xs md:text-base lg:text-[16px] leading-snug md:leading-relaxed lg:leading-[26px]"
-                                        style={{ fontFamily: "'Montserrat', sans-serif" }}
-                                    >
-                                        {card.description}
-                                    </p>
+                                    {/* Text Content */}
+                                    <div className="flex flex-col gap-1 md:gap-[12px] w-full px-2 md:px-0">
+                                        <h2
+                                            className="font-semibold text-base md:text-xl lg:text-[26px] leading-tight lg:leading-[34px] text-[#121010]"
+                                            style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                        >
+                                            {card.title}
+                                        </h2>
+                                        <p
+                                            className="text-[#4A4A4A] font-medium text-xs md:text-base lg:text-[16px] leading-snug md:leading-relaxed lg:leading-[26px]"
+                                            style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                        >
+                                            {card.description}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
 
-                {/* Progress Indicator Lines */}
+                {/* Progress Indicator Lines with animated fill */}
                 <div className="flex items-center gap-2 md:gap-[30px] px-4 md:px-12 lg:px-[102px]">
                     {cards.map((_, index) => (
                         <div
                             key={index}
                             onClick={() => goTo(index)}
-                            className="w-10 md:w-[66.5px] h-0 cursor-pointer"
+                            className="relative w-10 md:w-[66.5px] cursor-pointer overflow-hidden"
                             style={{
-                                borderWidth: index === activeIndex ? '4px' : '3px',
-                                borderStyle: 'solid',
-                                borderColor: index === activeIndex ? '#EF3C38' : '#B1B1B1',
-                                transition: 'border-color 0.3s ease',
+                                height: index === activeIndex ? '4px' : '3px',
+                                backgroundColor: '#B1B1B1',
+                                borderRadius: '2px',
+                                transition: 'height 0.3s ease',
                             }}
-                        />
+                        >
+                            {/* Animated progress fill for active indicator */}
+                            {index === activeIndex && (
+                                <div
+                                    key={progressKey}
+                                    className="absolute top-0 left-0 h-full"
+                                    style={{
+                                        backgroundColor: '#EF3C38',
+                                        borderRadius: '2px',
+                                        animation: paused
+                                            ? 'none'
+                                            : `progressFill ${SLIDE_DURATION}ms linear forwards`,
+                                        animationPlayState: paused ? 'paused' : 'running',
+                                    }}
+                                />
+                            )}
+                            {/* Static red fill for completed indicators */}
+                            {index < activeIndex && (
+                                <div
+                                    className="absolute top-0 left-0 h-full w-full"
+                                    style={{
+                                        backgroundColor: '#EF3C38',
+                                        borderRadius: '2px',
+                                    }}
+                                />
+                            )}
+                        </div>
                     ))}
                 </div>
 
