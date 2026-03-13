@@ -16,6 +16,28 @@ export const GlobalPresenceMap = () => {
                 </div>
             </div>
 
+            {/* Blue location dots */}
+            {/* Americas (Panama area) */}
+            <div className="absolute z-20" style={{ left: '44%', top: '55%' }}>
+                <span className="block w-3 h-3 bg-[#3B82F6] rounded-full shadow-lg shadow-blue-400/50" />
+                <span className="absolute inset-0 w-3 h-3 bg-[#3B82F6] rounded-full animate-ping opacity-50" />
+            </div>
+            {/* Europe (Germany area) */}
+            <div className="absolute z-20" style={{ left: '67%', top: '33%' }}>
+                <span className="block w-3 h-3 bg-[#3B82F6] rounded-full shadow-lg shadow-blue-400/50" />
+                <span className="absolute inset-0 w-3 h-3 bg-[#3B82F6] rounded-full animate-ping opacity-50" />
+            </div>
+            {/* Asia (India area) */}
+            <div className="absolute z-20" style={{ left: '85%', top: '55%' }}>
+                <span className="block w-3 h-3 bg-[#3B82F6] rounded-full shadow-lg shadow-blue-400/50" />
+                <span className="absolute inset-0 w-3 h-3 bg-[#3B82F6] rounded-full animate-ping opacity-50" />
+            </div>
+            {/* Africa (South Africa area) */}
+            <div className="absolute z-20" style={{ left: '68%', top: '72%' }}>
+                <span className="block w-3 h-3 bg-[#3B82F6] rounded-full shadow-lg shadow-blue-400/50" />
+                <span className="absolute inset-0 w-3 h-3 bg-[#3B82F6] rounded-full animate-ping opacity-50" />
+            </div>
+
             {/* Content overlay */}
             <div className="relative z-10 max-w-[1200px] w-full" style={{ marginLeft: 'clamp(24px, 8vw, 120px)' }}>
                 <FadeIn delay={100} direction="up">
