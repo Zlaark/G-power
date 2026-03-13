@@ -61,7 +61,7 @@ export const Footer = () => {
                                 404
                             </Link>
                             <Link
-                                href="/terms"
+                                href="/terms-conditions"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
                                 style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
@@ -73,6 +73,13 @@ export const Footer = () => {
                                 style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
                                 Privacy Policy
+                            </Link>
+                            <Link
+                                href="/disclaimer"
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
+                            >
+                                Disclaimer
                             </Link>
                         </FadeIn>
 

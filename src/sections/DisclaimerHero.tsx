@@ -1,6 +1,6 @@
 import { FadeIn } from "@/components/FadeIn";
 
-export const PrivacyPolicyHero = () => {
+export const DisclaimerHero = () => {
     return (
         <section className="relative w-full h-[60vh] min-h-[400px] bg-[#01050A] overflow-hidden flex justify-center">
             {/* hero_bg */}
@@ -47,7 +47,7 @@ export const PrivacyPolicyHero = () => {
                             lineHeight: '1.15',
                         }}
                     >
-                        Privacy Policy
+                        Disclaimer
                     </h1>
                 </FadeIn>
             </div>
