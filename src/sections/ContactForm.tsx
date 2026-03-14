@@ -3,14 +3,14 @@ import { Mail, Phone, MapPin, Clock, Send, Globe } from "lucide-react";
 
 export const ContactForm = () => {
     return (
-        <section className="bg-white py-24 px-6 lg:px-12 xl:px-16 flex justify-center">
-            <div className="max-w-[1200px] w-full grid grid-cols-1 lg:grid-cols-5 gap-16">
+        <section className="bg-white py-12 md:py-24 px-4 md:px-6 lg:px-12 xl:px-16 flex justify-center">
+            <div className="max-w-[1200px] w-full grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16">
                 
                 {/* Contact Form Section */}
                 <div className="lg:col-span-3">
                     <FadeIn delay={100} direction="right">
                         <div>
-                            <h2 className="text-3xl font-bold text-[#121010] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            <h2 className="text-2xl md:text-3xl font-bold text-[#121010] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                                 Send Us a Message
                             </h2>
                             <p className="text-[#4A4A4A] mb-10" style={{ fontFamily: "'Montserrat', sans-serif" }}>
@@ -24,7 +24,7 @@ export const ContactForm = () => {
                                         <input 
                                             type="text" 
                                             placeholder="John"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 focus:outline-none focus:border-[#EF3C38] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
                                             style={{ fontFamily: "'Montserrat', sans-serif" }}
                                             required
                                         />
@@ -34,7 +34,7 @@ export const ContactForm = () => {
                                         <input 
                                             type="text" 
                                             placeholder="Doe"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 focus:outline-none focus:border-[#EF3C38] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
                                             style={{ fontFamily: "'Montserrat', sans-serif" }}
                                             required
                                         />
@@ -47,7 +47,7 @@ export const ContactForm = () => {
                                         <input 
                                             type="email" 
                                             placeholder="john.doe@company.com"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 focus:outline-none focus:border-[#EF3C38] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
                                             style={{ fontFamily: "'Montserrat', sans-serif" }}
                                             required
                                         />
@@ -57,7 +57,7 @@ export const ContactForm = () => {
                                         <input 
                                             type="tel" 
                                             placeholder="+91 98765 43210"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 focus:outline-none focus:border-[#EF3C38] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
                                             style={{ fontFamily: "'Montserrat', sans-serif" }}
                                             required
                                         />
@@ -67,7 +67,7 @@ export const ContactForm = () => {
                                 <div className="space-y-2">
                                     <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Montserrat', sans-serif" }}>What are you interested in?</label>
                                     <select 
-                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 focus:outline-none focus:border-[#EF3C38] transition-colors appearance-none"
+                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors appearance-none"
                                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                                     >
                                         <option>General Inquiry</option>
@@ -81,7 +81,7 @@ export const ContactForm = () => {
                                     <textarea 
                                         placeholder="Tell us about your project or how we can help you..."
                                         rows={5}
-                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 focus:outline-none focus:border-[#EF3C38] transition-colors resize-none"
+                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors resize-none"
                                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                                         required
                                     ></textarea>
@@ -150,11 +150,11 @@ export const ContactForm = () => {
                         </div>
 
                         {/* Regional Offices Block */}
-                        <div className="mt-12 bg-[#01050A] rounded-2xl p-8 text-white relative overflow-hidden">
+                        <div className="mt-8 md:mt-12 bg-[#01050A] rounded-2xl p-6 md:p-8 text-white relative overflow-hidden">
                             <div className="absolute top-0 right-0 p-4 opacity-10">
                                 <Globe size={120} />
                             </div>
-                            <h4 className="text-xl font-bold mb-6 relative z-10" style={{ fontFamily: "'Montserrat', sans-serif" }}>Regional Offices</h4>
+                            <h4 className="text-lg md:text-xl font-bold mb-6 relative z-10" style={{ fontFamily: "'Montserrat', sans-serif" }}>Regional Offices</h4>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
                                 <div>
                                     <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>Mumbai</h5>
