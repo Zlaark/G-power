@@ -2,6 +2,8 @@ import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { PartnersHero } from "@/sections/PartnersHero";
 import { StrategicPartnerships } from "@/sections/StrategicPartnerships";
+import { PartnerAdvantages } from "@/sections/PartnerAdvantages";
+import { PartnerCollaborationFlow } from "@/sections/PartnerCollaborationFlow";
 import { PartnerNetwork } from "@/sections/PartnerNetwork";
 import { BecomePartner } from "@/sections/BecomePartner";
 import { Metadata } from "next";
@@ -17,6 +19,8 @@ export default function PartnersPage() {
       <Navbar />
       <PartnersHero />
       <StrategicPartnerships />
+      <PartnerAdvantages />
+      <PartnerCollaborationFlow />
       <PartnerNetwork />
       <BecomePartner />
       <Footer />
