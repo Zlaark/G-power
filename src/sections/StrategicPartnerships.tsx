@@ -2,6 +2,18 @@ import { FadeIn } from "@/components/FadeIn";
 import { Handshake, Award, Globe } from "lucide-react";
 
 export function StrategicPartnerships() {
+  const cardAnimationClasses = [
+    "hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/60",
+    "hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/60 hover:scale-[1.015]",
+    "hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/60",
+  ];
+
+  const iconAnimationClasses = [
+    "group-hover:-translate-y-1 group-hover:scale-110",
+    "group-hover:scale-110 group-hover:rotate-6",
+    "group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:scale-105",
+  ];
+
   const partnerships = [
     {
       title: "Technology Partners",
@@ -45,12 +57,14 @@ export function StrategicPartnerships() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[12px] sm:gap-[16px] md:gap-[20px] lg:gap-[24px] max-w-[1600px] mx-auto">
           {partnerships.map((item, index) => (
             <FadeIn delay={200 + index * 100} direction="up" key={item.title}>
-              <div className="bg-[#f9f9f9] rounded-[24px] px-5 py-7 md:px-[36px] md:py-[48px] lg:px-[48px] lg:py-[56px] flex flex-col items-center text-center justify-center hover:-translate-y-2 transition-transform duration-300">
-                <div className="mb-[30px]">
+              <div
+                className={`group bg-[#f9f9f9] rounded-[24px] px-5 py-7 md:px-[36px] md:py-[48px] lg:px-[48px] lg:py-[56px] flex flex-col items-center text-center justify-center border border-transparent transition-all duration-500 ease-out ${cardAnimationClasses[index]}`}
+              >
+                <div className={`mb-[30px] transition-transform duration-500 ${iconAnimationClasses[index]}`}>
                   {item.icon}
                 </div>
                 <h3 
-                  className="font-bold text-[#121010] mb-[20px] tracking-tight"
+                  className="font-bold text-[#121010] mb-[20px] tracking-tight transition-colors duration-500 group-hover:text-[#EF3C38]"
                   style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(18px, 2vw, 22px)' }}
                 >
                   {item.title}
