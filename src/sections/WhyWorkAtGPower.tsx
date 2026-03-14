@@ -41,7 +41,7 @@ export function WhyWorkAtGPower() {
               Why Work at GPower?
             </h2>
             <p
-              className="text-[#121010]/80 font-medium leading-[1.7]"
+              className="paragraph-hover-float text-[#121010]/80 font-medium leading-[1.7]"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.7vw, 18px)" }}
             >
               Join a team of passionate professionals committed to transforming India&apos;s energy landscape.
@@ -65,7 +65,7 @@ export function WhyWorkAtGPower() {
                   {item.title}
                 </h3>
                 <p
-                  className="text-[#121010]/75 font-medium leading-[1.6]"
+                  className="paragraph-hover-float text-[#121010]/75 font-medium leading-[1.6]"
                   style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                 >
                   {item.description}

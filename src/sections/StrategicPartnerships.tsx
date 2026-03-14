@@ -32,7 +32,7 @@ export function StrategicPartnerships() {
               Strategic Partnerships
             </h2>
             <p 
-              className="text-[#121010]/70 font-medium"
+              className="paragraph-hover-float text-[#121010]/70 font-medium"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
             >
               We collaborate with world-class technology providers, manufacturers,
@@ -56,7 +56,7 @@ export function StrategicPartnerships() {
                   {item.title}
                 </h3>
                 <p 
-                  className="text-[#64748b] font-medium leading-[1.6] max-w-[400px]"
+                  className="paragraph-hover-float text-[#64748b] font-medium leading-[1.6] max-w-[400px]"
                   style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(13px, 1.2vw, 15px)' }}
                 >
                   {item.desc}

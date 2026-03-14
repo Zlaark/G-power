@@ -3,7 +3,6 @@ import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { CareersHero } from "@/sections/CareersHero";
 import { WhyWorkAtGPower } from "@/sections/WhyWorkAtGPower";
-import { WhatWeOffer } from "@/sections/WhatWeOffer";
 import { OpenPositions } from "@/sections/OpenPositions";
 import { CareersCta } from "@/sections/CareersCta";
 
@@ -19,7 +18,6 @@ export default function CareersPage() {
       <Navbar />
       <CareersHero />
       <WhyWorkAtGPower />
-      <WhatWeOffer />
       <OpenPositions />
       <CareersCta />
       <Footer />

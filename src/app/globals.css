@@ -400,3 +400,25 @@ html {
 .career-card-scan:hover::after {
   animation: career-scan 0.9s ease-out;
 }
+
+@keyframes paragraph-float-glow {
+  0%,
+  100% {
+    transform: translateY(0);
+    color: inherit;
+  }
+
+  50% {
+    transform: translateY(-2px);
+    color: #334155;
+  }
+}
+
+.paragraph-hover-float {
+  transition: transform 0.28s ease, color 0.28s ease, letter-spacing 0.28s ease;
+}
+
+.paragraph-hover-float:hover {
+  animation: paragraph-float-glow 0.55s ease;
+  letter-spacing: 0.01em;
+}

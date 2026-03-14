@@ -37,7 +37,7 @@ export function ProjectCategories() {
               Project Categories
             </h2>
             <p
-              className="text-[#121010]/75 font-medium"
+              className="paragraph-hover-float text-[#121010]/75 font-medium"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.6vw, 17px)" }}
             >
               Explore the key segments where GPower delivers measurable clean-energy outcomes.
@@ -45,19 +45,19 @@ export function ProjectCategories() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[18px] lg:gap-[22px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px] lg:gap-[24px]">
           {categories.map((item, index) => (
             <FadeIn delay={180 + index * 70} direction="up" key={item.title}>
-              <div className="h-full rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] p-[22px] lg:p-[24px]">
-                <div className="mb-[14px]">{item.icon}</div>
+              <div className="h-full min-h-[260px] lg:min-h-[300px] rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] px-[22px] py-[28px] lg:px-[24px] lg:py-[34px] flex flex-col">
+                <div className="mb-[18px]">{item.icon}</div>
                 <h3
-                  className="text-[#121010] font-bold mb-[10px]"
+                  className="text-[#121010] font-bold mb-[12px]"
                   style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
                 >
                   {item.title}
                 </h3>
                 <p
-                  className="text-[#475569] font-medium leading-[1.6]"
+                  className="paragraph-hover-float text-[#475569] font-medium leading-[1.6]"
                   style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                 >
                   {item.description}
