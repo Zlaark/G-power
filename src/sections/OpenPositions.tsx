@@ -24,10 +24,10 @@ export function OpenPositions() {
           </h2>
         </FadeIn>
 
-        <div className="max-w-[1760px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[22px] lg:gap-[28px]">
+        <div className="max-w-[1760px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[30px] lg:gap-[38px]">
           {jobs.map((job, index) => (
             <FadeIn delay={180 + (index % 2) * 100} direction="up" key={job.title}>
-              <div className="bg-white rounded-[14px] border border-[#D6D9E0] p-[24px] lg:p-[30px] min-h-[210px] lg:min-h-[240px] h-full flex flex-col gap-[16px]">
+              <div className="bg-white rounded-[14px] border border-[#D6D9E0] px-[30px] py-[24px] lg:px-[42px] lg:py-[30px] min-h-[210px] lg:min-h-[240px] h-full flex flex-col gap-[16px]">
                 <h3
                   className="font-bold text-[#121010]"
                   style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2vw, 36px)" }}
