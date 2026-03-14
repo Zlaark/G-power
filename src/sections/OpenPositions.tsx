@@ -128,7 +128,7 @@ export function OpenPositions() {
       <div className="mx-auto max-w-[1920px]">
         <FadeIn delay={100} direction="up">
           <h2
-            className="text-center font-medium text-[#121010] mb-[34px] lg:mb-[44px]"
+            className="text-center font-normal text-[#121010] mb-[34px] lg:mb-[44px]"
             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
           >
             Open Positions
@@ -140,18 +140,18 @@ export function OpenPositions() {
             <FadeIn delay={180 + (index % 2) * 100} direction="up" key={job.title}>
               <div className="career-card-scan bg-white rounded-[14px] border border-[#D6D9E0] px-4 py-4 sm:px-[20px] sm:py-[20px] lg:px-[24px] lg:py-[22px] h-full flex flex-col gap-[10px]">
                 <h3
-                  className="font-semibold text-[#121010]"
+                  className="font-medium text-[#121010]"
                   style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 1.9vw, 28px)" }}
                 >
                   {job.title}
                 </h3>
 
                 <div className="flex flex-wrap items-center gap-[14px] text-[#475569]">
-                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-normal">
+                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-light">
                     <MapPin size={16} className="text-[#EF3C38]" />
                     {job.location}
                   </span>
-                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-normal">
+                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-light">
                     <Briefcase size={16} className="text-[#EF3C38]" />
                     {job.type}
                   </span>
@@ -161,7 +161,7 @@ export function OpenPositions() {
                   <button
                     type="button"
                     onClick={() => openModal(job)}
-                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#EF3C38] text-white font-medium hover:bg-[#d63532] transition-colors"
+                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
                     style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
                   >
                     Apply Now
