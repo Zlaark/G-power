@@ -89,7 +89,7 @@ export const GlobalPresenceMap = () => {
                 </FadeIn>
 
                 <FadeIn delay={300} direction="up">
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10">
+                    <div className="mt-10 lg:mt-14 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10">
                         <div>
                             <h3 className="text-4xl lg:text-5xl font-semibold text-[#121010] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>6</h3>
                             <p className="text-[#4A4A4A] text-base" style={{ fontFamily: "'Montserrat', sans-serif" }}>Continents</p>

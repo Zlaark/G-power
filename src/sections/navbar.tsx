@@ -54,9 +54,6 @@ export const Navbar = () => {
                         <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Careers
                         </Link>
-                        <Link href="/contact" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                            Contact
-                        </Link>
                         <Link href="/privacy-policy" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Privacy Policy
                         </Link>
@@ -111,9 +108,6 @@ export const Navbar = () => {
                         </Link>
                         <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Careers
-                        </Link>
-                        <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                            Contact
                         </Link>
                         <Link href="/privacy-policy" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Privacy Policy
