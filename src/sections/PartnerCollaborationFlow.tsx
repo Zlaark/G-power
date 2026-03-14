@@ -4,19 +4,16 @@ import Image from "next/image";
 export function PartnerCollaborationFlow() {
   const collaborationPoints = [
     {
-      label: "Step 01",
       title: "Discovery & Fit",
       description:
         "We align on market focus, technical fit, delivery expectations, and the long-term goals of the partnership.",
     },
     {
-      label: "Step 02",
       title: "Technical Alignment",
       description:
         "Our teams review architecture, engineering standards, compliance requirements, and implementation pathways.",
     },
     {
-      label: "Step 03",
       title: "Deployment & Scale",
       description:
         "Pilot delivery, rollout support, and lifecycle coordination help partnerships grow into repeat execution programs.",
@@ -93,19 +90,13 @@ export function PartnerCollaborationFlow() {
 
             <div className="mt-8 space-y-6 max-w-[700px]">
               {collaborationPoints.map((point, index) => (
-                <FadeIn key={point.label} delay={200 + index * 90} direction="up">
+                <FadeIn key={point.title} delay={200 + index * 90} direction="up">
                   <div className="pb-2">
                     <div className="flex items-start gap-4">
                       <div className="w-3 h-3 rounded-full bg-[#EF3C38] shrink-0 mt-3" />
                       <div className="flex-1 min-w-0">
-                        <p
-                          className="text-[#EF3C38] font-semibold uppercase tracking-[0.08em]"
-                          style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px" }}
-                        >
-                          {point.label}
-                        </p>
                         <h3
-                          className="text-[#121010] font-semibold mt-2"
+                          className="text-[#121010] font-semibold"
                           style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 1.6vw, 24px)" }}
                         >
                           {point.title}
