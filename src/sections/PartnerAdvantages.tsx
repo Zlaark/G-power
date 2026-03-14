@@ -35,6 +35,31 @@ export function PartnerAdvantages() {
 
   return (
     <section className="bg-[#F8FAFC] py-[56px] sm:py-[72px] lg:py-[96px] px-4 sm:px-6 lg:px-[80px] xl:px-[120px] overflow-hidden">
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            @keyframes partnerPulseFloat {
+              0%, 100% { transform: translateY(0); }
+              50% { transform: translateY(-6px); }
+            }
+            .partner-stat-float {
+              animation: partnerPulseFloat 6s ease-in-out infinite;
+            }
+            .partner-card-shine::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.7) 45%, transparent 70%);
+              transform: translateX(-140%);
+              transition: transform 700ms ease;
+              pointer-events: none;
+            }
+            .partner-card-shine:hover::before {
+              transform: translateX(140%);
+            }
+          `,
+        }}
+      />
       <div className="mx-auto max-w-[1920px]">
         <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-8 lg:gap-12 items-start max-w-[1500px] mx-auto">
           <FadeIn delay={100} direction="up">
@@ -59,7 +84,7 @@ export function PartnerAdvantages() {
               </p>
 
               <div className="mt-8 grid grid-cols-2 gap-4 max-w-[430px]">
-                <div className="rounded-[22px] bg-white border border-[#E2E8F0] px-5 py-5">
+                <div className="partner-stat-float rounded-[22px] bg-white border border-[#E2E8F0] px-5 py-5 transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
                   <p className="text-[#EF3C38] font-semibold" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "28px" }}>
                     360°
                   </p>
@@ -67,7 +92,7 @@ export function PartnerAdvantages() {
                     Support from design through long-term service
                   </p>
                 </div>
-                <div className="rounded-[22px] bg-[#121010] px-5 py-5 text-white">
+                <div className="partner-stat-float rounded-[22px] bg-[#EF3C38] px-5 py-5 text-white transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(239,60,56,0.25)]" style={{ animationDelay: "0.6s" }}>
                   <p className="font-semibold" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "28px" }}>
                     EPC+
                   </p>
@@ -85,25 +110,25 @@ export function PartnerAdvantages() {
 
               return (
                 <FadeIn key={advantage.title} delay={180 + index * 90} direction="up">
-                  <div className={`group h-full rounded-[28px] border border-[#E2E8F0] bg-gradient-to-br ${advantage.accent} p-[1px] ${index % 2 === 1 ? "sm:translate-y-8" : ""}`}>
-                    <div className="h-full rounded-[27px] bg-white/92 backdrop-blur px-5 py-6 sm:px-6 sm:py-7 transition-transform duration-500 group-hover:-translate-y-1">
+                  <div className={`partner-card-shine group relative h-full rounded-[28px] border border-[#E2E8F0] bg-gradient-to-br ${advantage.accent} p-[1px] overflow-hidden ${index % 2 === 1 ? "sm:translate-y-8" : ""}`}>
+                    <div className="h-full rounded-[27px] bg-white/92 backdrop-blur px-5 py-6 sm:px-6 sm:py-7 transition-all duration-500 group-hover:-translate-y-1.5 group-hover:shadow-[0_24px_55px_rgba(15,23,42,0.09)]">
                       <div className="flex items-start justify-between gap-4">
-                        <div className="w-12 h-12 rounded-[16px] bg-[#121010] text-white flex items-center justify-center shrink-0">
+                        <div className="w-12 h-12 rounded-[16px] bg-[#EF3C38] text-white flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
                           <Icon size={22} />
                         </div>
-                        <div className="w-10 h-10 rounded-full border border-[#CBD5E1] flex items-center justify-center text-[#121010] transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1">
+                        <div className="w-10 h-10 rounded-full border border-[#CBD5E1] flex items-center justify-center text-[#121010] transition-all duration-500 group-hover:translate-x-1.5 group-hover:-translate-y-1 group-hover:border-[#EF3C38]/35 group-hover:text-[#EF3C38]">
                           <ArrowUpRight size={18} />
                         </div>
                       </div>
 
                       <h3
-                        className="mt-8 text-[#121010] font-semibold"
+                        className="mt-8 text-[#121010] font-semibold transition-colors duration-500 group-hover:text-[#EF3C38]"
                         style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 1.7vw, 26px)" }}
                       >
                         {advantage.title}
                       </h3>
                       <p
-                        className="mt-3 text-[#64748B] font-medium leading-[1.75]"
+                        className="mt-3 text-[#64748B] font-medium leading-[1.75] transition-transform duration-500 group-hover:translate-y-[2px]"
                         style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
                       >
                         {advantage.description}
