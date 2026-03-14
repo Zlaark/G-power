@@ -1,5 +1,6 @@
 import { FadeIn } from "@/components/FadeIn";
 import Image from "next/image";
+import Link from "next/link";
 
 export function ProjectsHero() {
   return (
@@ -31,6 +32,24 @@ export function ProjectsHero() {
           >
             Delivering excellence across India's energy landscape
           </p>
+        </FadeIn>
+        <FadeIn delay={450} direction="up" className="mt-[28px]">
+          <div className="flex flex-wrap items-center justify-center gap-[12px]">
+            <a
+              href="#featured-projects"
+              className="inline-flex items-center justify-center px-[24px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+            >
+              Explore Projects
+            </a>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-[24px] py-[12px] rounded-[8px] border border-white/35 text-white font-semibold hover:bg-white/10 transition-colors"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+            >
+              Talk to Our Team
+            </Link>
+          </div>
         </FadeIn>
       </div>
     </section>

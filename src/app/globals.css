@@ -304,3 +304,99 @@ html {
 .link-hover-slide:hover::after {
   width: 100%;
 }
+
+/* ═══════════════════════════════════════════
+   PAGE-SPECIFIC ANIMATIONS
+   ═══════════════════════════════════════════ */
+
+@keyframes project-aurora {
+  0% {
+    transform: translateX(-130%) skewX(-18deg);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.85;
+  }
+
+  100% {
+    transform: translateX(130%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
+.project-aurora-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.project-aurora-card::before {
+  content: '';
+  position: absolute;
+  inset: -20% -40%;
+  background: linear-gradient(90deg,
+      transparent 10%,
+      rgba(239, 60, 56, 0.16) 50%,
+      transparent 90%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.project-aurora-card:hover::before {
+  animation: project-aurora 1.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@keyframes partner-card-breathe {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.partner-logo-breathe {
+  animation: partner-card-breathe 3.6s ease-in-out infinite;
+}
+
+@keyframes career-scan {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.55;
+  }
+
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+.career-card-scan {
+  position: relative;
+  overflow: hidden;
+}
+
+.career-card-scan::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 42%;
+  left: -45%;
+  background: linear-gradient(90deg,
+      rgba(239, 60, 56, 0),
+      rgba(239, 60, 56, 0.18),
+      rgba(239, 60, 56, 0));
+  pointer-events: none;
+}
+
+.career-card-scan:hover::after {
+  animation: career-scan 0.9s ease-out;
+}

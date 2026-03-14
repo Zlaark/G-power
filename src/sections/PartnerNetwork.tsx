@@ -55,7 +55,8 @@ export function PartnerNetwork() {
             {row1.map((partner, index) => (
               <div key={index} className="w-[200px] md:w-[280px] lg:w-[350px] px-[10px] md:px-[15px] flex-shrink-0">
                 <div
-                  className="group relative h-[120px] lg:h-[150px] flex items-center justify-center p-[20px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
+                  className="partner-logo-breathe group relative h-[120px] lg:h-[150px] flex items-center justify-center p-[20px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
+                  style={{ animationDelay: `${(index % 8) * 0.14}s` }}
                   title={partner.name}
                 >
                   <span 
@@ -75,7 +76,8 @@ export function PartnerNetwork() {
             {row2.map((partner, index) => (
               <div key={index} className="w-[200px] md:w-[280px] lg:w-[350px] px-[10px] md:px-[15px] flex-shrink-0">
                 <div
-                  className="group relative h-[120px] lg:h-[150px] flex items-center justify-center p-[20px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
+                  className="partner-logo-breathe group relative h-[120px] lg:h-[150px] flex items-center justify-center p-[20px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
+                  style={{ animationDelay: `${(index % 8) * 0.16}s` }}
                   title={partner.name}
                 >
                   <span 

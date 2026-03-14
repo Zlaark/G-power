@@ -55,7 +55,7 @@ export function FeaturedProjects() {
   ];
 
   return (
-    <section className="py-[80px] lg:py-[100px] bg-[#FBFBFB] px-[20px] md:px-[60px] lg:px-[80px]">
+    <section id="featured-projects" className="py-[80px] lg:py-[100px] bg-[#FBFBFB] px-[20px] md:px-[60px] lg:px-[80px]">
       <div className="mx-auto max-w-[1920px]">
         <FadeIn delay={100} direction="up">
           <div className="text-center max-w-3xl mx-auto mb-[60px] lg:mb-[80px]">
@@ -78,7 +78,7 @@ export function FeaturedProjects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] lg:gap-[40px] max-w-[1600px] mx-auto">
           {projects.map((project, index) => (
             <FadeIn delay={200 + (index % 3) * 100} direction="up" key={index}>
-              <div className="bg-white rounded-[24px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-all duration-300 group flex flex-col min-h-[600px] lg:min-h-[650px] h-full">
+              <div className="project-aurora-card bg-white rounded-[24px] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:-translate-y-2 transition-all duration-300 group flex flex-col min-h-[600px] lg:min-h-[650px] h-full">
                 <div className="relative h-[300px] lg:h-[360px] w-full overflow-hidden flex-shrink-0">
                   <Image
                     src={project.image}
