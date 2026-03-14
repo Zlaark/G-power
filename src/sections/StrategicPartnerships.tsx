@@ -21,10 +21,10 @@ export function StrategicPartnerships() {
   ];
 
   return (
-    <section className="py-20 bg-white px-[20px] md:px-[60px] lg:px-[80px]">
+    <section className="py-[56px] sm:py-[64px] lg:py-[80px] bg-white px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
       <div className="mx-auto max-w-[1920px]">
         <FadeIn delay={100} direction="up">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
             <h2 
               className="font-semibold text-[#121010] mb-6"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
@@ -42,10 +42,10 @@ export function StrategicPartnerships() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] lg:gap-[50px] max-w-[1600px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[12px] sm:gap-[16px] md:gap-[20px] lg:gap-[24px] max-w-[1600px] mx-auto">
           {partnerships.map((item, index) => (
             <FadeIn delay={200 + index * 100} direction="up" key={item.title}>
-              <div className="bg-[#f9f9f9] rounded-[24px] px-[40px] lg:px-[80px] py-[80px] h-[380px] flex flex-col items-center text-center justify-center hover:-translate-y-2 transition-transform duration-300">
+              <div className="bg-[#f9f9f9] rounded-[24px] px-5 py-7 md:px-[36px] md:py-[48px] lg:px-[48px] lg:py-[56px] flex flex-col items-center text-center justify-center hover:-translate-y-2 transition-transform duration-300">
                 <div className="mb-[30px]">
                   {item.icon}
                 </div>

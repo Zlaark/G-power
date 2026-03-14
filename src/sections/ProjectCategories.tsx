@@ -26,7 +26,7 @@ export function ProjectCategories() {
   ];
 
   return (
-    <section className="py-[70px] lg:py-[90px] bg-white px-[20px] md:px-[60px] lg:px-[80px]">
+    <section className="py-[56px] sm:py-[64px] lg:py-[90px] bg-white px-4 sm:px-6 md:px-[90px] lg:px-[120px]">
       <div className="mx-auto max-w-[1600px]">
         <FadeIn delay={100} direction="up">
           <div className="text-center max-w-3xl mx-auto mb-[40px] lg:mb-[55px]">
@@ -45,10 +45,10 @@ export function ProjectCategories() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px] lg:gap-[24px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[12px] sm:gap-[16px] lg:gap-[24px]">
           {categories.map((item, index) => (
             <FadeIn delay={180 + index * 70} direction="up" key={item.title}>
-              <div className="h-full min-h-[260px] lg:min-h-[300px] rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] px-[22px] py-[28px] lg:px-[24px] lg:py-[34px] flex flex-col">
+              <div className="h-full min-h-[220px] lg:min-h-[250px] rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] px-[22px] py-[22px] lg:px-[24px] lg:py-[24px] flex flex-col">
                 <div className="mb-[18px]">{item.icon}</div>
                 <h3
                   className="text-[#121010] font-bold mb-[12px]"

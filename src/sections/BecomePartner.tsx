@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export function BecomePartner() {
   return (
-    <section className="py-[100px] lg:py-[120px] bg-[#121010] text-white relative overflow-hidden px-[20px] md:px-[60px] lg:px-[80px]">
+    <section className="py-[56px] sm:py-[64px] lg:py-[90px] bg-[#121010] text-white relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
       {/* Background Decor */}
       <div className="absolute inset-x-0 top-0 h-[1px] bg-white/5"></div>
       <div
@@ -13,7 +13,7 @@ export function BecomePartner() {
       />
 
       <div className="mx-auto max-w-[1920px] relative z-10 text-center flex flex-col items-center">
-        <FadeIn delay={100} direction="up" className="max-w-[1000px]">
+        <FadeIn delay={100} direction="up" className="max-w-[1000px] px-2">
           <h2 
             className="font-semibold text-white mb-[20px] lg:mb-[30px]"
             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(32px, 4.5vw, 56px)' }}
@@ -21,7 +21,7 @@ export function BecomePartner() {
             Become a Partner
           </h2>
           <p 
-            className="text-white/90 mb-[40px] lg:mb-[50px] font-medium whitespace-nowrap"
+            className="text-white/90 mb-[40px] lg:mb-[50px] font-medium"
             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(15px, 1.8vw, 20px)' }}
           >
             Join our network of industry-leading partners and grow your business with GPower
@@ -29,7 +29,7 @@ export function BecomePartner() {
           <div className="flex justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-[35px] py-[18px] font-semibold text-white bg-[#EF3C38] hover:bg-[#d63532] rounded-[5px] transition-all hover:-translate-y-[2px]"
+              className="inline-flex items-center justify-center px-[24px] sm:px-[30px] py-[14px] sm:py-[16px] font-semibold text-white bg-[#EF3C38] hover:bg-[#d63532] rounded-[5px] transition-all hover:-translate-y-[2px]"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 2vw, 16px)' }}
             >
               Partner With Us

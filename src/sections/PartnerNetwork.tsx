@@ -16,7 +16,7 @@ export function PartnerNetwork() {
   const row2 = [...row2Partners, ...row2Partners];
 
   return (
-    <section className="py-[80px] lg:py-[100px] bg-white overflow-hidden">
+    <section className="py-[56px] sm:py-[64px] lg:py-[80px] bg-white overflow-hidden">
       <style dangerouslySetInnerHTML={{
         __html: `
         @keyframes scroll-left {
@@ -40,28 +40,28 @@ export function PartnerNetwork() {
         `
       }} />
       <div className="mx-auto max-w-[1920px] text-center pause-on-hover">
-        <FadeIn delay={100} direction="up" className="px-[20px] md:px-[60px] lg:px-[80px]">
+        <FadeIn delay={100} direction="up" className="px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
           <h2 
-            className="font-semibold text-[#121010] mb-[40px] lg:mb-[60px]"
+            className="font-semibold text-[#121010] mb-[30px] lg:mb-[44px]"
             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
           >
             Our Partner Network
           </h2>
         </FadeIn>
 
-        <div className="flex flex-col gap-[20px] md:gap-[30px] w-full">
+        <div className="flex flex-col gap-[14px] md:gap-[20px] w-full">
           {/* Row 1 - scrolling left */}
           <div className="flex w-max animate-scroll-left">
             {row1.map((partner, index) => (
-              <div key={index} className="w-[200px] md:w-[280px] lg:w-[350px] px-[10px] md:px-[15px] flex-shrink-0">
+              <div key={index} className="w-[130px] sm:w-[150px] md:w-[200px] lg:w-[250px] px-[6px] md:px-[10px] flex-shrink-0">
                 <div
-                  className="partner-logo-breathe group relative h-[120px] lg:h-[150px] flex items-center justify-center p-[20px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
+                  className="partner-logo-breathe group relative h-[72px] sm:h-[80px] lg:h-[100px] flex items-center justify-center p-[10px] sm:p-[12px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
                   style={{ animationDelay: `${(index % 8) * 0.14}s` }}
                   title={partner.name}
                 >
                   <span 
                     className="text-[#121010]/40 font-bold tracking-wider uppercase group-hover:text-[#EF3C38]/80 transition-colors"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(10px, 1.5vw, 14px)' }}
+                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(9px, 1.1vw, 12px)' }}
                   >
                     {partner.name}
                   </span>
@@ -74,15 +74,15 @@ export function PartnerNetwork() {
           {/* Row 2 - scrolling right */}
           <div className="flex w-max animate-scroll-right">
             {row2.map((partner, index) => (
-              <div key={index} className="w-[200px] md:w-[280px] lg:w-[350px] px-[10px] md:px-[15px] flex-shrink-0">
+              <div key={index} className="w-[130px] sm:w-[150px] md:w-[200px] lg:w-[250px] px-[6px] md:px-[10px] flex-shrink-0">
                 <div
-                  className="partner-logo-breathe group relative h-[120px] lg:h-[150px] flex items-center justify-center p-[20px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
+                  className="partner-logo-breathe group relative h-[72px] sm:h-[80px] lg:h-[100px] flex items-center justify-center p-[10px] sm:p-[12px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
                   style={{ animationDelay: `${(index % 8) * 0.16}s` }}
                   title={partner.name}
                 >
                   <span 
                     className="text-[#121010]/40 font-bold tracking-wider uppercase group-hover:text-[#EF3C38]/80 transition-colors"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(10px, 1.5vw, 14px)' }}
+                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(9px, 1.1vw, 12px)' }}
                   >
                     {partner.name}
                   </span>

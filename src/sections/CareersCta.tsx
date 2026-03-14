@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function CareersCta() {
   return (
-    <section className="py-[90px] lg:py-[110px] bg-[#121010] relative overflow-hidden px-[20px] md:px-[60px] lg:px-[80px]">
+    <section className="py-[56px] sm:py-[64px] lg:py-[100px] bg-[#121010] relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
       <div
         className="absolute inset-0 z-0 opacity-[0.08]"
         style={{

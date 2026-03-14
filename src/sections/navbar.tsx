@@ -38,39 +38,39 @@ export const Navbar = () => {
                     <div className="hidden xl:block w-[200px]" />
 
                     {/* Desktop Navigation */}
-                    <div className="hidden xl:flex items-center gap-10">
-                        <Link href="/" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    <div className="hidden xl:flex items-center gap-7 2xl:gap-8">
+                        <Link href="/" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Home
                         </Link>
-                        <Link href="/about" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/about" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             About Us
                         </Link>
-                        <Link href="/partners" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/partners" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Partners
                         </Link>
-                        <Link href="/our-projects" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/our-projects" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Our Projects
                         </Link>
-                        <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Careers
                         </Link>
-                        <Link href="/contact" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/contact" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Contact
                         </Link>
-                        <Link href="/privacy-policy" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/privacy-policy" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Privacy Policy
                         </Link>
-                        <Link href="/terms-conditions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/terms-conditions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Terms & Conditions
                         </Link>
-                        <Link href="/disclaimer" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/disclaimer" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Disclaimer
                         </Link>
                     </div>
 
                     {/* CTA Button */}
                     <div className="hidden xl:flex items-center">
-                        <Link href="/contact" className="btn-sweep-red bg-[#EF3C38] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/contact" className="btn-sweep-red bg-[#EF3C38] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Contact Us
                         </Link>
                     </div>

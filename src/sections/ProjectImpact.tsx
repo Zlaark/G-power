@@ -96,31 +96,25 @@ export function ProjectImpact() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-[100px] lg:py-[120px] bg-white px-[20px] md:px-[60px] lg:px-[80px] relative overflow-hidden">
-      {/* Subtle background decoration */}
-      <div className="absolute inset-0 z-0 opacity-[0.03]" style={{
-        backgroundImage: "radial-gradient(circle at 2px 2px, #121010 1px, transparent 0)",
-        backgroundSize: "40px 40px"
-      }} />
-
-      <div className="mx-auto max-w-[1920px] relative z-10">
+    <section ref={sectionRef} className="py-[44px] sm:py-[52px] lg:py-[64px] bg-[#F4F6F8] px-4 sm:px-6 md:px-[90px] lg:px-[120px]">
+      <div className="mx-auto max-w-[1920px]">
         <FadeIn delay={100} direction="up">
-          <div className="text-center mb-[60px] lg:mb-[80px]">
+          <div className="text-center mb-[40px] lg:mb-[52px]">
             <h2 
-              className="font-semibold text-[#121010] mb-6"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
+              className="font-semibold text-[#121010]"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(24px, 3.2vw, 34px)' }}
             >
               Project Impact
             </h2>
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] md:gap-[80px] lg:gap-[120px] max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px] md:gap-[26px] lg:gap-[36px] max-w-[1120px] mx-auto">
           {impacts.map((impact, index) => (
-            <FadeIn delay={200 + index * 100} direction="up" key={index} className="flex flex-col items-center text-center pt-[40px] md:pt-0 first:pt-0">
+            <FadeIn delay={200 + index * 100} direction="up" key={index} className="w-full max-w-[320px] min-h-[130px] mx-auto flex flex-col items-center justify-center text-center">
               <span 
-                className="font-bold text-[#EF3C38] mb-[18px] tracking-[0.02em] block"
-                style={{ fontFamily: "'Kumbh Sans', sans-serif", fontSize: 'clamp(48px, 6vw, 76px)' }}
+                className="font-semibold text-[#EF3C38] mb-[6px] block leading-[1.05]"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(34px, 4.2vw, 48px)' }}
               >
                 <AnimatedValue
                   value={impact.value}
@@ -130,8 +124,8 @@ export function ProjectImpact() {
                 />
               </span>
               <span 
-                className="text-[#121010]/90 font-medium uppercase tracking-[2px]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 1.2vw, 14px)' }}
+                className="text-[#64748b] font-light leading-[1.2]"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(11px, 0.9vw, 13px)' }}
               >
                 {impact.label}
               </span>

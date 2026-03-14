@@ -124,24 +124,24 @@ export function OpenPositions() {
 
   return (
     <>
-      <section className="py-[70px] lg:py-[84px] bg-white px-[28px] md:px-[90px] lg:px-[120px]">
+      <section className="py-[56px] sm:py-[64px] lg:py-[100px] bg-white px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
       <div className="mx-auto max-w-[1920px]">
         <FadeIn delay={100} direction="up">
           <h2
-            className="text-center font-semibold text-[#121010] mb-[34px] lg:mb-[40px]"
+            className="text-center font-semibold text-[#121010] mb-[34px] lg:mb-[44px]"
             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
           >
             Open Positions
           </h2>
         </FadeIn>
 
-        <div className="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40px] lg:gap-[50px]">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[12px] sm:gap-[14px] md:gap-[22px] lg:gap-[26px]">
           {jobs.map((job, index) => (
             <FadeIn delay={180 + (index % 2) * 100} direction="up" key={job.title}>
-              <div className="career-card-scan bg-white rounded-[14px] border border-[#D6D9E0] px-[30px] py-[24px] lg:px-[42px] lg:py-[30px] min-h-[210px] lg:min-h-[240px] h-full flex flex-col gap-[16px]">
+              <div className="career-card-scan bg-white rounded-[14px] border border-[#D6D9E0] px-4 py-4 sm:px-[20px] sm:py-[20px] lg:px-[24px] lg:py-[22px] h-full flex flex-col gap-[10px]">
                 <h3
                   className="font-bold text-[#121010]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2vw, 36px)" }}
+                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 1.9vw, 28px)" }}
                 >
                   {job.title}
                 </h3>
@@ -157,22 +157,7 @@ export function OpenPositions() {
                   </span>
                 </div>
 
-                <p
-                  className="paragraph-hover-float text-[#475569] font-medium leading-[1.6]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
-                >
-                  {job.summary}
-                </p>
-
                 <div className="mt-auto flex flex-wrap items-center gap-[10px]">
-                  <button
-                    type="button"
-                    onClick={() => openModal(job)}
-                    className="inline-flex items-center justify-center px-[16px] py-[9px] rounded-[8px] border border-[#121010]/20 text-[#121010] font-semibold hover:bg-[#F8FAFC] transition-colors"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
-                  >
-                    View Details
-                  </button>
                   <button
                     type="button"
                     onClick={() => openModal(job)}
@@ -218,7 +203,7 @@ export function OpenPositions() {
               </button>
             </div>
 
-            <div className="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="p-4 sm:p-6 md:p-8 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
               <div className="space-y-6">
                 <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-5">
                   <h4 className="text-[#121010] font-bold mb-4" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "18px" }}>
