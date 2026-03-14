@@ -66,9 +66,6 @@ export const Navbar = () => {
                         <Link href="/disclaimer" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Disclaimer
                         </Link>
-                        <Link href="/contact" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                            Contact
-                        </Link>
                     </div>
 
                     {/* CTA Button */}
@@ -127,9 +124,7 @@ export const Navbar = () => {
                         <Link href="/disclaimer" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Disclaimer
                         </Link>
-                        <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                            Contact
-                        </Link>
+
                         <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-[#EF3C38] text-white px-8 py-3 rounded text-[16px] font-medium hover:bg-white hover:text-[#EF3C38] transition-all" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Contact Us
                         </Link>
