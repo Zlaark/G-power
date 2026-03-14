@@ -1,7 +1,7 @@
 "use client";
 
 import { FadeIn } from "@/components/FadeIn";
-import { MapPin, Briefcase, X, Clock3, Building2 } from "lucide-react";
+import { MapPin, Briefcase, X } from "lucide-react";
 import { FormEvent, useEffect, useState } from "react";
 
 export function OpenPositions() {
@@ -128,7 +128,7 @@ export function OpenPositions() {
       <div className="mx-auto max-w-[1920px]">
         <FadeIn delay={100} direction="up">
           <h2
-            className="text-center font-semibold text-[#121010] mb-[34px] lg:mb-[44px]"
+            className="text-center font-medium text-[#121010] mb-[34px] lg:mb-[44px]"
             style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
           >
             Open Positions
@@ -140,18 +140,18 @@ export function OpenPositions() {
             <FadeIn delay={180 + (index % 2) * 100} direction="up" key={job.title}>
               <div className="career-card-scan bg-white rounded-[14px] border border-[#D6D9E0] px-4 py-4 sm:px-[20px] sm:py-[20px] lg:px-[24px] lg:py-[22px] h-full flex flex-col gap-[10px]">
                 <h3
-                  className="font-bold text-[#121010]"
+                  className="font-semibold text-[#121010]"
                   style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 1.9vw, 28px)" }}
                 >
                   {job.title}
                 </h3>
 
                 <div className="flex flex-wrap items-center gap-[14px] text-[#475569]">
-                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-medium">
+                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-normal">
                     <MapPin size={16} className="text-[#EF3C38]" />
                     {job.location}
                   </span>
-                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-medium">
+                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-normal">
                     <Briefcase size={16} className="text-[#EF3C38]" />
                     {job.type}
                   </span>
@@ -161,7 +161,7 @@ export function OpenPositions() {
                   <button
                     type="button"
                     onClick={() => openModal(job)}
-                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
+                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#EF3C38] text-white font-medium hover:bg-[#d63532] transition-colors"
                     style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
                   >
                     Apply Now
@@ -180,18 +180,13 @@ export function OpenPositions() {
           onClick={closeModal}
         >
           <div
-            className="w-full max-w-[980px] max-h-[90vh] overflow-y-auto rounded-[18px] bg-white border border-[#E2E8F0] shadow-2xl"
+            className="w-full max-w-[760px] max-h-[90vh] overflow-y-auto rounded-[18px] bg-white border border-[#E2E8F0] shadow-2xl"
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="sticky top-0 bg-white/95 backdrop-blur border-b border-[#E2E8F0] px-6 md:px-8 py-4 flex items-start justify-between gap-4 z-10">
-              <div>
-                <p className="text-[12px] tracking-[0.12em] uppercase text-[#EF3C38] font-bold" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                  Job Application
-                </p>
-                <h3 className="text-[#121010] font-bold mt-1" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(22px, 3vw, 30px)" }}>
-                  {selectedJob.title}
-                </h3>
-              </div>
+            <div className="sticky top-0 bg-white/95 backdrop-blur border-b border-[#E2E8F0] px-6 md:px-8 py-4 flex items-center justify-between gap-4 z-10">
+              <h3 className="text-[#121010] font-bold" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(22px, 3vw, 40px)" }}>
+                Apply for {selectedJob.title}
+              </h3>
 
               <button
                 type="button"
@@ -203,121 +198,96 @@ export function OpenPositions() {
               </button>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-              <div className="space-y-6">
-                <div className="rounded-[12px] bg-[#F8FAFC] border border-[#E2E8F0] p-5">
-                  <h4 className="text-[#121010] font-bold mb-4" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "18px" }}>
-                    Job Details
-                  </h4>
-
-                  <div className="space-y-3 text-[#334155]">
-                    <p className="inline-flex items-center gap-2 text-[14px] font-medium">
-                      <MapPin size={15} className="text-[#EF3C38]" />
-                      {selectedJob.location}
-                    </p>
-                    <p className="inline-flex items-center gap-2 text-[14px] font-medium">
-                      <Briefcase size={15} className="text-[#EF3C38]" />
-                      {selectedJob.type}
-                    </p>
-                    <p className="inline-flex items-center gap-2 text-[14px] font-medium">
-                      <Building2 size={15} className="text-[#EF3C38]" />
-                      {selectedJob.department}
-                    </p>
-                    <p className="inline-flex items-center gap-2 text-[14px] font-medium">
-                      <Clock3 size={15} className="text-[#EF3C38]" />
-                      {selectedJob.experience}
-                    </p>
-                  </div>
+            <div className="px-6 md:px-8 py-5 md:py-6">
+              {submitted ? (
+                <div className="rounded-[12px] border border-emerald-200 bg-emerald-50 px-4 py-4 text-emerald-800 font-medium" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                  Your application has been submitted successfully. Our team will contact you soon.
                 </div>
-
-                <div>
-                  <h4 className="text-[#121010] font-bold mb-2" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "18px" }}>
-                    Role Overview
-                  </h4>
-                  <p className="paragraph-hover-float text-[#475569] leading-[1.7] font-medium" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}>
-                    {selectedJob.summary}
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="text-[#121010] font-bold mb-2" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "18px" }}>
-                    Key Responsibilities
-                  </h4>
-                  <ul className="space-y-2">
-                    {selectedJob.responsibilities.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-[#475569]">
-                        <span className="mt-[8px] w-[6px] h-[6px] rounded-full bg-[#EF3C38] flex-shrink-0" />
-                        <span className="paragraph-hover-float font-medium leading-[1.6]" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}>
-                          {item}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div>
-                <h4 className="text-[#121010] font-bold mb-4" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "18px" }}>
-                  Apply for this Role
-                </h4>
-
-                {submitted ? (
-                  <div className="rounded-[12px] border border-emerald-200 bg-emerald-50 px-4 py-4 text-emerald-800 font-medium" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                    Your application has been submitted successfully. Our team will contact you soon.
-                  </div>
-                ) : (
-                  <form className="space-y-4" onSubmit={handleApplySubmit}>
+              ) : (
+                <form className="space-y-4" onSubmit={handleApplySubmit}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <input
                       type="text"
                       required
-                      placeholder="Full Name"
-                      className="w-full rounded-[10px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-3 text-[#121010] placeholder-[#64748B] focus:outline-none focus:border-[#EF3C38]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
-                    />
-                    <input
-                      type="email"
-                      required
-                      placeholder="Email Address"
-                      className="w-full rounded-[10px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-3 text-[#121010] placeholder-[#64748B] focus:outline-none focus:border-[#EF3C38]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
-                    />
-                    <input
-                      type="tel"
-                      required
-                      placeholder="Phone Number"
-                      className="w-full rounded-[10px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-3 text-[#121010] placeholder-[#64748B] focus:outline-none focus:border-[#EF3C38]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                      placeholder="First name"
+                      className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
                     />
                     <input
                       type="text"
                       required
-                      placeholder="Years of Experience (e.g. 4 years)"
-                      className="w-full rounded-[10px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-3 text-[#121010] placeholder-[#64748B] focus:outline-none focus:border-[#EF3C38]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                      placeholder="Last name"
+                      className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
                     />
+                  </div>
+
+                  <input
+                    type="email"
+                    required
+                    placeholder="Email"
+                    className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
+                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
+                  />
+
+                  <input
+                    type="tel"
+                    required
+                    placeholder="Phone"
+                    className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
+                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
+                  />
+
+                  <div>
+                    <p
+                      className="text-[#1E2340] mb-2 font-semibold"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "16px" }}
+                    >
+                      Resume
+                    </p>
                     <input
-                      type="url"
-                      placeholder="Resume / Portfolio URL"
-                      className="w-full rounded-[10px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-3 text-[#121010] placeholder-[#64748B] focus:outline-none focus:border-[#EF3C38]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                      type="file"
+                      required
+                      className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-2.5 text-[#121010] file:mr-4 file:rounded-[12px] file:border file:border-[#6B7280] file:bg-white file:px-5 file:py-2 file:text-[#1F2937] file:font-medium"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
                     />
+                  </div>
+
+                  <div>
+                    <p
+                      className="text-[#1E2340] mb-2 font-semibold"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "16px" }}
+                    >
+                      Cover letter (optional)
+                    </p>
                     <textarea
-                      rows={4}
-                      placeholder="Why are you a good fit for this role?"
-                      className="w-full rounded-[10px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-3 text-[#121010] placeholder-[#64748B] focus:outline-none focus:border-[#EF3C38] resize-none"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                      rows={5}
+                      placeholder="Write your cover letter"
+                      className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F] resize-none"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
                     />
+                  </div>
+
+                  <div className="pt-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <button
+                      type="button"
+                      onClick={closeModal}
+                      className="w-full rounded-full border border-[#1B2148] px-6 py-3 text-[#1B2148] font-semibold hover:bg-[#F8FAFC] transition-colors"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 1vw, 22px)" }}
+                    >
+                      Cancel
+                    </button>
 
                     <button
                       type="submit"
-                      className="w-full inline-flex items-center justify-center px-[18px] py-[12px] rounded-[10px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                      className="w-full rounded-full bg-[#11153F] px-6 py-3 text-white font-semibold hover:bg-[#0b1035] transition-colors"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 1vw, 22px)" }}
                     >
-                      Submit Application
+                      Submit application
                     </button>
-                  </form>
-                )}
-              </div>
+                  </div>
+                </form>
+              )}
             </div>
           </div>
         </div>
