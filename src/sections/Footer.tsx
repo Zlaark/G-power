@@ -33,32 +33,39 @@ export const Footer = () => {
                                 Home
                             </Link>
                             <Link
-                                href="#solutions"
+                                href="/about"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
                                 style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
-                                Solutions
+                                About Us
                             </Link>
                             <Link
-                                href="#contact"
+                                href="/partners"
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
+                            >
+                                Partners
+                            </Link>
+                            <Link
+                                href="/our-projects"
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
+                            >
+                                Our Projects
+                            </Link>
+                            <Link
+                                href="/careers"
+                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
+                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
+                            >
+                                Careers
+                            </Link>
+                            <Link
+                                href="/contact"
                                 className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
                                 style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
                             >
                                 Contact
-                            </Link>
-                            <Link
-                                href="#resources"
-                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
-                            >
-                                Resources
-                            </Link>
-                            <Link
-                                href="/404"
-                                className="text-white leading-normal md:leading-[36px] tracking-[-0.48px] hover:text-white/80 transition-colors inline-block"
-                                style={{ fontFamily: "'Inter', sans-serif", fontSize: 'clamp(14px, 3vw, 19px)' }}
-                            >
-                                404
                             </Link>
                             <Link
                                 href="/terms-conditions"
