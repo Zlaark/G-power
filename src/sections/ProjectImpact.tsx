@@ -36,12 +36,12 @@ export function ProjectImpact() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[30px] lg:gap-[40px] max-w-[1200px] mx-auto divide-y md:divide-y-0 md:divide-x divide-[#121010]/20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] md:gap-[80px] lg:gap-[120px] max-w-[1400px] mx-auto">
           {impacts.map((impact, index) => (
             <FadeIn delay={200 + index * 100} direction="up" key={index} className="flex flex-col items-center text-center pt-[40px] md:pt-0 first:pt-0">
               <span 
-                className="font-bold text-[#EF3C38] mb-[15px] tracking-tight block"
-                style={{ fontFamily: "'Kumbh Sans', sans-serif", fontSize: 'clamp(40px, 5vw, 64px)' }}
+                className="font-bold text-[#EF3C38] mb-[18px] tracking-[0.02em] block"
+                style={{ fontFamily: "'Kumbh Sans', sans-serif", fontSize: 'clamp(48px, 6vw, 76px)' }}
               >
                 {impact.value}
               </span>
