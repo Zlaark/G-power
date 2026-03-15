@@ -51,9 +51,22 @@ export const Navbar = () => {
                         <Link href="/our-projects" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Our Projects
                         </Link>
-                        <Link href="/solutions/utility" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                            Solutions
-                        </Link>
+                        <div className="relative group">
+                            <Link href="/solutions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                Solutions
+                            </Link>
+                            <div className="absolute left-0 top-full mt-3 w-[220px] rounded-[10px] bg-white border border-black/10 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+                                <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-black/80 hover:bg-[#F5F5F5] hover:text-black" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                    Utility
+                                </Link>
+                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-black/80 hover:bg-[#F5F5F5] hover:text-black" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                    Residential
+                                </Link>
+                                <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-black/80 hover:bg-[#F5F5F5] hover:text-black" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                    Commercial & Industrial
+                                </Link>
+                            </div>
+                        </div>
                         <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Careers
                         </Link>
@@ -109,8 +122,17 @@ export const Navbar = () => {
                         <Link href="/our-projects" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Our Projects
                         </Link>
-                        <Link href="/solutions/utility" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Solutions
+                        </Link>
+                        <Link href="/solutions/utility" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            - Utility
+                        </Link>
+                        <Link href="/solutions/residential" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            - Residential
+                        </Link>
+                        <Link href="/solutions/commercial-industrial" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            - Commercial & Industrial
                         </Link>
                         <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Careers
