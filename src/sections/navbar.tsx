@@ -51,6 +51,9 @@ export const Navbar = () => {
                         <Link href="/our-projects" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Our Projects
                         </Link>
+                        <Link href="/solutions/utility" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            Solutions
+                        </Link>
                         <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Careers
                         </Link>
@@ -105,6 +108,9 @@ export const Navbar = () => {
                         </Link>
                         <Link href="/our-projects" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Our Projects
+                        </Link>
+                        <Link href="/solutions/utility" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            Solutions
                         </Link>
                         <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             Careers
