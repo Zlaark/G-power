@@ -42,7 +42,7 @@ export const SaveOnBills = () => {
                     <FadeIn delay={100} direction="right">
                         <h2
                             className="font-semibold leading-tight md:leading-[49px] w-full text-[#121010]"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(24px, 3vw, 36px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(24px, 3vw, 36px)' }}
                         >
                             Save On Electricity Bills
                         </h2>
@@ -50,7 +50,7 @@ export const SaveOnBills = () => {
                     <FadeIn delay={300} direction="right">
                         <p
                             className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 1.8vw, 18px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.8vw, 18px)' }}
                         >
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
@@ -82,7 +82,7 @@ export const SaveOnBills = () => {
                                 <div className="transition-opacity duration-500 ease-in-out">
                                     <h3
                                         className="card-title text-[#121010] font-medium leading-tight md:leading-[34px] w-full max-w-[656px] transition-colors duration-500 group-hover:text-[#EF3C38]"
-                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
+                                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
                                     >
                                         {activeIndex === 0 && "Monthly Bill Savings"}
                                         {activeIndex === 1 && "Energy Independence"}
@@ -92,7 +92,7 @@ export const SaveOnBills = () => {
                                     {/* Body Text */}
                                     <p
                                         className="card-body mt-[15px] md:mt-[19px] text-[#121010]/80 font-normal leading-normal md:leading-[22px] w-full max-w-[656px]"
-                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
+                                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
                                     >
                                         {activeIndex === 0 && "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
                                         {activeIndex === 1 && "Generating your own solar power means you are less reliant on the traditional utility grid. You can protect yourself against unpredictable electricity rate increases and enjoy peace of mind."}

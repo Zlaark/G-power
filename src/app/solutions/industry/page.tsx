@@ -19,7 +19,7 @@ export default function IndustrySolutionsPage() {
           <FadeIn delay={120} direction="up">
             <h1
               className="text-white font-semibold mb-[16px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(34px, 6vw, 62px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 62px)" }}
             >
               Industry Energy Storage
             </h1>
@@ -27,7 +27,7 @@ export default function IndustrySolutionsPage() {
           <FadeIn delay={220} direction="up">
             <p
               className="text-white/80 font-medium mx-auto max-w-3xl"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
             >
               Reliable and scalable storage for industrial power continuity and efficiency.
             </p>
@@ -41,7 +41,7 @@ export default function IndustrySolutionsPage() {
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
             >
               Contact Us
             </Link>

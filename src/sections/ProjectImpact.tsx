@@ -102,7 +102,7 @@ export function ProjectImpact() {
           <div className="text-center mb-[40px] lg:mb-[52px]">
             <h2 
               className="font-semibold text-[#121010]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(24px, 3.2vw, 34px)' }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(24px, 3.2vw, 34px)' }}
             >
               Project Impact
             </h2>
@@ -114,7 +114,7 @@ export function ProjectImpact() {
             <FadeIn delay={200 + index * 100} direction="up" key={index} className="w-full max-w-[320px] min-h-[130px] mx-auto flex flex-col items-center justify-center text-center">
               <span 
                 className="font-semibold text-[#EF3C38] mb-[6px] block leading-[1.05]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(34px, 4.2vw, 48px)' }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(34px, 4.2vw, 48px)' }}
               >
                 <AnimatedValue
                   value={impact.value}
@@ -125,7 +125,7 @@ export function ProjectImpact() {
               </span>
               <span 
                 className="text-[#64748b] font-light leading-[1.2]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(11px, 0.9vw, 13px)' }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(11px, 0.9vw, 13px)' }}
               >
                 {impact.label}
               </span>

@@ -11,7 +11,7 @@ export const FutureStorage = () => {
                     <h2
                         className="w-full text-center font-bold text-black"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(18px, 2vw, 28px)',
                             lineHeight: '1.2',
                         }}
@@ -25,7 +25,7 @@ export const FutureStorage = () => {
                     <p
                         className="w-full text-center font-medium text-black max-w-[1391px]"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(11px, 1.1vw, 18px)',
                             lineHeight: '34px',
                         }}

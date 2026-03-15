@@ -112,7 +112,7 @@ export default function ResidentialSolutionsPage() {
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      <section className="relative h-[58vh] min-h-[430px] md:h-[70vh] md:min-h-[560px] flex items-center justify-center bg-[#121010] overflow-hidden pt-20">
+      <section className="relative h-[52vh] min-h-[360px] sm:min-h-[430px] md:h-[70vh] md:min-h-[560px] flex items-center justify-center bg-[#121010] overflow-hidden pt-20">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
             src="https://images.unsplash.com/photo-1771479755134-9c1e3143c110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
@@ -128,7 +128,7 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={120} direction="up">
             <p
               className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
             >
               Residential Energy Storage Solutions
             </p>
@@ -136,7 +136,7 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={220} direction="up">
             <h1
               className="text-white font-semibold leading-tight mb-5"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(34px, 6vw, 64px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 64px)" }}
             >
               Power Your Home,Sustainably
             </h1>
@@ -144,7 +144,7 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={340} direction="up">
             <p
               className="text-white/80 max-w-3xl mx-auto font-medium"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.8vw, 22px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.8vw, 22px)" }}
             >
               Transform your home into an energy-independent powerhouse with our advanced
               residential battery storage solutions
@@ -159,13 +159,13 @@ export default function ResidentialSolutionsPage() {
             <div className="text-center max-w-4xl mx-auto mb-[56px] lg:mb-[72px]">
               <h2
                 className="font-semibold text-[#121010] mb-4"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
               >
                 Complete Home Energy Solution
               </h2>
               <p
                 className="text-[#121010]/75 font-medium leading-[1.75]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
               >
                 Our residential energy storage systems integrate seamlessly with solar panels,
                 providing reliable backup power and maximizing your energy independence
@@ -189,13 +189,13 @@ export default function ResidentialSolutionsPage() {
               <div className="w-full">
                 <h3
                   className="font-normal text-[#111827] mb-5"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2.1vw, 34px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2.1vw, 34px)" }}
                 >
                   Why Choose Our Residential Solutions?
                 </h3>
                 <p
                   className="text-[#475569] font-medium leading-[1.75] mb-[24px]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.45vw, 18px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.45vw, 18px)" }}
                 >
                   Our residential battery storage systems are designed to provide homeowners with
                   energy independence, cost savings, and peace of mind. Store excess solar
@@ -209,14 +209,14 @@ export default function ResidentialSolutionsPage() {
                         <CheckCircle2 className="w-[19px] h-[19px] mt-[4px] text-[#EF3C38]" strokeWidth={2.2} />
                         <div>
                           <h4
-                            className="text-[#111827] font-normal leading-[1.35] md:whitespace-nowrap"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(16px, 1.5vw, 24px)" }}
+                            className="text-[#111827] font-normal leading-[1.35]"
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(16px, 1.5vw, 24px)" }}
                           >
                             {item.title}
                           </h4>
                           <p
-                            className="text-[#475569] font-medium leading-[1.65] md:whitespace-nowrap"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 1.1vw, 18px)" }}
+                            className="text-[#475569] font-medium leading-[1.65]"
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 18px)" }}
                           >
                             {item.description}
                           </p>
@@ -237,7 +237,7 @@ export default function ResidentialSolutionsPage() {
             <div className="text-center max-w-4xl mx-auto mb-[40px] lg:mb-[52px]">
               <h2
                 className="font-semibold text-[#121010]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
               >
                 Key Product Merits
               </h2>
@@ -253,13 +253,13 @@ export default function ResidentialSolutionsPage() {
                     <Icon className="w-8 h-8 text-[#EF3C38] mb-[18px]" strokeWidth={2.2} />
                     <h3
                       className="text-[#121010] font-bold mb-[10px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
                     >
                       {item.title}
                     </h3>
                     <p
                       className="text-[#475569] font-medium leading-[1.6]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                     >
                       {item.description}
                     </p>
@@ -277,7 +277,7 @@ export default function ResidentialSolutionsPage() {
             <div className="text-center max-w-4xl mx-auto mb-[18px] lg:mb-[22px]">
               <h2
                 className="font-semibold text-[#121010]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
               >
                 Recommended Products
               </h2>
@@ -286,7 +286,7 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={130} direction="up">
             <p
               className="text-[#121010]/75 font-medium text-center mb-[36px] lg:mb-[48px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
             >
               Our premium residential battery systems designed for your home
             </p>
@@ -295,24 +295,24 @@ export default function ResidentialSolutionsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] sm:gap-[20px] lg:gap-[24px]">
             {recommendedProducts.map((product, index) => (
               <FadeIn delay={180 + index * 90} direction="up" key={product.title}>
-                <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-[540px] lg:min-h-[610px] flex flex-col">
+                <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-0 lg:min-h-[610px] flex flex-col">
                   <div className="img-zoom relative h-[240px] sm:h-[290px] lg:h-[340px] w-full">
                     <Image src={product.image} alt={product.title} fill className="object-cover" />
                     <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#EF3C38] text-white font-semibold"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}>
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}>
                       {product.tagline}
                     </div>
                   </div>
                   <div className="p-[22px] lg:p-[24px] flex flex-col flex-1">
                     <h3
                       className="text-[#121010] font-medium mb-[16px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(22px, 2vw, 32px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(22px, 2vw, 32px)" }}
                     >
                       {product.title}
                     </h3>
                     <p
                       className="text-[#475569] font-normal leading-[1.65] mb-[22px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}
                     >
                       {product.description}
                     </p>
@@ -321,13 +321,13 @@ export default function ResidentialSolutionsPage() {
                         <div key={spec.label} className="border-l-2 border-[#EF3C38] pl-3">
                           <p
                             className="text-[#64748B] font-normal leading-[1.1]"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
                           >
                             {spec.label}
                           </p>
                           <p
                             className="text-[#121010] font-medium leading-[1.2] mt-1"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
                           >
                             {spec.value}
                           </p>
@@ -337,7 +337,7 @@ export default function ResidentialSolutionsPage() {
                     <Link
                       href="/contact"
                       className="mt-auto inline-flex items-center gap-2 w-fit text-[#EF3C38] font-medium hover:text-[#d63532] hover:gap-4 transition-all duration-200"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(15px, 1.15vw, 18px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.15vw, 18px)" }}
                     >
                       View Details <span aria-hidden="true">→</span>
                     </Link>
@@ -355,7 +355,7 @@ export default function ResidentialSolutionsPage() {
             <div className="text-center max-w-4xl mx-auto mb-[16px] lg:mb-[22px]">
               <h2
                 className="font-semibold text-[#121010]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
               >
                 Project Case Studies
               </h2>
@@ -364,7 +364,7 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={130} direction="up">
             <p
               className="text-[#121010]/75 font-medium text-center mb-[36px] lg:mb-[48px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
             >
               Real-world implementations of our residential energy storage solutions
             </p>
@@ -380,19 +380,19 @@ export default function ResidentialSolutionsPage() {
                   <div className="p-[20px] lg:p-[22px] flex-1 flex flex-col gap-[8px]">
                     <h3
                       className="text-[#121010] font-semibold mb-[4px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2.4vw, 24px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2.4vw, 24px)" }}
                     >
                       {item.title}
                     </h3>
                     <p
                       className="text-[#475569] font-medium leading-[1.65]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                     >
                       Capacity:{item.capacity}
                     </p>
                     <p
                       className="text-[#475569] font-medium leading-[1.65]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                     >
                       Result:{item.result}
                     </p>
@@ -409,7 +409,7 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={120} direction="up">
             <h2
               className="text-white font-medium mb-[16px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(24px, 3.2vw, 42px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3.2vw, 42px)" }}
             >
               Ready to Power Your Home?
             </h2>
@@ -417,7 +417,7 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={220} direction="up">
             <p
               className="text-white/80 font-medium mx-auto mb-[30px] max-w-3xl"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
             >
               Get in touch with our experts to design the perfect residential energy storage
               solution for your needs
@@ -426,15 +426,15 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={300} direction="up" className="flex flex-wrap items-center justify-center gap-[12px]">
             <Link
               href="/contact"
-              className="btn-glow inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
+              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
             >
               Contact Us
             </Link>
             <a
               href="tel:+911234567890"
-              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-semibold hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
+              className="inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-semibold hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
             >
               Call: +91 123 456 7890
             </a>

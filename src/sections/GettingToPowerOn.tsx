@@ -12,7 +12,7 @@ export const GettingToPowerOn = () => {
                     <FadeIn delay={100} direction="up" className="w-[100%] lg:w-[512px]">
                         <h2
                             className="text-[#121010] font-semibold leading-tight md:leading-[49px] flex-shrink-0"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(24px, 4.5vw, 32px)', transformOrigin: 'left center' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(24px, 4.5vw, 32px)', transformOrigin: 'left center' }}
                         >
                             Getting to Power On
                         </h2>
@@ -20,7 +20,7 @@ export const GettingToPowerOn = () => {
                     <FadeIn delay={300} direction="up" className="w-full">
                         <p
                             className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full lg:max-w-[1240px]"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(13px, 2.5vw, 22px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(13px, 2.5vw, 22px)' }}
                         >
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more
                         </p>
@@ -67,13 +67,13 @@ export const GettingToPowerOn = () => {
                     <FadeIn delay={200} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[443px] cursor-pointer">
                         <h3
                             className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[16px] transition-colors duration-500"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(16px, 3.5vw, 22px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(16px, 3.5vw, 22px)' }}
                         >
                             From Order to Design
                         </h3>
                         <p
                             className="text-[#121010]/90 font-normal leading-snug lg:leading-[22px] text-center lg:text-left transition-colors duration-500"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
                         >
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
@@ -83,13 +83,13 @@ export const GettingToPowerOn = () => {
                     <FadeIn delay={400} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[432px] cursor-pointer">
                         <h3
                             className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[16px] transition-colors duration-500"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(16px, 3.5vw, 22px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(16px, 3.5vw, 22px)' }}
                         >
                             From Install to Power On
                         </h3>
                         <p
                             className="text-[#121010]/90 font-normal leading-snug lg:leading-[22px] text-center lg:text-left transition-colors duration-500"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
                         >
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
@@ -99,13 +99,13 @@ export const GettingToPowerOn = () => {
                     <FadeIn delay={600} direction="up" className="flex flex-col items-center lg:items-start w-full lg:w-[428px] cursor-pointer">
                         <h3
                             className="text-[#121010] font-medium leading-tight lg:leading-[34px] mb-[15px] lg:mb-[16px] transition-colors duration-500"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(16px, 3.5vw, 22px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(16px, 3.5vw, 22px)' }}
                         >
                             From Day One to Onward
                         </h3>
                         <p
                             className="text-[#121010]/90 font-normal leading-snug lg:leading-[22px] text-center lg:text-left transition-colors duration-500"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
                         >
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>

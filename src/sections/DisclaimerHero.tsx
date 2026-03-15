@@ -42,7 +42,7 @@ export const DisclaimerHero = () => {
                     <h1
                         className="text-white font-bold"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(36px, 5vw, 72px)',
                             lineHeight: '1.15',
                         }}

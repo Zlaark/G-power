@@ -43,7 +43,7 @@ export function PartnerNetwork() {
         <FadeIn delay={100} direction="up" className="px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
           <h2 
             className="font-semibold text-[#121010] mb-[30px] lg:mb-[44px]"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
           >
             Our Partner Network
           </h2>
@@ -61,7 +61,7 @@ export function PartnerNetwork() {
                 >
                   <span 
                     className="text-[#121010]/40 font-bold tracking-wider uppercase group-hover:text-[#EF3C38]/80 transition-colors"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(9px, 1.1vw, 12px)' }}
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(9px, 1.1vw, 12px)' }}
                   >
                     {partner.name}
                   </span>
@@ -82,7 +82,7 @@ export function PartnerNetwork() {
                 >
                   <span 
                     className="text-[#121010]/40 font-bold tracking-wider uppercase group-hover:text-[#EF3C38]/80 transition-colors"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(9px, 1.1vw, 12px)' }}
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(9px, 1.1vw, 12px)' }}
                   >
                     {partner.name}
                   </span>

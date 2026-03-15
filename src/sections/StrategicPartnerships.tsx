@@ -39,13 +39,13 @@ export function StrategicPartnerships() {
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
             <h2 
               className="font-semibold text-[#121010] mb-6"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
             >
               Strategic Partnerships
             </h2>
             <p 
               className="paragraph-hover-float text-[#121010]/70 font-medium"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
             >
               We collaborate with world-class technology providers, manufacturers,
               and service partners to deliver best-in-class renewable energy
@@ -65,13 +65,13 @@ export function StrategicPartnerships() {
                 </div>
                 <h3 
                   className="font-bold text-[#121010] mb-[20px] tracking-tight transition-colors duration-500 group-hover:text-[#EF3C38]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(18px, 2vw, 22px)' }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(18px, 2vw, 22px)' }}
                 >
                   {item.title}
                 </h3>
                 <p 
                   className="paragraph-hover-float text-[#64748b] font-medium leading-[1.6] max-w-[400px]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(13px, 1.2vw, 15px)' }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(13px, 1.2vw, 15px)' }}
                 >
                   {item.desc}
                 </p>

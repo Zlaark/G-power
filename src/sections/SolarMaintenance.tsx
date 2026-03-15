@@ -17,7 +17,7 @@ export const SolarMaintenance = () => {
                         <h2
                             className="font-semibold text-center w-full max-w-[900px] text-[#121010]"
                             style={{
-                                fontFamily: "'Montserrat', sans-serif",
+                                fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(20px, 2.5vw, 36px)',
                                 lineHeight: '1.2'
                             }}
@@ -29,7 +29,7 @@ export const SolarMaintenance = () => {
                         <p
                             className="text-[#121010] font-medium text-center w-full max-w-[900px]"
                             style={{
-                                fontFamily: "'Montserrat', sans-serif",
+                                fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(14px, 1.8vw, 18px)',
                                 lineHeight: '1.4'
                             }}

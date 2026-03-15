@@ -38,7 +38,7 @@ export function WhatWeOffer() {
           <div className="max-w-[1560px] mx-auto rounded-[24px] bg-[#F3F4F6] px-[28px] md:px-[52px] lg:px-[72px] py-[48px] lg:py-[68px]">
             <h2
               className="text-center font-semibold text-[#121010] mb-[44px] lg:mb-[56px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 52px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 52px)" }}
             >
               What We Offer
             </h2>
@@ -48,7 +48,7 @@ export function WhatWeOffer() {
                 <div key={column.title} className="h-full">
                   <h3
                     className="font-bold text-[#121010] mb-[20px]"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2vw, 24px)" }}
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 24px)" }}
                   >
                     {column.title}
                   </h3>
@@ -58,7 +58,7 @@ export function WhatWeOffer() {
                         <span className="mt-[7px] w-[6px] h-[6px] rounded-full bg-[#EF3C38] flex-shrink-0" />
                         <span
                           className="text-[#334155] font-medium leading-[1.6]"
-                          style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
+                          style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                         >
                           {item}
                         </span>

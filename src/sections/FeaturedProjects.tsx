@@ -61,13 +61,13 @@ export function FeaturedProjects() {
           <div className="text-center max-w-3xl mx-auto mb-[60px] lg:mb-[80px]">
             <h2 
               className="font-semibold text-[#121010] mb-6"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}
             >
               Featured Projects
             </h2>
             <p 
               className="text-[#121010]/80 font-medium leading-[1.6]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 1.8vw, 18px)' }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.8vw, 18px)' }}
             >
               From utility-scale installations to residential solutions, explore our portfolio
               of successful clean energy projects
@@ -92,7 +92,7 @@ export function FeaturedProjects() {
                   <div className="mb-[8px]">
                     <span 
                       className="inline-block bg-[#ff4d4d] text-white font-medium px-[16px] py-[6px] rounded-full"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: '13px' }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: '13px' }}
                     >
                       {project.type}
                     </span>
@@ -100,7 +100,7 @@ export function FeaturedProjects() {
                   
                   <h3 
                     className="font-semibold text-[#121010] mb-[8px]"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(18px, 2vw, 22px)' }}
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(18px, 2vw, 22px)' }}
                   >
                     {project.title}
                   </h3>

@@ -29,13 +29,13 @@ export const ServiceCards = () => {
                                 <div>
                                     <h3
                                         className="text-white font-medium leading-tight md:leading-[34px] mb-[5px] md:mb-[10px] mt-[60px] md:mt-[40px]"
-                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
+                                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
                                     >
                                         Book Your Service
                                     </h3>
                                     <p
                                         className="text-white/80 md:text-white/60 font-normal leading-snug md:leading-[22px] max-w-[280px] md:max-w-none"
-                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
+                                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
                                     >
                                         Reach out to us, pick a service, and schedule a visit that suits your time.
                                     </p>
@@ -59,13 +59,13 @@ export const ServiceCards = () => {
                                 <div>
                                     <h3
                                         className="text-[#121010] font-medium leading-tight md:leading-[34px] mb-[5px] md:mb-[10px] mt-[60px] md:mt-[40px]"
-                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
+                                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
                                     >
                                         Get a Free Assessment
                                     </h3>
                                     <p
                                         className="text-[#121010]/80 md:text-[#121010]/60 font-normal leading-snug md:leading-[22px] max-w-[280px] md:max-w-none"
-                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
+                                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
                                     >
                                         Contact us, choose a service, and schedule your convenient visit.
                                     </p>
@@ -89,13 +89,13 @@ export const ServiceCards = () => {
                                 <div>
                                     <h3
                                         className="text-[#121010] font-medium leading-tight md:leading-[34px] mb-[5px] md:mb-[10px] mt-[60px] md:mt-[40px]"
-                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
+                                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
                                     >
                                         We Get to Work
                                     </h3>
                                     <p
                                         className="text-[#121010]/80 md:text-[#121010]/60 font-normal leading-snug md:leading-[22px] max-w-[280px] md:max-w-none"
-                                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
+                                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
                                     >
                                         Message us, choose your service, and arrange a visit at your convenience.
                                     </p>

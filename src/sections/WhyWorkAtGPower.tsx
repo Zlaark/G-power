@@ -36,13 +36,13 @@ export function WhyWorkAtGPower() {
           <div className="text-center max-w-4xl mx-auto mb-[32px] sm:mb-[40px] lg:mb-[64px]">
             <h2
               className="font-semibold text-[#121010] mb-6"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
             >
               Why Work at GPower?
             </h2>
             <p
               className="paragraph-hover-float text-[#121010]/80 font-medium leading-[1.7]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.7vw, 18px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 18px)" }}
             >
               Join a team of passionate professionals committed to transforming India&apos;s energy landscape.
               At GPower, you&apos;ll work on cutting-edge renewable energy projects while growing your career in a supportive, innovative environment.
@@ -60,13 +60,13 @@ export function WhyWorkAtGPower() {
                 <div className="mb-[12px]">{item.icon}</div>
                 <h3
                   className="font-bold text-[#121010] mb-[8px]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(16px, 1.5vw, 19px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(16px, 1.5vw, 19px)" }}
                 >
                   {item.title}
                 </h3>
                 <p
                   className="paragraph-hover-float text-[#121010]/75 font-medium leading-[1.6]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(11px, 0.95vw, 13px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(11px, 0.95vw, 13px)" }}
                 >
                   {item.description}
                 </p>

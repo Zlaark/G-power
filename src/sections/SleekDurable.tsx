@@ -23,13 +23,13 @@ export const SleekDurable = () => {
                         <div className="max-w-[1200px] flex flex-col items-start gap-[10px] md:gap-[16px] px-0 md:px-[20px] lg:px-[40px] pt-[10px]">
                             <h2
                                 className="text-white font-semibold leading-tight md:leading-[49px] w-full cursor-default tracking-wide"
-                                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(22px, 4.5vw, 32px)' }}
+                                style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(22px, 4.5vw, 32px)' }}
                             >
                                 Sleek and Durable
                             </h2>
                             <p
                                 className="text-white/90 font-medium leading-normal md:leading-[34px] w-full md:pr-[140px] cursor-default"
-                                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2.5vw, 22px)' }}
+                                style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 22px)' }}
                             >
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                             </p>

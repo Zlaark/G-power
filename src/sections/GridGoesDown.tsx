@@ -20,13 +20,13 @@ export const GridGoesDown = () => {
                     <FadeIn delay={200} direction="up" className="absolute left-[20px] md:left-[80px] bottom-[20px] md:bottom-[70px] right-[20px] md:right-[80px] max-w-[1200px] flex flex-col gap-[8px] md:gap-[16px]">
                         <h2
                             className="font-semibold leading-tight md:leading-[49px] w-full text-white"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(18px, 3.5vw, 32px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(18px, 3.5vw, 32px)' }}
                         >
                             Grid Goes Down,<br />Lights Stay On
                         </h2>
                         <p
                             className="text-white/90 font-medium leading-snug md:leading-relaxed md:leading-[34px] w-full md:pr-[240px] max-w-full md:max-w-[1050px]"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(11px, 2vw, 18px)' }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(11px, 2vw, 18px)' }}
                         >
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>

@@ -35,14 +35,14 @@ export const Hero3 = () => {
                 <div className="absolute left-[20px] md:left-[86px] top-1/2 -translate-y-1/2 w-[calc(100%-40px)] md:w-[490px] flex flex-col items-start gap-4">
                     <h1
                         className="animate-hero-reveal text-white font-semibold leading-tight md:leading-[84px] w-full m-0 text-left"
-                        style={{ fontFamily: "'Kumbh Sans', sans-serif", fontSize: 'clamp(36px, 6vw, 54px)' }}
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(36px, 6vw, 54px)' }}
                     >
                         Solar Panels
                     </h1>
 
                     <p
                         className="animate-hero-reveal-delay-1 text-white font-medium leading-normal md:leading-[34px] w-full m-0 text-left"
-                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 3vw, 22px)' }}
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 3vw, 22px)' }}
                     >
                         Save on Energy, Power Your Home
                     </p>
@@ -59,14 +59,14 @@ export const Hero3 = () => {
                 <div className="absolute left-[20px] md:left-[86px] right-[20px] md:right-auto bottom-[40px] md:bottom-[10vh] lg:bottom-[120px] flex flex-col md:flex-row items-stretch md:items-center gap-[15px] md:gap-[27px]">
                     <button
                         className="animate-hero-reveal-delay-2 btn-sweep border-transparent flex items-center justify-center w-full md:w-[273px] h-[50px] md:h-[57px] border-2 rounded-[5px] text-white font-semibold transition-all hover:text-white hover:border-[#EF3C38]"
-                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)', backgroundColor: 'rgba(255, 255, 255, 0.1)', borderColor: 'white' }}
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)', backgroundColor: 'rgba(255, 255, 255, 0.1)', borderColor: 'white' }}
                     >
                         Schedule consultation
                     </button>
 
                     <button
                         className="animate-hero-reveal-delay-3 btn-sweep flex items-center justify-center w-full md:w-[190px] h-[50px] md:h-[57px] rounded-[5px] text-[#121010] bg-white font-semibold transition-all hover:text-white"
-                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
                     >
                         Order Now
                     </button>

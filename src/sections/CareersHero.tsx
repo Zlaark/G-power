@@ -19,7 +19,7 @@ export function CareersHero() {
         <FadeIn delay={100} direction="up">
           <h1
             className="text-white font-semibold leading-tight mb-6"
-            style={{ fontFamily: "'Kumbh Sans', sans-serif", fontSize: "clamp(36px, 6vw, 54px)" }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(36px, 6vw, 54px)" }}
           >
             Join Our Team
           </h1>
@@ -27,7 +27,7 @@ export function CareersHero() {
         <FadeIn delay={300} direction="up">
           <p
             className="text-white/80 max-w-3xl mx-auto font-medium"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 2vw, 22px)" }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 2vw, 22px)" }}
           >
             Build your career while building India&apos;s clean energy future
           </p>

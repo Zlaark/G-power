@@ -20,7 +20,7 @@ export function ProjectsHero() {
         <FadeIn delay={100} direction="up">
           <h1 
             className="text-white font-semibold leading-tight mb-6"
-            style={{ fontFamily: "'Kumbh Sans', sans-serif", fontSize: 'clamp(36px, 6vw, 54px)' }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(36px, 6vw, 54px)' }}
           >
             Our Projects
           </h1>
@@ -28,7 +28,7 @@ export function ProjectsHero() {
         <FadeIn delay={300} direction="up">
           <p 
             className="text-white/80 max-w-2xl mx-auto font-medium"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 2vw, 22px)' }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 2vw, 22px)' }}
           >
             Delivering excellence across India's energy landscape
           </p>
@@ -38,14 +38,14 @@ export function ProjectsHero() {
             <a
               href="#featured-projects"
               className="inline-flex items-center justify-center px-[24px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
               Explore Projects
             </a>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-[24px] py-[12px] rounded-[8px] border border-white/35 text-white font-semibold hover:bg-white/10 transition-colors"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
               Talk to Our Team
             </Link>

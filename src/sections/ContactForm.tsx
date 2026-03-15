@@ -10,32 +10,32 @@ export const ContactForm = () => {
                 <div className="lg:col-span-3">
                     <FadeIn delay={100} direction="right">
                         <div>
-                            <h2 className="text-2xl md:text-3xl font-bold text-[#121010] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            <h2 className="text-2xl md:text-3xl font-bold text-[#121010] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Send Us a Message
                             </h2>
-                            <p className="text-[#4A4A4A] mb-10" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            <p className="text-[#4A4A4A] mb-10" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Fill out the form below and we'll get back to you within 24 hours
                             </p>
 
                             <form className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Montserrat', sans-serif" }}>First Name *</label>
+                                        <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>First Name *</label>
                                         <input 
                                             type="text" 
                                             placeholder="John"
                                             className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
-                                            style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                            style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Last Name *</label>
+                                        <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Last Name *</label>
                                         <input 
                                             type="text" 
                                             placeholder="Doe"
                                             className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
-                                            style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                            style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
                                     </div>
@@ -43,32 +43,32 @@ export const ContactForm = () => {
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Email Address *</label>
+                                        <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Email Address *</label>
                                         <input 
                                             type="email" 
                                             placeholder="john.doe@company.com"
                                             className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
-                                            style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                            style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Phone Number *</label>
+                                        <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone Number *</label>
                                         <input 
                                             type="tel" 
                                             placeholder="+91 98765 43210"
                                             className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
-                                            style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                            style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
                                     </div>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Montserrat', sans-serif" }}>What are you interested in?</label>
+                                    <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>What are you interested in?</label>
                                     <select 
                                         className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors appearance-none"
-                                        style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                        style={{ fontFamily: "'Poppins', sans-serif" }}
                                     >
                                         <option>General Inquiry</option>
                                         <option>Sales</option>
@@ -77,12 +77,12 @@ export const ContactForm = () => {
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Message *</label>
+                                    <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Message *</label>
                                     <textarea 
                                         placeholder="Tell us about your project or how we can help you..."
                                         rows={5}
                                         className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors resize-none"
-                                        style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                        style={{ fontFamily: "'Poppins', sans-serif" }}
                                         required
                                     ></textarea>
                                 </div>
@@ -90,7 +90,7 @@ export const ContactForm = () => {
                                 <button 
                                     type="submit"
                                     className="bg-[#EF3C38] text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center space-x-2 hover:bg-[#d63531] transition-all w-full md:w-auto"
-                                    style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                    style={{ fontFamily: "'Poppins', sans-serif" }}
                                 >
                                     <span>Send Message</span>
                                     <Send size={18} />
@@ -109,8 +109,8 @@ export const ContactForm = () => {
                                     <MapPin className="text-[#EF3C38]" size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Montserrat', sans-serif" }}>Head Office</h4>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Green Energy Tower, Königsallee 92, 40212 Düsseldorf, Germany.</p>
+                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Head Office</h4>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Green Energy Tower, Königsallee 92, 40212 Düsseldorf, Germany.</p>
                                 </div>
                             </div>
 
@@ -119,9 +119,9 @@ export const ContactForm = () => {
                                     <Phone className="text-[#EF3C38]" size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Montserrat', sans-serif" }}>Phone</h4>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Primary: +49 211 8765 420</p>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Support: +49 211 8765 421</p>
+                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone</h4>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Primary: +49 211 8765 420</p>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Support: +49 211 8765 421</p>
                                 </div>
                             </div>
 
@@ -130,9 +130,9 @@ export const ContactForm = () => {
                                     <Mail className="text-[#EF3C38]" size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Montserrat', sans-serif" }}>Email</h4>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Inquiries: hello@gpower.com</p>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Support: support@gpower.com</p>
+                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Email</h4>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Inquiries: hello@gpower.com</p>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Support: support@gpower.com</p>
                                 </div>
                             </div>
 
@@ -141,10 +141,10 @@ export const ContactForm = () => {
                                     <Clock className="text-[#EF3C38]" size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Montserrat', sans-serif" }}>Business Hours</h4>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Sat: 9:00 AM - 2:00 PM</p>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Montserrat', sans-serif" }}>Sun: Closed</p>
+                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Business Hours</h4>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Sat: 9:00 AM - 2:00 PM</p>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Sun: Closed</p>
                                 </div>
                             </div>
                         </div>
@@ -154,23 +154,23 @@ export const ContactForm = () => {
                             <div className="absolute top-0 right-0 p-4 opacity-10">
                                 <Globe size={120} />
                             </div>
-                            <h4 className="text-lg md:text-xl font-bold mb-6 relative z-10" style={{ fontFamily: "'Montserrat', sans-serif" }}>Regional Offices</h4>
+                            <h4 className="text-lg md:text-xl font-bold mb-6 relative z-10" style={{ fontFamily: "'Poppins', sans-serif" }}>Regional Offices</h4>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
                                 <div>
-                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>Mumbai</h5>
-                                    <p className="text-sm opacity-80" style={{ fontFamily: "'Montserrat', sans-serif" }}>Andheri East, Mumbai - 400069</p>
+                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Mumbai</h5>
+                                    <p className="text-sm opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>Andheri East, Mumbai - 400069</p>
                                 </div>
                                 <div>
-                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>Bangalore</h5>
-                                    <p className="text-sm opacity-80" style={{ fontFamily: "'Montserrat', sans-serif" }}>Whitefield, Bangalore - 560066</p>
+                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Bangalore</h5>
+                                    <p className="text-sm opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>Whitefield, Bangalore - 560066</p>
                                 </div>
                                 <div>
-                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>Delhi NCR</h5>
-                                    <p className="text-sm opacity-80" style={{ fontFamily: "'Montserrat', sans-serif" }}>Gurugram, Haryana - 122001</p>
+                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Delhi NCR</h5>
+                                    <p className="text-sm opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>Gurugram, Haryana - 122001</p>
                                 </div>
                                 <div>
-                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>Pune</h5>
-                                    <p className="text-sm opacity-80" style={{ fontFamily: "'Montserrat', sans-serif" }}>Hinjewadi, Pune - 411057</p>
+                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Pune</h5>
+                                    <p className="text-sm opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>Hinjewadi, Pune - 411057</p>
                                 </div>
                             </div>
                         </div>

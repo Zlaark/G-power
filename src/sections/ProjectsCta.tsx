@@ -16,20 +16,20 @@ export function ProjectsCta() {
         <FadeIn delay={100} direction="up">
           <h2
             className="text-white font-semibold mb-[14px]"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(30px, 4.5vw, 52px)" }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(30px, 4.5vw, 52px)" }}
           >
             Have a Project in Mind?
           </h2>
           <p
             className="text-white/80 font-medium mb-[28px]"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.7vw, 18px)" }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 18px)" }}
           >
             Let&apos;s design a clean-energy solution tailored to your site, scale, and business goals.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
           >
             Start Your Project
           </Link>

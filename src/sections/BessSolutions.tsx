@@ -95,7 +95,7 @@ export const BessSolutions = () => {
                 <p
                     className="text-center font-medium text-black mb-[44px] md:mb-[56px] lg:mb-[52px]"
                     style={{
-                        fontFamily: "'Montserrat', sans-serif",
+                        fontFamily: "'Poppins', sans-serif",
                         fontSize: 'clamp(11px, 1.1vw, 18px)',
                         lineHeight: '1.55',
                     }}
@@ -126,7 +126,7 @@ export const BessSolutions = () => {
                             <p
                                 className="font-semibold text-black transition-colors duration-300"
                                 style={{
-                                    fontFamily: "'Montserrat', sans-serif",
+                                    fontFamily: "'Poppins', sans-serif",
                                     fontSize: 'clamp(13px, 1.3vw, 22px)',
                                     lineHeight: '1.3',
                                     marginTop: '10px',
@@ -142,7 +142,7 @@ export const BessSolutions = () => {
                 <p
                     className="text-center font-medium text-black mb-[48px] md:mb-[56px] lg:mb-[48px]"
                     style={{
-                        fontFamily: "'Montserrat', sans-serif",
+                        fontFamily: "'Poppins', sans-serif",
                         fontSize: 'clamp(11px, 1.1vw, 18px)',
                         lineHeight: '1.55',
                     }}
@@ -156,7 +156,7 @@ export const BessSolutions = () => {
                     <button
                         className="btn-sweep flex items-center justify-center w-[273px] h-[57px] border-2 border-black rounded-[5px] text-black font-semibold shadow-sm cursor-pointer"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: '15px',
                             lineHeight: '22px',
                         }}

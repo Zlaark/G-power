@@ -74,7 +74,7 @@ export const AboutHero = () => {
                 <h1
                     className="animate-hero-reveal text-white font-bold"
                     style={{
-                        fontFamily: "'Outfit', sans-serif",
+                        fontFamily: "'Poppins', sans-serif",
                         fontSize: 'clamp(36px, 5vw, 72px)',
                         lineHeight: '1.15',
                     }}

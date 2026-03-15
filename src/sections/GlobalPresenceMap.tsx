@@ -20,10 +20,10 @@ const MapMarker = ({ left, top, region, countries, position = 'top' }: { left: s
             <span className="absolute inset-0 w-3 h-3 bg-[#3B82F6] rounded-full animate-ping opacity-50" />
             
             <div className={tooltipClasses}>
-                <h4 className="text-[#121010] text-lg font-medium mb-4" style={{ fontFamily: "'Montserrat', sans-serif" }}>{region}</h4>
+                <h4 className="text-[#121010] text-lg font-medium mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>{region}</h4>
                 <div className="flex flex-wrap gap-x-5 gap-y-3">
                     {countries.map(c => (
-                        <span key={c} className="text-[13px] text-[#4A4A4A] whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>{c}</span>
+                        <span key={c} className="text-[13px] text-[#4A4A4A] whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>{c}</span>
                     ))}
                 </div>
             </div>
@@ -83,7 +83,7 @@ export const GlobalPresenceMap = () => {
             {/* Content overlay */}
             <div className="relative z-10 max-w-[640px] w-full" style={{ marginLeft: 'clamp(8px, 3vw, 48px)' }}>
                 <FadeIn delay={100} direction="up">
-                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#121010] mb-10" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                    <h2 className="text-3xl lg:text-4xl font-semibold text-[#121010] mb-10" style={{ fontFamily: "'Poppins', sans-serif" }}>
                         Global Presence
                     </h2>
                 </FadeIn>
@@ -91,16 +91,16 @@ export const GlobalPresenceMap = () => {
                 <FadeIn delay={300} direction="up">
                     <div className="mt-10 lg:mt-14 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10">
                         <div>
-                            <h3 className="text-4xl lg:text-5xl font-semibold text-[#121010] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>6</h3>
-                            <p className="text-[#4A4A4A] text-base" style={{ fontFamily: "'Montserrat', sans-serif" }}>Continents</p>
+                            <h3 className="text-4xl lg:text-5xl font-semibold text-[#121010] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>6</h3>
+                            <p className="text-[#4A4A4A] text-base" style={{ fontFamily: "'Poppins', sans-serif" }}>Continents</p>
                         </div>
                         <div>
-                            <h3 className="text-4xl lg:text-5xl font-semibold text-[#121010] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>110+</h3>
-                            <p className="text-[#4A4A4A] text-base" style={{ fontFamily: "'Montserrat', sans-serif" }}>Countries and Regions</p>
+                            <h3 className="text-4xl lg:text-5xl font-semibold text-[#121010] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>110+</h3>
+                            <p className="text-[#4A4A4A] text-base" style={{ fontFamily: "'Poppins', sans-serif" }}>Countries and Regions</p>
                         </div>
                         <div>
-                            <h3 className="text-4xl lg:text-5xl font-semibold text-[#121010] mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>500+</h3>
-                            <p className="text-[#4A4A4A] text-base" style={{ fontFamily: "'Montserrat', sans-serif" }}>Projects</p>
+                            <h3 className="text-4xl lg:text-5xl font-semibold text-[#121010] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>500+</h3>
+                            <p className="text-[#4A4A4A] text-base" style={{ fontFamily: "'Poppins', sans-serif" }}>Projects</p>
                         </div>
                     </div>
                 </FadeIn>

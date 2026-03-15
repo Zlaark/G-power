@@ -32,13 +32,13 @@ export function ProjectCategories() {
           <div className="text-center max-w-3xl mx-auto mb-[40px] lg:mb-[55px]">
             <h2
               className="font-semibold text-[#121010] mb-4"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(26px, 3.8vw, 40px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(26px, 3.8vw, 40px)" }}
             >
               Project Categories
             </h2>
             <p
               className="paragraph-hover-float text-[#121010]/75 font-medium"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.6vw, 17px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 17px)" }}
             >
               Explore the key segments where GPower delivers measurable clean-energy outcomes.
             </p>
@@ -52,13 +52,13 @@ export function ProjectCategories() {
                 <div className="mb-[18px]">{item.icon}</div>
                 <h3
                   className="text-[#121010] font-bold mb-[12px]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
                 >
                   {item.title}
                 </h3>
                 <p
                   className="paragraph-hover-float text-[#475569] font-medium leading-[1.6]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                 >
                   {item.description}
                 </p>

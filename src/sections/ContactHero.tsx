@@ -40,7 +40,7 @@ export const ContactHero = () => {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                 <FadeIn delay={100} direction="up">
                     <div className="mb-6 inline-block bg-[#EF3C38]/10 border border-[#EF3C38]/20 px-6 py-2 rounded-full">
-                        <span className="text-[#EF3C38] text-sm md:text-base font-semibold uppercase tracking-wider" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <span className="text-[#EF3C38] text-sm md:text-base font-semibold uppercase tracking-wider" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             We're Here to Help
                         </span>
                     </div>
@@ -50,7 +50,7 @@ export const ContactHero = () => {
                     <h1
                         className="text-white font-bold"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(36px, 5vw, 72px)',
                             lineHeight: '1.15',
                         }}
@@ -63,7 +63,7 @@ export const ContactHero = () => {
                     <p
                         className="text-white mt-6 opacity-80 max-w-[700px]"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontWeight: 400,
                             fontSize: 'clamp(14px, 1.4vw, 20px)',
                             lineHeight: '1.6',

@@ -39,51 +39,51 @@ export const Navbar = () => {
 
                     {/* Desktop Navigation */}
                     <div className="hidden xl:flex items-center gap-7 2xl:gap-8">
-                        <Link href="/" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Home
                         </Link>
-                        <Link href="/about" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/about" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             About Us
                         </Link>
-                        <Link href="/partners" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/partners" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Partners
                         </Link>
-                        <Link href="/our-projects" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/our-projects" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Our Projects
                         </Link>
                         <div className="relative group">
-                            <Link href="/solutions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            <Link href="/solutions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Solutions
                             </Link>
                             <div className="absolute left-0 top-full mt-3 w-[220px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-                                <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Utility
                                 </Link>
-                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Residential
                                 </Link>
-                                <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Commercial & Industrial
                                 </Link>
                             </div>
                         </div>
-                        <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers
                         </Link>
-                        <Link href="/privacy-policy" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/privacy-policy" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Privacy Policy
                         </Link>
-                        <Link href="/terms-conditions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/terms-conditions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Terms & Conditions
                         </Link>
-                        <Link href="/disclaimer" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/disclaimer" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Disclaimer
                         </Link>
                     </div>
 
                     {/* CTA Button */}
                     <div className="hidden xl:flex items-center">
-                        <Link href="/contact" className="btn-sweep-red bg-[#EF3C38] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/contact" className="btn-sweep-red bg-[#EF3C38] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Contact Us
                         </Link>
                     </div>
@@ -110,44 +110,44 @@ export const Navbar = () => {
                 {/* Mobile Navigation Dropdown */}
                 {isMobileMenuOpen && (
                     <div className="xl:hidden absolute top-[120px] left-0 right-0 bg-[#121010]/95 backdrop-blur-xl border-t border-white/10 shadow-2xl flex flex-col items-center py-8 gap-6 z-50">
-                        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Home
                         </Link>
-                        <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             About Us
                         </Link>
-                        <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Partners
                         </Link>
-                        <Link href="/our-projects" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/our-projects" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Our Projects
                         </Link>
-                        <Link href="/solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Solutions
                         </Link>
-                        <Link href="/solutions/utility" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/solutions/utility" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - Utility
                         </Link>
-                        <Link href="/solutions/residential" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/solutions/residential" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - Residential
                         </Link>
-                        <Link href="/solutions/commercial-industrial" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/solutions/commercial-industrial" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - Commercial & Industrial
                         </Link>
-                        <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers
                         </Link>
-                        <Link href="/privacy-policy" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/privacy-policy" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Privacy Policy
                         </Link>
-                        <Link href="/terms-conditions" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/terms-conditions" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Terms & Conditions
                         </Link>
-                        <Link href="/disclaimer" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/disclaimer" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Disclaimer
                         </Link>
 
-                        <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-[#EF3C38] text-white px-8 py-3 rounded text-[16px] font-medium hover:bg-white hover:text-[#EF3C38] transition-all" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-[#EF3C38] text-white px-8 py-3 rounded text-[16px] font-medium hover:bg-white hover:text-[#EF3C38] transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Contact Us
                         </Link>
                     </div>

@@ -197,13 +197,13 @@ export const FeaturesCarousel = () => {
                                     <div className="flex flex-col gap-1 md:gap-[12px] w-full px-2 md:px-0">
                                         <h2
                                             className="font-semibold text-base md:text-xl lg:text-[26px] leading-tight lg:leading-[34px] text-[#121010]"
-                                            style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                            style={{ fontFamily: "'Poppins', sans-serif" }}
                                         >
                                             {card.title}
                                         </h2>
                                         <p
                                             className="text-[#4A4A4A] font-medium text-xs md:text-base lg:text-[16px] leading-snug md:leading-relaxed lg:leading-[26px]"
-                                            style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                            style={{ fontFamily: "'Poppins', sans-serif" }}
                                         >
                                             {card.description}
                                         </p>

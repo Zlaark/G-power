@@ -25,7 +25,7 @@ export default function SolutionsPage() {
           <FadeIn delay={120} direction="up">
             <h1
               className="text-white font-semibold mb-[16px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(34px, 6vw, 62px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 62px)" }}
             >
               Energy Storage Solutions
             </h1>
@@ -33,7 +33,7 @@ export default function SolutionsPage() {
           <FadeIn delay={220} direction="up">
             <p
               className="text-white/80 font-medium mx-auto max-w-3xl"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
             >
               Choose the right solution for your application: Utility, Residential, and Commercial & Industrial.
             </p>
@@ -51,7 +51,7 @@ export default function SolutionsPage() {
               >
                 <h2
                   className="text-[#121010] font-bold"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(24px, 3vw, 30px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3vw, 30px)" }}
                 >
                   {item.title}
                 </h2>

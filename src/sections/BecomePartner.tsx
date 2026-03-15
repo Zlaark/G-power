@@ -16,13 +16,13 @@ export function BecomePartner() {
         <FadeIn delay={100} direction="up" className="max-w-[1000px] px-2">
           <h2 
             className="font-semibold text-white mb-[20px] lg:mb-[30px]"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(32px, 4.5vw, 56px)' }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(32px, 4.5vw, 56px)' }}
           >
             Become a Partner
           </h2>
           <p 
             className="text-white/90 mb-[40px] lg:mb-[50px] font-medium"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(15px, 1.8vw, 20px)' }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(15px, 1.8vw, 20px)' }}
           >
             Join our network of industry-leading partners and grow your business with GPower
           </p>
@@ -30,7 +30,7 @@ export function BecomePartner() {
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-[24px] sm:px-[30px] py-[14px] sm:py-[16px] font-semibold text-white bg-[#EF3C38] hover:bg-[#d63532] rounded-[5px] transition-all hover:-translate-y-[2px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 'clamp(14px, 2vw, 16px)' }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 2vw, 16px)' }}
             >
               Partner With Us
               <ArrowRight className="w-5 h-5 ml-[10px]" />

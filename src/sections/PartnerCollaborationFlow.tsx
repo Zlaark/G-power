@@ -67,13 +67,13 @@ export function PartnerCollaborationFlow() {
               <div className="absolute left-[7%] bottom-[16%] w-[180px] sm:w-[220px] rounded-[22px] border border-[#E2E8F0] bg-white/95 backdrop-blur px-5 py-5 shadow-[0_18px_40px_rgba(15,23,42,0.12)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_22px_46px_rgba(15,23,42,0.16)]">
                 <p
                   className="text-[#EF3C38] font-semibold uppercase tracking-[0.12em]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}
                 >
                   Partnership Journey
                 </p>
                 <p
                   className="text-[#121010] font-semibold mt-3 leading-[1.35]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "18px" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "18px" }}
                 >
                   Built for trust, technical clarity, and long-term execution.
                 </p>
@@ -86,19 +86,19 @@ export function PartnerCollaborationFlow() {
               <div className="max-w-[650px]">
               <p
                 className="text-[#EF3C38] font-semibold uppercase tracking-[0.12em]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
               >
                 Partnership Journey
               </p>
               <h2
                 className="text-[#121010] font-semibold mt-5 leading-[1.08]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(30px, 4vw, 48px)" }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(30px, 4vw, 48px)" }}
               >
                 How We Build Strong Partner Relationships
               </h2>
               <p
                 className="text-[#475569] font-medium mt-5 leading-[1.8] max-w-[540px]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.3vw, 17px)" }}
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.3vw, 17px)" }}
               >
                 A structured collaboration model helps our partners move from first conversation to long-term execution with clarity and speed.
               </p>
@@ -114,13 +114,13 @@ export function PartnerCollaborationFlow() {
                       <div className="flex-1 min-w-0">
                         <h3
                           className="text-[#121010] font-semibold transition-colors duration-500 group-hover:text-[#EF3C38]"
-                          style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 1.6vw, 24px)" }}
+                          style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 1.6vw, 24px)" }}
                         >
                           {point.title}
                         </h3>
                         <p
                           className="text-[#475569] font-medium mt-2 leading-[1.75] transition-transform duration-500 group-hover:translate-y-[1px]"
-                          style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                          style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                         >
                           {point.description}
                         </p>

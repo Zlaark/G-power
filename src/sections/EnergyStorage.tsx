@@ -11,7 +11,7 @@ export const EnergyStorage = () => {
                     <h2
                         className="text-center font-bold text-black mb-[32px] md:mb-[48px] lg:mb-[60px]"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(15px, 2.2vw, 26px)',
                             lineHeight: '1.22',
                         }}
@@ -25,7 +25,7 @@ export const EnergyStorage = () => {
                     <p
                         className="text-center font-medium text-black w-full mx-auto mb-[20px] md:mb-[28px] lg:mb-[36px]"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(11px, 1.2vw, 16px)',
                             lineHeight: '1.55',
                         }}
@@ -59,7 +59,7 @@ export const EnergyStorage = () => {
                     <p
                         className="text-center font-medium text-black w-full mx-auto"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(11px, 1.1vw, 16px)',
                             lineHeight: '1.6',
                         }}

@@ -11,7 +11,7 @@ export const EnergyManagement = () => {
                     <h2
                         className="text-center font-bold text-black mb-8 md:mb-10 lg:mb-10"
                         style={{
-                            fontFamily: "'Montserrat', sans-serif",
+                            fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(17px, 2vw, 26px)',
                             lineHeight: '1.2',
                         }}
@@ -27,7 +27,7 @@ export const EnergyManagement = () => {
                         <h3
                             className="font-semibold text-black"
                             style={{
-                                fontFamily: "'Montserrat', sans-serif",
+                                fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(17px, 2vw, 26px)',
                                 lineHeight: '1.2',
                             }}
@@ -41,7 +41,7 @@ export const EnergyManagement = () => {
                         <p
                             className="font-medium text-black"
                             style={{
-                                fontFamily: "'Montserrat', sans-serif",
+                                fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(11px, 1.1vw, 15px)',
                                 lineHeight: '1.4',
                             }}

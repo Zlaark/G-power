@@ -129,7 +129,7 @@ export function OpenPositions() {
         <FadeIn delay={100} direction="up">
           <h2
             className="text-center font-normal text-[#121010] mb-[34px] lg:mb-[44px]"
-            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
+            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
           >
             Open Positions
           </h2>
@@ -141,7 +141,7 @@ export function OpenPositions() {
               <div className="career-card-scan w-full max-w-[560px] md:max-w-none mx-auto bg-white rounded-[14px] border border-[#D6D9E0] px-4 py-4 sm:px-[20px] sm:py-[20px] lg:px-[24px] lg:py-[22px] h-full flex flex-col gap-[10px]">
                 <h3
                   className="font-medium text-[#121010]"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 1.9vw, 28px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.9vw, 28px)" }}
                 >
                   {job.title}
                 </h3>
@@ -162,7 +162,7 @@ export function OpenPositions() {
                     type="button"
                     onClick={() => openModal(job)}
                     className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                   >
                     Apply Now
                   </button>
@@ -184,7 +184,7 @@ export function OpenPositions() {
             onClick={(event) => event.stopPropagation()}
           >
             <div className="sticky top-0 bg-white/95 backdrop-blur border-b border-[#E2E8F0] px-6 md:px-8 py-4 flex items-center justify-between gap-4 z-10">
-              <h3 className="text-[#121010] font-medium" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(16px, 1.7vw, 24px)" }}>
+              <h3 className="text-[#121010] font-medium" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(16px, 1.7vw, 24px)" }}>
                 Apply for {selectedJob.title}
               </h3>
 
@@ -200,7 +200,7 @@ export function OpenPositions() {
 
             <div className="px-6 md:px-8 py-5 md:py-6">
               {submitted ? (
-                <div className="rounded-[12px] border border-emerald-200 bg-emerald-50 px-4 py-4 text-emerald-800 font-medium" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                <div className="rounded-[12px] border border-emerald-200 bg-emerald-50 px-4 py-4 text-emerald-800 font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>
                   Your application has been submitted successfully. Our team will contact you soon.
                 </div>
               ) : (
@@ -211,14 +211,14 @@ export function OpenPositions() {
                       required
                       placeholder="First name"
                       className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                     />
                     <input
                       type="text"
                       required
                       placeholder="Last name"
                       className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                     />
                   </div>
 
@@ -227,7 +227,7 @@ export function OpenPositions() {
                     required
                     placeholder="Email"
                     className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                   />
 
                   <input
@@ -235,13 +235,13 @@ export function OpenPositions() {
                     required
                     placeholder="Phone"
                     className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
-                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                   />
 
                   <div>
                     <p
                       className="text-[#1E2340] mb-2 font-semibold"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
                     >
                       Resume
                     </p>
@@ -249,14 +249,14 @@ export function OpenPositions() {
                       type="file"
                       required
                       className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-2.5 text-[#121010] file:mr-4 file:rounded-[12px] file:border file:border-[#6B7280] file:bg-white file:px-5 file:py-2 file:text-[#1F2937] file:font-medium"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                     />
                   </div>
 
                   <div>
                     <p
                       className="text-[#1E2340] mb-2 font-semibold"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
                     >
                       Cover letter (optional)
                     </p>
@@ -264,7 +264,7 @@ export function OpenPositions() {
                       rows={5}
                       placeholder="Write your cover letter"
                       className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F] resize-none"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                     />
                   </div>
 
@@ -273,7 +273,7 @@ export function OpenPositions() {
                       type="button"
                       onClick={closeModal}
                       className="w-full rounded-full border border-[#1B2148] px-6 py-3 text-[#1B2148] font-semibold hover:bg-[#F8FAFC] transition-colors"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
                     >
                       Cancel
                     </button>
@@ -281,7 +281,7 @@ export function OpenPositions() {
                     <button
                       type="submit"
                       className="w-full rounded-full bg-[#11153F] px-6 py-3 text-white font-semibold hover:bg-[#0b1035] transition-colors"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
                     >
                       Submit application
                     </button>
