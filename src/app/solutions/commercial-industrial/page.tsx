@@ -68,8 +68,8 @@ export default function CommercialIndustrialSolutionsPage() {
         <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-[16px] sm:gap-[20px] lg:gap-[26px]">
           {products.map((product, index) => (
             <FadeIn delay={140 + index * 90} direction="up" key={product.title}>
-              <article className="rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full flex flex-col">
-                <div className="relative h-[250px] sm:h-[300px] lg:h-[340px] w-full">
+              <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full flex flex-col">
+                <div className="img-zoom relative h-[250px] sm:h-[300px] lg:h-[340px] w-full">
                   <Image src={product.image} alt={product.title} fill className="object-cover" />
                 </div>
                 <div className="p-[22px] lg:p-[26px] flex flex-col flex-1">
@@ -87,7 +87,7 @@ export default function CommercialIndustrialSolutionsPage() {
                   </p>
                   <Link
                     href="/contact"
-                    className="mt-auto inline-flex items-center justify-center w-fit px-[22px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
+                    className="btn-glow mt-auto inline-flex items-center justify-center w-fit px-[22px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
                     style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px" }}
                   >
                     View Details
@@ -102,7 +102,7 @@ export default function CommercialIndustrialSolutionsPage() {
       <section className="py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#F9FAFB]">
         <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-12 gap-[18px] sm:gap-[22px] lg:gap-[26px]">
           <FadeIn delay={100} direction="up" className="lg:col-span-4">
-            <div className="rounded-[18px] border border-[#121010]/10 bg-white p-[22px] lg:p-[28px] h-full lg:min-h-[560px] flex flex-col justify-between">
+            <div className="card-border-glow rounded-[18px] border border-[#121010]/10 bg-white p-[22px] lg:p-[28px] h-full lg:min-h-[560px] flex flex-col justify-between">
               <div>
                 <h2
                   className="text-[#121010] font-medium mb-[12px]"
@@ -136,8 +136,8 @@ export default function CommercialIndustrialSolutionsPage() {
 
           <div className="lg:col-span-8 grid grid-cols-1 gap-[16px] sm:gap-[20px] lg:gap-[22px]">
             <FadeIn delay={180} direction="up">
-              <article className="rounded-[18px] overflow-hidden border border-[#121010]/10 bg-white grid grid-cols-1 md:grid-cols-2">
-                <div className="relative h-[240px] md:h-full min-h-[220px]">
+              <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-white grid grid-cols-1 md:grid-cols-2">
+                <div className="img-zoom relative h-[240px] md:h-full min-h-[220px]">
                   <Image
                     src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
                     alt="Commercial business district"
@@ -163,8 +163,8 @@ export default function CommercialIndustrialSolutionsPage() {
             </FadeIn>
 
             <FadeIn delay={260} direction="up">
-              <article className="rounded-[18px] overflow-hidden border border-[#121010]/10 bg-white grid grid-cols-1 md:grid-cols-2">
-                <div className="relative h-[240px] md:h-full min-h-[220px]">
+              <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-white grid grid-cols-1 md:grid-cols-2">
+                <div className="img-zoom relative h-[240px] md:h-full min-h-[220px]">
                   <Image
                     src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
                     alt="Commercial high-rise infrastructure"
@@ -213,8 +213,8 @@ export default function CommercialIndustrialSolutionsPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[18px] sm:gap-[22px] lg:gap-[28px]">
             <FadeIn delay={160} direction="up">
-              <article className="rounded-[18px] border border-[#121010]/10 bg-white p-[18px] sm:p-[22px] lg:p-[24px] h-full">
-                <div className="relative h-[260px] sm:h-[320px] rounded-[14px] overflow-hidden mb-[18px]">
+              <article className="card-shimmer card-border-glow rounded-[18px] border border-[#121010]/10 bg-white p-[18px] sm:p-[22px] lg:p-[24px] h-full">
+                <div className="img-zoom relative h-[260px] sm:h-[320px] rounded-[14px] overflow-hidden mb-[18px]">
                   <Image
                     src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
                     alt="Industrial plant operations"
@@ -244,8 +244,8 @@ export default function CommercialIndustrialSolutionsPage() {
             </FadeIn>
 
             <FadeIn delay={240} direction="up">
-              <article className="rounded-[18px] border border-[#121010]/10 bg-white p-[18px] sm:p-[22px] lg:p-[24px] h-full">
-                <div className="relative h-[260px] sm:h-[320px] rounded-[14px] overflow-hidden mb-[18px]">
+              <article className="card-shimmer card-border-glow rounded-[18px] border border-[#121010]/10 bg-white p-[18px] sm:p-[22px] lg:p-[24px] h-full">
+                <div className="img-zoom relative h-[260px] sm:h-[320px] rounded-[14px] overflow-hidden mb-[18px]">
                   <Image
                     src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
                     alt="Industrial control and machinery"
@@ -290,7 +290,7 @@ export default function CommercialIndustrialSolutionsPage() {
           <FadeIn delay={260} direction="up">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-medium hover:bg-[#d63532] transition-colors"
+              className="btn-glow inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-medium hover:bg-[#d63532] transition-colors"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
             >
               Contact Us

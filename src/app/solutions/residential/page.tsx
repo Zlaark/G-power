@@ -295,8 +295,8 @@ export default function ResidentialSolutionsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] sm:gap-[20px] lg:gap-[24px]">
             {recommendedProducts.map((product, index) => (
               <FadeIn delay={180 + index * 90} direction="up" key={product.title}>
-                <article className="rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-[540px] lg:min-h-[610px] flex flex-col">
-                  <div className="relative h-[240px] sm:h-[290px] lg:h-[340px] w-full">
+                <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-[540px] lg:min-h-[610px] flex flex-col">
+                  <div className="img-zoom relative h-[240px] sm:h-[290px] lg:h-[340px] w-full">
                     <Image src={product.image} alt={product.title} fill className="object-cover" />
                     <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#EF3C38] text-white font-semibold"
                       style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}>
@@ -336,7 +336,7 @@ export default function ResidentialSolutionsPage() {
                     </div>
                     <Link
                       href="/contact"
-                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#EF3C38] font-medium hover:text-[#d63532] transition-colors"
+                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#EF3C38] font-medium hover:text-[#d63532] hover:gap-4 transition-all duration-200"
                       style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(15px, 1.15vw, 18px)" }}
                     >
                       View Details <span aria-hidden="true">→</span>
@@ -373,8 +373,8 @@ export default function ResidentialSolutionsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px] sm:gap-[20px] lg:gap-[24px]">
             {caseStudies.map((item, index) => (
               <FadeIn delay={180 + index * 80} direction="up" key={item.title}>
-                <article className="rounded-[16px] overflow-hidden border border-[#121010]/10 bg-white h-full flex flex-col">
-                  <div className="relative h-[220px] w-full">
+                <article className="card-shimmer card-border-glow rounded-[16px] overflow-hidden border border-[#121010]/10 bg-white h-full flex flex-col">
+                  <div className="img-zoom relative h-[220px] w-full">
                     <Image src={item.image} alt={item.title} fill className="object-cover" />
                   </div>
                   <div className="p-[20px] lg:p-[22px] flex-1 flex flex-col gap-[8px]">
@@ -426,14 +426,14 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={300} direction="up" className="flex flex-wrap items-center justify-center gap-[12px]">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
+              className="btn-glow inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
             >
               Contact Us
             </Link>
             <a
               href="tel:+911234567890"
-              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-semibold hover:bg-white/10 transition-colors"
+              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-semibold hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
             >
               Call: +91 123 456 7890

@@ -55,14 +55,14 @@ export const Navbar = () => {
                             <Link href="/solutions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                                 Solutions
                             </Link>
-                            <div className="absolute left-0 top-full mt-3 w-[220px] rounded-[10px] bg-white border border-black/10 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-                                <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-black/80 hover:bg-[#F5F5F5] hover:text-black" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            <div className="absolute left-0 top-full mt-3 w-[220px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+                                <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                                     Utility
                                 </Link>
-                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-black/80 hover:bg-[#F5F5F5] hover:text-black" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                                     Residential
                                 </Link>
-                                <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-black/80 hover:bg-[#F5F5F5] hover:text-black" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                                     Commercial & Industrial
                                 </Link>
                             </div>

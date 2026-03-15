@@ -1,7 +1,7 @@
 import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { FadeIn } from "@/components/FadeIn";
-import { Activity, ShieldCheck, Zap, Gauge } from "lucide-react";
+import { Activity, ShieldCheck, Zap, Gauge, ArrowRight, TrendingUp, Clock, Globe2 } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,6 +54,36 @@ const products = [
       "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     href: "/contact",
   },
+];
+
+const howItWorksSteps = [
+  {
+    step: "01",
+    title: "Site Assessment",
+    description: "Our engineers evaluate grid connection points, load profiles, and renewable generation patterns to design the optimal system.",
+  },
+  {
+    step: "02",
+    title: "System Design",
+    description: "We architect the right capacity, power rating, and inverter configuration to match your grid's specific requirements.",
+  },
+  {
+    step: "03",
+    title: "Deployment & Integration",
+    description: "Factory-tested containerized units are installed and integrated with SCADA, EMS, and existing grid infrastructure.",
+  },
+  {
+    step: "04",
+    title: "Monitoring & O&M",
+    description: "24/7 remote monitoring with predictive maintenance ensures maximum uptime and optimal performance over the system's lifetime.",
+  },
+];
+
+const scaleStats = [
+  { value: "500+", label: "MW Deployed", icon: TrendingUp },
+  { value: "99.8%", label: "System Uptime", icon: Clock },
+  { value: "20+", label: "Countries Served", icon: Globe2 },
+  { value: "20yr", label: "Design Lifetime", icon: Activity },
 ];
 
 export default function UtilitySolutionsPage() {
@@ -128,8 +158,8 @@ export default function UtilitySolutionsPage() {
               const Icon = feature.icon;
               return (
                 <FadeIn delay={180 + index * 70} direction="up" key={feature.title}>
-                  <div className="h-full min-h-[205px] lg:min-h-[224px] rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] p-[22px] flex flex-col">
-                    <Icon className="w-8 h-8 text-[#EF3C38] mb-[18px]" strokeWidth={2.2} />
+                  <div className="card-shimmer card-border-glow card-icon-anim h-full min-h-[205px] lg:min-h-[224px] rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] p-[22px] flex flex-col">
+                    <Icon className="icon-pop w-8 h-8 text-[#EF3C38] mb-[18px]" strokeWidth={2.2} />
                     <h3
                       className="text-[#121010] font-medium mb-[10px]"
                       style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(16px, 1.8vw, 21px)" }}
@@ -166,8 +196,8 @@ export default function UtilitySolutionsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] sm:gap-[20px] lg:gap-[26px]">
             {products.map((product, index) => (
               <FadeIn delay={180 + index * 90} direction="up" key={product.title}>
-                <article className="rounded-[18px] overflow-hidden border border-[#121010]/10 bg-white h-full flex flex-col">
-                  <div className="relative h-[250px] sm:h-[300px] lg:h-[340px] w-full">
+                <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-white h-full flex flex-col">
+                  <div className="img-overlay relative h-[250px] sm:h-[300px] lg:h-[340px] w-full">
                     <Image src={product.image} alt={product.title} fill className="object-cover" />
                   </div>
                   <div className="p-[22px] lg:p-[26px] flex flex-col flex-1">
@@ -191,7 +221,7 @@ export default function UtilitySolutionsPage() {
                     </p>
                     <Link
                       href={product.href}
-                      className="mt-auto inline-flex items-center justify-center w-fit px-[22px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
+                      className="btn-glow mt-auto inline-flex items-center justify-center w-fit px-[22px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
                       style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
                     >
                       View Details
@@ -201,6 +231,167 @@ export default function UtilitySolutionsPage() {
               </FadeIn>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── Section 3: How It Works ─────────────────────────── */}
+      <section className="py-[64px] lg:py-[96px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-white">
+        <div className="mx-auto max-w-[1600px] grid grid-cols-1 lg:grid-cols-2 gap-[48px] lg:gap-[80px] items-center">
+          {/* Left: image */}
+          <FadeIn delay={100} direction="up">
+            <div className="img-overlay relative w-full h-[360px] md:h-[480px] lg:h-[560px] rounded-[20px] overflow-hidden border border-[#121010]/10 shadow-lg">
+              <Image
+                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
+                alt="Utility grid infrastructure at sunset"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#121010]/60 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <p
+                  className="text-white font-normal leading-snug"
+                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.1vw, 15px)" }}
+                >
+                  End-to-end project delivery from assessment through long-term O&M.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Right: steps */}
+          <div className="flex flex-col gap-[8px]">
+            <FadeIn delay={80} direction="up">
+              <p
+                className="text-[#EF3C38] font-medium tracking-[0.14em] uppercase mb-3"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+              >
+                Our Process
+              </p>
+              <h2
+                className="text-[#121010] font-medium mb-[32px]"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(24px, 3.2vw, 40px)" }}
+              >
+                How We Deploy Utility Storage
+              </h2>
+            </FadeIn>
+
+            <div className="flex flex-col gap-[28px]">
+              {howItWorksSteps.map((item, index) => (
+                <FadeIn delay={160 + index * 70} direction="up" key={item.step}>
+                  <div className="step-point flex items-start gap-[16px] group/step">
+                    <span
+                      className="step-badge shrink-0 w-8 h-8 rounded-full bg-[#EF3C38] text-white flex items-center justify-center font-medium mt-[2px]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px" }}
+                    >
+                      {item.step}
+                    </span>
+                    <div>
+                      <h3
+                        className="step-title text-[#121010] font-medium mb-[4px]"
+                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(15px, 1.5vw, 18px)" }}
+                      >
+                        {item.title}
+                      </h3>
+                      <p
+                        className="text-[#475569] font-normal leading-[1.65]"
+                        style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 1.05vw, 14px)" }}
+                      >
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Section 4: Proven at Scale ───────────────────────── */}
+      <section className="relative py-[72px] lg:py-[108px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] overflow-hidden bg-[#0D0D0D]">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0 select-none pointer-events-none">
+          <Image
+            src="https://images.unsplash.com/photo-1548337138-e87d889cc369?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            alt="Large-scale solar and storage farm"
+            fill
+            className="object-cover opacity-25 brightness-75 animate-ken-burns"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D0D]/80 via-[#0D0D0D]/60 to-[#EF3C38]/10" />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-[1600px]">
+          <FadeIn delay={80} direction="up">
+            <div className="text-center mb-[52px] lg:mb-[64px]">
+              <p
+                className="text-[#EF3C38] font-medium tracking-[0.14em] uppercase mb-3"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px" }}
+              >
+                Track Record
+              </p>
+              <h2
+                className="text-white font-medium"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(24px, 3.4vw, 44px)" }}
+              >
+                Proven at Scale, Globally
+              </h2>
+            </div>
+          </FadeIn>
+
+          {/* Stats grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-[14px] sm:gap-[18px] lg:gap-[22px] mb-[56px] lg:mb-[72px]">
+            {scaleStats.map((stat, index) => {
+              const Icon = stat.icon;
+              return (
+                <FadeIn delay={160 + index * 70} direction="up" key={stat.label}>
+                  <div className="card-border-glow rounded-[16px] border border-white/10 bg-white/5 backdrop-blur-sm p-[22px] lg:p-[26px] flex flex-col items-center text-center">
+                    <Icon className="icon-pop w-7 h-7 text-[#EF3C38] mb-[12px]" strokeWidth={1.8} />
+                    <p
+                      className="stat-glow text-white font-medium leading-none mb-[8px]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 3.5vw, 44px)" }}
+                    >
+                      {stat.value}
+                    </p>
+                    <p
+                      className="text-white/60 font-normal"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 1.05vw, 14px)" }}
+                    >
+                      {stat.label}
+                    </p>
+                  </div>
+                </FadeIn>
+              );
+            })}
+          </div>
+
+          {/* Wide image strip */}
+          <FadeIn delay={200} direction="up">
+            <div className="img-overlay relative w-full h-[260px] sm:h-[320px] lg:h-[380px] rounded-[20px] overflow-hidden border border-white/10">
+              <Image
+                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+                alt="Grid-scale battery storage installation"
+                fill
+                className="object-cover brightness-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D]/70 via-transparent to-transparent flex items-center">
+                <div className="px-[32px] lg:px-[48px] max-w-xl">
+                  <p
+                    className="text-white font-medium mb-3"
+                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 2.2vw, 28px)" }}
+                  >
+                    Ready to join the grid-scale revolution?
+                  </p>
+                  <Link
+                    href="/contact"
+                    className="btn-glow inline-flex items-center gap-2 px-[20px] py-[10px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
+                    style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px" }}
+                  >
+                    Talk to an Expert <ArrowRight className="w-4 h-4" strokeWidth={2} />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -225,7 +416,7 @@ export default function UtilitySolutionsPage() {
           <FadeIn delay={300} direction="up">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
+              className="btn-glow inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
               style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
             >
               Contact Us
