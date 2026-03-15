@@ -84,16 +84,16 @@ export default function UtilitySolutionsPage() {
           </FadeIn>
           <FadeIn delay={220} direction="up">
             <h1
-              className="text-white font-semibold leading-tight mb-5"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(34px, 6vw, 64px)" }}
+              className="text-white font-normal leading-tight mb-5"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(32px, 5.2vw, 58px)" }}
             >
               Grid-Scale Energy Storage
             </h1>
           </FadeIn>
           <FadeIn delay={340} direction="up">
             <p
-              className="text-white/80 max-w-3xl mx-auto font-medium"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.8vw, 22px)" }}
+              className="text-white/80 max-w-3xl mx-auto font-normal"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.6vw, 20px)" }}
             >
               Large-scale battery storage systems for grid stabilization, renewable
               integration, and energy management
@@ -107,14 +107,14 @@ export default function UtilitySolutionsPage() {
           <FadeIn delay={100} direction="up">
             <div className="text-center max-w-4xl mx-auto mb-[44px] lg:mb-[58px]">
               <h2
-                className="font-semibold text-[#121010] mb-4"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                className="font-medium text-[#121010] mb-4"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(25px, 3.5vw, 42px)" }}
               >
                 Complete Utility-Scale Solution
               </h2>
               <p
-                className="text-[#121010]/75 font-medium leading-[1.75]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
+                className="text-[#121010]/75 font-normal leading-[1.75]"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.5vw, 17px)" }}
               >
                 Our utility-scale energy storage systems provide grid operators with flexible,
                 reliable, and cost-effective solutions for managing renewable energy integration
@@ -131,14 +131,14 @@ export default function UtilitySolutionsPage() {
                   <div className="h-full min-h-[205px] lg:min-h-[224px] rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] p-[22px] flex flex-col">
                     <Icon className="w-8 h-8 text-[#EF3C38] mb-[18px]" strokeWidth={2.2} />
                     <h3
-                      className="text-[#121010] font-bold mb-[10px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
+                      className="text-[#121010] font-medium mb-[10px]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(16px, 1.8vw, 21px)" }}
                     >
                       {feature.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-medium leading-[1.6]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
+                      className="text-[#475569] font-normal leading-[1.6]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.15vw, 15px)" }}
                     >
                       {feature.description}
                     </p>
@@ -155,8 +155,8 @@ export default function UtilitySolutionsPage() {
           <FadeIn delay={100} direction="up">
             <div className="text-center max-w-4xl mx-auto mb-[40px] lg:mb-[52px]">
               <h2
-                className="font-semibold text-[#121010]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                className="font-medium text-[#121010]"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(25px, 3.5vw, 42px)" }}
               >
                 Recommended Products
               </h2>
@@ -172,20 +172,20 @@ export default function UtilitySolutionsPage() {
                   </div>
                   <div className="p-[22px] lg:p-[26px] flex flex-col flex-1">
                     <p
-                      className="text-[#EF3C38] font-medium mb-[8px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.4vw, 16px)" }}
+                      className="text-[#EF3C38] font-normal mb-[8px]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.25vw, 15px)" }}
                     >
                        {product.capacity}
                     </p>
                     <h3
-                      className="text-[#121010] font-medium mb-[10px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(22px, 2.8vw, 30px)" }}
+                      className="text-[#121010] font-normal mb-[10px]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2.4vw, 27px)" }}
                     >
                       {product.title}
                     </h3>
                     <p
                       className="text-[#475569] font-normal leading-[1.65] mb-[20px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.3vw, 16px)" }}
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                     >
                       {product.description}
                     </p>
@@ -208,16 +208,16 @@ export default function UtilitySolutionsPage() {
         <div className="mx-auto max-w-[1200px] text-center">
           <FadeIn delay={120} direction="up">
             <h2
-              className="text-white font-medium mb-[16px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(24px, 3.2vw, 42px)" }}
+              className="text-white font-normal mb-[16px]"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(22px, 2.9vw, 38px)" }}
             >
               Ready to Deploy Utility-Scale Storage?
             </h2>
           </FadeIn>
           <FadeIn delay={220} direction="up">
             <p
-              className="text-white/80 font-medium mx-auto mb-[30px] max-w-3xl"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
+              className="text-white/80 font-normal mx-auto mb-[30px] max-w-3xl"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}
             >
               Contact our experts to design the perfect utility-scale energy storage solution
             </p>
@@ -225,8 +225,8 @@ export default function UtilitySolutionsPage() {
           <FadeIn delay={300} direction="up">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "15px" }}
+              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
             >
               Contact Us
             </Link>
