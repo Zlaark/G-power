@@ -74,20 +74,20 @@ export default function CommercialIndustrialSolutionsPage() {
                 </div>
                 <div className="p-[22px] lg:p-[26px] flex flex-col flex-1">
                   <h2
-                    className="text-[#121010] font-bold mb-[10px]"
+                    className="text-[#121010] font-semibold mb-[10px]"
                     style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(22px, 2.8vw, 30px)" }}
                   >
                     {product.title}
                   </h2>
                   <p
-                    className="text-[#475569] font-medium leading-[1.65] mb-[20px]"
+                    className="text-[#475569] font-normal leading-[1.65] mb-[20px]"
                     style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.3vw, 16px)" }}
                   >
                     {product.description}
                   </p>
                   <Link
                     href="/contact"
-                    className="mt-auto inline-flex items-center justify-center w-fit px-[22px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
+                    className="mt-auto inline-flex items-center justify-center w-fit px-[22px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-medium hover:bg-[#d63532] transition-colors"
                     style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
                   >
                     View Details
@@ -103,8 +103,8 @@ export default function CommercialIndustrialSolutionsPage() {
         <div className="mx-auto max-w-[1200px] text-center">
           <FadeIn delay={120} direction="up">
             <h2
-              className="text-white font-semibold mb-[16px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(30px, 4vw, 52px)" }}
+              className="text-white font-medium mb-[16px]"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(24px, 3.2vw, 42px)" }}
             >
               Ready to Optimize Your Energy Costs?
             </h2>

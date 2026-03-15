@@ -61,7 +61,12 @@ const recommendedProducts = [
     description: "Premium home energy storage system with high voltage design",
     image:
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    specs: ["Capacity 16.6 kWh", "Power 5 kW", "Voltage Range 192-460 VDC", "Efficiency ≥96%"],
+    specs: [
+      { label: "Capacity", value: "16.6 kWh" },
+      { label: "Power", value: "5 kW" },
+      { label: "Voltage Range", value: "192-460 VDC" },
+      { label: "Efficiency", value: "≥96%" },
+    ],
   },
   {
     title: "BYD Battery-Box Premium LVS",
@@ -69,7 +74,12 @@ const recommendedProducts = [
     description: "Low voltage home battery system for residential solar",
     image:
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    specs: ["Capacity 12.8 kWh", "Power 3.5 kW", "Voltage Range 48 VDC", "Efficiency ≥95%"],
+    specs: [
+      { label: "Capacity", value: "12.8 kWh" },
+      { label: "Power", value: "3.5 kW" },
+      { label: "Voltage Range", value: "48 VDC" },
+      { label: "Efficiency", value: "≥95%" },
+    ],
   },
 ];
 
@@ -146,7 +156,7 @@ export default function ResidentialSolutionsPage() {
       <section className="py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#F3F4F6]">
         <div className="mx-auto max-w-[1600px]">
           <FadeIn delay={100} direction="up">
-            <div className="text-center max-w-4xl mx-auto mb-[36px] lg:mb-[44px]">
+            <div className="text-center max-w-4xl mx-auto mb-[56px] lg:mb-[72px]">
               <h2
                 className="font-semibold text-[#121010] mb-4"
                 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
@@ -163,7 +173,7 @@ export default function ResidentialSolutionsPage() {
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-[24px] lg:gap-[44px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-[40px] lg:gap-[88px]">
             <FadeIn delay={150} direction="up">
               <div className="relative w-full h-[300px] md:h-[420px] lg:h-[560px] rounded-[18px] overflow-hidden border border-[#121010]/10">
                 <Image
@@ -176,10 +186,10 @@ export default function ResidentialSolutionsPage() {
             </FadeIn>
 
             <FadeIn delay={180} direction="up">
-              <div className="max-w-[620px]">
+              <div className="w-full">
                 <h3
-                  className="font-semibold text-[#111827] mb-5"
-                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(30px, 3.1vw, 52px)" }}
+                  className="font-normal text-[#111827] mb-5"
+                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2.1vw, 34px)" }}
                 >
                   Why Choose Our Residential Solutions?
                 </h3>
@@ -192,21 +202,21 @@ export default function ResidentialSolutionsPage() {
                   energy during the day and use it when you need it most.
                 </p>
 
-                <div className="space-y-[14px]">
+                <div className="space-y-[22px]">
                   {residentialBenefits.map((item, index) => (
                     <FadeIn delay={220 + index * 60} direction="up" key={item.title}>
                       <div className="flex items-start gap-3">
                         <CheckCircle2 className="w-[19px] h-[19px] mt-[4px] text-[#EF3C38]" strokeWidth={2.2} />
                         <div>
                           <h4
-                            className="text-[#111827] font-bold leading-[1.35]"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2vw, 31px)" }}
+                            className="text-[#111827] font-normal leading-[1.35] md:whitespace-nowrap"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(16px, 1.5vw, 24px)" }}
                           >
                             {item.title}
                           </h4>
                           <p
-                            className="text-[#475569] font-medium leading-[1.65]"
-                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.35vw, 30px)" }}
+                            className="text-[#475569] font-medium leading-[1.65] md:whitespace-nowrap"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 1.1vw, 18px)" }}
                           >
                             {item.description}
                           </p>
@@ -239,7 +249,7 @@ export default function ResidentialSolutionsPage() {
               const Icon = item.icon;
               return (
                 <FadeIn delay={180 + index * 70} direction="up" key={item.title}>
-                  <div className="h-full min-h-[205px] lg:min-h-[224px] rounded-[16px] border border-[#121010]/10 bg-white p-[22px] flex flex-col">
+                  <div className="card-shimmer h-full min-h-[250px] lg:min-h-[290px] rounded-[16px] border border-[#121010]/10 bg-white p-[22px] flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                     <Icon className="w-8 h-8 text-[#EF3C38] mb-[18px]" strokeWidth={2.2} />
                     <h3
                       className="text-[#121010] font-bold mb-[10px]"
@@ -282,49 +292,54 @@ export default function ResidentialSolutionsPage() {
             </p>
           </FadeIn>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] sm:gap-[20px] lg:gap-[26px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] sm:gap-[20px] lg:gap-[24px]">
             {recommendedProducts.map((product, index) => (
               <FadeIn delay={180 + index * 90} direction="up" key={product.title}>
-                <article className="rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full flex flex-col">
-                  <div className="relative h-[250px] sm:h-[300px] lg:h-[340px] w-full">
+                <article className="rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-[540px] lg:min-h-[610px] flex flex-col">
+                  <div className="relative h-[240px] sm:h-[290px] lg:h-[340px] w-full">
                     <Image src={product.image} alt={product.title} fill className="object-cover" />
-                  </div>
-                  <div className="p-[22px] lg:p-[26px] flex flex-col flex-1">
-                    <p
-                      className="text-[#EF3C38] font-bold mb-[8px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.4vw, 16px)" }}
-                    >
+                    <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#EF3C38] text-white font-semibold"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}>
                       {product.tagline}
-                    </p>
+                    </div>
+                  </div>
+                  <div className="p-[22px] lg:p-[24px] flex flex-col flex-1">
                     <h3
-                      className="text-[#121010] font-bold mb-[10px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(22px, 2.8vw, 30px)" }}
+                      className="text-[#121010] font-medium mb-[16px]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(22px, 2vw, 32px)" }}
                     >
                       {product.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-medium leading-[1.65] mb-[14px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.3vw, 16px)" }}
+                      className="text-[#475569] font-normal leading-[1.65] mb-[22px]"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}
                     >
                       {product.description}
                     </p>
-                    <div className="flex flex-wrap gap-x-[14px] gap-y-[8px] mb-[18px]">
+                    <div className="grid grid-cols-2 gap-x-[16px] gap-y-[16px] mb-[26px]">
                       {product.specs.map((spec) => (
-                        <span
-                          key={spec}
-                          className="text-[#121010]/80 font-semibold"
-                          style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px" }}
-                        >
-                          {spec}
-                        </span>
+                        <div key={spec.label} className="border-l-2 border-[#EF3C38] pl-3">
+                          <p
+                            className="text-[#64748B] font-normal leading-[1.1]"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
+                          >
+                            {spec.label}
+                          </p>
+                          <p
+                            className="text-[#121010] font-medium leading-[1.2] mt-1"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
+                          >
+                            {spec.value}
+                          </p>
+                        </div>
                       ))}
                     </div>
                     <Link
                       href="/contact"
-                      className="mt-auto inline-flex items-center justify-center w-fit px-[22px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
+                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#EF3C38] font-medium hover:text-[#d63532] transition-colors"
+                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(15px, 1.15vw, 18px)" }}
                     >
-                      View Details
+                      View Details <span aria-hidden="true">→</span>
                     </Link>
                   </div>
                 </article>
@@ -362,21 +377,21 @@ export default function ResidentialSolutionsPage() {
                   <div className="relative h-[220px] w-full">
                     <Image src={item.image} alt={item.title} fill className="object-cover" />
                   </div>
-                  <div className="p-[20px] lg:p-[22px] flex-1">
+                  <div className="p-[20px] lg:p-[22px] flex-1 flex flex-col gap-[8px]">
                     <h3
-                      className="text-[#121010] font-bold mb-[10px]"
+                      className="text-[#121010] font-semibold mb-[4px]"
                       style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2.4vw, 24px)" }}
                     >
                       {item.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-semibold leading-[1.65]"
+                      className="text-[#475569] font-medium leading-[1.65]"
                       style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
                     >
                       Capacity:{item.capacity}
                     </p>
                     <p
-                      className="text-[#475569] font-semibold leading-[1.65]"
+                      className="text-[#475569] font-medium leading-[1.65]"
                       style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "14px" }}
                     >
                       Result:{item.result}
@@ -393,8 +408,8 @@ export default function ResidentialSolutionsPage() {
         <div className="mx-auto max-w-[1200px] text-center">
           <FadeIn delay={120} direction="up">
             <h2
-              className="text-white font-semibold mb-[16px]"
-              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(30px, 4vw, 52px)" }}
+              className="text-white font-medium mb-[16px]"
+              style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(24px, 3.2vw, 42px)" }}
             >
               Ready to Power Your Home?
             </h2>
