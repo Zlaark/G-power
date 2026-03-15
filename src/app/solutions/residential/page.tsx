@@ -1,7 +1,7 @@
 import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { FadeIn } from "@/components/FadeIn";
-import { BatteryCharging, CircleDollarSign, Home, Leaf, ShieldCheck, Zap, Clock3, SlidersHorizontal } from "lucide-react";
+import { ShieldCheck, Zap, Clock3, SlidersHorizontal, CheckCircle2 } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,22 +16,18 @@ const residentialBenefits = [
   {
     title: "Energy Independence",
     description: "Reduce reliance on the grid and control your energy consumption",
-    icon: BatteryCharging,
   },
   {
     title: "Cost Savings",
     description: "Lower electricity bills with time-of-use optimization",
-    icon: CircleDollarSign,
   },
   {
     title: "Backup Power",
     description: "Keep your home running during grid outages",
-    icon: Home,
   },
   {
     title: "Environmental Impact",
     description: "Reduce carbon footprint with clean energy storage",
-    icon: Leaf,
   },
 ];
 
@@ -147,10 +143,10 @@ export default function ResidentialSolutionsPage() {
         </div>
       </section>
 
-      <section className="py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-white">
+      <section className="py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#F3F4F6]">
         <div className="mx-auto max-w-[1600px]">
           <FadeIn delay={100} direction="up">
-            <div className="text-center max-w-4xl mx-auto mb-[26px] lg:mb-[34px]">
+            <div className="text-center max-w-4xl mx-auto mb-[36px] lg:mb-[44px]">
               <h2
                 className="font-semibold text-[#121010] mb-4"
                 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
@@ -167,59 +163,60 @@ export default function ResidentialSolutionsPage() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={150} direction="up">
-            <div className="relative w-full h-[260px] md:h-[340px] lg:h-[430px] rounded-[18px] overflow-hidden border border-[#121010]/10 mb-[36px] lg:mb-[48px]">
-              <Image
-                src="https://images.unsplash.com/photo-1758957851828-5179f0e06985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                alt="Modern sustainable home"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </FadeIn>
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-[24px] lg:gap-[44px]">
+            <FadeIn delay={150} direction="up">
+              <div className="relative w-full h-[300px] md:h-[420px] lg:h-[560px] rounded-[18px] overflow-hidden border border-[#121010]/10">
+                <Image
+                  src="https://images.unsplash.com/photo-1758957851828-5179f0e06985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  alt="Modern sustainable home"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </FadeIn>
 
-          <FadeIn delay={180} direction="up">
-            <div className="text-center max-w-4xl mx-auto mb-[30px] lg:mb-[40px]">
-              <h3
-                className="font-semibold text-[#121010] mb-4"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(24px, 3.3vw, 38px)" }}
-              >
-                Why Choose Our Residential Solutions?
-              </h3>
-              <p
-                className="text-[#121010]/75 font-medium leading-[1.75]"
-                style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.5vw, 17px)" }}
-              >
-                Our residential battery storage systems are designed to provide homeowners with
-                energy independence, cost savings, and peace of mind. Store excess solar energy
-                during the day and use it when you need it most.
-              </p>
-            </div>
-          </FadeIn>
+            <FadeIn delay={180} direction="up">
+              <div className="max-w-[620px]">
+                <h3
+                  className="font-semibold text-[#111827] mb-5"
+                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(30px, 3.1vw, 52px)" }}
+                >
+                  Why Choose Our Residential Solutions?
+                </h3>
+                <p
+                  className="text-[#475569] font-medium leading-[1.75] mb-[24px]"
+                  style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.45vw, 18px)" }}
+                >
+                  Our residential battery storage systems are designed to provide homeowners with
+                  energy independence, cost savings, and peace of mind. Store excess solar
+                  energy during the day and use it when you need it most.
+                </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[14px] sm:gap-[18px] lg:gap-[24px]">
-            {residentialBenefits.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <FadeIn delay={220 + index * 70} direction="up" key={item.title}>
-                  <div className="h-full min-h-[205px] lg:min-h-[224px] rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] p-[22px] flex flex-col">
-                    <Icon className="w-8 h-8 text-[#EF3C38] mb-[18px]" strokeWidth={2.2} />
-                    <h4
-                      className="text-[#121010] font-bold mb-[10px]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
-                    >
-                      {item.title}
-                    </h4>
-                    <p
-                      className="text-[#475569] font-medium leading-[1.6]"
-                      style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
-                    >
-                      {item.description}
-                    </p>
-                  </div>
-                </FadeIn>
-              );
-            })}
+                <div className="space-y-[14px]">
+                  {residentialBenefits.map((item, index) => (
+                    <FadeIn delay={220 + index * 60} direction="up" key={item.title}>
+                      <div className="flex items-start gap-3">
+                        <CheckCircle2 className="w-[19px] h-[19px] mt-[4px] text-[#EF3C38]" strokeWidth={2.2} />
+                        <div>
+                          <h4
+                            className="text-[#111827] font-bold leading-[1.35]"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(20px, 2vw, 31px)" }}
+                          >
+                            {item.title}
+                          </h4>
+                          <p
+                            className="text-[#475569] font-medium leading-[1.65]"
+                            style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(14px, 1.35vw, 30px)" }}
+                          >
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    </FadeIn>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
