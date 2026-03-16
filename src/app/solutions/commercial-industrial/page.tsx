@@ -25,7 +25,7 @@ const products = [
     description: "Medium-sized containerized solution for commercial applications",
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    href: "/contact",
+    href: "/solutions/commercial-industrial/ci-battery-2",
   },
 ];
 
