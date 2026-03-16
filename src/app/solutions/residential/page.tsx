@@ -61,6 +61,7 @@ const recommendedProducts = [
     description: "Premium home energy storage system with high voltage design",
     image:
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    href: "/solutions/residential/res-battery-1",
     specs: [
       { label: "Capacity", value: "16.6 kWh" },
       { label: "Power", value: "5 kW" },
@@ -74,6 +75,7 @@ const recommendedProducts = [
     description: "Low voltage home battery system for residential solar",
     image:
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    href: "/contact",
     specs: [
       { label: "Capacity", value: "12.8 kWh" },
       { label: "Power", value: "3.5 kW" },
@@ -335,7 +337,7 @@ export default function ResidentialSolutionsPage() {
                       ))}
                     </div>
                     <Link
-                      href="/contact"
+                      href={product.href}
                       className="mt-auto inline-flex items-center gap-2 w-fit text-[#EF3C38] font-medium hover:text-[#d63532] hover:gap-4 transition-all duration-200"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.15vw, 18px)" }}
                     >
