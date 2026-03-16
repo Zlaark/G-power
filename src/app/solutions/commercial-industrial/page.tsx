@@ -18,12 +18,14 @@ const products = [
       "Scalable energy storage solution for commercial and industrial applications",
     image:
       "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    href: "/solutions/commercial-industrial/ci-battery-1",
   },
   {
     title: "BYD MC Cube",
     description: "Medium-sized containerized solution for commercial applications",
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    href: "/contact",
   },
 ];
 
@@ -86,7 +88,7 @@ export default function CommercialIndustrialSolutionsPage() {
                     {product.description}
                   </p>
                   <Link
-                    href="/contact"
+                    href={product.href}
                     className="btn-glow mt-auto inline-flex items-center justify-center w-fit px-[22px] py-[12px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
                   >
