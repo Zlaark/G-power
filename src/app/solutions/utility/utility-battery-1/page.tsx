@@ -149,7 +149,7 @@ export default function UtilityBattery1Page() {
                   {specs.map((s) => (
                     <div
                       key={s.label}
-                      className="rounded-[10px] border border-[#E2E8F0] bg-white px-3 py-3 flex flex-col"
+                      className="rounded-[10px] border border-[#E2E8F0] bg-white px-3 py-5 flex flex-col"
                     >
                       <span
                         className="text-[#64748B] mb-[4px]"
@@ -186,7 +186,7 @@ export default function UtilityBattery1Page() {
                       </svg>
                       <span
                         className="text-[#334155]"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.3vw, 17px)" }}
                       >
                         {app.label}
                       </span>
@@ -215,7 +215,7 @@ export default function UtilityBattery1Page() {
                       </svg>
                       <span
                         className="text-[#334155]"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 14px)" }}
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.05vw, 14px)" }}
                       >
                         {merit.label}
                       </span>
