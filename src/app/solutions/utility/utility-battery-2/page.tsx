@@ -7,57 +7,55 @@ import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "BYD Cube Pro C&C | Utility Solutions | GPower",
+  title: "BYD Cube T28 | Utility Solutions | GPower",
   description:
-    "Large-scale containerized energy storage system for utility applications. 2.76 MWh capacity, 1.38 MW power, ≥85% efficiency.",
+    "Next-generation utility-scale energy storage with enhanced safety. 3.44 MWh capacity, 1.72 MW power, ≥87% efficiency.",
 };
 
 const specs = [
-  { label: "Capacity", value: "2.76 MWh" },
-  { label: "Power", value: "1.38 MW" },
-  { label: "Voltage Range", value: "950–1312 VDC" },
-  { label: "Efficiency", value: "≥85%" },
+  { label: "Capacity", value: "3.44 MWh" },
+  { label: "Power", value: "1.72 MW" },
+  { label: "Voltage Range", value: "1000–1400 VDC" },
+  { label: "Efficiency", value: "≥87%" },
 ];
 
 const applications = [
-  { label: "Grid frequency regulation" },
-  { label: "Peak shaving and valley filling" },
-  { label: "Renewable energy integration" },
-  { label: "Black start capability" },
+  { label: "Large-scale energy storage" },
+  { label: "Grid stabilization" },
+  { label: "Renewable integration" },
+  { label: "Demand response" },
 ];
 
 const keyMerits = [
-  { label: "High energy density and efficiency" },
-  { label: "Modular and scalable design" },
-  { label: "Advanced thermal management" },
-  { label: "20+ year design life" },
+  { label: "Ultra-safe LFP chemistry" },
+  { label: "Industry-leading efficiency" },
+  { label: "Intelligent BMS" },
+  { label: "Compact footprint" },
 ];
 
 const technicalParams = [
-  { param: "Capacity", value: "2.76 MWh" },
-  { param: "Power", value: "1.38 MW" },
-  { param: "Voltage Range", value: "950–1312 VDC" },
-  { param: "Efficiency", value: "≥85%" },
+  { param: "Capacity", value: "3.44 MWh" },
+  { param: "Power", value: "1.72 MW" },
+  { param: "Voltage Range", value: "1000–1400 VDC" },
+  { param: "Efficiency", value: "≥87%" },
   { param: "Cell Chemistry", value: "LFP (Lithium Iron Phosphate)" },
-  { param: "Cycle Life", value: "≥6000 cycles @ 80% DoD" },
+  { param: "Battery Management", value: "Intelligent multi-layer BMS" },
   { param: "Operating Temperature", value: "-20°C to +55°C" },
   { param: "Communication", value: "CAN / RS485 / Ethernet" },
   { param: "Protection Class", value: "IP55" },
   { param: "Certifications", value: "IEC 62619, UL 9540, CE" },
 ];
 
-export default function UtilityBattery1Page() {
+export default function UtilityBattery2Page() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
-        {/* Full-bleed background image */}
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
           <Image
-            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
-            alt="BYD Cube Pro C&C"
+            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            alt="BYD Cube T28"
             fill
             priority
             className="object-cover brightness-75"
@@ -65,13 +63,9 @@ export default function UtilityBattery1Page() {
           <div className="absolute inset-0 bg-black/45" />
         </div>
 
-        {/* Centered content */}
         <div className="relative z-10 flex flex-col items-center text-center px-6">
-          {/* Pill badge — bordered, no fill */}
           <FadeIn delay={100} direction="up">
-            <div
-              className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm"
-            >
+            <div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm">
               <span className="w-[7px] h-[7px] rounded-full bg-[#EF3C38] shrink-0" />
               <span
                 className="text-white font-medium uppercase tracking-[0.18em]"
@@ -82,7 +76,6 @@ export default function UtilityBattery1Page() {
             </div>
           </FadeIn>
 
-          {/* Title */}
           <FadeIn delay={200} direction="up">
             <h1
               className="text-white font-bold leading-tight mb-5"
@@ -91,11 +84,10 @@ export default function UtilityBattery1Page() {
                 fontSize: "clamp(40px, 6.5vw, 82px)",
               }}
             >
-              BYD Cube Pro C&amp;C
+              BYD Cube T28
             </h1>
           </FadeIn>
 
-          {/* Subtitle */}
           <FadeIn delay={320} direction="up">
             <p
               className="text-white/80 max-w-[640px]"
@@ -104,40 +96,33 @@ export default function UtilityBattery1Page() {
                 fontSize: "clamp(14px, 1.6vw, 19px)",
               }}
             >
-              Large-scale containerized energy storage system for utility applications
+              Next-generation utility-scale energy storage with enhanced safety
             </p>
           </FadeIn>
         </div>
       </section>
 
-      {/* ── Product Specifications ────────────────────────────── */}
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col lg:flex-row gap-[48px] lg:gap-[72px] items-start lg:min-h-[120vh]">
-
-            {/* LEFT — product image with capacity badge */}
             <FadeIn delay={100} direction="up" className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
               <div className="relative w-full rounded-[20px] overflow-hidden" style={{ aspectRatio: "3/2.2" }}>
-                  <Image
-                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                  alt="BYD Cube Pro C&C"
+                <Image
+                  src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  alt="BYD Cube T28"
                   fill
                   className="object-cover"
                 />
-                {/* Red capacity badge — top-right overlay */}
                 <span
                   className="absolute top-5 right-5 bg-[#EF3C38] text-white font-semibold rounded-full px-5 py-2 shadow-lg"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}
                 >
-                  2.76 MWh
+                  3.44 MWh
                 </span>
               </div>
             </FadeIn>
 
-            {/* RIGHT — specs, applications, key merits */}
             <div className="flex-1 flex flex-col gap-[56px] lg:gap-[72px] lg:pt-6">
-
-              {/* Product Specifications heading + 2×2 cards */}
               <FadeIn delay={160} direction="up">
                 <h2
                   className="font-semibold text-[#121010] mb-[24px]"
@@ -168,7 +153,6 @@ export default function UtilityBattery1Page() {
                 </div>
               </FadeIn>
 
-              {/* Applications */}
               <FadeIn delay={240} direction="up">
                 <h3
                   className="font-bold text-[#121010] mb-[16px]"
@@ -179,7 +163,6 @@ export default function UtilityBattery1Page() {
                 <div className="flex flex-col gap-[12px]">
                   {applications.map((app) => (
                     <div key={app.label} className="flex items-center gap-3">
-                      {/* Red circle-check icon */}
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0">
                         <circle cx="10" cy="10" r="9" stroke="#EF3C38" strokeWidth="1.6" />
                         <path d="M6.5 10.2l2.3 2.3 4.7-4.7" stroke="#EF3C38" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -195,7 +178,6 @@ export default function UtilityBattery1Page() {
                 </div>
               </FadeIn>
 
-              {/* Key Merits — 2×2 bordered cards */}
               <FadeIn delay={320} direction="up">
                 <h3
                   className="font-bold text-[#121010] mb-[16px]"
@@ -223,32 +205,30 @@ export default function UtilityBattery1Page() {
                   ))}
                 </div>
               </FadeIn>
-
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Technical Parameters ─────────────────────────────── */}
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-[#F9FAFB]">
-        <div className="mx-auto max-w-[980px]">
+        <div className="mx-auto max-w-[920px]">
           <FadeIn delay={100} direction="up">
             <h2
               className="font-normal text-[#121010] mb-3 text-center"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(26px, 3.4vw, 42px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(26px, 3.3vw, 40px)" }}
             >
               Technical Parameters
             </h2>
             <p
               className="text-[#475569] mb-[54px] text-center"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.1vw, 18px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}
             >
-              Detailed specifications for BYD Cube Pro C&amp;C
+              Detailed specifications for BYD Cube T28
             </p>
           </FadeIn>
 
           <FadeIn delay={180} direction="up">
-            <div className="rounded-[20px] overflow-hidden bg-white shadow-[0_10px_24px_rgba(2,8,23,0.08)]">
+            <div className="rounded-[20px] overflow-hidden bg-white shadow-[0_12px_28px_rgba(2,8,23,0.10)]">
               <table className="w-full">
                 <tbody>
                   {technicalParams.slice(0, 4).map((row, index) => (
@@ -257,14 +237,14 @@ export default function UtilityBattery1Page() {
                       className={index % 2 === 0 ? "bg-[#F8FAFC]" : "bg-[#F1F5F9]"}
                     >
                       <td
-                        className="px-6 py-3 border-r border-white/70 text-[#0F172A] font-normal w-1/2"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 22px)" }}
+                        className="px-7 py-4 border-r border-white/70 text-[#0F172A] font-normal w-1/2"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.35vw, 20px)" }}
                       >
                         {row.param}
                       </td>
                       <td
-                        className="px-6 py-3 text-[#334155]"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 22px)" }}
+                        className="px-7 py-4 text-[#334155]"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.35vw, 20px)" }}
                       >
                         {row.value}
                       </td>
@@ -273,24 +253,24 @@ export default function UtilityBattery1Page() {
                 </tbody>
               </table>
 
-              <div className="px-5 md:px-7 py-5 md:py-6 bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] text-center">
+              <div className="px-6 md:px-8 py-6 md:py-7 bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] text-center">
                 <h3
-                  className="text-white font-normal mb-4"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2.1vw, 32px)" }}
+                  className="text-white font-normal mb-3"
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 30px)" }}
                 >
                   Need More Details?
                 </h3>
                 <p
-                  className="text-white/90 mb-8"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.15vw, 18px)" }}
+                  className="text-white/90 mb-6"
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}
                 >
                   View complete technical specifications and download the full datasheet
                 </p>
 
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 bg-[#EF3C38] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#ff4a46] transition-colors"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.1vw, 16px)" }}
+                  className="inline-flex items-center gap-2 bg-[#EF3C38] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#ff4a46] transition-colors shadow-[0_8px_18px_rgba(239,60,56,0.22)]"
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}
                 >
                   <Download className="w-5 h-5" />
                   View More &amp; Download
@@ -302,7 +282,6 @@ export default function UtilityBattery1Page() {
         </div>
       </section>
 
-      {/* ── CTA ──────────────────────────────────────────────── */}
       <section className="relative py-[80px] lg:py-[112px] px-6 md:px-[60px] lg:px-[100px] overflow-hidden bg-[#0D0D0D]">
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
           <Image
@@ -320,7 +299,7 @@ export default function UtilityBattery1Page() {
               className="text-white font-medium mb-4"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Interested in BYD Cube Pro C&amp;C?
+              Interested in BYD Cube T28?
             </h2>
           </FadeIn>
           <FadeIn delay={200} direction="up">

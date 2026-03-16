@@ -52,7 +52,7 @@ const products = [
       "Next-generation utility-scale energy storage with enhanced safety",
     image:
       "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    href: "/contact",
+    href: "/solutions/utility/utility-battery-2",
   },
 ];
 
