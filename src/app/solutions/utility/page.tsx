@@ -43,7 +43,7 @@ const products = [
       "Large-scale containerized energy storage system for utility applications",
     image:
       "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    href: "/contact",
+    href: "/solutions/utility/utility-battery-1",
   },
   {
     title: "BYD Cube T28",
