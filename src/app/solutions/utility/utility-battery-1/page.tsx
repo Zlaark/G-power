@@ -113,7 +113,7 @@ export default function UtilityBattery1Page() {
       {/* ── Product Specifications ────────────────────────────── */}
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
         <div className="mx-auto max-w-[1400px]">
-          <div className="flex flex-col lg:flex-row gap-[48px] lg:gap-[72px] items-start lg:min-h-[120vh]">
+          <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[56px] items-start lg:min-h-[102vh]">
 
             {/* LEFT — product image with capacity badge */}
             <FadeIn delay={100} direction="up" className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
@@ -135,7 +135,7 @@ export default function UtilityBattery1Page() {
             </FadeIn>
 
             {/* RIGHT — specs, applications, key merits */}
-            <div className="flex-1 flex flex-col gap-[56px] lg:gap-[72px] lg:pt-6">
+            <div className="flex-1 flex flex-col gap-[40px] lg:gap-[52px] lg:pt-2">
 
               {/* Product Specifications heading + 2×2 cards */}
               <FadeIn delay={160} direction="up">

@@ -78,7 +78,7 @@ export default function CIBattery1Page() {
 
           <FadeIn delay={200} direction="up">
             <h1
-              className="text-white font-semibold leading-tight mb-5"
+              className="text-white font-medium leading-tight mb-5"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.4vw, 64px)" }}
             >
               BYD Battery-Box Commercial
@@ -98,7 +98,7 @@ export default function CIBattery1Page() {
 
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
         <div className="mx-auto max-w-[1400px]">
-          <div className="flex flex-col lg:flex-row gap-[48px] lg:gap-[72px] items-start lg:min-h-[120vh]">
+          <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[56px] items-start lg:min-h-[102vh]">
             <FadeIn delay={100} direction="up" className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
               <div className="relative w-full rounded-[20px] overflow-hidden border border-[#EF3C38]/35" style={{ aspectRatio: "3/2.2" }}>
                 <Image
@@ -116,7 +116,7 @@ export default function CIBattery1Page() {
               </div>
             </FadeIn>
 
-            <div className="flex-1 flex flex-col gap-[56px] lg:gap-[72px] lg:pt-6">
+            <div className="flex-1 flex flex-col gap-[40px] lg:gap-[52px] lg:pt-2">
               <FadeIn delay={160} direction="up">
                 <h2
                   className="font-medium text-[#121010] mb-[24px]"
