@@ -70,10 +70,6 @@ export const Navbar = () => {
                         <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers
                         </Link>
-                    </div>
-
-                    {/* CTA Button */}
-                    <div className="hidden xl:flex items-center">
                         <Link href="/contact" className="btn-sweep-red bg-[#EF3C38] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Contact Us
                         </Link>
