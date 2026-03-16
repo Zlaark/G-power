@@ -75,7 +75,7 @@ const recommendedProducts = [
     description: "Low voltage home battery system for residential solar",
     image:
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-    href: "/contact",
+    href: "/solutions/residential/res-battery-2",
     specs: [
       { label: "Capacity", value: "12.8 kWh" },
       { label: "Power", value: "3.5 kW" },
