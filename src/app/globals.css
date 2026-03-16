@@ -322,6 +322,52 @@ body {
   transform: scale(1.06);
 }
 
+/* Generic hover animations for detail pages */
+.btn-float-hover {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
+}
+
+.btn-float-hover:hover {
+  transform: translateY(-2px) scale(1.015);
+  filter: brightness(1.02);
+  box-shadow: 0 10px 24px rgba(239, 60, 56, 0.24);
+}
+
+.card-soft-hover {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.card-soft-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(239, 60, 56, 0.36) !important;
+  box-shadow: 0 12px 26px rgba(2, 8, 23, 0.10);
+}
+
+.point-hover {
+  transition: transform 0.22s ease, color 0.22s ease;
+}
+
+.point-hover:hover {
+  transform: translateX(4px);
+}
+
+.point-hover:hover svg {
+  transform: scale(1.08);
+}
+
+.point-hover svg {
+  transition: transform 0.22s ease;
+}
+
+.section-soft-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-soft-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(2, 8, 23, 0.08);
+}
+
 /* Step badge pulse ring on hover */
 .step-badge {
   position: relative;

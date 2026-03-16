@@ -100,7 +100,7 @@ export default function CIBattery2Page() {
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[56px] items-start lg:min-h-[102vh]">
             <FadeIn delay={100} direction="up" className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
-              <div className="relative w-full rounded-[20px] overflow-hidden border border-[#EF3C38]/35" style={{ aspectRatio: "3/2.2" }}>
+              <div className="relative w-full rounded-[20px] overflow-hidden border border-[#EF3C38]/35 card-soft-hover" style={{ aspectRatio: "3/2.2" }}>
                 <Image
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
                   alt="BYD MC Cube"
@@ -128,7 +128,7 @@ export default function CIBattery2Page() {
                   {specs.map((spec) => (
                     <div
                       key={spec.label}
-                      className="rounded-[10px] border border-[#E2E8F0] bg-white px-3 py-5 flex flex-col"
+                      className="rounded-[10px] border border-[#E2E8F0] bg-white px-3 py-5 flex flex-col card-soft-hover"
                     >
                       <span
                         className="text-[#64748B] mb-[4px] font-light"
@@ -156,7 +156,7 @@ export default function CIBattery2Page() {
                 </h3>
                 <div className="flex flex-col gap-[12px]">
                   {applications.map((app) => (
-                    <div key={app.label} className="flex items-center gap-3">
+                    <div key={app.label} className="flex items-center gap-3 point-hover">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0">
                         <circle cx="10" cy="10" r="9" stroke="#EF3C38" strokeWidth="1.6" />
                         <path d="M6.5 10.2l2.3 2.3 4.7-4.7" stroke="#EF3C38" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -183,7 +183,7 @@ export default function CIBattery2Page() {
                   {keyMerits.map((merit) => (
                     <div
                       key={merit.label}
-                      className="flex items-center gap-3 rounded-[10px] border border-[#E2E8F0] px-4 py-3"
+                      className="flex items-center gap-3 rounded-[10px] border border-[#E2E8F0] px-4 py-3 card-soft-hover point-hover"
                     >
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0">
                         <circle cx="10" cy="10" r="9" stroke="#EF3C38" strokeWidth="1.6" />
@@ -222,7 +222,7 @@ export default function CIBattery2Page() {
           </FadeIn>
 
           <FadeIn delay={180} direction="up">
-            <div className="rounded-[20px] overflow-hidden bg-white shadow-[0_12px_28px_rgba(2,8,23,0.10)]">
+            <div className="rounded-[20px] overflow-hidden bg-white shadow-[0_12px_28px_rgba(2,8,23,0.10)] section-soft-hover">
               <table className="w-full">
                 <tbody>
                   {technicalParams.slice(0, 4).map((row, index) => (
@@ -260,7 +260,7 @@ export default function CIBattery2Page() {
 
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 bg-[#EF3C38] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#ff4a46] transition-colors shadow-[0_8px_18px_rgba(239,60,56,0.22)]"
+                  className="btn-sweep-red btn-float-hover inline-flex items-center gap-2 bg-[#EF3C38] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#ff4a46] transition-colors shadow-[0_8px_18px_rgba(239,60,56,0.22)]"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}
                 >
                   <Download className="w-5 h-5" />
@@ -304,7 +304,7 @@ export default function CIBattery2Page() {
           <FadeIn delay={300} direction="up">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center bg-[#EF3C38] text-white px-10 py-4 rounded-[10px] font-medium hover:bg-white hover:text-[#EF3C38] transition-all hover:scale-105 hover:shadow-xl"
+              className="btn-sweep-red btn-float-hover inline-flex items-center justify-center bg-[#EF3C38] text-white px-10 py-4 rounded-[10px] font-medium hover:bg-white hover:text-[#EF3C38] transition-all hover:scale-105 hover:shadow-xl"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}
             >
               Request a Quote
