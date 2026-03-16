@@ -78,8 +78,8 @@ export default function CIBattery2Page() {
 
           <FadeIn delay={200} direction="up">
             <h1
-              className="text-white font-bold leading-tight mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(38px, 6vw, 74px)" }}
+              className="text-white font-semibold leading-tight mb-5"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.4vw, 64px)" }}
             >
               BYD MC Cube
             </h1>
@@ -119,8 +119,8 @@ export default function CIBattery2Page() {
             <div className="flex-1 flex flex-col gap-[56px] lg:gap-[72px] lg:pt-6">
               <FadeIn delay={160} direction="up">
                 <h2
-                  className="font-semibold text-[#121010] mb-[24px]"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 3.4vw, 40px)" }}
+                  className="font-medium text-[#121010] mb-[24px]"
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(25px, 3vw, 34px)" }}
                 >
                   Product Specifications
                 </h2>
@@ -149,8 +149,8 @@ export default function CIBattery2Page() {
 
               <FadeIn delay={240} direction="up">
                 <h3
-                  className="font-bold text-[#121010] mb-[16px]"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
+                  className="font-medium text-[#121010] mb-[16px]"
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(17px, 1.8vw, 20px)" }}
                 >
                   Applications
                 </h3>
@@ -174,8 +174,8 @@ export default function CIBattery2Page() {
 
               <FadeIn delay={320} direction="up">
                 <h3
-                  className="font-bold text-[#121010] mb-[16px]"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
+                  className="font-medium text-[#121010] mb-[16px]"
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(17px, 1.8vw, 20px)" }}
                 >
                   Key Merits
                 </h3>
@@ -287,8 +287,8 @@ export default function CIBattery2Page() {
         <div className="relative z-10 mx-auto max-w-[800px] text-center">
           <FadeIn delay={100} direction="up">
             <h2
-              className="text-white font-medium mb-4"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 48px)" }}
+              className="text-white font-normal mb-4"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3.4vw, 40px)" }}
             >
               Interested in BYD MC Cube?
             </h2>
