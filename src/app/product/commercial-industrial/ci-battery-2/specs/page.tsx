@@ -18,8 +18,8 @@ export default function CIBattery2SpecsPage() {
     <main className="min-h-screen bg-[#F3F4F6]">
       <Navbar />
 
-      <section className="px-6 md:px-[60px] lg:px-[100px] py-[70px] lg:py-[100px]">
-        <div className="mx-auto max-w-[980px]">
+      <section className="px-3 sm:px-6 md:px-[30px] lg:px-[60px] py-[40px] md:py-[70px] lg:py-[100px]">
+        <div className="mx-auto max-w-[980px] w-full">
           <FadeIn delay={80} direction="up">
             <h1
               className="text-[#0F172A] text-center font-normal mb-3"
@@ -62,16 +62,16 @@ export default function CIBattery2SpecsPage() {
                   <div className="flex flex-col sm:flex-row justify-center gap-3">
                     <a
                       href="#"
-                      className="inline-flex items-center justify-center gap-2 bg-[#EF3C38] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#ff4a46] transition-colors"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}
+                      className="inline-flex items-center justify-center gap-2 bg-[#EF3C38] text-white px-5 py-3 rounded-[10px] font-normal hover:bg-[#ff4a46] transition-colors text-sm md:text-base w-full sm:w-auto"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
                     >
                       <Download className="w-5 h-5" />
                       Download PDF Datasheet
                     </a>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center justify-center bg-white text-[#0F172A] px-7 py-4 rounded-[12px] font-normal hover:bg-[#F1F5F9] transition-colors"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}
+                      className="inline-flex items-center justify-center bg-white text-[#0F172A] px-5 py-3 rounded-[10px] font-normal hover:bg-[#F1F5F9] transition-colors text-sm md:text-base w-full sm:w-auto"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
                     >
                       Request More Information
                     </Link>
@@ -85,8 +85,8 @@ export default function CIBattery2SpecsPage() {
             <div className="mt-8 flex justify-center">
               <Link
                 href="/product/commercial-industrial/ci-battery-2"
-                className="inline-flex items-center gap-2 text-[#0F172A] hover:text-[#EF3C38] transition-colors"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 16px)" }}
+                className="inline-flex items-center gap-2 text-[#0F172A] hover:text-[#EF3C38] transition-colors text-sm md:text-base"
+                style={{ fontFamily: "'Poppins', sans-serif" }}
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back to Product
