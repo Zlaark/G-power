@@ -18,7 +18,7 @@ export default function UtilityBattery1SpecsPage() {
     <main className="min-h-screen bg-[#F3F4F6]">
       <Navbar />
 
-      <section className="px-6 md:px-[60px] lg:px-[100px] py-[70px] lg:py-[100px]">
+      <section className="px-6 md:px-[60px] lg:px-[100px] py-[70px] lg:py-[100px] animate-slide-left">
         <div className="mx-auto max-w-[980px]">
           <FadeIn delay={80} direction="up">
             <h1
@@ -42,12 +42,17 @@ export default function UtilityBattery1SpecsPage() {
 
               <div className="rounded-[14px] overflow-hidden shadow-[0_10px_22px_rgba(2,8,23,0.1)]">
                 <div className="bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] px-5 md:px-8 py-8 text-center">
-                <h3
-                  className="text-white font-normal mb-3"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 2.3vw, 36px)" }}
-                >
-                  Download Complete Datasheet
-                </h3>
+                  <h3
+                    className="text-white font-normal mb-3"
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 2.3vw, 36px)" }}
+                  >
+                    Download Complete Datasheet
+                  </h3>
+                  <Link href="/docs/utility-battery-1-datasheet.pdf" passHref>
+                    <button className="btn-sweep btn-glow btn-float-hover mt-4 text-white font-semibold text-lg px-6 py-3 rounded-[8px] shadow-md transition-all duration-300">
+                      <Download className="inline-block mr-2" /> View & Download
+                    </button>
+                  </Link>
                 <p
                   className="text-white/90 mb-7"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}

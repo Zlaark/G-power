@@ -18,7 +18,7 @@ export default function ResidentialBattery1SpecsPage() {
     <main className="min-h-screen bg-[#F3F4F6]">
       <Navbar />
 
-      <section className="px-6 md:px-[60px] lg:px-[100px] py-[70px] lg:py-[100px]">
+      <section className="px-6 md:px-[60px] lg:px-[100px] py-[70px] lg:py-[100px] animate-slide-left-d2">
         <div className="mx-auto max-w-[980px]">
           <FadeIn delay={80} direction="up">
             <h1
@@ -48,6 +48,11 @@ export default function ResidentialBattery1SpecsPage() {
                   >
                     Download Complete Datasheet
                   </h3>
+                  <Link href="/docs/res-battery-1-datasheet.pdf" passHref>
+                    <button className="btn-sweep btn-glow btn-float-hover mt-4 text-white font-semibold text-lg px-6 py-3 rounded-[8px] shadow-md transition-all duration-300">
+                      <Download className="inline-block mr-2" /> View & Download
+                    </button>
+                  </Link>
                   <p
                     className="text-white/90 mb-7"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}

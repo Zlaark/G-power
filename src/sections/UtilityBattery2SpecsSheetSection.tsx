@@ -18,7 +18,7 @@ const terms = [
 
 export function UtilityBattery2SpecsSheetSection() {
   return (
-    <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] p-5 md:p-8">
+    <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] p-5 md:p-8 card-shimmer card-soft-hover">
       <div className="flex items-center gap-3 mb-5">
         <span className="w-[2px] h-7 bg-[#EF3C38]" />
         <h3
@@ -69,10 +69,10 @@ export function UtilityBattery2SpecsSheetSection() {
           {terms.map((term) => (
             <p
               key={term}
-              className="text-[#475569]"
+              className="text-[#475569] transition-transform duration-300 hover:translate-x-2 hover:text-[#EF3C38]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
             >
-              • {term}
+              2 {term}
             </p>
           ))}
         </div>
