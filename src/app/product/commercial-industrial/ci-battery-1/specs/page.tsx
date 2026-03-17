@@ -18,7 +18,7 @@ export default function CIBattery1SpecsPage() {
     <main className="min-h-screen bg-[#F3F4F6]">
       <Navbar />
 
-      <section className="px-6 md:px-[60px] lg:px-[100px] py-[70px] lg:py-[100px] animate-badge-pop">
+      <section className="px-6 md:px-[60px] lg:px-[100px] py-[70px] lg:py-[100px] animate-badge-pop slow-anim">
         <div className="mx-auto max-w-[980px]">
           <FadeIn delay={80} direction="up">
             <h1

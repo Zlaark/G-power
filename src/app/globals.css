@@ -261,6 +261,11 @@ body {
 .animate-slide-left-d2 { animation: slide-in-left 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) 0.24s forwards; opacity: 0; }
 .animate-slide-left-d3 { animation: slide-in-left 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) 0.36s forwards; opacity: 0; }
 
+/* Slow animation utility */
+.slow-anim {
+  animation-duration: 1.8s !important;
+}
+
 /* Scale-bounce pop – for numbered badges & capacity tags */
 @keyframes badge-pop {
   0%   { opacity: 0; transform: scale(0.4); }
