@@ -259,7 +259,7 @@ export default function CIBattery2Page() {
                 </p>
 
                 <Link
-                  href="/contact"
+                  href="/product/commercial-industrial/ci-battery-2/specs"
                   className="btn-sweep-red btn-float-hover inline-flex items-center gap-2 bg-[#EF3C38] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#ff4a46] transition-colors shadow-[0_8px_18px_rgba(239,60,56,0.22)]"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}
                 >
