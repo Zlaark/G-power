@@ -14,6 +14,7 @@ const solutionLinks = [
   { title: "Residential", href: "/solutions/residential" },
   { title: "Commercial & Industrial", href: "/solutions/commercial-industrial" },
   { title: "2 & 3 Wheeler Application", href: "/solutions/2-3-wheeler" },
+  { title: "New Application Business", href: "/solutions/new-application-business" },
 ];
 
 export default function SolutionsPage() {
