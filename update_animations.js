@@ -5,19 +5,38 @@ const files = [
 ];
 
 const replacers = {
-  'card-shimmer h-full min-h-[250px] lg:min-h-[290px] rounded-[16px] border border-[#121010]/10 bg-white p-[22px] flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-xl': 'group card-shimmer h-full min-h-[250px] lg:min-h-[290px] rounded-[16px] border border-[#121010]/10 bg-white p-[22px] flex flex-col transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:scale-105 hover:border-[#EF3C38]/20',
-  'w-8 h-8 text-[#EF3C38] mb-[18px]': 'w-8 h-8 text-[#EF3C38] mb-[18px] transition-transform duration-500 group-hover:scale-125 group-hover:rotate-6',
-  'card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-0 lg:min-h-[610px] flex flex-col': 'group card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-0 lg:min-h-[610px] flex flex-col transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:-translate-x-1 hover:border-[#EF3C38]/10',
-  'alt={product.title} fill className="object-cover" />': 'alt={product.title} fill className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.12]" />',
-  'card-shimmer card-border-glow rounded-[16px] overflow-hidden border border-[#121010]/10 bg-white h-full flex flex-col': 'group card-shimmer card-border-glow rounded-[16px] overflow-hidden border border-[#121010]/10 bg-white h-full flex flex-col transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02] hover:border-[#EF3C38]/10',
-  'alt={item.title} fill className="object-cover" />': 'alt={item.title} fill className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.12]" />',
-  'bg-[#EF3C38] text-white font-medium hover:bg-[#d63532] transition-colors': 'bg-[#EF3C38] text-white font-medium transition-all duration-300 hover:bg-[#d63532] hover:scale-105 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(239,60,56,0.4)]',
-  'text-white font-medium hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg': 'text-white font-medium transition-all duration-300 hover:bg-white/10 hover:border-white hover:scale-105 hover:-translate-y-1 hover:shadow-lg',
-  '<FadeIn delay={150} direction="up">': '<FadeIn delay={150} direction="left">',
-  '<FadeIn delay={180} direction="up">': '<FadeIn delay={180} direction="right">',
-  'alt="Electric vehicle charging"\n                  fill\n                  className="object-cover"': 'alt="Electric vehicle charging"\n                  fill\n                  className="object-cover transition-transform duration-700 hover:scale-110"',
-  'alt="Modern business technology lab"\n                  fill\n                  className="object-cover"': 'alt="Modern business technology lab"\n                  fill\n                  className="object-cover transition-transform duration-700 hover:scale-110"',
-  'hover:text-[#d63532] hover:gap-4 transition-all duration-200': 'hover:text-[#d63532] transition-all duration-300 group-hover:gap-4',
+  // Slow down all FadeIn durations by adding duration prop (default is 450ms, bump to 900ms)
+  'direction="up">': 'direction="up" duration={900}>',
+  'direction="left">': 'direction="left" duration={900}>',
+  'direction="right">': 'direction="right" duration={900}>',
+
+  // Slow down hover transitions on cards
+  'transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:scale-105': 'transition-all duration-700 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:scale-105',
+  'transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl': 'transition-all duration-700 ease-in-out hover:-translate-y-2 hover:shadow-2xl',
+  'transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02]': 'transition-all duration-700 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02]',
+
+  // Slow down icon animations
+  'transition-transform duration-500 group-hover:scale-125': 'transition-transform duration-700 ease-in-out group-hover:scale-125',
+
+  // Slow down image zoom on hover
+  'transition-transform duration-700 ease-out group-hover:scale-[1.12]': 'transition-transform duration-1000 ease-in-out group-hover:scale-[1.08]',
+  'transition-transform duration-700 hover:scale-110': 'transition-transform duration-1000 ease-in-out hover:scale-110',
+
+  // Slow down button hover
+  'transition-all duration-300 hover:bg-[#d63532] hover:scale-105 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(239,60,56,0.4)]': 'transition-all duration-500 ease-in-out hover:bg-[#d63532] hover:scale-105 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(239,60,56,0.4)]',
+  'transition-all duration-300 hover:bg-white/10': 'transition-all duration-500 ease-in-out hover:bg-white/10',
+
+  // Slow down View Details link
+  'transition-all duration-300 group-hover:gap-4': 'transition-all duration-500 ease-in-out group-hover:gap-4',
+
+  // Increase FadeIn delays to space out staggered animations more
+  'delay={120}': 'delay={200}',
+  'delay={220}': 'delay={400}',
+  'delay={340}': 'delay={600}',
+  'delay={100}': 'delay={180}',
+  'delay={150}': 'delay={300}',
+  'delay={180}': 'delay={400}',
+  'delay={130}': 'delay={250}',
 };
 
 files.forEach(file => {
