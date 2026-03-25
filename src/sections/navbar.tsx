@@ -65,6 +65,9 @@ export const Navbar = () => {
                                 <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Commercial & Industrial
                                 </Link>
+                                <Link href="/solutions/2-3-wheeler" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    2 & 3 Wheeler Application
+                                </Link>
                             </div>
                         </div>
                         <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -120,6 +123,9 @@ export const Navbar = () => {
                         </Link>
                         <Link href="/solutions/commercial-industrial" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - Commercial & Industrial
+                        </Link>
+                        <Link href="/solutions/2-3-wheeler" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            - 2 & 3 Wheeler Application
                         </Link>
                         <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers

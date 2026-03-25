@@ -13,6 +13,7 @@ const solutionLinks = [
   { title: "Utility", href: "/solutions/utility" },
   { title: "Residential", href: "/solutions/residential" },
   { title: "Commercial & Industrial", href: "/solutions/commercial-industrial" },
+  { title: "2 & 3 Wheeler Application", href: "/solutions/2-3-wheeler" },
 ];
 
 export default function SolutionsPage() {
