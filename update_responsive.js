@@ -5,97 +5,39 @@ const files = [
 ];
 
 const replacers = {
-  // Hero section - better mobile height and padding
-  'relative h-[52vh] min-h-[360px] sm:min-h-[430px] md:h-[70vh] md:min-h-[560px] flex items-center justify-center bg-[#121010] overflow-hidden pt-20':
-    'relative h-auto min-h-[380px] sm:min-h-[430px] md:h-[65vh] md:min-h-[520px] flex items-center justify-center bg-[#121010] overflow-hidden pt-[140px] pb-[50px] sm:pt-[150px] sm:pb-[60px] md:pt-20 md:pb-0',
+  // Product merit cards - remove scale/translate hover on mobile
+  'transition-all duration-700 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:scale-105 hover:border-[#EF3C38]/20':
+    'transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-3 md:hover:scale-105 hover:border-[#EF3C38]/20',
 
-  // Hero container - tighter mobile padding
-  'container relative z-10 px-4 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl':
-    'container relative z-10 px-5 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl',
+  // Recommended product cards - remove translate hover on mobile
+  'transition-all duration-700 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:-translate-x-1 hover:border-[#EF3C38]/10':
+    'transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-2 md:hover:-translate-x-1 hover:border-[#EF3C38]/20',
 
-  // Section padding - reduce for mobile
-  'py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#F3F4F6]':
-    'py-[40px] sm:py-[56px] lg:py-[92px] px-5 sm:px-6 md:px-[60px] lg:px-[120px] bg-[#F3F4F6]',
+  // Case study cards - remove scale/translate hover on mobile
+  'transition-all duration-700 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02] hover:border-[#EF3C38]/10':
+    'transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-3 md:hover:scale-[1.02] hover:border-[#EF3C38]/20',
 
-  'py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#F9FAFB]':
-    'py-[40px] sm:py-[56px] lg:py-[92px] px-5 sm:px-6 md:px-[60px] lg:px-[120px] bg-[#F9FAFB]',
+  // Image zoom on hover - disable on mobile
+  'transition-transform duration-1000 ease-in-out group-hover:scale-[1.08]':
+    'transition-transform duration-1000 ease-in-out md:group-hover:scale-[1.08]',
 
-  'py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-white':
-    'py-[40px] sm:py-[56px] lg:py-[92px] px-5 sm:px-6 md:px-[60px] lg:px-[120px] bg-white',
+  'transition-transform duration-1000 ease-in-out hover:scale-110':
+    'transition-transform duration-1000 ease-in-out md:hover:scale-110',
 
-  'py-[72px] lg:py-[110px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#121010]':
-    'py-[48px] sm:py-[64px] lg:py-[110px] px-5 sm:px-6 md:px-[60px] lg:px-[120px] bg-[#121010]',
+  // Icon hover scale - disable on mobile
+  'transition-transform duration-700 ease-in-out group-hover:scale-125 group-hover:rotate-6':
+    'transition-transform duration-700 ease-in-out md:group-hover:scale-125 md:group-hover:rotate-6',
 
-  // Section inner heading margins - tighter on mobile
-  'text-center max-w-4xl mx-auto mb-[56px] lg:mb-[72px]':
-    'text-center max-w-4xl mx-auto mb-[32px] sm:mb-[48px] lg:mb-[72px]',
+  // CTA buttons - disable scale on mobile
+  'transition-all duration-500 ease-in-out hover:bg-[#d63532] hover:scale-105 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(239,60,56,0.4)]':
+    'transition-all duration-500 ease-in-out hover:bg-[#d63532] md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(239,60,56,0.4)]',
 
-  'text-center max-w-4xl mx-auto mb-[40px] lg:mb-[52px]':
-    'text-center max-w-4xl mx-auto mb-[24px] sm:mb-[36px] lg:mb-[52px]',
+  'transition-all duration-500 ease-in-out hover:bg-white/10 hover:border-white hover:scale-105 hover:-translate-y-1 hover:shadow-lg':
+    'transition-all duration-500 ease-in-out hover:bg-white/10 hover:border-white md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-lg',
 
-  'text-center max-w-4xl mx-auto mb-[16px] lg:mb-[22px]':
-    'text-center max-w-4xl mx-auto mb-[14px] sm:mb-[16px] lg:mb-[22px]',
-
-  'text-center max-w-4xl mx-auto mb-[18px] lg:mb-[22px]':
-    'text-center max-w-4xl mx-auto mb-[14px] sm:mb-[18px] lg:mb-[22px]',
-
-  // Product grid card min height - remove on mobile
-  'h-full min-h-[250px] lg:min-h-[290px]':
-    'h-full min-h-0 sm:min-h-[250px] lg:min-h-[290px]',
-
-  // Recommended product card min height - remove on mobile
-  'h-full min-h-0 lg:min-h-[610px]':
-    'h-full min-h-0 lg:min-h-[580px]',
-
-  // Image heights - smaller on mobile
-  'relative h-[240px] sm:h-[290px] lg:h-[340px] w-full':
-    'relative h-[200px] sm:h-[260px] lg:h-[340px] w-full overflow-hidden',
-
-  'relative h-[220px] w-full':
-    'relative h-[180px] sm:h-[220px] w-full overflow-hidden',
-
-  // Main image in benefits section
-  'relative w-full h-[300px] md:h-[420px] lg:h-[560px] rounded-[18px] overflow-hidden':
-    'relative w-full h-[240px] sm:h-[300px] md:h-[420px] lg:h-[560px] rounded-[14px] sm:rounded-[18px] overflow-hidden',
-
-  // Grid gap between image and text in benefits section
-  'grid grid-cols-1 lg:grid-cols-2 items-center gap-[40px] lg:gap-[88px]':
-    'grid grid-cols-1 lg:grid-cols-2 items-center gap-[28px] sm:gap-[40px] lg:gap-[88px]',
-
-  // Benefits list spacing
-  'space-y-[22px]':
-    'space-y-[16px] sm:space-y-[22px]',
-
-  // Subtitle paragraph margin
-  'font-normal text-center mb-[36px] lg:mb-[48px]':
-    'font-normal text-center mb-[24px] sm:mb-[36px] lg:mb-[48px]',
-
-  // CTA buttons - full width stacking on mobile
-  'flex flex-wrap items-center justify-center gap-[12px]':
-    'flex flex-col sm:flex-row flex-wrap items-center justify-center gap-[12px] sm:gap-[14px]',
-
-  // Cards padding - tighter on mobile
-  'p-[22px] lg:p-[24px] flex flex-col flex-1':
-    'p-[16px] sm:p-[22px] lg:p-[24px] flex flex-col flex-1',
-
-  'p-[20px] lg:p-[22px] flex-1 flex flex-col gap-[8px]':
-    'p-[16px] sm:p-[20px] lg:p-[22px] flex-1 flex flex-col gap-[6px] sm:gap-[8px]',
-
-  // Product card padding
-  'p-[22px] flex flex-col':
-    'p-[16px] sm:p-[22px] flex flex-col',
-
-  // Spec grid gap
-  'grid grid-cols-2 gap-x-[16px] gap-y-[16px] mb-[26px]':
-    'grid grid-cols-2 gap-x-[12px] sm:gap-x-[16px] gap-y-[12px] sm:gap-y-[16px] mb-[20px] sm:mb-[26px]',
-
-  // Card description margin
-  'font-normal leading-[1.65] mb-[22px]':
-    'font-normal leading-[1.65] mb-[16px] sm:mb-[22px]',
-
-  // Card title margin  
-  'font-normal mb-[16px]':
-    'font-normal mb-[10px] sm:mb-[16px]',
+  // View details link
+  'transition-all duration-500 ease-in-out group-hover:gap-4':
+    'transition-all duration-500 ease-in-out md:group-hover:gap-4',
 };
 
 files.forEach(file => {
