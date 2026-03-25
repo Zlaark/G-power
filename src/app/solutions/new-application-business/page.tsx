@@ -60,7 +60,7 @@ const recommendedProducts = [
     tagline: "50 kWh",
     description: "Compact and powerful standardized unit perfect for growing commercial spaces",
     image:
-      "https://images.unsplash.com/photo-1518985172082-fdb9d5ce7a07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     href: "/solutions/new-application-business/core-station",
     specs: [
       { label: "Capacity", value: "50 kWh" },
@@ -74,7 +74,7 @@ const recommendedProducts = [
     tagline: "250 kWh",
     description: "High-density modular storage designed for large-scale operations and data centers",
     image:
-      "https://images.unsplash.com/photo-1549317661-bc6154b5df56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     href: "/solutions/new-application-business/enterprise-hub",
     specs: [
       { label: "Capacity", value: "250 kWh" },
@@ -89,21 +89,21 @@ const caseStudies = [
   {
     title: "Corporate Tech Park in Pune",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+      "https://images.unsplash.com/photo-1765272087971-2cfac8bc6c97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     capacity: "500 kWh Total",
     result: "Eliminated peak-hour grid dependency",
   },
   {
     title: "Data Center in Chennai",
     image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+      "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     capacity: "2 MWh Redundant",
     result: "99.999% uptime during frequent grid outages",
   },
   {
     title: "Logistics Hub in Noida",
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8ed7c1590a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+      "https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     capacity: "150 kWh Custom",
     result: "Self-sufficient operation synced with rooftop solar",
   },
@@ -117,7 +117,7 @@ export default function NewApplicationBusinessPage() {
       <section className="relative h-[52vh] min-h-[360px] sm:min-h-[430px] md:h-[70vh] md:min-h-[560px] flex items-center justify-center bg-[#121010] overflow-hidden pt-20">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            src="https://images.unsplash.com/photo-1558981420-c532902e58b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
             alt="Modern Business Infrastructure Background"
             fill
             priority
@@ -177,7 +177,7 @@ export default function NewApplicationBusinessPage() {
             <FadeIn delay={150} direction="up">
               <div className="relative w-full h-[300px] md:h-[420px] lg:h-[560px] rounded-[18px] overflow-hidden border border-[#121010]/10">
                 <Image
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                  src="https://images.unsplash.com/photo-1758957851828-5179f0e06985?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
                   alt="Modern business technology lab"
                   fill
                   className="object-cover"
