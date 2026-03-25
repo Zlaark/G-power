@@ -129,16 +129,16 @@ export default function NewApplicationBusinessPage() {
         <div className="container relative z-10 px-4 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
           <FadeIn delay={120} direction="up">
             <p
-              className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
+              className="text-white/85 font-normal tracking-[0.16em] uppercase mb-5"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
             >
               Business Energy Solutions
             </p>
           </FadeIn>
           <FadeIn delay={220} direction="up">
             <h1
-              className="text-white font-semibold leading-tight mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 64px)" }}
+              className="text-white font-medium leading-tight mb-5"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 5vw, 48px)" }}
             >
               Power Your Enterprise, Effortlessly
             </h1>
@@ -146,7 +146,7 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={340} direction="up">
             <p
               className="text-white/80 max-w-3xl mx-auto font-medium"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.8vw, 22px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.5vw, 18px)" }}
             >
               Intelligent energy architectures tailored for new-age businesses and cutting-edge industrial applications.
             </p>
@@ -159,14 +159,14 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={100} direction="up">
             <div className="text-center max-w-4xl mx-auto mb-[56px] lg:mb-[72px]">
               <h2
-                className="font-semibold text-[#121010] mb-4"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                className="font-medium text-[#121010] mb-4"
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(22px, 3vw, 36px)" }}
               >
                 Built for the Future
               </h2>
               <p
-                className="text-[#121010]/75 font-medium leading-[1.75]"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
+                className="text-[#121010]/75 font-normal leading-[1.75]"
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}
               >
                 Our commercial storage systems provide enterprises with energy certainty, transforming grid volatility into a non-issue while optimizing daily operational costs.
               </p>
@@ -189,13 +189,13 @@ export default function NewApplicationBusinessPage() {
               <div className="w-full">
                 <h3
                   className="font-normal text-[#111827] mb-5"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2.1vw, 34px)" }}
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.8vw, 28px)" }}
                 >
                   Why Partner With Us?
                 </h3>
                 <p
-                  className="text-[#475569] font-medium leading-[1.75] mb-[24px]"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.45vw, 18px)" }}
+                  className="text-[#475569] font-normal leading-[1.75] mb-[24px]"
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.35vw, 16px)" }}
                 >
                   We understand that your business applications cannot afford power interruptions. Our battery storage platforms are explicitly designed to be silent, smart, and profoundly reliable.
                 </p>
@@ -208,13 +208,13 @@ export default function NewApplicationBusinessPage() {
                         <div>
                           <h4
                             className="text-[#111827] font-normal leading-[1.35]"
-                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(16px, 1.5vw, 24px)" }}
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.3vw, 20px)" }}
                           >
                             {item.title}
                           </h4>
                           <p
-                            className="text-[#475569] font-medium leading-[1.65]"
-                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 18px)" }}
+                            className="text-[#475569] font-normal leading-[1.65]"
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}
                           >
                             {item.description}
                           </p>
@@ -234,8 +234,8 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={100} direction="up">
             <div className="text-center max-w-4xl mx-auto mb-[40px] lg:mb-[52px]">
               <h2
-                className="font-semibold text-[#121010]"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                className="font-medium text-[#121010]"
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(22px, 3vw, 36px)" }}
               >
                 Key Product Merits
               </h2>
@@ -250,13 +250,13 @@ export default function NewApplicationBusinessPage() {
                   <div className="card-shimmer h-full min-h-[250px] lg:min-h-[290px] rounded-[16px] border border-[#121010]/10 bg-white p-[22px] flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                     <Icon className="w-8 h-8 text-[#EF3C38] mb-[18px]" strokeWidth={2.2} />
                     <h3
-                      className="text-[#121010] font-bold mb-[10px]"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
+                      className="text-[#121010] font-normal mb-[10px]"
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(16px, 1.5vw, 20px)" }}
                     >
                       {item.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-medium leading-[1.6]"
+                      className="text-[#475569] font-normal leading-[1.6]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                     >
                       {item.description}
@@ -274,8 +274,8 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={100} direction="up">
             <div className="text-center max-w-4xl mx-auto mb-[18px] lg:mb-[22px]">
               <h2
-                className="font-semibold text-[#121010]"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                className="font-medium text-[#121010]"
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(22px, 3vw, 36px)" }}
               >
                 Recommended Products
               </h2>
@@ -283,8 +283,8 @@ export default function NewApplicationBusinessPage() {
           </FadeIn>
           <FadeIn delay={130} direction="up">
             <p
-              className="text-[#121010]/75 font-medium text-center mb-[36px] lg:mb-[48px]"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
+              className="text-[#121010]/75 font-normal text-center mb-[36px] lg:mb-[48px]"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}
             >
               Enterprise-grade storage systems precisely scaled for your operational needs
             </p>
@@ -296,21 +296,21 @@ export default function NewApplicationBusinessPage() {
                 <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-0 lg:min-h-[610px] flex flex-col">
                   <div className="img-zoom relative h-[240px] sm:h-[290px] lg:h-[340px] w-full">
                     <Image src={product.image} alt={product.title} fill className="object-cover" />
-                    <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#EF3C38] text-white font-semibold"
+                    <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#EF3C38] text-white font-medium"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}>
                       {product.tagline}
                     </div>
                   </div>
                   <div className="p-[22px] lg:p-[24px] flex flex-col flex-1">
                     <h3
-                      className="text-[#121010] font-medium mb-[16px]"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(22px, 2vw, 32px)" }}
+                      className="text-[#121010] font-normal mb-[16px]"
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.6vw, 26px)" }}
                     >
                       {product.title}
                     </h3>
                     <p
                       className="text-[#475569] font-normal leading-[1.65] mb-[22px]"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 16px)" }}
                     >
                       {product.description}
                     </p>
@@ -324,8 +324,8 @@ export default function NewApplicationBusinessPage() {
                             {spec.label}
                           </p>
                           <p
-                            className="text-[#121010] font-medium leading-[1.2] mt-1"
-                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
+                            className="text-[#121010] font-normal leading-[1.2] mt-1"
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.1vw, 16px)" }}
                           >
                             {spec.value}
                           </p>
@@ -335,7 +335,7 @@ export default function NewApplicationBusinessPage() {
                     <Link
                       href={product.href}
                       className="mt-auto inline-flex items-center gap-2 w-fit text-[#EF3C38] font-medium hover:text-[#d63532] hover:gap-4 transition-all duration-200"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.15vw, 18px)" }}
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.15vw, 16px)" }}
                     >
                       View Details <span aria-hidden="true">→</span>
                     </Link>
@@ -352,8 +352,8 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={100} direction="up">
             <div className="text-center max-w-4xl mx-auto mb-[16px] lg:mb-[22px]">
               <h2
-                className="font-semibold text-[#121010]"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 46px)" }}
+                className="font-medium text-[#121010]"
+                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(22px, 3vw, 36px)" }}
               >
                 Project Case Studies
               </h2>
@@ -361,8 +361,8 @@ export default function NewApplicationBusinessPage() {
           </FadeIn>
           <FadeIn delay={130} direction="up">
             <p
-              className="text-[#121010]/75 font-medium text-center mb-[36px] lg:mb-[48px]"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
+              className="text-[#121010]/75 font-normal text-center mb-[36px] lg:mb-[48px]"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}
             >
               Real-world implementations empowering modern commercial infrastructure
             </p>
@@ -377,19 +377,19 @@ export default function NewApplicationBusinessPage() {
                   </div>
                   <div className="p-[20px] lg:p-[22px] flex-1 flex flex-col gap-[8px]">
                     <h3
-                      className="text-[#121010] font-semibold mb-[4px]"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2.4vw, 24px)" }}
+                      className="text-[#121010] font-normal mb-[4px]"
+                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
                     >
                       {item.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-medium leading-[1.65]"
+                      className="text-[#475569] font-normal leading-[1.65]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                     >
                       Capacity: {item.capacity}
                     </p>
                     <p
-                      className="text-[#475569] font-medium leading-[1.65]"
+                      className="text-[#475569] font-normal leading-[1.65]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                     >
                       Result: {item.result}
@@ -407,15 +407,15 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={120} direction="up">
             <h2
               className="text-white font-medium mb-[16px]"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3.2vw, 42px)" }}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2.8vw, 32px)" }}
             >
               Ready to Upgrade Your Infrastructure?
             </h2>
           </FadeIn>
           <FadeIn delay={220} direction="up">
             <p
-              className="text-white/80 font-medium mx-auto mb-[30px] max-w-3xl"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
+              className="text-white/80 font-normal mx-auto mb-[30px] max-w-3xl"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.5vw, 18px)" }}
             >
               Get in touch with our commercial application experts to architect the perfect resilient power solution for your business.
             </p>
@@ -423,15 +423,15 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={300} direction="up" className="flex flex-wrap items-center justify-center gap-[12px]">
             <Link
               href="/contact"
-              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
+              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-medium hover:bg-[#d63532] transition-colors"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
               Contact Us
             </Link>
             <a
               href="tel:+911234567890"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-semibold hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
+              className="inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-medium hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
               Call: +91 123 456 7890
             </a>
