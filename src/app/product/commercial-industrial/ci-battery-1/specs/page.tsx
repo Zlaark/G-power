@@ -4,6 +4,7 @@ import { ArrowLeft, Download } from "lucide-react";
 import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { FadeIn } from "@/components/FadeIn";
+import { DownloadPdfButton } from "@/components/DownloadPdfButton";
 import { CIBattery1SpecsCoverSection } from "@/sections/CIBattery1SpecsCoverSection";
 import { CIBattery1SpecsSheetSection } from "@/sections/CIBattery1SpecsSheetSection";
 
@@ -37,8 +38,10 @@ export default function CIBattery1SpecsPage() {
 
           <FadeIn delay={140} direction="up">
             <div className="mt-12 flex flex-col gap-7">
-              <CIBattery1SpecsCoverSection />
-              <CIBattery1SpecsSheetSection />
+              <div id="datasheet-content" className="flex flex-col gap-7">
+                <CIBattery1SpecsCoverSection />
+                <CIBattery1SpecsSheetSection />
+              </div>
 
               <div className="rounded-[14px] overflow-hidden shadow-[0_10px_22px_rgba(2,8,23,0.1)]">
                 <div className="bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] px-5 md:px-8 py-8 text-center">
@@ -48,29 +51,24 @@ export default function CIBattery1SpecsPage() {
                   >
                     Download Complete Datasheet
                   </h3>
-                  <Link href="/docs/ci-battery-1-datasheet.pdf" passHref>
-                    <button className="btn-sweep btn-glow btn-float-hover mt-4 text-white font-semibold text-lg px-6 py-3 rounded-[8px] shadow-md transition-all duration-300">
-                      <Download className="inline-block mr-2" /> View & Download
-                    </button>
-                  </Link>
+                                    <DownloadPdfButton 
+                    targetId="datasheet-content" 
+                    filename="ci-battery-1-Datasheet.pdf" 
+                  />
                   <p
-                    className="text-white/90 mb-7"
-                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
-                  >
-                    Get the complete 2-page technical datasheet for BYD Battery-Box Commercial in PDF format with all specifications, features, and contact information.
-                  </p>
+                  className="text-white/90 mb-7 mt-6"
+                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
+                >
+                  Get the complete 2-page technical datasheet for BYD Battery-Box Commercial in PDF format exactly as shown above, containing all specifications, features, and contact information.
+                </p>
                   <div className="flex flex-col sm:flex-row justify-center gap-3">
-                    <a
-                      href="#"
-                      className="inline-flex items-center justify-center gap-2 bg-[#EF3C38] text-white px-5 py-3 rounded-[10px] font-normal hover:bg-[#ff4a46] transition-colors text-sm md:text-base w-full sm:w-auto"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
-                    >
-                      <Download className="w-5 h-5" />
-                      Download PDF Datasheet
-                    </a>
+                  <DownloadPdfButton 
+                    targetId="datasheet-content" 
+                    filename="ci-battery-1-Datasheet.pdf" 
+                  />
                     <Link
                       href="/contact"
-                      className="inline-flex items-center justify-center bg-white text-[#0F172A] px-5 py-3 rounded-[10px] font-normal hover:bg-[#F1F5F9] transition-colors text-sm md:text-base w-full sm:w-auto"
+                      className="inline-flex items-center justify-center bg-white text-[#0F172A] px-5 py-3 rounded-[10px] font-medium hover:bg-[#F1F5F9] transition-colors text-sm md:text-base w-full sm:w-auto"
                       style={{ fontFamily: "'Poppins', sans-serif" }}
                     >
                       Request More Information
