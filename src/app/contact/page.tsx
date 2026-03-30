@@ -1,6 +1,7 @@
 import { Navbar } from "@/sections/navbar";
 import { ContactHero } from "@/sections/ContactHero";
 import { ContactForm } from "@/sections/ContactForm";
+import { ServiceCenters } from "@/sections/ServiceCenters";
 import { GlobalPresenceMap } from "@/sections/GlobalPresenceMap";
 import { Footer } from "@/sections/Footer";
 import { Poppins } from "next/font/google";
@@ -22,6 +23,7 @@ export default function ContactPage() {
             <Navbar />
             <ContactHero />
             <ContactForm />
+            <ServiceCenters />
             <GlobalPresenceMap />
             <Footer />
         </main>
