@@ -30,17 +30,33 @@ export const DownloadPdfButton = ({ targetId, filename }: Props) => {
 
       for (let i = 0; i < pages.length; i++) {
         const pageElement = pages[i];
+        const originalStyle = pageElement.getAttribute('style') || '';
+        const originalCssText = pageElement.style.cssText;
+
+        // Force desktop sizing for the snapshot to guarantee high-quality layout and typography
+        pageElement.style.width = '1200px';
+        pageElement.style.maxWidth = '1200px';
+        pageElement.style.minWidth = '1200px';
+        pageElement.style.boxSizing = 'border-box';
         
+        // Also temporarily ensure any animations inside are disabled during capture
+        pageElement.classList.add('no-animations');
+
         // Hide specific elements that shouldn't appear in the PDF if needed
-        // (For example, we might not want certain hover animations or shadows to trigger during capture)
         const canvas = await html2canvas(pageElement, {
-          scale: window.devicePixelRatio > 1 ? window.devicePixelRatio : 2,
+          scale: 2, // consistently use 2 for sharpness
           useCORS: true,
+          windowWidth: 1200,
           allowTaint: true,
-          backgroundColor: '#FFFFFF',
+          backgroundColor: '#F3F4F6', // The standard background color for the pamhplet
           logging: false
         });
         
+        // Restore styles instantly
+        pageElement.setAttribute('style', originalStyle);
+        pageElement.style.cssText = originalCssText;
+        pageElement.classList.remove('no-animations');
+
         const imgHeight = (canvas.height * imgWidth) / canvas.width;
         const imgData = canvas.toDataURL('image/jpeg', 0.95);
         

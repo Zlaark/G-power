@@ -17,7 +17,8 @@ const terms = [
 
 export function ResidentialBattery2SpecsSheetSection() {
   return (
-    <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] p-5 md:p-8 card-shimmer card-soft-hover">
+    <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] overflow-hidden flex flex-col justify-between card-shimmer card-soft-hover">
+      <div className="p-5 md:p-8 flex-1">
       <div className="flex items-center gap-3 mb-5">
         <span className="w-[2px] h-7 bg-[#EF3C38]" />
         <h3

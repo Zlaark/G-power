@@ -26,7 +26,8 @@ const terms = [
 
 export function EVCargo48VSpecsSheetSection() {
   return (
-    <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] p-5 md:p-8 card-shimmer card-soft-hover">
+    <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] overflow-hidden flex flex-col justify-between card-shimmer card-soft-hover">
+      <div className="p-5 md:p-8 flex-1">
       <div className="flex items-center gap-3 mb-5">
         <span className="w-[2px] h-7 bg-[#EF3C38]" />
         <h3 className="text-[#0F172A] font-semibold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 30px)" }}>Detailed Technical Parameters</h3>
@@ -70,7 +71,15 @@ export function EVCargo48VSpecsSheetSection() {
         <div className="flex items-start gap-3"><span className="w-8 h-8 rounded-[8px] bg-[#FBEBEC] flex items-center justify-center shrink-0"><Phone className="w-4 h-4 text-[#EF3C38]" /></span><div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Phone</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>+91 123 456 7890</p></div></div>
         <div className="flex items-start gap-3"><span className="w-8 h-8 rounded-[8px] bg-[#FBEBEC] flex items-center justify-center shrink-0"><MapPin className="w-4 h-4 text-[#EF3C38]" /></span><div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Location</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>India</p></div></div>
       </div>
-      <p className="text-center text-[#64748B]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>Page 2 of 2</p>
+      </div>
+      <div className="bg-[#ECEFF3] border-t border-[#DDE3EC] py-4 mt-auto w-full">
+        <p
+          className="text-center text-[#64748B]"
+          style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
+        >
+          Page 2 of 2
+        </p>
+      </div>
     </section>
   );
 }

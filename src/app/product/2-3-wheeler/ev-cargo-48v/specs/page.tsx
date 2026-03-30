@@ -19,7 +19,7 @@ export default function EVCargo48VSpecsPage() {
       <Navbar />
 
       <section className="px-3 sm:px-6 md:px-[30px] lg:px-[60px] py-[40px] md:py-[70px] lg:py-[100px]">
-        <div className="mx-auto max-w-[980px] w-full">
+        <div className="mx-auto max-w-[1536px] w-full">
           <FadeIn delay={80} direction="up">
             <h1 className="text-[#0F172A] text-center font-normal mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 4.2vw, 62px)" }}>Technical Specifications</h1>
             <p className="text-[#475569] text-center" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.2vw, 22px)" }}>EV Cargo Series 48V - Complete Technical Documentation</p>
@@ -27,7 +27,7 @@ export default function EVCargo48VSpecsPage() {
 
           <FadeIn delay={140} direction="up">
             <div className="mt-12 flex flex-col gap-7">
-              <div id="datasheet-content" className="flex flex-col gap-7">
+              <div id="datasheet-content" className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-7 items-start">
                 <EVCargo48VSpecsCoverSection />
                 <EVCargo48VSpecsSheetSection />
               </div>

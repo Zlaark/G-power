@@ -26,7 +26,8 @@ const terms = [
 
 export function EVPro72VSpecsSheetSection() {
   return (
-    <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] p-5 md:p-8 card-shimmer card-soft-hover">
+    <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] overflow-hidden flex flex-col justify-between card-shimmer card-soft-hover">
+      <div className="p-5 md:p-8 flex-1">
       <div className="flex items-center gap-3 mb-5">
         <span className="w-[2px] h-7 bg-[#EF3C38]" />
         <h3
@@ -103,7 +104,15 @@ export function EVPro72VSpecsSheetSection() {
         </div>
       </div>
 
-      <p className="text-center text-[#64748B]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>Page 2 of 2</p>
+      </div>
+      <div className="bg-[#ECEFF3] border-t border-[#DDE3EC] py-4 mt-auto w-full">
+        <p
+          className="text-center text-[#64748B]"
+          style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
+        >
+          Page 2 of 2
+        </p>
+      </div>
     </section>
   );
 }
