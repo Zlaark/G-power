@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import { FadeIn } from '@/components/FadeIn';
+import { ServiceHighlight } from '@/sections/ServiceHighlight';
 
 export const Footer = () => {
     return (
-        <footer className="relative bg-[#121010] overflow-hidden">
-            <div className="mx-auto max-w-[1920px] relative px-[20px] md:px-[40px] lg:px-[88px] py-[60px] lg:py-[80px]">
+        <div className="flex flex-col w-full">
+            {/* The global highlighted service marquee */}
+            <ServiceHighlight />
+
+            <footer className="relative bg-[#121010] overflow-hidden">
+                <div className="mx-auto max-w-[1920px] relative px-[20px] md:px-[40px] lg:px-[88px] py-[60px] lg:py-[80px]">
                 <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-0">
 
                     {/* Left Column - Description Text */}
@@ -147,7 +152,9 @@ export const Footer = () => {
                     </div>
                 </div>
 
-            </div>
-        </footer>
+                </div>
+
+            </footer>
+        </div>
     );
 };
