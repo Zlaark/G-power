@@ -7,6 +7,8 @@ import { AboutBanner } from "@/sections/AboutBanner";
 import { HithiumHiner } from "@/sections/HithiumHiner";
 import { CustomBatteryPacks } from "@/sections/CustomBatteryPacks";
 import { EnergyManagement } from "@/sections/EnergyManagement";
+import { OurJourney } from "@/sections/OurJourney";
+import { WhyGPower } from "@/sections/WhyGPower";
 import { AboutBanner2 } from "@/sections/AboutBanner2";
 import { Footer } from "@/sections/Footer";
 
@@ -22,6 +24,8 @@ export default function AboutPage() {
             <HithiumHiner />
             <CustomBatteryPacks />
             <EnergyManagement />
+            <OurJourney />
+            <WhyGPower />
             <AboutBanner2 />
             <Footer />
         </main>

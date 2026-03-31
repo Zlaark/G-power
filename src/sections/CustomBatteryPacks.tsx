@@ -16,7 +16,7 @@ export const CustomBatteryPacks = () => {
                             lineHeight: '1.2',
                         }}
                     >
-                        Customized Battery Packs
+                        Delivering Energy at Scale
                     </h2>
                 </FadeIn>
 
@@ -32,26 +32,25 @@ export const CustomBatteryPacks = () => {
                                 lineHeight: '1.2',
                             }}
                         >
-                            Engineered to Your Application
+                            Our technology is already powering energy infrastructure across India.
                         </h3>
                     </FadeIn>
 
                     {/* Right Description */}
                     <FadeIn delay={300} direction="left" className="md:w-[65%] max-w-[976px]">
-                        <p
-                            className="font-medium text-black"
+                        <ul
+                            className="font-medium text-black list-disc pl-5 space-y-2"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(11px, 1.1vw, 15px)',
                                 lineHeight: '1.4',
                             }}
                         >
-                            We design and deliver customized battery packs tailored to
-                            specific power, energy, and integration requirements. From cell
-                            selection and thermal management to enclosure design and safety
-                            systems, our solutions are optimized for performance, compliance,
-                            and long-term operational reliability across diverse use cases.
-                        </p>
+                            <li>150+ MWh batteries delivered nationwide</li>
+                            <li>500 MWh fully automated EV &amp; ESS assembly line</li>
+                            <li>5 MWh grid-connected BESS project successfully delivered</li>
+                            <li>100 MWh large-scale BESS project secured</li>
+                        </ul>
                     </FadeIn>
                 </div>
 

@@ -16,12 +16,12 @@ export const FutureStorage = () => {
                             lineHeight: '1.2',
                         }}
                     >
-                        The Future Is Storage-Led
+                        Our Mission
                     </h2>
                 </FadeIn>
 
-                {/* Subtitle */}
-                <FadeIn delay={300} direction="up">
+                {/* Mission Text */}
+                <FadeIn delay={200} direction="up">
                     <p
                         className="w-full text-center font-medium text-black max-w-[1391px]"
                         style={{
@@ -30,8 +30,39 @@ export const FutureStorage = () => {
                             lineHeight: '34px',
                         }}
                     >
-                        As renewable penetration increases, energy storage is becoming
-                        the backbone of India&apos;s power infrastructure.
+                        Accelerate the transition toward smarter and more sustainable energy systems.
+                        <br />
+                        By combining advanced battery technology with intelligent system integration, we enable industries, businesses, and communities to access reliable and efficient energy solutions.
+                    </p>
+                </FadeIn>
+
+                {/* Vision Title */}
+                <FadeIn delay={300} direction="up" className="mt-6 md:mt-8">
+                    <h2
+                        className="w-full text-center font-bold text-black"
+                        style={{
+                            fontFamily: "'Poppins', sans-serif",
+                            fontSize: 'clamp(18px, 2vw, 28px)',
+                            lineHeight: '1.2',
+                        }}
+                    >
+                        Our Vision
+                    </h2>
+                </FadeIn>
+
+                {/* Vision Text */}
+                <FadeIn delay={400} direction="up">
+                    <p
+                        className="w-full text-center font-medium text-black max-w-[1391px]"
+                        style={{
+                            fontFamily: "'Poppins', sans-serif",
+                            fontSize: 'clamp(11px, 1.1vw, 18px)',
+                            lineHeight: '34px',
+                        }}
+                    >
+                        To develop cutting-edge technology that delivers sustainable energy solutions for a better future.
+                        <br />
+                        We envision a world where energy efficiency and environmental responsibility work together to power tomorrow.
                     </p>
                 </FadeIn>
             </div>

@@ -16,7 +16,7 @@ export const HithiumHiner = () => {
                             lineHeight: '1.2',
                         }}
                     >
-                        Hithium Hiner – 125 kW / 261 kWh
+                        Built on Engineering Excellence
                     </h2>
                 </FadeIn>
 
@@ -32,13 +32,13 @@ export const HithiumHiner = () => {
                                 lineHeight: '1.2',
                             }}
                         >
-                            Standardized, Grid-Ready Energy Storage
+                            At G-Power, engineering innovation drives every solution we deliver.
                         </h3>
                     </FadeIn>
 
                     {/* Right Description */}
                     <FadeIn delay={300} direction="left" className="md:w-[65%] max-w-[976px]">
-                        <p
+                        <div
                             className="font-medium text-black"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
@@ -46,13 +46,15 @@ export const HithiumHiner = () => {
                                 lineHeight: '1.4',
                             }}
                         >
-                            Joulecube Energy offers the Hithium Hiner 125 kW / 261 kWh
-                            Battery Energy Storage System, engineered for high performance,
-                            safety, and reliability. Designed for commercial and industrial
-                            applications, the system enables peak load management, backup
-                            power, and renewable integration with a compact, scalable
-                            architecture.
-                        </p>
+                            <p className="mb-2">Our capabilities include:</p>
+                            <ul className="list-disc pl-5 space-y-1">
+                                <li>State-of-the-art lithium battery assembly facility in India</li>
+                                <li>Advanced expertise in Battery Energy Storage Systems (BESS)</li>
+                                <li>In-house developed Energy Management System (EMS)</li>
+                                <li>Integration with multiple battery, PCS, and EMS OEMs</li>
+                                <li>Specialized expertise in system software, troubleshooting, and optimization</li>
+                            </ul>
+                        </div>
                     </FadeIn>
                 </div>
 

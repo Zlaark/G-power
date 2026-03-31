@@ -79,7 +79,7 @@ export const AboutHero = () => {
                         lineHeight: '1.15',
                     }}
                 >
-                    About us
+                    About G-Power
                 </h1>
 
                 <p
@@ -91,7 +91,7 @@ export const AboutHero = () => {
                         lineHeight: '1.5',
                     }}
                 >
-                    Powering India's Clean Energy Transition
+                    Powering the Next Generation of Energy
                 </p>
             </div>
         </section>

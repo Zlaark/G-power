@@ -3,23 +3,33 @@ import Image from 'next/image';
 const solutions = [
     {
         image: '/about-renewable.png',
-        alt: 'Solar panels with power lines and wind turbines',
-        label: 'Renewable energy integration',
+        alt: 'Smart residential energy storage',
+        label: 'PowerPod',
+        description: 'Smart residential energy storage systems designed to provide reliable home power. PowerPod integrates advanced lithium batteries with intelligent inverters to optimize energy usage and ensure uninterrupted power supply.'
     },
     {
         image: '/about-solar-field.png',
-        alt: 'Solar panel installation in a field',
-        label: 'Peak load shaving & demand response',
+        alt: 'Commercial Energy Systems',
+        label: 'Commercial Energy Systems',
+        description: 'Energy storage solutions designed for offices, institutions, and commercial establishments. Our systems help businesses maintain operational continuity while improving energy efficiency.'
     },
     {
         image: '/about-solar-field.png',
-        alt: 'Solar panel array providing backup power',
-        label: 'Reliable backup and power continuity',
+        alt: 'Industrial Energy Systems',
+        label: 'Industrial Energy Systems',
+        description: 'High-capacity battery and inverter solutions designed for demanding industrial environments, ensuring operational reliability and energy stability for large-scale facilities.'
     },
     {
         image: '/about-solar-field.png',
-        alt: 'Solar energy for grid balancing',
-        label: 'Grid balancing & frequency regulation',
+        alt: 'EV Battery Packs',
+        label: 'EV Battery Packs',
+        description: 'Advanced lithium battery solutions designed for a wide range of mobility applications. From electric two-wheelers and three-wheelers to commercial vehicles, trucks, and marine vessels, our battery systems are engineered for high performance, safety, and long lifecycle.'
+    },
+    {
+        image: '/about-solar-field.png',
+        alt: 'Battery Energy Storage Systems (BESS)',
+        label: 'Battery Energy Storage Systems (BESS)',
+        description: 'Grid-scale battery energy storage solutions that support renewable energy integration, improve grid stability, and enable reliable power infrastructure for large-scale applications.'
     },
 ];
 
@@ -91,21 +101,20 @@ export const BessSolutions = () => {
             `}} />
             <div className="w-full max-w-[1600px] mx-auto px-[20px] md:px-[60px] lg:px-[240px]">
 
-                {/* Top Text */}
-                <p
-                    className="text-center font-medium text-black mb-[44px] md:mb-[56px] lg:mb-[52px]"
+                {/* Title */}
+                <h2
+                    className="text-center font-bold text-black mb-[44px] md:mb-[56px] lg:mb-[52px]"
                     style={{
                         fontFamily: "'Poppins', sans-serif",
-                        fontSize: 'clamp(11px, 1.1vw, 18px)',
-                        lineHeight: '1.55',
+                        fontSize: 'clamp(18px, 2vw, 28px)',
+                        lineHeight: '1.2',
                     }}
                 >
-                    At Joulecube Energy, we design and execute utility-scale and C&amp;I
-                    Battery Energy Storage Solutions that enable:
-                </p>
+                    What We Build
+                </h2>
 
-                {/* 2x2 Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[40px] md:gap-x-[50px] lg:gap-x-[60px] gap-y-[48px] md:gap-y-[56px] lg:gap-y-[44px] mb-[44px] md:mb-[56px] lg:mb-[44px]">
+                {/* Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[40px] md:gap-x-[50px] lg:gap-x-[60px] gap-y-[48px] md:gap-y-[56px] lg:gap-y-[44px] mb-[44px] md:mb-[56px] lg:mb-[44px]">
                     {solutions.map((item, index) => (
                         <div key={index} className="flex flex-col items-start elegant-card rounded-[20px] cursor-pointer">
                             {/* Image */}
@@ -134,36 +143,21 @@ export const BessSolutions = () => {
                             >
                                 {item.label}
                             </p>
+                            {/* Description */}
+                            <p
+                                className="font-medium text-black mt-2"
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    fontSize: 'clamp(11px, 1vw, 15px)',
+                                    lineHeight: '1.5',
+                                }}
+                            >
+                                {item.description}
+                            </p>
                         </div>
                     ))}
                 </div>
 
-                {/* Bottom Text */}
-                <p
-                    className="text-center font-medium text-black mb-[48px] md:mb-[56px] lg:mb-[48px]"
-                    style={{
-                        fontFamily: "'Poppins', sans-serif",
-                        fontSize: 'clamp(11px, 1.1vw, 18px)',
-                        lineHeight: '1.55',
-                    }}
-                >
-                    Our EPC-driven approach ensures projects are engineered for
-                    performance, compliance, and long-term operational excellence.
-                </p>
-
-                {/* Explore Impact Button */}
-                <div className="flex justify-center mt-6">
-                    <button
-                        className="btn-sweep flex items-center justify-center w-[273px] h-[57px] border-2 border-black rounded-[5px] text-black font-semibold shadow-sm cursor-pointer"
-                        style={{
-                            fontFamily: "'Poppins', sans-serif",
-                            fontSize: '15px',
-                            lineHeight: '22px',
-                        }}
-                    >
-                        Explore Impact
-                    </button>
-                </div>
             </div>
         </section>
     );

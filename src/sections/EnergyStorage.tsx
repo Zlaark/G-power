@@ -16,7 +16,7 @@ export const EnergyStorage = () => {
                             lineHeight: '1.22',
                         }}
                     >
-                        Delivering Reliable Energy Storage Infrastructure for India
+                        Energy is changing.
                     </h2>
                 </FadeIn>
 
@@ -30,10 +30,9 @@ export const EnergyStorage = () => {
                             lineHeight: '1.55',
                         }}
                     >
-                        Joulecube Energy is a specialized EPC solutions and long-term service
-                        provider for Battery Energy Storage Systems (BESS), supporting
-                        India&apos;s transition to a resilient, flexible, and low-carbon power
-                        ecosystem.
+                        The world is moving toward cleaner, smarter, and more reliable power systems.
+                        <br /><br />
+                        At G-Power, we are building the technology that powers this transition. Our advanced battery and energy storage solutions support homes, businesses, industries, and mobility systems across a rapidly evolving energy landscape.
                     </p>
                 </FadeIn>
 
@@ -64,10 +63,7 @@ export const EnergyStorage = () => {
                             lineHeight: '1.6',
                         }}
                     >
-                        We deliver end-to-end battery energy storage projects—from engineering
-                        and procurement to construction, commissioning, and life cycle
-                        services—helping utilities, commercial, and industrial consumers
-                        achieve grid stability, peak demand management, and energy security.
+                        Through innovation, engineering excellence, and strong partnerships, we deliver energy solutions that are efficient, scalable, and built for the future.
                     </p>
                 </FadeIn>
             </div>
