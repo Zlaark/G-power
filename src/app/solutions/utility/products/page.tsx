@@ -33,19 +33,19 @@ const products = [
   {
     title: "Hithium Hiner",
     capacity: "261 kWh",
-    image: "https://images.unsplash.com/photo-1513828583688-c52646fcdd2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/about-bess-facility.jpg",
     href: "/solutions/utility/products/utility-battery-4",
   },
   {
     title: "G-Power Grid Scale Mega",
     capacity: "10 MWh",
-    image: "https://images.unsplash.com/photo-1548611716-1011ff5b85a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/about-solar-field2.png",
     href: "/solutions/utility/products/utility-battery-5",
   },
   {
     title: "G-Power Utility ESS",
     capacity: "50 MWh",
-    image: "https://images.unsplash.com/photo-1511228224726-0e10411831ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/wind-solar-energy.jpg",
     href: "/solutions/utility/products/utility-battery-6",
   },
 ];
