@@ -42,7 +42,7 @@ export default function CIBattery1SpecsPage() {
         <div className="mx-auto max-w-[1536px] w-full">
           <FadeIn delay={140} direction="up">
             <div className="flex flex-col gap-7">
-              <div id="datasheet-content" className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-7 items-start">
+              <div id="datasheet-content" className="grid grid-cols-1 gap-4 lg:gap-7 max-w-4xl mx-auto w-full">
                 <CIBattery1SpecsCoverSection />
                 <CIBattery1SpecsSheetSection />
               </div>
