@@ -156,6 +156,7 @@ export function UtilityBattery2SpecsSheetSection() {
       >
         Page 2 of 2
       </p>
+      </div>
     </section>
   );
 }
