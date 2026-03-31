@@ -109,7 +109,7 @@ export function UtilityBattery1SpecsSheetSection() {
               className="text-[#475569] transition-transform duration-300 hover:translate-x-2 hover:text-[#EF3C38]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
             >
-              2 {term}
+               2 {term}
             </p>
           ))}
         </div>
@@ -192,6 +192,7 @@ export function UtilityBattery1SpecsSheetSection() {
       >
         Page 2 of 2
       </p>
+      </div>
     </section>
   );
 }

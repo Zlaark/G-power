@@ -24,6 +24,30 @@ const products = [
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     href: "/solutions/utility/products/utility-battery-2",
   },
+  {
+    title: "G-Power BESS Max",
+    capacity: "5.0 MWh",
+    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    href: "/solutions/utility/products/utility-battery-3",
+  },
+  {
+    title: "Hithium Hiner",
+    capacity: "261 kWh",
+    image: "https://images.unsplash.com/photo-1513828583688-c52646fcdd2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    href: "/solutions/utility/products/utility-battery-4",
+  },
+  {
+    title: "G-Power Grid Scale Mega",
+    capacity: "10 MWh",
+    image: "https://images.unsplash.com/photo-1548611716-1011ff5b85a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    href: "/solutions/utility/products/utility-battery-5",
+  },
+  {
+    title: "G-Power Utility ESS",
+    capacity: "50 MWh",
+    image: "https://images.unsplash.com/photo-1511228224726-0e10411831ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    href: "/solutions/utility/products/utility-battery-6",
+  },
 ];
 
 export default function UtilityProductsPage() {
