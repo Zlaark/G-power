@@ -264,7 +264,7 @@ export default function CIBattery2Page() {
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}
                 >
                   <Download className="w-5 h-5" />
-                  View More &amp; Download
+                  View More
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
