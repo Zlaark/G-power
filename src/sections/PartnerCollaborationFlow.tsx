@@ -42,7 +42,7 @@ export function PartnerCollaborationFlow() {
       <div className="mx-auto max-w-[1920px]">
         <div className="max-w-[1500px] mx-auto grid grid-cols-1 xl:grid-cols-[0.95fr_1.05fr] gap-10 xl:gap-14 items-center">
           <FadeIn delay={100} direction="up">
-            <div className="relative mx-auto w-full max-w-[680px] min-h-[540px] lg:min-h-[620px]">
+            <div className="relative mx-auto w-full max-w-[680px] min-h-[320px] sm:min-h-[540px] lg:min-h-[620px]">
               <div className="journey-photo-main group absolute left-0 top-0 w-[78%] h-[360px] sm:h-[400px] lg:h-[450px] rounded-[32px] overflow-hidden border border-[#E2E8F0] shadow-[0_30px_80px_rgba(15,23,42,0.14)] transition-transform duration-700 hover:-translate-y-2 hover:rotate-[-1deg]">
                 <Image
                   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
@@ -54,7 +54,7 @@ export function PartnerCollaborationFlow() {
                 <div className="absolute top-0 left-0 h-[3px] w-[110px] bg-[#EF3C38]" />
               </div>
 
-              <div className="journey-photo-secondary group absolute right-0 bottom-0 w-[62%] h-[250px] sm:h-[280px] lg:h-[320px] rounded-[28px] overflow-hidden border border-[#E2E8F0] shadow-[0_26px_60px_rgba(15,23,42,0.16)] transition-transform duration-700 hover:translate-y-2 hover:rotate-[1deg]">
+              <div className="journey-photo-secondary group absolute right-0 bottom-0 w-[62%] h-[180px] sm:h-[280px] lg:h-[320px] rounded-[20px] sm:rounded-[28px] overflow-hidden border border-[#E2E8F0] shadow-[0_26px_60px_rgba(15,23,42,0.16)] transition-transform duration-700 hover:translate-y-2 hover:rotate-[1deg]">
                 <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
                   alt="Team collaboration"
@@ -64,7 +64,7 @@ export function PartnerCollaborationFlow() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
               </div>
 
-              <div className="absolute left-[7%] bottom-[16%] w-[180px] sm:w-[220px] rounded-[22px] border border-[#E2E8F0] bg-white/95 backdrop-blur px-5 py-5 shadow-[0_18px_40px_rgba(15,23,42,0.12)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_22px_46px_rgba(15,23,42,0.16)]">
+              <div className="absolute left-[7%] bottom-[2%] sm:bottom-[16%] w-[160px] sm:w-[220px] rounded-[18px] sm:rounded-[22px] border border-[#E2E8F0] bg-white/95 backdrop-blur px-4 sm:px-5 py-4 sm:py-5 shadow-[0_18px_40px_rgba(15,23,42,0.12)] transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_22px_46px_rgba(15,23,42,0.16)] hidden sm:block">
                 <p
                   className="text-[#EF3C38] font-semibold uppercase tracking-[0.12em]"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}

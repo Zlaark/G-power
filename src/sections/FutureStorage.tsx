@@ -26,8 +26,8 @@ export const FutureStorage = () => {
                         className="w-full text-center font-medium text-black max-w-[1391px]"
                         style={{
                             fontFamily: "'Poppins', sans-serif",
-                            fontSize: 'clamp(11px, 1.1vw, 18px)',
-                            lineHeight: '34px',
+                            fontSize: 'clamp(13px, 1.1vw, 18px)',
+                            lineHeight: 'clamp(22px, 2.5vw, 34px)',
                         }}
                     >
                         Accelerate the transition toward smarter and more sustainable energy systems.
@@ -56,8 +56,8 @@ export const FutureStorage = () => {
                         className="w-full text-center font-medium text-black max-w-[1391px]"
                         style={{
                             fontFamily: "'Poppins', sans-serif",
-                            fontSize: 'clamp(11px, 1.1vw, 18px)',
-                            lineHeight: '34px',
+                            fontSize: 'clamp(13px, 1.1vw, 18px)',
+                            lineHeight: 'clamp(22px, 2.5vw, 34px)',
                         }}
                     >
                         To develop cutting-edge technology that delivers sustainable energy solutions for a better future.

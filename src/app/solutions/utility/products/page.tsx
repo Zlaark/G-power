@@ -13,40 +13,22 @@ export const metadata: Metadata = {
 
 const products = [
   {
-    title: "BYD Cube Pro C&C",
+    title: "G-Power Cube Pro C&C",
     capacity: "2.76 MWh",
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     href: "/solutions/utility/products/utility-battery-1",
   },
   {
-    title: "BYD Cube T28",
+    title: "G-Power Cube T28",
     capacity: "3.44 MWh",
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     href: "/solutions/utility/products/utility-battery-2",
-  },
-  {
-    title: "G-Power BESS Max",
-    capacity: "5.0 MWh",
-    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
-    href: "/solutions/utility/products/utility-battery-3",
   },
   {
     title: "Hithium Hiner",
     capacity: "261 kWh",
     image: "/about-bess-facility.jpg",
     href: "/solutions/utility/products/utility-battery-4",
-  },
-  {
-    title: "G-Power Grid Scale Mega",
-    capacity: "10 MWh",
-    image: "/about-solar-field2.png",
-    href: "/solutions/utility/products/utility-battery-5",
-  },
-  {
-    title: "G-Power Utility ESS",
-    capacity: "50 MWh",
-    image: "/wind-solar-energy.jpg",
-    href: "/solutions/utility/products/utility-battery-6",
   },
 ];
 

@@ -33,9 +33,9 @@ const MapMarker = ({ left, top, region, countries, position = 'top' }: { left: s
 
 export const GlobalPresenceMap = () => {
     return (
-        <section className="relative bg-[#EEF1FA] py-24 lg:py-32 px-6 lg:px-12 xl:px-16 overflow-hidden min-h-[700px] flex items-start">
+        <section className="relative bg-[#EEF1FA] py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-12 xl:px-16 overflow-hidden min-h-[500px] md:min-h-[700px] flex items-start">
             {/* Map image as background */}
-            <div className="absolute inset-y-0 right-0 flex items-center justify-end opacity-90 pointer-events-none w-[58%]">
+            <div className="absolute inset-y-0 right-0 hidden md:flex items-center justify-end opacity-90 pointer-events-none w-[58%]">
                 <div className="relative w-full h-full">
                     <Image
                         src="/map-banner-pc.png"
@@ -46,7 +46,8 @@ export const GlobalPresenceMap = () => {
                 </div>
             </div>
 
-            {/* Blue location dots */}
+            {/* Blue location dots - hidden on mobile */}
+            <div className="hidden lg:block">
             {/* Americas */}
             <MapMarker 
                 left="44%" 
@@ -79,9 +80,10 @@ export const GlobalPresenceMap = () => {
                 countries={['Saudi Arabia', 'Senegal', 'Qatar', 'South Africa', 'D.R.C']} 
                 position="top"
             />
+            </div>
 
             {/* Content overlay */}
-            <div className="relative z-10 max-w-[640px] w-full" style={{ marginLeft: 'clamp(8px, 3vw, 48px)' }}>
+            <div className="relative z-10 max-w-[640px] w-full" style={{ marginLeft: 'clamp(0px, 3vw, 48px)' }}>
                 <FadeIn delay={100} direction="up">
                     <h2 className="text-3xl lg:text-4xl font-semibold text-[#121010] mb-10" style={{ fontFamily: "'Poppins', sans-serif" }}>
                         Global Presence

@@ -40,7 +40,7 @@ export const WhyGPower = () => {
                             className="font-medium text-black"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
-                                fontSize: 'clamp(11px, 1.1vw, 15px)',
+                                fontSize: 'clamp(13px, 1.1vw, 15px)',
                                 lineHeight: '1.4',
                             }}
                         >

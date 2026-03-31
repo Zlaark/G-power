@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "BYD Cube Pro C&C | Utility Solutions | GPower",
+  title: "G-Power Cube Pro C&C | Utility Solutions | GPower",
   description:
     "Large-scale containerized energy storage system for utility applications. 2.76 MWh capacity, 1.38 MW power, ≥85% efficiency.",
 };
@@ -57,7 +57,7 @@ export default function UtilityBattery1Page() {
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
           <Image
             src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
-            alt="BYD Cube Pro C&C"
+            alt="G-Power Cube Pro C&C"
             fill
             priority
             className="object-cover brightness-75"
@@ -91,7 +91,7 @@ export default function UtilityBattery1Page() {
                 fontSize: "clamp(40px, 6.5vw, 82px)",
               }}
             >
-              BYD Cube Pro C&amp;C
+              G-Power Cube Pro C&amp;C
             </h1>
           </FadeIn>
 
@@ -120,7 +120,7 @@ export default function UtilityBattery1Page() {
               <div className="relative w-full rounded-[20px] overflow-hidden" style={{ aspectRatio: "3/2.2" }}>
                   <Image
                   src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                  alt="BYD Cube Pro C&C"
+                  alt="G-Power Cube Pro C&C"
                   fill
                   className="object-cover"
                 />
@@ -243,7 +243,7 @@ export default function UtilityBattery1Page() {
               className="text-[#475569] mb-[54px] text-center"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.1vw, 18px)" }}
             >
-              Detailed specifications for BYD Cube Pro C&amp;C
+              Detailed specifications for G-Power Cube Pro C&amp;C
             </p>
           </FadeIn>
 
@@ -320,7 +320,7 @@ export default function UtilityBattery1Page() {
               className="text-white font-medium mb-4"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Interested in BYD Cube Pro C&amp;C?
+              Interested in G-Power Cube Pro C&amp;C?
             </h2>
           </FadeIn>
           <FadeIn delay={200} direction="up">

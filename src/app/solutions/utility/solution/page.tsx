@@ -56,7 +56,7 @@ const productMerits = [
 
 const recommendedProducts = [
   {
-    title: "BYD Cube Pro C&C",
+    title: "G-Power Cube Pro C&C",
     tagline: "2.76 MWh",
     description: "Large-scale containerized energy storage system for utility applications",
     image:
@@ -70,7 +70,7 @@ const recommendedProducts = [
     ],
   },
   {
-    title: "BYD Cube T28",
+    title: "G-Power Cube T28",
     tagline: "3.44 MWh",
     description: "Next-generation utility-scale energy storage with enhanced energy density",
     image:

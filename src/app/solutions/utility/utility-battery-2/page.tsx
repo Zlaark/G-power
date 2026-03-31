@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "BYD Cube T28 | Utility Solutions | GPower",
+  title: "G-Power Cube T28 | Utility Solutions | GPower",
   description:
     "Next-generation utility-scale energy storage with enhanced safety. 3.44 MWh capacity, 1.72 MW power, ≥87% efficiency.",
 };
@@ -55,7 +55,7 @@ export default function UtilityBattery2Page() {
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
           <Image
             src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
-            alt="BYD Cube T28"
+            alt="G-Power Cube T28"
             fill
             priority
             className="object-cover brightness-75"
@@ -84,7 +84,7 @@ export default function UtilityBattery2Page() {
                 fontSize: "clamp(40px, 6.5vw, 82px)",
               }}
             >
-              BYD Cube T28
+              G-Power Cube T28
             </h1>
           </FadeIn>
 
@@ -109,7 +109,7 @@ export default function UtilityBattery2Page() {
               <div className="relative w-full rounded-[20px] overflow-hidden" style={{ aspectRatio: "3/2.2" }}>
                 <Image
                   src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                  alt="BYD Cube T28"
+                  alt="G-Power Cube T28"
                   fill
                   className="object-cover"
                 />
@@ -223,7 +223,7 @@ export default function UtilityBattery2Page() {
               className="text-[#475569] mb-[54px] text-center"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}
             >
-              Detailed specifications for BYD Cube T28
+              Detailed specifications for G-Power Cube T28
             </p>
           </FadeIn>
 
@@ -299,7 +299,7 @@ export default function UtilityBattery2Page() {
               className="text-white font-medium mb-4"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Interested in BYD Cube T28?
+              Interested in G-Power Cube T28?
             </h2>
           </FadeIn>
           <FadeIn delay={200} direction="up">

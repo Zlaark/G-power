@@ -27,7 +27,7 @@ export function UtilityBattery2SpecsCoverSection() {
           className="text-white font-semibold mb-1"
           style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 3.2vw, 48px)" }}
         >
-          BYD Cube T28
+          G-Power Cube T28
         </h2>
         <p
           className="text-white/95"
@@ -41,7 +41,7 @@ export function UtilityBattery2SpecsCoverSection() {
         <div className="relative w-full rounded-[12px] overflow-hidden mb-6" style={{ aspectRatio: "16/5.3" }}>
           <Image
             src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
-            alt="BYD Cube T28"
+            alt="G-Power Cube T28"
             fill
             className="object-cover"
           />

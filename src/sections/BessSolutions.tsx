@@ -99,7 +99,7 @@ export const BessSolutions = () => {
                     border-color: #000;
                 }
             `}} />
-            <div className="w-full max-w-[1600px] mx-auto px-[20px] md:px-[60px] lg:px-[240px]">
+            <div className="w-full max-w-[1600px] mx-auto px-[20px] md:px-[60px] lg:px-[120px] xl:px-[240px]">
 
                 {/* Title */}
                 <h2
@@ -136,7 +136,7 @@ export const BessSolutions = () => {
                                 className="font-semibold text-black transition-colors duration-300"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
-                                    fontSize: 'clamp(13px, 1.3vw, 22px)',
+                                    fontSize: 'clamp(15px, 1.3vw, 22px)',
                                     lineHeight: '1.3',
                                     marginTop: '10px',
                                 }}
@@ -148,7 +148,7 @@ export const BessSolutions = () => {
                                 className="font-medium text-black mt-2"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
-                                    fontSize: 'clamp(11px, 1vw, 15px)',
+                                    fontSize: 'clamp(13px, 1vw, 15px)',
                                     lineHeight: '1.5',
                                 }}
                             >

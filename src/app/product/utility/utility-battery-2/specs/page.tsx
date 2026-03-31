@@ -9,9 +9,9 @@ import { UtilityBattery2SpecsCoverSection } from "@/sections/UtilityBattery2Spec
 import { UtilityBattery2SpecsSheetSection } from "@/sections/UtilityBattery2SpecsSheetSection";
 
 export const metadata: Metadata = {
-  title: "Technical Specifications | BYD Cube T28 | GPower",
+  title: "Technical Specifications | G-Power Cube T28 | GPower",
   description:
-    "Complete technical specifications for BYD Cube T28 utility battery system.",
+    "Complete technical specifications for G-Power Cube T28 utility battery system.",
 };
 
 export default function UtilityBattery2SpecsPage() {
@@ -32,7 +32,7 @@ export default function UtilityBattery2SpecsPage() {
               className="text-white/70"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.2vw, 22px)" }}
             >
-              BYD Cube T28 - Complete Technical Documentation
+              G-Power Cube T28 - Complete Technical Documentation
             </p>
           </FadeIn>
         </div>
@@ -63,7 +63,7 @@ export default function UtilityBattery2SpecsPage() {
                   className="text-white/90 mb-7 mt-6"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
                 >
-                  Get the complete 2-page technical datasheet for BYD Cube T28 in PDF format exactly as shown above, containing all specifications, features, and contact information.
+                  Get the complete 2-page technical datasheet for G-Power Cube T28 in PDF format exactly as shown above, containing all specifications, features, and contact information.
                 </p>
                   <div className="flex flex-col sm:flex-row justify-center gap-3">
                   <DownloadPdfButton 
