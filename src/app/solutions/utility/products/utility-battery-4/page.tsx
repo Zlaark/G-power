@@ -124,7 +124,7 @@ export default function UtilityBattery4ProductPage() {
                 <h3 className="text-white font-normal mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 30px)" }}>Need More Details?</h3>
                 <p className="text-white/90 mb-6" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}>Contact our team for complete technical specifications.</p>
                 <Link href="/contact" className="btn-sweep-red btn-float-hover inline-flex items-center gap-2 bg-[#EF3C38] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#ff4a46] transition-colors shadow-[0_8px_18px_rgba(239,60,56,0.22)]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}>
-                    Contact Us <ArrowRight className="w-5 h-5 ml-1" />
+                    <Download className="w-5 h-5" /> View More <ArrowRight className="w-5 h-5 ml-1" />
                 </Link>
               </div>
             </div>
