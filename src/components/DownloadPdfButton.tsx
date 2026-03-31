@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Download, Loader2 } from 'lucide-react';
 import { jsPDF } from 'jspdf';
-import html2canvas from 'html2canvas';
+import { toJpeg } from 'html-to-image';
 
 interface Props {
   targetId: string;
@@ -26,45 +26,37 @@ export const DownloadPdfButton = ({ targetId, filename }: Props) => {
       
       const pdf = new jsPDF('p', 'mm', 'a4');
       const imgWidth = 210; // A4 width in mm
-      const pageHeight = 297; // A4 height in mm
 
       for (let i = 0; i < pages.length; i++) {
         const pageElement = pages[i];
-        const originalStyle = pageElement.getAttribute('style') || '';
-        const originalCssText = pageElement.style.cssText;
-
-        // Force desktop sizing for the snapshot to guarantee high-quality layout and typography
-        pageElement.style.width = '1200px';
-        pageElement.style.maxWidth = '1200px';
-        pageElement.style.minWidth = '1200px';
-        pageElement.style.boxSizing = 'border-box';
         
         // Also temporarily ensure any animations inside are disabled during capture
         pageElement.classList.add('no-animations');
 
-        // Hide specific elements that shouldn't appear in the PDF if needed
-        const canvas = await html2canvas(pageElement, {
-          scale: 2, // consistently use 2 for sharpness
-          useCORS: true,
-          windowWidth: 1200,
-          allowTaint: true,
-          backgroundColor: '#F3F4F6', // The standard background color for the pamhplet
-          logging: false
+        // Capture with html-to-image (uses native browser rendering, supports modern CSS like oklch/oklab flawlessly)
+        const dataUrl = await toJpeg(pageElement, {
+          quality: 0.95,
+          pixelRatio: 2,
+          backgroundColor: '#F3F4F6',
+          style: {
+            width: '1200px',
+            maxWidth: '1200px',
+            minWidth: '1200px',
+            margin: '0',
+            transform: 'scale(1)',
+          }
         });
         
-        // Restore styles instantly
-        pageElement.setAttribute('style', originalStyle);
-        pageElement.style.cssText = originalCssText;
         pageElement.classList.remove('no-animations');
 
-        const imgHeight = (canvas.height * imgWidth) / canvas.width;
-        const imgData = canvas.toDataURL('image/jpeg', 0.95);
+        const imgProps = pdf.getImageProperties(dataUrl);
+        const imgHeight = (imgProps.height * imgWidth) / imgProps.width;
         
         if (i > 0) {
           pdf.addPage();
         }
         
-        pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight);
+        pdf.addImage(dataUrl, 'JPEG', 0, 0, imgWidth, imgHeight);
       }
       
       pdf.save(filename);
