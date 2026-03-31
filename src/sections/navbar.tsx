@@ -85,7 +85,7 @@ export const Navbar = () => {
                                     G-Power Cube T28
                                 </Link>
                                 <Link href="/solutions/utility/products/utility-battery-4" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    Hithium Hiner
+                                    G-Power Hiner
                                 </Link>
                             </div>
                         </div>
@@ -159,7 +159,7 @@ export const Navbar = () => {
                             - G-Power Cube T28
                         </Link>
                         <Link href="/solutions/utility/products/utility-battery-4" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                            - Hithium Hiner
+                            - G-Power Hiner
                         </Link>
                         <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers

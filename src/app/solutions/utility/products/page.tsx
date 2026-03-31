@@ -25,7 +25,7 @@ const products = [
     href: "/solutions/utility/products/utility-battery-2",
   },
   {
-    title: "Hithium Hiner",
+    title: "G-Power Hiner",
     capacity: "261 kWh",
     image: "/about-bess-facility.jpg",
     href: "/solutions/utility/products/utility-battery-4",
