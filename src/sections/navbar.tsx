@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export const Navbar = () => {
@@ -34,8 +35,17 @@ export const Navbar = () => {
                 `}} />
                 <div className="flex items-center justify-between h-[120px]">
 
-                    {/* Spacer for left side */}
-                    <div className="hidden xl:block w-[200px]" />
+                    {/* Logo */}
+                    <Link href="/" className="hidden xl:flex items-center w-[200px] shrink-0">
+                        <Image
+                            src="/logo-clean.png"
+                            alt="G-Power Logo"
+                            width={171}
+                            height={124}
+                            className="h-[95px] w-auto object-contain"
+                            priority
+                        />
+                    </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden xl:flex items-center gap-7 2xl:gap-8">
@@ -92,13 +102,23 @@ export const Navbar = () => {
                         <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers
                         </Link>
-                        <Link href="/contact" className="btn-sweep-red bg-[#EF3C38] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/contact" className="btn-sweep-blue bg-[#0A5191] text-white px-6 py-2 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-lg rounded text-[16px] 2xl:text-[18px] font-medium whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Contact Us
                         </Link>
                     </div>
 
-                    {/* Mobile menu button */}
-                    <div className="xl:hidden flex justify-end w-full pr-4 md:pr-0">
+                    {/* Mobile: Logo + menu button */}
+                    <div className="xl:hidden flex items-center justify-between w-full pr-4 md:pr-0">
+                        <Link href="/" className="flex items-center">
+                            <Image
+                                src="/logo-clean.png"
+                                alt="G-Power Logo"
+                                width={171}
+                                height={124}
+                                className="h-[75px] w-auto object-contain"
+                                priority
+                            />
+                        </Link>
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             className="text-black hover:text-black/80 transition-all hover:scale-110 p-2 bg-gray-100 rounded backdrop-blur-md"
@@ -119,53 +139,53 @@ export const Navbar = () => {
                 {/* Mobile Navigation Dropdown */}
                 {isMobileMenuOpen && (
                     <div className="xl:hidden absolute top-[120px] left-0 right-0 bg-[#121010]/95 backdrop-blur-xl border-t border-white/10 shadow-2xl flex flex-col items-center py-8 gap-6 z-50">
-                        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Home
                         </Link>
-                        <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             About Us
                         </Link>
-                        <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Partners
                         </Link>
-                        <Link href="/our-projects" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/our-projects" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Our Projects
                         </Link>
-                        <Link href="/solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Solutions
                         </Link>
-                        <Link href="/solutions/utility" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/utility" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - Utility
                         </Link>
-                        <Link href="/solutions/residential" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/residential" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - Residential
                         </Link>
-                        <Link href="/solutions/commercial-industrial" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/commercial-industrial" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - Commercial & Industrial
                         </Link>
-                        <Link href="/solutions/2-3-wheeler" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/2-3-wheeler" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - 2 & 3 Wheeler Application
                         </Link>
-                        <Link href="/solutions/new-application-business" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/new-application-business" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - New Application Business
                         </Link>
-                        <Link href="/solutions/utility/products" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/utility/products" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Products
                         </Link>
-                        <Link href="/solutions/utility/products/utility-battery-1" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/utility/products/utility-battery-1" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - G-Power Cube Pro C&amp;C
                         </Link>
-                        <Link href="/solutions/utility/products/utility-battery-2" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/utility/products/utility-battery-2" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - G-Power Cube T28
                         </Link>
-                        <Link href="/solutions/utility/products/utility-battery-4" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/solutions/utility/products/utility-battery-4" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - G-Power Hiner
                         </Link>
-                        <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#EF3C38] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers
                         </Link>
 
-                        <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-[#EF3C38] text-white px-8 py-3 rounded text-[16px] font-medium hover:bg-white hover:text-[#EF3C38] transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-[#0A5191] text-white px-8 py-3 rounded text-[16px] font-medium hover:bg-white hover:text-[#0A5191] transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Contact Us
                         </Link>
                     </div>

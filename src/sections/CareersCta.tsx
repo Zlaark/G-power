@@ -28,7 +28,7 @@ export function CareersCta() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
+            className="inline-flex items-center justify-center px-[28px] py-[14px] rounded-[8px] bg-[#0A5191] text-white font-semibold hover:bg-[#d63532] transition-colors"
             style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
           >
             Submit Your Resume

@@ -55,7 +55,7 @@ export function WhatWeOffer() {
                   <ul className="space-y-[12px]">
                     {column.items.map((item) => (
                       <li key={item} className="flex items-start gap-[10px]">
-                        <span className="mt-[7px] w-[6px] h-[6px] rounded-full bg-[#EF3C38] flex-shrink-0" />
+                        <span className="mt-[7px] w-[6px] h-[6px] rounded-full bg-[#0A5191] flex-shrink-0" />
                         <span
                           className="text-[#334155] font-medium leading-[1.6]"
                           style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}

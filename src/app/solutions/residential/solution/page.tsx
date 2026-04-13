@@ -208,7 +208,7 @@ export default function ResidentialSolutionsPage() {
                   {residentialBenefits.map((item, index) => (
                     <FadeIn delay={220 + index * 60} direction="up" key={item.title}>
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="w-[19px] h-[19px] mt-[4px] text-[#EF3C38]" strokeWidth={2.2} />
+                        <CheckCircle2 className="w-[19px] h-[19px] mt-[4px] text-[#0A5191]" strokeWidth={2.2} />
                         <div>
                           <h4
                             className="text-[#111827] font-normal leading-[1.35]"
@@ -252,7 +252,7 @@ export default function ResidentialSolutionsPage() {
               return (
                 <FadeIn delay={180 + index * 70} direction="up" key={item.title}>
                   <div className="card-shimmer h-full min-h-[250px] lg:min-h-[290px] rounded-[16px] border border-[#121010]/10 bg-white p-[22px] flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                    <Icon className="w-8 h-8 text-[#EF3C38] mb-[18px]" strokeWidth={2.2} />
+                    <Icon className="w-8 h-8 text-[#0A5191] mb-[18px]" strokeWidth={2.2} />
                     <h3
                       className="text-[#121010] font-bold mb-[10px]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 2vw, 22px)" }}
@@ -300,7 +300,7 @@ export default function ResidentialSolutionsPage() {
                 <article className="card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-0 lg:min-h-[610px] flex flex-col">
                   <div className="img-zoom relative h-[240px] sm:h-[290px] lg:h-[340px] w-full">
                     <Image src={product.image} alt={product.title} fill className="object-cover" />
-                    <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#EF3C38] text-white font-semibold"
+                    <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#0A5191] text-white font-semibold"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}>
                       {product.tagline}
                     </div>
@@ -320,7 +320,7 @@ export default function ResidentialSolutionsPage() {
                     </p>
                     <div className="grid grid-cols-2 gap-x-[16px] gap-y-[16px] mb-[26px]">
                       {product.specs.map((spec) => (
-                        <div key={spec.label} className="border-l-2 border-[#EF3C38] pl-3">
+                        <div key={spec.label} className="border-l-2 border-[#0A5191] pl-3">
                           <p
                             className="text-[#64748B] font-normal leading-[1.1]"
                             style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
@@ -338,7 +338,7 @@ export default function ResidentialSolutionsPage() {
                     </div>
                     <Link
                       href={product.href}
-                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#EF3C38] font-medium hover:text-[#d63532] hover:gap-4 transition-all duration-200"
+                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#0A5191] font-medium hover:text-[#d63532] hover:gap-4 transition-all duration-200"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.15vw, 18px)" }}
                     >
                       View Details <span aria-hidden="true">→</span>
@@ -428,7 +428,7 @@ export default function ResidentialSolutionsPage() {
           <FadeIn delay={300} direction="up" className="flex flex-wrap items-center justify-center gap-[12px]">
             <Link
               href="/contact"
-              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
+              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#0A5191] text-white font-semibold hover:bg-[#d63532] transition-colors"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
             >
               Contact Us

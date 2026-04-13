@@ -67,7 +67,7 @@ export const BessSolutions = () => {
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background: linear-gradient(90deg, transparent, #EF3C38, transparent);
+                    background: linear-gradient(90deg, transparent, #0A5191, transparent);
                     transform: translateX(-100%);
                     transition: transform 0.6s ease;
                 }

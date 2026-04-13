@@ -40,7 +40,7 @@ export default function IndustrySolutionsPage() {
           <FadeIn delay={120} direction="up">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-semibold hover:bg-[#d63532] transition-colors"
+              className="inline-flex items-center justify-center px-[28px] py-[13px] rounded-[8px] bg-[#0A5191] text-white font-semibold hover:bg-[#d63532] transition-colors"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
             >
               Contact Us

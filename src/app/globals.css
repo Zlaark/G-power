@@ -66,14 +66,14 @@ body {
 }
 
 /* Red sweep variant for CTA buttons */
-.btn-sweep-red {
+.btn-sweep-blue {
   position: relative;
   overflow: hidden;
   z-index: 1;
   transition: color 0.3s ease, border-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.btn-sweep-red::before {
+.btn-sweep-blue::before {
   content: '';
   position: absolute;
   top: 0;
@@ -85,16 +85,16 @@ body {
   transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.btn-sweep-red:hover::before {
+.btn-sweep-blue:hover::before {
   width: 100%;
 }
 
-.btn-sweep-red:hover {
+.btn-sweep-blue:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(239, 60, 56, 0.35);
+  box-shadow: 0 8px 30px rgba(10, 81, 145, 0.35);
 }
 
-.btn-sweep-red:active {
+.btn-sweep-blue:active {
   transform: translateY(0px);
 }
 
@@ -105,7 +105,7 @@ body {
 
 .btn-glow:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(239, 60, 56, 0.4), 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(10, 81, 145, 0.4), 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* ═══════════════════════════════════════════
@@ -281,8 +281,8 @@ body {
   transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
 }
 .card-border-glow:hover {
-  box-shadow: 0 0 0 2px rgba(239, 60, 56, 0.55), 0 10px 36px rgba(239, 60, 56, 0.10);
-  border-color: rgba(239, 60, 56, 0.45) !important;
+  box-shadow: 0 0 0 2px rgba(10, 81, 145, 0.55), 0 10px 36px rgba(10, 81, 145, 0.10);
+  border-color: rgba(10, 81, 145, 0.45) !important;
   transform: translateY(-3px);
 }
 
@@ -311,7 +311,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(239,60,56,0.18) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(10, 81, 145,0.18) 0%, transparent 60%);
   opacity: 0;
   transition: opacity 0.45s ease;
   pointer-events: none;
@@ -335,7 +335,7 @@ body {
 .btn-float-hover:hover {
   transform: translateY(-2px) scale(1.015);
   filter: brightness(1.02);
-  box-shadow: 0 10px 24px rgba(239, 60, 56, 0.24);
+  box-shadow: 0 10px 24px rgba(10, 81, 145, 0.24);
 }
 
 .card-soft-hover {
@@ -344,7 +344,7 @@ body {
 
 .card-soft-hover:hover {
   transform: translateY(-3px);
-  border-color: rgba(239, 60, 56, 0.36) !important;
+  border-color: rgba(10, 81, 145, 0.36) !important;
   box-shadow: 0 12px 26px rgba(2, 8, 23, 0.10);
 }
 
@@ -383,7 +383,7 @@ body {
   position: absolute;
   inset: -4px;
   border-radius: 50%;
-  border: 2px solid rgba(239, 60, 56, 0.5);
+  border: 2px solid rgba(10, 81, 145, 0.5);
   opacity: 0;
   transform: scale(0.7);
   transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -408,7 +408,7 @@ body {
   left: 0;
   width: 0;
   height: 1.5px;
-  background: #EF3C38;
+  background: #0A5191;
   transition: width 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .step-point:hover .step-title::after {
@@ -429,7 +429,7 @@ body {
   transition: text-shadow 0.35s ease, transform 0.3s ease;
 }
 .card-border-glow:hover .stat-glow {
-  text-shadow: 0 0 18px rgba(239, 60, 56, 0.6);
+  text-shadow: 0 0 18px rgba(10, 81, 145, 0.6);
   transform: scale(1.04);
 }
 
@@ -453,11 +453,11 @@ body {
 
   0%,
   100% {
-    border-color: rgba(239, 60, 56, 0.3);
+    border-color: rgba(10, 81, 145, 0.3);
   }
 
   50% {
-    border-color: rgba(239, 60, 56, 0.7);
+    border-color: rgba(10, 81, 145, 0.7);
   }
 }
 
@@ -481,7 +481,7 @@ html {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #EF3C38;
+  background-color: #0A5191;
   transition: width 0.3s ease;
 }
 
@@ -520,7 +520,7 @@ html {
   inset: -20% -40%;
   background: linear-gradient(90deg,
       transparent 10%,
-      rgba(239, 60, 56, 0.16) 50%,
+      rgba(10, 81, 145, 0.16) 50%,
       transparent 90%);
   opacity: 0;
   pointer-events: none;
@@ -575,9 +575,9 @@ html {
   width: 42%;
   left: -45%;
   background: linear-gradient(90deg,
-      rgba(239, 60, 56, 0),
-      rgba(239, 60, 56, 0.18),
-      rgba(239, 60, 56, 0));
+      rgba(10, 81, 145, 0),
+      rgba(10, 81, 145, 0.18),
+      rgba(10, 81, 145, 0));
   pointer-events: none;
 }
 

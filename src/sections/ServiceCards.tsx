@@ -16,14 +16,14 @@ export const ServiceCards = () => {
                         {/* Card 1: Book Your Service (Red) */}
                         <FadeIn delay={100} direction="up" className="h-full">
                             <div
-                                className="card-shimmer relative bg-[#EF3C38] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
+                                className="card-shimmer relative bg-[#0A5191] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
                             >
                                 <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent_50%)]" />
                                 {/* Bell Icon */}
                                 <div className="absolute top-[20px] left-[20px]">
                                     <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="60" height="60" rx="30" fill="white" />
-                                        <path d="M40.2594 35.2434C39.6523 34.1978 38.75 31.2392 38.75 27.375C38.75 25.0544 37.8281 22.8288 36.1872 21.1878C34.5462 19.5469 32.3206 18.625 30 18.625C27.6794 18.625 25.4538 19.5469 23.8128 21.1878C22.1719 22.8288 21.25 25.0544 21.25 27.375C21.25 31.2403 20.3466 34.1978 19.7395 35.2434C19.5845 35.5093 19.5023 35.8113 19.5013 36.119C19.5002 36.4267 19.5803 36.7293 19.7335 36.9962C19.8867 37.2631 20.1076 37.4848 20.3738 37.6391C20.64 37.7934 20.9423 37.8748 21.25 37.875H25.7136C25.9155 38.8628 26.4523 39.7506 27.2334 40.3882C28.0145 41.0258 28.9918 41.374 30 41.374C31.0082 41.374 31.9855 41.0258 32.7666 40.3882C33.5477 39.7506 34.0845 38.8628 34.2864 37.875H38.75C39.0576 37.8746 39.3597 37.7931 39.6258 37.6387C39.8919 37.4843 40.1126 37.2625 40.2657 36.9957C40.4187 36.7288 40.4987 36.4263 40.4976 36.1187C40.4965 35.8111 40.4143 35.5092 40.2594 35.2434ZM30 39.625C29.4573 39.6248 28.928 39.4565 28.4849 39.1431C28.0419 38.8297 27.7068 38.3867 27.5259 37.875H32.4741C32.2932 38.3867 31.9581 38.8297 31.5151 39.1431C31.072 39.4565 30.5427 39.6248 30 39.625ZM21.25 36.125C22.0922 34.6769 23 31.3212 23 27.375C23 25.5185 23.7375 23.738 25.0503 22.4253C26.363 21.1125 28.1435 20.375 30 20.375C31.8565 20.375 33.637 21.1125 34.9497 22.4253C36.2625 23.738 37 25.5185 37 27.375C37 31.318 37.9056 34.6736 38.75 36.125H21.25Z" fill="#EF3C38" />
+                                        <path d="M40.2594 35.2434C39.6523 34.1978 38.75 31.2392 38.75 27.375C38.75 25.0544 37.8281 22.8288 36.1872 21.1878C34.5462 19.5469 32.3206 18.625 30 18.625C27.6794 18.625 25.4538 19.5469 23.8128 21.1878C22.1719 22.8288 21.25 25.0544 21.25 27.375C21.25 31.2403 20.3466 34.1978 19.7395 35.2434C19.5845 35.5093 19.5023 35.8113 19.5013 36.119C19.5002 36.4267 19.5803 36.7293 19.7335 36.9962C19.8867 37.2631 20.1076 37.4848 20.3738 37.6391C20.64 37.7934 20.9423 37.8748 21.25 37.875H25.7136C25.9155 38.8628 26.4523 39.7506 27.2334 40.3882C28.0145 41.0258 28.9918 41.374 30 41.374C31.0082 41.374 31.9855 41.0258 32.7666 40.3882C33.5477 39.7506 34.0845 38.8628 34.2864 37.875H38.75C39.0576 37.8746 39.3597 37.7931 39.6258 37.6387C39.8919 37.4843 40.1126 37.2625 40.2657 36.9957C40.4187 36.7288 40.4987 36.4263 40.4976 36.1187C40.4965 35.8111 40.4143 35.5092 40.2594 35.2434ZM30 39.625C29.4573 39.6248 28.928 39.4565 28.4849 39.1431C28.0419 38.8297 27.7068 38.3867 27.5259 37.875H32.4741C32.2932 38.3867 31.9581 38.8297 31.5151 39.1431C31.072 39.4565 30.5427 39.6248 30 39.625ZM21.25 36.125C22.0922 34.6769 23 31.3212 23 27.375C23 25.5185 23.7375 23.738 25.0503 22.4253C26.363 21.1125 28.1435 20.375 30 20.375C31.8565 20.375 33.637 21.1125 34.9497 22.4253C36.2625 23.738 37 25.5185 37 27.375C37 31.318 37.9056 34.6736 38.75 36.125H21.25Z" fill="#0A5191" />
                                     </svg>
                                 </div>
                                 <div>
@@ -48,7 +48,7 @@ export const ServiceCards = () => {
                             <div
                                 className="card-shimmer relative bg-[#EDEDED] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
                             >
-                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(239,60,56,0.05),transparent_50%)]" />
+                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(10, 81, 145,0.05),transparent_50%)]" />
                                 {/* Settings Icon */}
                                 <div className="absolute top-[20px] left-[20px]">
                                     <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@ export const ServiceCards = () => {
                             <div
                                 className="card-shimmer relative bg-[#EDEDED] rounded-[20px] min-h-[250px] md:min-h-[329px] h-full p-[20px] md:p-[20px] lg:p-[30px] overflow-hidden flex flex-col justify-end group"
                             >
-                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(239,60,56,0.05),transparent_50%)]" />
+                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(10, 81, 145,0.05),transparent_50%)]" />
                                 {/* Chat Icon */}
                                 <div className="absolute top-[20px] left-[20px]">
                                     <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">

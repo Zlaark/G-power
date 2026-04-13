@@ -79,8 +79,8 @@ export const ServiceCenters = () => {
                                 key={data.region}
                                 onClick={() => setActiveTab(idx)}
                                 className={`px-8 py-3 rounded-full text-base font-medium transition-all duration-300 ${activeTab === idx 
-                                    ? 'bg-[#EF3C38] text-white shadow-[0_8px_20px_rgba(239,60,56,0.3)] scale-105' 
-                                    : 'bg-white text-[#4A4A4A] border border-[#E5E7EB] hover:border-[#EF3C38] hover:text-[#EF3C38]'}`}
+                                    ? 'bg-[#0A5191] text-white shadow-[0_8px_20px_rgba(10, 81, 145,0.3)] scale-105' 
+                                    : 'bg-white text-[#4A4A4A] border border-[#E5E7EB] hover:border-[#0A5191] hover:text-[#0A5191]'}`}
                                 style={{ fontFamily: "'Poppins', sans-serif" }}
                             >
                                 {data.region} Zone
@@ -96,11 +96,11 @@ export const ServiceCenters = () => {
                         {/* Zonal HQ Header if exists */}
                         {serviceData[activeTab].hq && (
                             <div className="flex items-center gap-3 mb-8 pb-6 border-b border-gray-100">
-                                <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-[#EF3C38]">
+                                <div className="w-12 h-12 rounded-full bg-[#E1EBF5] flex items-center justify-center text-[#0A5191]">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <p className="text-sm font-semibold text-[#EF3C38] uppercase tracking-wider mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Zonal Headquarters</p>
+                                    <p className="text-sm font-semibold text-[#0A5191] uppercase tracking-wider mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Zonal Headquarters</p>
                                     <h3 className="text-xl font-medium text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>{serviceData[activeTab].hq}</h3>
                                 </div>
                             </div>
@@ -111,14 +111,14 @@ export const ServiceCenters = () => {
                             {serviceData[activeTab].states.map((state) => (
                                 <div key={state.name} className="flex flex-col">
                                     <div className="flex items-center gap-2 mb-4">
-                                        <Map className="w-5 h-5 text-[#EF3C38]" />
+                                        <Map className="w-5 h-5 text-[#0A5191]" />
                                         <h4 className="text-lg font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                             {state.name}
                                         </h4>
                                     </div>
                                     <ul className="flex flex-wrap gap-2">
                                         {state.cities.map((city) => (
-                                            <li key={city} className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 border border-gray-100 rounded-lg text-sm text-[#4A4A4A] transition-all hover:bg-white hover:border-[#EF3C38]/30 hover:shadow-sm" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                            <li key={city} className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 border border-gray-100 rounded-lg text-sm text-[#4A4A4A] transition-all hover:bg-white hover:border-[#0A5191]/30 hover:shadow-sm" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                                 <MapPin className="w-3.5 h-3.5 text-gray-400" />
                                                 <span>{city}</span>
                                             </li>

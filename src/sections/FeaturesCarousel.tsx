@@ -234,7 +234,7 @@ export const FeaturesCarousel = () => {
                                     key={progressKey}
                                     className="absolute top-0 left-0 h-full"
                                     style={{
-                                        backgroundColor: '#EF3C38',
+                                        backgroundColor: '#0A5191',
                                         borderRadius: '2px',
                                         animation: paused
                                             ? 'none'
@@ -248,7 +248,7 @@ export const FeaturesCarousel = () => {
                                 <div
                                     className="absolute top-0 left-0 h-full w-full"
                                     style={{
-                                        backgroundColor: '#EF3C38',
+                                        backgroundColor: '#0A5191',
                                         borderRadius: '2px',
                                     }}
                                 />

@@ -24,7 +24,7 @@ export const ContactForm = () => {
                                         <input 
                                             type="text" 
                                             placeholder="John"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
@@ -34,7 +34,7 @@ export const ContactForm = () => {
                                         <input 
                                             type="text" 
                                             placeholder="Doe"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
@@ -47,7 +47,7 @@ export const ContactForm = () => {
                                         <input 
                                             type="email" 
                                             placeholder="john.doe@company.com"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
@@ -57,7 +57,7 @@ export const ContactForm = () => {
                                         <input 
                                             type="tel" 
                                             placeholder="+91 98765 43210"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
@@ -67,7 +67,7 @@ export const ContactForm = () => {
                                 <div className="space-y-2">
                                     <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>What are you interested in?</label>
                                     <select 
-                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors appearance-none"
+                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors appearance-none"
                                         style={{ fontFamily: "'Poppins', sans-serif" }}
                                     >
                                         <option>General Inquiry</option>
@@ -81,7 +81,7 @@ export const ContactForm = () => {
                                     <textarea 
                                         placeholder="Tell us about your project or how we can help you..."
                                         rows={5}
-                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#EF3C38] transition-colors resize-none"
+                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors resize-none"
                                         style={{ fontFamily: "'Poppins', sans-serif" }}
                                         required
                                     ></textarea>
@@ -89,7 +89,7 @@ export const ContactForm = () => {
 
                                 <button 
                                     type="submit"
-                                    className="bg-[#EF3C38] text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center space-x-2 hover:bg-[#d63531] transition-all w-full md:w-auto"
+                                    className="bg-[#0A5191] text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center space-x-2 hover:bg-[#d63531] transition-all w-full md:w-auto"
                                     style={{ fontFamily: "'Poppins', sans-serif" }}
                                 >
                                     <span>Send Message</span>
@@ -105,8 +105,8 @@ export const ContactForm = () => {
                     <FadeIn delay={200} direction="left">
                         <div className="space-y-8">
                             <div className="flex items-start space-x-4">
-                                <div className="bg-[#EF3C38]/10 p-3 rounded-lg">
-                                    <MapPin className="text-[#EF3C38]" size={24} />
+                                <div className="bg-[#0A5191]/10 p-3 rounded-lg">
+                                    <MapPin className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Head Office</h4>
@@ -115,8 +115,8 @@ export const ContactForm = () => {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="bg-[#EF3C38]/10 p-3 rounded-lg">
-                                    <Phone className="text-[#EF3C38]" size={24} />
+                                <div className="bg-[#0A5191]/10 p-3 rounded-lg">
+                                    <Phone className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone</h4>
@@ -126,8 +126,8 @@ export const ContactForm = () => {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="bg-[#EF3C38]/10 p-3 rounded-lg">
-                                    <Mail className="text-[#EF3C38]" size={24} />
+                                <div className="bg-[#0A5191]/10 p-3 rounded-lg">
+                                    <Mail className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Email</h4>
@@ -137,8 +137,8 @@ export const ContactForm = () => {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="bg-[#EF3C38]/10 p-3 rounded-lg">
-                                    <Clock className="text-[#EF3C38]" size={24} />
+                                <div className="bg-[#0A5191]/10 p-3 rounded-lg">
+                                    <Clock className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Business Hours</h4>
@@ -157,19 +157,19 @@ export const ContactForm = () => {
                             <h4 className="text-lg md:text-xl font-bold mb-6 relative z-10" style={{ fontFamily: "'Poppins', sans-serif" }}>Regional Offices</h4>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
                                 <div>
-                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Mumbai</h5>
+                                    <h5 className="font-bold text-[#0A5191] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Mumbai</h5>
                                     <p className="text-sm opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>Andheri East, Mumbai - 400069</p>
                                 </div>
                                 <div>
-                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Bangalore</h5>
+                                    <h5 className="font-bold text-[#0A5191] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Bangalore</h5>
                                     <p className="text-sm opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>Whitefield, Bangalore - 560066</p>
                                 </div>
                                 <div>
-                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Delhi NCR</h5>
+                                    <h5 className="font-bold text-[#0A5191] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Delhi NCR</h5>
                                     <p className="text-sm opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>Gurugram, Haryana - 122001</p>
                                 </div>
                                 <div>
-                                    <h5 className="font-bold text-[#EF3C38] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Pune</h5>
+                                    <h5 className="font-bold text-[#0A5191] text-sm uppercase mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Pune</h5>
                                     <p className="text-sm opacity-80" style={{ fontFamily: "'Poppins', sans-serif" }}>Hinjewadi, Pune - 411057</p>
                                 </div>
                             </div>

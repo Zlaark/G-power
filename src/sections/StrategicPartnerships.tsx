@@ -18,17 +18,17 @@ export function StrategicPartnerships() {
     {
       title: "Technology Partners",
       desc: "Leading solar panel and battery storage manufacturers providing cutting-edge technology",
-      icon: <Handshake className="w-10 h-10 text-[#EF3C38]" strokeWidth={2.5} />,
+      icon: <Handshake className="w-10 h-10 text-[#0A5191]" strokeWidth={2.5} />,
     },
     {
       title: "Service Partners",
       desc: "Certified installation and maintenance partners ensuring quality service delivery",
-      icon: <Award className="w-10 h-10 text-[#EF3C38]" strokeWidth={2.5} />,
+      icon: <Award className="w-10 h-10 text-[#0A5191]" strokeWidth={2.5} />,
     },
     {
       title: "Global Alliances",
       desc: "International partnerships bringing world-class expertise to India",
-      icon: <Globe className="w-10 h-10 text-[#EF3C38]" strokeWidth={2.5} />,
+      icon: <Globe className="w-10 h-10 text-[#0A5191]" strokeWidth={2.5} />,
     },
   ];
 
@@ -64,7 +64,7 @@ export function StrategicPartnerships() {
                   {item.icon}
                 </div>
                 <h3 
-                  className="font-bold text-[#121010] mb-[20px] tracking-tight transition-colors duration-500 group-hover:text-[#EF3C38]"
+                  className="font-bold text-[#121010] mb-[20px] tracking-tight transition-colors duration-500 group-hover:text-[#0A5191]"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(18px, 2vw, 22px)' }}
                 >
                   {item.title}

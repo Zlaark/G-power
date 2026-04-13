@@ -48,12 +48,12 @@ export default function TwoThreeWheelerHubPage() {
                 <div className="relative h-[180px] lg:h-[220px] w-full overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="EV Solutions" fill className="object-cover transition-transform duration-700 group-hover:scale-[1.06]" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#EF3C38] flex items-center justify-center shadow-lg"><Lightbulb className="w-6 h-6 text-white" strokeWidth={2} /></div>
+                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#0A5191] flex items-center justify-center shadow-lg"><Lightbulb className="w-6 h-6 text-white" strokeWidth={2} /></div>
                 </div>
                 <div className="p-[24px] lg:p-[28px] flex flex-col flex-1">
                   <h3 className="text-[#121010] font-semibold mb-[10px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(22px, 2.5vw, 30px)" }}>Solutions</h3>
                   <p className="text-[#475569] font-medium leading-[1.65] mb-[18px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 16px)" }}>Complete EV battery solution overview with product merits, recommended products, project case studies, and expert consultation.</p>
-                  <span className="mt-auto inline-flex items-center gap-2 text-[#EF3C38] font-medium group-hover:gap-4 transition-all duration-300" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}>Explore Solutions <span aria-hidden="true">→</span></span>
+                  <span className="mt-auto inline-flex items-center gap-2 text-[#0A5191] font-medium group-hover:gap-4 transition-all duration-300" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}>Explore Solutions <span aria-hidden="true">→</span></span>
                 </div>
               </Link>
             </FadeIn>
@@ -62,12 +62,12 @@ export default function TwoThreeWheelerHubPage() {
                 <div className="relative h-[180px] lg:h-[220px] w-full overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="EV Products" fill className="object-cover transition-transform duration-700 group-hover:scale-[1.06]" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#EF3C38] flex items-center justify-center shadow-lg"><Package className="w-6 h-6 text-white" strokeWidth={2} /></div>
+                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#0A5191] flex items-center justify-center shadow-lg"><Package className="w-6 h-6 text-white" strokeWidth={2} /></div>
                 </div>
                 <div className="p-[24px] lg:p-[28px] flex flex-col flex-1">
                   <h3 className="text-[#121010] font-semibold mb-[10px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(22px, 2.5vw, 30px)" }}>More Products</h3>
                   <p className="text-[#475569] font-medium leading-[1.65] mb-[18px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 16px)" }}>Browse all EV battery products individually with specifications, technical parameters, and downloadable datasheets.</p>
-                  <span className="mt-auto inline-flex items-center gap-2 text-[#EF3C38] font-medium group-hover:gap-4 transition-all duration-300" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}>Browse Products <span aria-hidden="true">→</span></span>
+                  <span className="mt-auto inline-flex items-center gap-2 text-[#0A5191] font-medium group-hover:gap-4 transition-all duration-300" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}>Browse Products <span aria-hidden="true">→</span></span>
                 </div>
               </Link>
             </FadeIn>

@@ -49,7 +49,7 @@ export default function SolutionsPage() {
             <FadeIn delay={140 + index * 70} direction="up" key={item.title}>
               <Link
                 href={item.href}
-                className="block rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] px-[24px] py-[26px] hover:border-[#EF3C38]/50 transition-colors"
+                className="block rounded-[16px] border border-[#121010]/10 bg-[#F9FAFB] px-[24px] py-[26px] hover:border-[#0A5191]/50 transition-colors"
               >
                 <h2
                   className="text-[#121010] font-bold"

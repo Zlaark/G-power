@@ -4,7 +4,7 @@ import { Zap, ShieldCheck, Clock } from 'lucide-react';
 
 export const ServiceHighlight = () => {
     return (
-        <div className="relative bg-[#EF3C38] overflow-hidden py-[18px] border-t border-b border-[#EF3C38]/20 flex items-center shadow-[0_0_40px_rgba(239,60,56,0.25)] z-20 w-full transform-gpu">
+        <div className="relative bg-[#0A5191] overflow-hidden py-[18px] border-t border-b border-[#0A5191]/20 flex items-center shadow-[0_0_40px_rgba(10, 81, 145,0.25)] z-20 w-full transform-gpu">
             {/* The scrolling container */}
             <div className="flex animate-marquee hover:animation-pause min-w-[200%] items-center select-none cursor-default">
                 {/* We repeat the phrase 6 times to ensure continuous seamless scrolling across wide monitors */}

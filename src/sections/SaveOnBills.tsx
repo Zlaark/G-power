@@ -71,8 +71,8 @@ export const SaveOnBills = () => {
                                         <div
                                             key={idx}
                                             className={`w-[40px] md:w-[66.5px] h-0 rounded-full transition-all duration-500 ease-in-out ${activeIndex === idx
-                                                ? 'border-[3px] md:border-[3.5px] border-[#EF3C38]'
-                                                : 'border-[1.5px] border-[#B1B1B1] group-hover:border-[#EF3C38]/50'
+                                                ? 'border-[3px] md:border-[3.5px] border-[#0A5191]'
+                                                : 'border-[1.5px] border-[#B1B1B1] group-hover:border-[#0A5191]/50'
                                                 }`}
                                         />
                                     ))}
@@ -81,7 +81,7 @@ export const SaveOnBills = () => {
                                 {/* Subtitle & Body Content */}
                                 <div className="transition-opacity duration-500 ease-in-out">
                                     <h3
-                                        className="card-title text-[#121010] font-medium leading-tight md:leading-[34px] w-full max-w-[656px] transition-colors duration-500 group-hover:text-[#EF3C38]"
+                                        className="card-title text-[#121010] font-medium leading-tight md:leading-[34px] w-full max-w-[656px] transition-colors duration-500 group-hover:text-[#0A5191]"
                                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
                                     >
                                         {activeIndex === 0 && "Monthly Bill Savings"}

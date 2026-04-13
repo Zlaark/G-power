@@ -53,7 +53,7 @@ export const AboutHero = () => {
                         right: '0%',
                         top: '0%',
                         bottom: '85.22%',
-                        background: '#EF3C38',
+                        background: '#0A5191',
                     }}
                 />
                 {/* Bottom red bar */}
@@ -64,7 +64,7 @@ export const AboutHero = () => {
                         right: '0%',
                         top: '16.4%',
                         bottom: '0%',
-                        background: '#EF3C38',
+                        background: '#0A5191',
                     }}
                 />
             </div>

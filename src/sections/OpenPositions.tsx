@@ -148,11 +148,11 @@ export function OpenPositions() {
 
                 <div className="flex flex-wrap items-center gap-[14px] text-[#475569]">
                   <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-light">
-                    <MapPin size={16} className="text-[#EF3C38]" />
+                    <MapPin size={16} className="text-[#0A5191]" />
                     {job.location}
                   </span>
                   <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-light">
-                    <Briefcase size={16} className="text-[#EF3C38]" />
+                    <Briefcase size={16} className="text-[#0A5191]" />
                     {job.type}
                   </span>
                 </div>
@@ -161,7 +161,7 @@ export function OpenPositions() {
                   <button
                     type="button"
                     onClick={() => openModal(job)}
-                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#EF3C38] text-white font-normal hover:bg-[#d63532] transition-colors"
+                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#0A5191] text-white font-normal hover:bg-[#d63532] transition-colors"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                   >
                     Apply Now

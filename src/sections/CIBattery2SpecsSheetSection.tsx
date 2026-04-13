@@ -20,7 +20,7 @@ export function CIBattery2SpecsSheetSection() {
     <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] overflow-hidden flex flex-col justify-between card-shimmer card-soft-hover">
       <div className="p-5 md:p-8 flex-1">
       <div className="flex items-center gap-3 mb-5">
-        <span className="w-[2px] h-7 bg-[#EF3C38]" />
+        <span className="w-[2px] h-7 bg-[#0A5191]" />
         <h3
           className="text-[#0F172A] font-semibold"
           style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 30px)" }}
@@ -69,7 +69,7 @@ export function CIBattery2SpecsSheetSection() {
           {terms.map((term) => (
             <p
               key={term}
-              className="text-[#475569] transition-transform duration-300 hover:translate-x-2 hover:text-[#EF3C38]"
+              className="text-[#475569] transition-transform duration-300 hover:translate-x-2 hover:text-[#0A5191]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
             >
               2 {term}
@@ -89,8 +89,8 @@ export function CIBattery2SpecsSheetSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-7">
         <div className="flex items-start gap-3">
-          <span className="w-8 h-8 rounded-[8px] bg-[#FBEBEC] flex items-center justify-center shrink-0">
-            <Mail className="w-4 h-4 text-[#EF3C38]" />
+          <span className="w-8 h-8 rounded-[8px] bg-[#E1EBF5] flex items-center justify-center shrink-0">
+            <Mail className="w-4 h-4 text-[#0A5191]" />
           </span>
           <div>
             <p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Email</p>
@@ -99,8 +99,8 @@ export function CIBattery2SpecsSheetSection() {
         </div>
 
         <div className="flex items-start gap-3">
-          <span className="w-8 h-8 rounded-[8px] bg-[#FBEBEC] flex items-center justify-center shrink-0">
-            <Phone className="w-4 h-4 text-[#EF3C38]" />
+          <span className="w-8 h-8 rounded-[8px] bg-[#E1EBF5] flex items-center justify-center shrink-0">
+            <Phone className="w-4 h-4 text-[#0A5191]" />
           </span>
           <div>
             <p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Phone</p>
@@ -109,8 +109,8 @@ export function CIBattery2SpecsSheetSection() {
         </div>
 
         <div className="flex items-start gap-3">
-          <span className="w-8 h-8 rounded-[8px] bg-[#FBEBEC] flex items-center justify-center shrink-0">
-            <MapPin className="w-4 h-4 text-[#EF3C38]" />
+          <span className="w-8 h-8 rounded-[8px] bg-[#E1EBF5] flex items-center justify-center shrink-0">
+            <MapPin className="w-4 h-4 text-[#0A5191]" />
           </span>
           <div>
             <p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Location</p>

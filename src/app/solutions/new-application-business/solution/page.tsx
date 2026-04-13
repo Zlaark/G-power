@@ -204,7 +204,7 @@ export default function NewApplicationBusinessPage() {
                   {businessBenefits.map((item, index) => (
                     <FadeIn delay={220 + index * 60} direction="up" key={item.title}>
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="w-[19px] h-[19px] mt-[4px] text-[#EF3C38]" strokeWidth={2.2} />
+                        <CheckCircle2 className="w-[19px] h-[19px] mt-[4px] text-[#0A5191]" strokeWidth={2.2} />
                         <div>
                           <h4
                             className="text-[#111827] font-normal leading-[1.35]"
@@ -247,8 +247,8 @@ export default function NewApplicationBusinessPage() {
               const Icon = item.icon;
               return (
                 <FadeIn delay={180 + index * 70} direction="up" key={item.title}>
-                  <div className="group card-shimmer h-full min-h-0 sm:min-h-[250px] lg:min-h-[290px] rounded-[16px] border border-[#121010]/10 bg-white p-[16px] sm:p-[22px] flex flex-col transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-3 md:hover:scale-105 hover:border-[#EF3C38]/20">
-                    <Icon className="w-8 h-8 text-[#EF3C38] mb-[18px] transition-transform duration-700 ease-in-out md:group-hover:scale-125 md:group-hover:rotate-6" strokeWidth={2.2} />
+                  <div className="group card-shimmer h-full min-h-0 sm:min-h-[250px] lg:min-h-[290px] rounded-[16px] border border-[#121010]/10 bg-white p-[16px] sm:p-[22px] flex flex-col transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-3 md:hover:scale-105 hover:border-[#0A5191]/20">
+                    <Icon className="w-8 h-8 text-[#0A5191] mb-[18px] transition-transform duration-700 ease-in-out md:group-hover:scale-125 md:group-hover:rotate-6" strokeWidth={2.2} />
                     <h3
                       className="text-[#121010] font-normal mb-[10px]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(16px, 1.5vw, 20px)" }}
@@ -293,10 +293,10 @@ export default function NewApplicationBusinessPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] sm:gap-[20px] lg:gap-[24px]">
             {recommendedProducts.map((product, index) => (
               <FadeIn delay={180 + index * 90} direction="up" key={product.title}>
-                <article className="group card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-0 lg:min-h-[580px] flex flex-col transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-2 md:hover:-translate-x-1 hover:border-[#EF3C38]/20">
+                <article className="group card-shimmer card-border-glow rounded-[18px] overflow-hidden border border-[#121010]/10 bg-[#F9FAFB] h-full min-h-0 lg:min-h-[580px] flex flex-col transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-2 md:hover:-translate-x-1 hover:border-[#0A5191]/20">
                   <div className="img-zoom relative h-[200px] sm:h-[260px] lg:h-[340px] w-full overflow-hidden">
                     <Image src={product.image} alt={product.title} fill className="object-cover transition-transform duration-1000 ease-in-out md:group-hover:scale-[1.08]" />
-                    <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#EF3C38] text-white font-medium"
+                    <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-[#0A5191] text-white font-medium"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}>
                       {product.tagline}
                     </div>
@@ -316,7 +316,7 @@ export default function NewApplicationBusinessPage() {
                     </p>
                     <div className="grid grid-cols-2 gap-x-[12px] sm:gap-x-[16px] gap-y-[12px] sm:gap-y-[16px] mb-[20px] sm:mb-[26px]">
                       {product.specs.map((spec) => (
-                        <div key={spec.label} className="border-l-2 border-[#EF3C38] pl-3">
+                        <div key={spec.label} className="border-l-2 border-[#0A5191] pl-3">
                           <p
                             className="text-[#64748B] font-normal leading-[1.1]"
                             style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
@@ -334,7 +334,7 @@ export default function NewApplicationBusinessPage() {
                     </div>
                     <Link
                       href={product.href}
-                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#EF3C38] font-medium hover:text-[#d63532] transition-all duration-500 ease-in-out md:group-hover:gap-4"
+                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#0A5191] font-medium hover:text-[#d63532] transition-all duration-500 ease-in-out md:group-hover:gap-4"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.15vw, 16px)" }}
                     >
                       View Details <span aria-hidden="true">→</span>
@@ -371,7 +371,7 @@ export default function NewApplicationBusinessPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px] sm:gap-[20px] lg:gap-[24px]">
             {caseStudies.map((item, index) => (
               <FadeIn delay={180 + index * 80} direction="up" key={item.title}>
-                <article className="group card-shimmer card-border-glow rounded-[16px] overflow-hidden border border-[#121010]/10 bg-white h-full flex flex-col transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-3 md:hover:scale-[1.02] hover:border-[#EF3C38]/20">
+                <article className="group card-shimmer card-border-glow rounded-[16px] overflow-hidden border border-[#121010]/10 bg-white h-full flex flex-col transition-all duration-700 ease-in-out hover:shadow-xl md:hover:shadow-2xl md:hover:-translate-y-3 md:hover:scale-[1.02] hover:border-[#0A5191]/20">
                   <div className="img-zoom relative h-[180px] sm:h-[220px] w-full overflow-hidden">
                     <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-1000 ease-in-out md:group-hover:scale-[1.08]" />
                   </div>
@@ -423,7 +423,7 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={300} direction="up" className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-[12px] sm:gap-[14px]">
             <Link
               href="/contact"
-              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#EF3C38] text-white font-medium transition-all duration-500 ease-in-out hover:bg-[#d63532] md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(239,60,56,0.4)]"
+              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#0A5191] text-white font-medium transition-all duration-500 ease-in-out hover:bg-[#d63532] md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(10, 81, 145,0.4)]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
               Contact Us

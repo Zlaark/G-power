@@ -39,8 +39,8 @@ export const ContactHero = () => {
             {/* Centered Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                 <FadeIn delay={100} direction="up">
-                    <div className="mb-6 inline-block bg-[#EF3C38]/10 border border-[#EF3C38]/20 px-6 py-2 rounded-full">
-                        <span className="text-[#EF3C38] text-sm md:text-base font-semibold uppercase tracking-wider" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                    <div className="mb-6 inline-block bg-[#0A5191]/10 border border-[#0A5191]/20 px-6 py-2 rounded-full">
+                        <span className="text-[#0A5191] text-sm md:text-base font-semibold uppercase tracking-wider" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             We're Here to Help
                         </span>
                     </div>

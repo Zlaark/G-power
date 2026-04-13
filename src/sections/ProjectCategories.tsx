@@ -6,22 +6,22 @@ export function ProjectCategories() {
     {
       title: "Utility Scale",
       description: "Large-scale renewable plants delivering high-capacity clean energy generation.",
-      icon: <Building2 className="w-8 h-8 text-[#EF3C38]" strokeWidth={2.3} />,
+      icon: <Building2 className="w-8 h-8 text-[#0A5191]" strokeWidth={2.3} />,
     },
     {
       title: "Commercial & Industrial",
       description: "Tailored energy systems for enterprises seeking lower costs and better efficiency.",
-      icon: <Factory className="w-8 h-8 text-[#EF3C38]" strokeWidth={2.3} />,
+      icon: <Factory className="w-8 h-8 text-[#0A5191]" strokeWidth={2.3} />,
     },
     {
       title: "Residential",
       description: "Reliable rooftop and storage solutions for homes and modern communities.",
-      icon: <Home className="w-8 h-8 text-[#EF3C38]" strokeWidth={2.3} />,
+      icon: <Home className="w-8 h-8 text-[#0A5191]" strokeWidth={2.3} />,
     },
     {
       title: "EV Infrastructure",
       description: "Scalable EV charging deployments for tech parks, fleets, and urban hubs.",
-      icon: <CarFront className="w-8 h-8 text-[#EF3C38]" strokeWidth={2.3} />,
+      icon: <CarFront className="w-8 h-8 text-[#0A5191]" strokeWidth={2.3} />,
     },
   ];
 

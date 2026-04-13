@@ -91,7 +91,7 @@ export function FeaturedProjects() {
                 <div className="p-[24px] lg:p-[30px] flex flex-col flex-1">
                   <div className="mb-[8px]">
                     <span 
-                      className="inline-block bg-[#ff4d4d] text-white font-medium px-[16px] py-[6px] rounded-full"
+                      className="inline-block bg-[#0A5191] text-white font-medium px-[16px] py-[6px] rounded-full"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: '13px' }}
                     >
                       {project.type}
@@ -107,21 +107,21 @@ export function FeaturedProjects() {
                   
                   <div className="mt-auto flex flex-col gap-[4px]">
                     <div className="flex items-center gap-[8px]">
-                      <div className="w-[36px] h-[36px] rounded-full bg-[#f9f9f9] flex items-center justify-center flex-shrink-0 text-[#EF3C38]">
+                      <div className="w-[36px] h-[36px] rounded-full bg-[#f9f9f9] flex items-center justify-center flex-shrink-0 text-[#0A5191]">
                         <MapPin size={16} strokeWidth={2.5} />
                       </div>
                       <span className="text-[#64748b] font-medium text-[14px]">{project.location}</span>
                     </div>
 
                     <div className="flex items-center gap-[8px]">
-                      <div className="w-[36px] h-[36px] rounded-full bg-[#f9f9f9] flex items-center justify-center flex-shrink-0 text-[#EF3C38]">
+                      <div className="w-[36px] h-[36px] rounded-full bg-[#f9f9f9] flex items-center justify-center flex-shrink-0 text-[#0A5191]">
                         <Zap size={16} strokeWidth={2.5} />
                       </div>
                       <span className="text-[#64748b] font-medium text-[14px]">{project.capacity}</span>
                     </div>
 
                     <div className="flex items-center gap-[8px]">
-                      <div className="w-[36px] h-[36px] rounded-full bg-[#f9f9f9] flex items-center justify-center flex-shrink-0 text-[#EF3C38]">
+                      <div className="w-[36px] h-[36px] rounded-full bg-[#f9f9f9] flex items-center justify-center flex-shrink-0 text-[#0A5191]">
                         <Calendar size={16} strokeWidth={2.5} />
                       </div>
                       <span className="text-[#64748b] font-medium text-[14px]">{project.year}</span>

@@ -56,7 +56,7 @@ export const Hero2 = () => {
                             {/* Fake dashboard UI snippet */}
                             <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-white/10 bg-white dark:bg-[#0A0A0A] shadow-sm">
                                 <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-100 dark:border-white/5 bg-gray-50/50 dark:bg-white/[0.02]">
-                                    <div className="w-3 h-3 rounded-full bg-red-400" />
+                                    <div className="w-3 h-3 rounded-full bg-[#0A5191]" />
                                     <div className="w-3 h-3 rounded-full bg-amber-400" />
                                     <div className="w-3 h-3 rounded-full bg-green-400" />
                                 </div>

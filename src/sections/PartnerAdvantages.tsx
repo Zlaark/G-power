@@ -8,7 +8,7 @@ export function PartnerAdvantages() {
       description:
         "Reach commercial, industrial, and utility-scale opportunities through a partner ecosystem built around renewable growth.",
       icon: TrendingUp,
-      accent: "from-[#FFF2F1] to-[#FFE4E1]",
+      accent: "from-[#E1EBF5] to-[#D4E3F3]",
     },
     {
       title: "Technical Enablement",
@@ -65,7 +65,7 @@ export function PartnerAdvantages() {
           <FadeIn delay={100} direction="up">
             <div className="lg:sticky lg:top-24">
               <p
-                className="inline-flex items-center gap-2 rounded-full border border-[#EF3C38]/15 bg-white px-4 py-2 text-[#EF3C38] font-semibold"
+                className="inline-flex items-center gap-2 rounded-full border border-[#0A5191]/15 bg-white px-4 py-2 text-[#0A5191] font-semibold"
                 style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px", letterSpacing: "0.08em", textTransform: "uppercase" }}
               >
                 Partner Value
@@ -85,14 +85,14 @@ export function PartnerAdvantages() {
 
               <div className="mt-8 grid grid-cols-2 gap-4 max-w-[430px]">
                 <div className="partner-stat-float rounded-[22px] bg-white border border-[#E2E8F0] px-5 py-5 transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
-                  <p className="text-[#EF3C38] font-semibold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "28px" }}>
+                  <p className="text-[#0A5191] font-semibold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "28px" }}>
                     360°
                   </p>
                   <p className="text-[#475569] mt-2 font-medium" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px", lineHeight: 1.6 }}>
                     Support from design through long-term service
                   </p>
                 </div>
-                <div className="partner-stat-float rounded-[22px] bg-[#EF3C38] px-5 py-5 text-white transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(239,60,56,0.25)]" style={{ animationDelay: "0.6s" }}>
+                <div className="partner-stat-float rounded-[22px] bg-[#0A5191] px-5 py-5 text-white transition-transform duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(10, 81, 145,0.25)]" style={{ animationDelay: "0.6s" }}>
                   <p className="font-semibold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "28px" }}>
                     EPC+
                   </p>
@@ -113,16 +113,16 @@ export function PartnerAdvantages() {
                   <div className={`partner-card-shine group relative h-full rounded-[28px] border border-[#E2E8F0] bg-gradient-to-br ${advantage.accent} p-[1px] overflow-hidden ${index % 2 === 1 ? "sm:translate-y-8" : ""}`}>
                     <div className="h-full rounded-[27px] bg-white/92 backdrop-blur px-5 py-6 sm:px-6 sm:py-7 transition-all duration-500 group-hover:-translate-y-1.5 group-hover:shadow-[0_24px_55px_rgba(15,23,42,0.09)]">
                       <div className="flex items-start justify-between gap-4">
-                        <div className="w-12 h-12 rounded-[16px] bg-[#EF3C38] text-white flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+                        <div className="w-12 h-12 rounded-[16px] bg-[#0A5191] text-white flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
                           <Icon size={22} />
                         </div>
-                        <div className="w-10 h-10 rounded-full border border-[#CBD5E1] flex items-center justify-center text-[#121010] transition-all duration-500 group-hover:translate-x-1.5 group-hover:-translate-y-1 group-hover:border-[#EF3C38]/35 group-hover:text-[#EF3C38]">
+                        <div className="w-10 h-10 rounded-full border border-[#CBD5E1] flex items-center justify-center text-[#121010] transition-all duration-500 group-hover:translate-x-1.5 group-hover:-translate-y-1 group-hover:border-[#0A5191]/35 group-hover:text-[#0A5191]">
                           <ArrowUpRight size={18} />
                         </div>
                       </div>
 
                       <h3
-                        className="mt-8 text-[#121010] font-semibold transition-colors duration-500 group-hover:text-[#EF3C38]"
+                        className="mt-8 text-[#121010] font-semibold transition-colors duration-500 group-hover:text-[#0A5191]"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 1.7vw, 26px)" }}
                       >
                         {advantage.title}

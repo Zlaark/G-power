@@ -29,7 +29,7 @@ export function EnterpriseHubSpecsSheetSection() {
     <section className="rounded-[14px] bg-[#F5F6F8] border border-[#E7EAF0] overflow-hidden flex flex-col justify-between card-shimmer card-soft-hover">
       <div className="p-5 md:p-8 flex-1">
       <div className="flex items-center gap-3 mb-5">
-        <span className="w-[2px] h-7 bg-[#EF3C38]" />
+        <span className="w-[2px] h-7 bg-[#0A5191]" />
         <h3 className="text-[#0F172A] font-semibold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 30px)" }}>Detailed Technical Parameters</h3>
       </div>
       <h4 className="text-[#0F172A] font-semibold mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.2vw, 18px)" }}>General Parameters</h4>
@@ -57,15 +57,15 @@ export function EnterpriseHubSpecsSheetSection() {
       <div className="rounded-[10px] bg-[#F0F2F5] border border-[#E3E7EE] p-4 md:p-5 mb-7">
         <h4 className="text-[#0F172A] font-semibold mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.2vw, 18px)" }}>Terms &amp; Conditions</h4>
         <div className="flex flex-col gap-2">
-          {terms.map((term) => (<p key={term} className="text-[#475569] transition-transform duration-300 hover:translate-x-2 hover:text-[#EF3C38]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>• {term}</p>))}
+          {terms.map((term) => (<p key={term} className="text-[#475569] transition-transform duration-300 hover:translate-x-2 hover:text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>• {term}</p>))}
         </div>
       </div>
       <div className="h-px bg-[#D7DEE7] mb-5" />
       <h4 className="text-[#0F172A] font-semibold mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(16px, 1.3vw, 20px)" }}>Contact Information</h4>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-7">
-        <div className="flex items-start gap-3"><span className="w-8 h-8 rounded-[8px] bg-[#FBEBEC] flex items-center justify-center shrink-0"><Mail className="w-4 h-4 text-[#EF3C38]" /></span><div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Email</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>info@gpower.com</p></div></div>
-        <div className="flex items-start gap-3"><span className="w-8 h-8 rounded-[8px] bg-[#FBEBEC] flex items-center justify-center shrink-0"><Phone className="w-4 h-4 text-[#EF3C38]" /></span><div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Phone</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>+91 123 456 7890</p></div></div>
-        <div className="flex items-start gap-3"><span className="w-8 h-8 rounded-[8px] bg-[#FBEBEC] flex items-center justify-center shrink-0"><MapPin className="w-4 h-4 text-[#EF3C38]" /></span><div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Location</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>India</p></div></div>
+        <div className="flex items-start gap-3"><span className="w-8 h-8 rounded-[8px] bg-[#E1EBF5] flex items-center justify-center shrink-0"><Mail className="w-4 h-4 text-[#0A5191]" /></span><div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Email</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>info@gpower.com</p></div></div>
+        <div className="flex items-start gap-3"><span className="w-8 h-8 rounded-[8px] bg-[#E1EBF5] flex items-center justify-center shrink-0"><Phone className="w-4 h-4 text-[#0A5191]" /></span><div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Phone</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>+91 123 456 7890</p></div></div>
+        <div className="flex items-start gap-3"><span className="w-8 h-8 rounded-[8px] bg-[#E1EBF5] flex items-center justify-center shrink-0"><MapPin className="w-4 h-4 text-[#0A5191]" /></span><div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Location</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>India</p></div></div>
       </div>
       </div>
       <div className="bg-[#ECEFF3] border-t border-[#DDE3EC] py-4 mt-auto w-full">

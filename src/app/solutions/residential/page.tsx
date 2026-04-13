@@ -90,7 +90,7 @@ export default function ResidentialHubPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.06]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#EF3C38] flex items-center justify-center shadow-lg">
+                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#0A5191] flex items-center justify-center shadow-lg">
                     <Lightbulb className="w-6 h-6 text-white" strokeWidth={2} />
                   </div>
                 </div>
@@ -108,7 +108,7 @@ export default function ResidentialHubPage() {
                     Detailed solution overview, product merits, recommended products, project case studies, and expert consultation.
                   </p>
                   <span
-                    className="mt-auto inline-flex items-center gap-2 text-[#EF3C38] font-medium group-hover:gap-4 transition-all duration-300"
+                    className="mt-auto inline-flex items-center gap-2 text-[#0A5191] font-medium group-hover:gap-4 transition-all duration-300"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
                   >
                     Explore Solutions <span aria-hidden="true">→</span>
@@ -130,7 +130,7 @@ export default function ResidentialHubPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.06]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#EF3C38] flex items-center justify-center shadow-lg">
+                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#0A5191] flex items-center justify-center shadow-lg">
                     <Package className="w-6 h-6 text-white" strokeWidth={2} />
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export default function ResidentialHubPage() {
                     Browse all residential battery products individually with specifications, technical parameters, and downloadable datasheets.
                   </p>
                   <span
-                    className="mt-auto inline-flex items-center gap-2 text-[#EF3C38] font-medium group-hover:gap-4 transition-all duration-300"
+                    className="mt-auto inline-flex items-center gap-2 text-[#0A5191] font-medium group-hover:gap-4 transition-all duration-300"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
                   >
                     Browse Products <span aria-hidden="true">→</span>

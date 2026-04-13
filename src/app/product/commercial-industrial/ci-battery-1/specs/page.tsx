@@ -87,7 +87,7 @@ export default function CIBattery1SpecsPage() {
             <div className="mt-8 flex justify-center">
               <Link
                 href="/product/commercial-industrial/ci-battery-1"
-                className="inline-flex items-center gap-2 text-[#0F172A] hover:text-[#EF3C38] transition-colors text-sm md:text-base"
+                className="inline-flex items-center gap-2 text-[#0F172A] hover:text-[#0A5191] transition-colors text-sm md:text-base"
                 style={{ fontFamily: "'Poppins', sans-serif" }}
               >
                 <ArrowLeft className="w-4 h-4" />

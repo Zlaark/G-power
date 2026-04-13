@@ -24,8 +24,8 @@ export const Hero3 = () => {
             />
 
             {/* Red accent bars on the right */}
-            <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '0%', bottom: '85.22%', background: '#EF3C38', opacity: 0.37 }} />
-            <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '16.4%', bottom: '0%', background: '#EF3C38', opacity: 0.37 }} />
+            <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '0%', bottom: '85.22%', background: '#0A5191', opacity: 0.37 }} />
+            <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '16.4%', bottom: '0%', background: '#0A5191', opacity: 0.37 }} />
 
             {/* Content */}
             <div className="absolute inset-0 z-10 w-full max-w-[1920px] mx-auto">
@@ -58,7 +58,7 @@ export const Hero3 = () => {
                 {/* Buttons - bottom area */}
                 <div className="absolute left-[20px] md:left-[86px] right-[20px] md:right-auto bottom-[40px] md:bottom-[10vh] lg:bottom-[120px] flex flex-col md:flex-row items-stretch md:items-center gap-[15px] md:gap-[27px]">
                     <button
-                        className="animate-hero-reveal-delay-2 btn-sweep border-transparent flex items-center justify-center w-full md:w-[273px] h-[50px] md:h-[57px] border-2 rounded-[5px] text-white font-semibold transition-all hover:text-white hover:border-[#EF3C38]"
+                        className="animate-hero-reveal-delay-2 btn-sweep border-transparent flex items-center justify-center w-full md:w-[273px] h-[50px] md:h-[57px] border-2 rounded-[5px] text-white font-semibold transition-all hover:text-white hover:border-[#0A5191]"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)', backgroundColor: 'rgba(255, 255, 255, 0.1)', borderColor: 'white' }}
                     >
                         Schedule consultation

@@ -55,17 +55,17 @@ export function PartnerNetwork() {
             {row1.map((partner, index) => (
               <div key={index} className="w-[130px] sm:w-[150px] md:w-[200px] lg:w-[250px] px-[6px] md:px-[10px] flex-shrink-0">
                 <div
-                  className="partner-logo-breathe group relative h-[72px] sm:h-[80px] lg:h-[100px] flex items-center justify-center p-[10px] sm:p-[12px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
+                  className="partner-logo-breathe group relative h-[72px] sm:h-[80px] lg:h-[100px] flex items-center justify-center p-[10px] sm:p-[12px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#0A5191]/40 transition-colors"
                   style={{ animationDelay: `${(index % 8) * 0.14}s` }}
                   title={partner.name}
                 >
                   <span 
-                    className="text-[#121010]/40 font-bold tracking-wider uppercase group-hover:text-[#EF3C38]/80 transition-colors"
+                    className="text-[#121010]/40 font-bold tracking-wider uppercase group-hover:text-[#0A5191]/80 transition-colors"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(9px, 1.1vw, 12px)' }}
                   >
                     {partner.name}
                   </span>
-                  <div className="absolute inset-0 rounded-[8px] ring-1 ring-inset ring-black/5 group-hover:ring-[#EF3C38]/10 pointer-events-none transition-all"></div>
+                  <div className="absolute inset-0 rounded-[8px] ring-1 ring-inset ring-black/5 group-hover:ring-[#0A5191]/10 pointer-events-none transition-all"></div>
                 </div>
               </div>
             ))}
@@ -76,17 +76,17 @@ export function PartnerNetwork() {
             {row2.map((partner, index) => (
               <div key={index} className="w-[130px] sm:w-[150px] md:w-[200px] lg:w-[250px] px-[6px] md:px-[10px] flex-shrink-0">
                 <div
-                  className="partner-logo-breathe group relative h-[72px] sm:h-[80px] lg:h-[100px] flex items-center justify-center p-[10px] sm:p-[12px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#EF3C38]/40 transition-colors"
+                  className="partner-logo-breathe group relative h-[72px] sm:h-[80px] lg:h-[100px] flex items-center justify-center p-[10px] sm:p-[12px] bg-[#FBFBFB] rounded-[8px] border border-[#121010]/5 hover:border-[#0A5191]/40 transition-colors"
                   style={{ animationDelay: `${(index % 8) * 0.16}s` }}
                   title={partner.name}
                 >
                   <span 
-                    className="text-[#121010]/40 font-bold tracking-wider uppercase group-hover:text-[#EF3C38]/80 transition-colors"
+                    className="text-[#121010]/40 font-bold tracking-wider uppercase group-hover:text-[#0A5191]/80 transition-colors"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(9px, 1.1vw, 12px)' }}
                   >
                     {partner.name}
                   </span>
-                  <div className="absolute inset-0 rounded-[8px] ring-1 ring-inset ring-black/5 group-hover:ring-[#EF3C38]/10 pointer-events-none transition-all"></div>
+                  <div className="absolute inset-0 rounded-[8px] ring-1 ring-inset ring-black/5 group-hover:ring-[#0A5191]/10 pointer-events-none transition-all"></div>
                 </div>
               </div>
             ))}

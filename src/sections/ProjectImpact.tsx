@@ -113,7 +113,7 @@ export function ProjectImpact() {
           {impacts.map((impact, index) => (
             <FadeIn delay={200 + index * 100} direction="up" key={index} className="w-full max-w-[320px] min-h-[130px] mx-auto flex flex-col items-center justify-center text-center">
               <span 
-                className="font-semibold text-[#EF3C38] mb-[6px] block leading-[1.05]"
+                className="font-semibold text-[#0A5191] mb-[6px] block leading-[1.05]"
                 style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(34px, 4.2vw, 48px)' }}
               >
                 <AnimatedValue

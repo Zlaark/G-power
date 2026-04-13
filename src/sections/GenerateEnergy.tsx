@@ -11,7 +11,7 @@ export const GenerateEnergy = () => {
                     {/* Left Side: Text Content */}
                     <div className="w-full lg:w-1/2 flex flex-col gap-[15px] md:gap-[23px] mb-[40px] lg:mb-0 z-10">
                         {/* Red Accent Line */}
-                        <div className="h-0 border-[3.5px] border-[#EF3C38] rounded-full w-[66.5px]" />
+                        <div className="h-0 border-[3.5px] border-[#0A5191] rounded-full w-[66.5px]" />
 
                         {/* Text */}
                         <FadeIn delay={100} direction="right" className="flex flex-col gap-[15px] md:gap-[23px] mt-[10px] lg:mt-0">

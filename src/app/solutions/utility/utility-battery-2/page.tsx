@@ -66,7 +66,7 @@ export default function UtilityBattery2Page() {
         <div className="relative z-10 flex flex-col items-center text-center px-6">
           <FadeIn delay={100} direction="up">
             <div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm">
-              <span className="w-[7px] h-[7px] rounded-full bg-[#EF3C38] shrink-0" />
+              <span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" />
               <span
                 className="text-white font-medium uppercase tracking-[0.18em]"
                 style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
@@ -114,7 +114,7 @@ export default function UtilityBattery2Page() {
                   className="object-cover"
                 />
                 <span
-                  className="absolute top-5 right-5 bg-[#EF3C38] text-white font-semibold rounded-full px-5 py-2 shadow-lg"
+                  className="absolute top-5 right-5 bg-[#0A5191] text-white font-semibold rounded-full px-5 py-2 shadow-lg"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}
                 >
                   3.44 MWh
@@ -164,8 +164,8 @@ export default function UtilityBattery2Page() {
                   {applications.map((app) => (
                     <div key={app.label} className="flex items-center gap-3">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0">
-                        <circle cx="10" cy="10" r="9" stroke="#EF3C38" strokeWidth="1.6" />
-                        <path d="M6.5 10.2l2.3 2.3 4.7-4.7" stroke="#EF3C38" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                        <circle cx="10" cy="10" r="9" stroke="#0A5191" strokeWidth="1.6" />
+                        <path d="M6.5 10.2l2.3 2.3 4.7-4.7" stroke="#0A5191" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                       <span
                         className="text-[#334155]"
@@ -192,8 +192,8 @@ export default function UtilityBattery2Page() {
                       className="flex items-center gap-3 rounded-[10px] border border-[#E2E8F0] px-4 py-3"
                     >
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="shrink-0">
-                        <circle cx="10" cy="10" r="9" stroke="#EF3C38" strokeWidth="1.6" />
-                        <path d="M6.5 10.2l2.3 2.3 4.7-4.7" stroke="#EF3C38" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                        <circle cx="10" cy="10" r="9" stroke="#0A5191" strokeWidth="1.6" />
+                        <path d="M6.5 10.2l2.3 2.3 4.7-4.7" stroke="#0A5191" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                       <span
                         className="text-[#334155]"
@@ -269,7 +269,7 @@ export default function UtilityBattery2Page() {
 
                 <Link
                   href="/product/utility/utility-battery-2/specs"
-                  className="inline-flex items-center gap-2 bg-[#EF3C38] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#ff4a46] transition-colors shadow-[0_8px_18px_rgba(239,60,56,0.22)]"
+                  className="inline-flex items-center gap-2 bg-[#0A5191] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#083D6D] transition-colors shadow-[0_8px_18px_rgba(10, 81, 145,0.22)]"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}
                 >
                   <Download className="w-5 h-5" />
@@ -290,7 +290,7 @@ export default function UtilityBattery2Page() {
             fill
             className="object-cover opacity-20 brightness-75"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D0D]/80 via-[#0D0D0D]/60 to-[#EF3C38]/10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D0D]/80 via-[#0D0D0D]/60 to-[#0A5191]/10" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-[800px] text-center">
@@ -313,7 +313,7 @@ export default function UtilityBattery2Page() {
           <FadeIn delay={300} direction="up">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center bg-[#EF3C38] text-white px-10 py-4 rounded-[10px] font-medium hover:bg-white hover:text-[#EF3C38] transition-all hover:scale-105 hover:shadow-xl"
+              className="inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[10px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}
             >
               Request a Quote

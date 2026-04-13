@@ -6,25 +6,25 @@ export function WhyWorkAtGPower() {
     {
       title: "Career Growth",
       description: "Clear advancement paths and professional development opportunities",
-      icon: <TrendingUp className="w-10 h-10 text-[#EF3C38]" strokeWidth={2.3} />,
+      icon: <TrendingUp className="w-10 h-10 text-[#0A5191]" strokeWidth={2.3} />,
       bg: "#EFF6FF",
     },
     {
       title: "Challenging Work",
       description: "Work on innovative projects that make a real environmental impact",
-      icon: <Lightbulb className="w-10 h-10 text-[#EF3C38]" strokeWidth={2.3} />,
+      icon: <Lightbulb className="w-10 h-10 text-[#0A5191]" strokeWidth={2.3} />,
       bg: "#EFF6FF",
     },
     {
       title: "Great Team",
       description: "Collaborate with industry experts and passionate colleagues",
-      icon: <Users className="w-10 h-10 text-[#EF3C38]" strokeWidth={2.3} />,
+      icon: <Users className="w-10 h-10 text-[#0A5191]" strokeWidth={2.3} />,
       bg: "#FFF7ED",
     },
     {
       title: "Benefits",
       description: "Competitive compensation, health insurance, and work-life balance",
-      icon: <HeartHandshake className="w-10 h-10 text-[#EF3C38]" strokeWidth={2.3} />,
+      icon: <HeartHandshake className="w-10 h-10 text-[#0A5191]" strokeWidth={2.3} />,
       bg: "#FAF5FF",
     },
   ];

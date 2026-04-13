@@ -48,7 +48,7 @@ export const GettingToPowerOn = () => {
                     {/* Red accent line on the left */}
                     <div
                         className="absolute left-[74px] top-1/2 -translate-y-1/2 w-[193.5px] h-0"
-                        style={{ borderWidth: '5px', borderStyle: 'solid', borderColor: '#EF3C38' }}
+                        style={{ borderWidth: '5px', borderStyle: 'solid', borderColor: '#0A5191' }}
                     />
                     {/* Red circle at end of red accent line */}
                     <svg
@@ -56,7 +56,7 @@ export const GettingToPowerOn = () => {
                         style={{ left: `${74 + 193.5 - 22.5}px` }}
                         width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"
                     >
-                        <circle cx="22.5" cy="22.5" r="22.5" fill="#EF3C38" />
+                        <circle cx="22.5" cy="22.5" r="22.5" fill="#0A5191" />
                     </svg>
                 </div>
 
