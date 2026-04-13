@@ -50,7 +50,7 @@ export const Footer = () => {
                         <FadeIn delay={100} direction="up" className="lg:col-span-6 flex flex-col items-center text-center order-1 lg:order-2 px-4 lg:px-16 border-x-0 lg:border-x border-white/5 pb-4 lg:pb-0">
                             <Link href="/">
                                 <Image
-                                    src="/logo.png"
+                                    src="/logo-clean.png"
                                     alt="G-Power Logo"
                                     width={180}
                                     height={90}
