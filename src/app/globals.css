@@ -80,7 +80,7 @@ body {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #c42d2a;
+  background-color: #4a90e2;
   z-index: -1;
   transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -421,7 +421,7 @@ body {
 }
 .card-shimmer:hover .icon-pop {
   transform: scale(1.25) rotate(-8deg);
-  color: #d63532;
+  color: #4a90e2;
 }
 
 /* Stat card number glow on hover */

@@ -161,7 +161,7 @@ export function OpenPositions() {
                   <button
                     type="button"
                     onClick={() => openModal(job)}
-                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#0A5191] text-white font-normal hover:bg-[#d63532] transition-colors"
+                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#0A5191] text-white font-normal hover:bg-[#4a90e2] transition-colors"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                   >
                     Apply Now

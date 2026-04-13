@@ -37,7 +37,7 @@ export function ProjectsHero() {
           <div className="flex flex-wrap items-center justify-center gap-[12px]">
             <a
               href="#featured-projects"
-              className="inline-flex items-center justify-center px-[24px] py-[12px] rounded-[8px] bg-[#0A5191] text-white font-semibold hover:bg-[#d63532] transition-colors"
+              className="inline-flex items-center justify-center px-[24px] py-[12px] rounded-[8px] bg-[#0A5191] text-white font-semibold hover:bg-[#4a90e2] transition-colors"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
               Explore Projects

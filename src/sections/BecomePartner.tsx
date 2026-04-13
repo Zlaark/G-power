@@ -29,7 +29,7 @@ export function BecomePartner() {
           <div className="flex justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-[24px] sm:px-[30px] py-[14px] sm:py-[16px] font-semibold text-white bg-[#0A5191] hover:bg-[#d63532] rounded-[5px] transition-all hover:-translate-y-[2px]"
+              className="inline-flex items-center justify-center px-[24px] sm:px-[30px] py-[14px] sm:py-[16px] font-semibold text-white bg-[#0A5191] hover:bg-[#4a90e2] rounded-[5px] transition-all hover:-translate-y-[2px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 2vw, 16px)' }}
             >
               Partner With Us

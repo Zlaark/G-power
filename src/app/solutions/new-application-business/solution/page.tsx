@@ -334,7 +334,7 @@ export default function NewApplicationBusinessPage() {
                     </div>
                     <Link
                       href={product.href}
-                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#0A5191] font-medium hover:text-[#d63532] transition-all duration-500 ease-in-out md:group-hover:gap-4"
+                      className="mt-auto inline-flex items-center gap-2 w-fit text-[#0A5191] font-medium hover:text-[#4a90e2] transition-all duration-500 ease-in-out md:group-hover:gap-4"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.15vw, 16px)" }}
                     >
                       View Details <span aria-hidden="true">→</span>
@@ -423,7 +423,7 @@ export default function NewApplicationBusinessPage() {
           <FadeIn delay={300} direction="up" className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-[12px] sm:gap-[14px]">
             <Link
               href="/contact"
-              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#0A5191] text-white font-medium transition-all duration-500 ease-in-out hover:bg-[#d63532] md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(10, 81, 145,0.4)]"
+              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#0A5191] text-white font-medium transition-all duration-500 ease-in-out hover:bg-[#4a90e2] md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(10, 81, 145,0.4)]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
               Contact Us
