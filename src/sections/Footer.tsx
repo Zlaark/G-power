@@ -50,11 +50,11 @@ export const Footer = () => {
                         <FadeIn delay={100} direction="up" className="lg:col-span-6 flex flex-col items-center text-center order-1 lg:order-2 px-4 lg:px-16 border-x-0 lg:border-x border-white/5 pb-4 lg:pb-0">
                             <Link href="/">
                                 <Image
-                                    src="/logo-clean.png"
+                                    src="/logo.png"
                                     alt="G-Power Logo"
                                     width={180}
                                     height={90}
-                                    className="h-[65px] w-auto object-contain brightness-0 invert mb-12 hover:opacity-80 transition-opacity duration-500"
+                                    className="h-[65px] w-auto object-contain mb-12 hover:opacity-80 transition-opacity duration-500"
                                 />
                             </Link>
                             <p className="text-white/50 leading-[2] font-light text-[17px] max-w-[540px] mb-12">
