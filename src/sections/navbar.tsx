@@ -62,9 +62,9 @@ export const Navbar = () => {
                             Our Projects
                         </Link>
                         <div className="relative group">
-                            <Link href="/solutions" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <span className="nav-link text-[16px] 2xl:text-[18px] font-medium text-black/75 hover:text-black transition-colors whitespace-nowrap cursor-default" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Solutions
-                            </Link>
+                            </span>
                             <div className="absolute left-0 top-full mt-3 w-[220px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
                                 <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Utility
@@ -151,9 +151,9 @@ export const Navbar = () => {
                         <Link href="/our-projects" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Our Projects
                         </Link>
-                        <Link href="/solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        <span className="text-white text-[16px] font-medium transition-colors cursor-default" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Solutions
-                        </Link>
+                        </span>
                         <Link href="/solutions/utility" onClick={() => setIsMobileMenuOpen(false)} className="text-white/85 text-[15px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             - Utility
                         </Link>
@@ -184,7 +184,6 @@ export const Navbar = () => {
                         <Link href="/careers" onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[16px] font-medium hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers
                         </Link>
-
                         <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-[#0A5191] text-white px-8 py-3 rounded text-[16px] font-medium hover:bg-white hover:text-[#0A5191] transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Contact Us
                         </Link>
