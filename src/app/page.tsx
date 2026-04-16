@@ -1,7 +1,10 @@
 import { Navbar } from "@/sections/navbar";
 import { Hero3 } from "@/sections/Hero3";
+import { BessHero } from "@/sections/BessHero";
 import { SaveOnBills } from "@/sections/SaveOnBills";
+import { WhyGPowerHome } from "@/sections/WhyGPowerHome";
 import { SolarMaintenance } from "@/sections/SolarMaintenance";
+import { GPowerAdvantage } from "@/sections/GPowerAdvantage";
 import { GenerateEnergy } from "@/sections/GenerateEnergy";
 import { SleekDurable } from "@/sections/SleekDurable";
 import { FeaturesCarousel } from "@/sections/FeaturesCarousel";
@@ -16,8 +19,11 @@ export default function Home() {
     <main className="flex min-h-screen flex-col overflow-x-hidden">
       <Navbar />
       <Hero3 />
+      <BessHero />
       <SaveOnBills />
+      <WhyGPowerHome />
       <SolarMaintenance />
+      <GPowerAdvantage />
       <GenerateEnergy />
       <SleekDurable />
       <FeaturesCarousel />
