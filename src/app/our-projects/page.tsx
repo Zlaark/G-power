@@ -1,7 +1,7 @@
 import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { ProjectsHero } from "@/sections/ProjectsHero";
-import { ProjectCategories } from "@/sections/ProjectCategories";
+
 import { FeaturedProjects } from "@/sections/FeaturedProjects";
 import { ProjectImpact } from "@/sections/ProjectImpact";
 import { ProjectsCta } from "@/sections/ProjectsCta";
@@ -17,7 +17,7 @@ export default function OurProjectsPage() {
     <main className="min-h-screen">
       <Navbar />
       <ProjectsHero />
-      <ProjectCategories />
+
       <FeaturedProjects />
       <ProjectImpact />
       <ProjectsCta />

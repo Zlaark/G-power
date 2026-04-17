@@ -201,12 +201,6 @@ export const FeaturesCarousel = () => {
                                         >
                                             {card.title}
                                         </h2>
-                                        <p
-                                            className="text-[#4A4A4A] font-medium text-xs md:text-base lg:text-[16px] leading-snug md:leading-relaxed lg:leading-[26px]"
-                                            style={{ fontFamily: "'Poppins', sans-serif" }}
-                                        >
-                                            {card.description}
-                                        </p>
                                     </div>
                                 </div>
                             );

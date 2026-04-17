@@ -8,10 +8,10 @@ import { GPowerAdvantage } from "@/sections/GPowerAdvantage";
 import { GenerateEnergy } from "@/sections/GenerateEnergy";
 import { SleekDurable } from "@/sections/SleekDurable";
 import { FeaturesCarousel } from "@/sections/FeaturesCarousel";
-import { GridGoesDown } from "@/sections/GridGoesDown";
-import { SolarHome } from "@/sections/SolarHome";
-import { GettingToPowerOn } from "@/sections/GettingToPowerOn";
-import { ServiceCards } from "@/sections/ServiceCards";
+// import { GridGoesDown } from "@/sections/GridGoesDown";
+// import { SolarHome } from "@/sections/SolarHome";
+// import { GettingToPowerOn } from "@/sections/GettingToPowerOn";
+// import { ServiceCards } from "@/sections/ServiceCards";
 import { Footer } from "@/sections/Footer";
 
 export default function Home() {
@@ -21,16 +21,16 @@ export default function Home() {
       <Hero3 />
       <BessHero />
       <SaveOnBills />
-      <WhyGPowerHome />
+      {/* <WhyGPowerHome /> */}
       <SolarMaintenance />
       <GPowerAdvantage />
       <GenerateEnergy />
       <SleekDurable />
       <FeaturesCarousel />
-      <GridGoesDown />
+      {/* <GridGoesDown />
       <SolarHome />
       <GettingToPowerOn />
-      <ServiceCards />
+      <ServiceCards /> */}
       <Footer />
     </main>
   );
