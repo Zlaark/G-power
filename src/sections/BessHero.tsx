@@ -126,27 +126,29 @@ export const BessHero = () => {
                         </FadeIn>
 
                         {/* CTA Buttons */}
-                        <FadeIn delay={600} direction="up">
-                            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-[15px] w-full sm:w-auto">
-                                <Link href="/solutions">
+                        <FadeIn delay={600} direction="up" className="w-full sm:w-auto">
+                            <div className="flex flex-row items-center gap-[10px] sm:gap-[15px] w-full sm:w-auto">
+                                <Link href="/solutions" className="w-1/2 sm:w-auto">
                                     <button
-                                        className="bess-hero-btn bess-btn-primary flex items-center justify-center w-full sm:w-[220px] h-[52px] md:h-[56px] rounded-[6px] text-white font-semibold border-2 border-[#0A5191] bg-[#0A5191]"
+                                        className="bess-hero-btn bess-btn-primary flex items-center justify-center w-full sm:w-[220px] h-[52px] md:h-[56px] rounded-[6px] text-white font-semibold border-2 border-[#0A5191] bg-[#0A5191] px-2"
                                         style={{
                                             fontFamily: "'Poppins', sans-serif",
-                                            fontSize: "clamp(13px, 1.2vw, 15px)",
+                                            fontSize: "clamp(12px, 1.2vw, 15px)",
                                             letterSpacing: "0.3px",
+                                            whiteSpace: "nowrap"
                                         }}
                                     >
                                         Explore Solutions
                                     </button>
                                 </Link>
-                                <Link href="/contact">
+                                <Link href="/contact" className="w-1/2 sm:w-auto">
                                     <button
-                                        className="bess-hero-btn bess-btn-outline flex items-center justify-center w-full sm:w-[220px] h-[52px] md:h-[56px] rounded-[6px] text-[#0A5191] font-semibold border-2 border-[#0A5191] bg-transparent"
+                                        className="bess-hero-btn bess-btn-outline flex items-center justify-center w-full sm:w-[220px] h-[52px] md:h-[56px] rounded-[6px] text-[#0A5191] font-semibold border-2 border-[#0A5191] bg-transparent px-2"
                                         style={{
                                             fontFamily: "'Poppins', sans-serif",
-                                            fontSize: "clamp(13px, 1.2vw, 15px)",
+                                            fontSize: "clamp(12px, 1.2vw, 15px)",
                                             letterSpacing: "0.3px",
+                                            whiteSpace: "nowrap"
                                         }}
                                     >
                                         Contact Us Now
