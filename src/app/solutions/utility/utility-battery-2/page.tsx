@@ -105,7 +105,8 @@ export default function UtilityBattery2Page() {
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[56px] items-start lg:min-h-[102vh]">
-            <FadeIn delay={100} direction="up" className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
+            <div className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
+<FadeIn delay={100} direction="up" className="w-full">
               <div className="relative w-full rounded-[20px] overflow-hidden" style={{ aspectRatio: "3/2.2" }}>
                 <Image
                   src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
@@ -121,6 +122,7 @@ export default function UtilityBattery2Page() {
                 </span>
               </div>
             </FadeIn>
+</div>
 
             <div className="flex-1 flex flex-col gap-[40px] lg:gap-[52px] lg:pt-2">
               <FadeIn delay={160} direction="up">

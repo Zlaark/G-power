@@ -109,8 +109,8 @@ export const ContactForm = () => {
                                     <MapPin className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Head Office</h4>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Green Energy Tower, Königsallee 92, 40212 Düsseldorf, Germany.</p>
+                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Corporate Office Address</h4>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>No. 621/4F, Sire Mansion, Anna Salai, Thousand Lights, Chennai, Tamil Nadu - 600006</p>
                                 </div>
                             </div>
 
@@ -119,9 +119,9 @@ export const ContactForm = () => {
                                     <Phone className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone</h4>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Primary: +49 211 8765 420</p>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Support: +49 211 8765 421</p>
+                                    <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Reg. Mobile No &amp; Email ID</h4>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>+91 9894277915</p>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>info@gpowerindia.com</p>
                                 </div>
                             </div>
 
@@ -131,8 +131,7 @@ export const ContactForm = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Email</h4>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Inquiries: hello@gpower.com</p>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Support: support@gpower.com</p>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>info@gpowerindia.com</p>
                                 </div>
                             </div>
 
@@ -142,9 +141,7 @@ export const ContactForm = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-[#121010] mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>Business Hours</h4>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Sat: 9:00 AM - 2:00 PM</p>
-                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Sun: Closed</p>
+                                    <p className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>Monday to Saturday - 9:30AM to 6:30PM</p>
                                 </div>
                             </div>
                         </div>

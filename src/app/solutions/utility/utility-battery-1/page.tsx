@@ -116,7 +116,8 @@ export default function UtilityBattery1Page() {
           <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[56px] items-start lg:min-h-[102vh]">
 
             {/* LEFT — product image with capacity badge */}
-            <FadeIn delay={100} direction="up" className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
+            <div className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
+<FadeIn delay={100} direction="up" className="w-full">
               <div className="relative w-full rounded-[20px] overflow-hidden" style={{ aspectRatio: "3/2.2" }}>
                   <Image
                   src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
@@ -133,6 +134,7 @@ export default function UtilityBattery1Page() {
                 </span>
               </div>
             </FadeIn>
+</div>
 
             {/* RIGHT — specs, applications, key merits */}
             <div className="flex-1 flex flex-col gap-[40px] lg:gap-[52px] lg:pt-2">
