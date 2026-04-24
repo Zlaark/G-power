@@ -29,9 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className="overflow-x-clip">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased overflow-x-hidden w-full max-w-[100vw] relative`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased overflow-x-clip w-full max-w-[100vw] relative`}
       >
         {children}
       </body>

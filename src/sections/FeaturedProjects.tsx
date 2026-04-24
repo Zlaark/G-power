@@ -247,7 +247,7 @@ export function FeaturedProjects() {
               </button>
             </div>
 
-            <div className="relative h-[210px] sm:h-[250px] md:h-[300px] bg-[#0B1728]">
+            <div className="relative h-[280px] sm:h-[380px] md:h-[480px] bg-[#0B1728]">
               <Image
                 src={activeProject.gallery[activeSlide]}
                 alt={`${activeProject.title} image ${activeSlide + 1}`}

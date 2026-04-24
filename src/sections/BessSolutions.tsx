@@ -35,78 +35,17 @@ const solutions = [
 
 export const BessSolutions = () => {
     return (
-        <section className="relative w-full bg-white pt-[60px] md:pt-[70px] lg:pt-[70px] pb-[40px] md:pb-[60px] lg:pb-[60px] overflow-hidden">
-            <style dangerouslySetInnerHTML={{
-                __html: `
-                .elegant-card {
-                    transition: none;
-                }
-                .elegant-card:hover {
-                    transform: none;
-                    box-shadow: none;
-                }
-                .elegant-card .card-img {
-                    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-                }
-                .elegant-card:hover .card-img {
-                    transform: scale(1.05);
-                }
-                .elegant-line {
-                    position: relative;
-                    width: 100%;
-                    height: 2px;
-                    background-color: #000;
-                    overflow: hidden;
-                    margin-top: 8px;
-                    margin-bottom: 4px;
-                }
-                .elegant-line::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: linear-gradient(90deg, transparent, #0A5191, transparent);
-                    transform: translateX(-100%);
-                    transition: transform 0.6s ease;
-                }
-                .elegant-card:hover .elegant-line::after {
-                    transform: translateX(100%);
-                }
-                .btn-sweep {
-                    position: relative;
-                    overflow: hidden;
-                    z-index: 1;
-                    transition: color 0.4s ease;
-                }
-                .btn-sweep::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 0;
-                    height: 100%;
-                    background-color: #000;
-                    z-index: -1;
-                    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-                }
-                .btn-sweep:hover::before {
-                    width: 100%;
-                }
-                .btn-sweep:hover {
-                    color: #fff;
-                    border-color: #000;
-                }
-            `}} />
-            <div className="w-full max-w-[1600px] mx-auto px-[20px] md:px-[60px] lg:px-[120px] xl:px-[240px]">
-
+        <section className="relative w-full bg-[#050505] pt-[60px] md:pt-[70px] lg:pt-[70px] pb-[40px] md:pb-[60px] lg:pb-[60px] overflow-hidden">
+            {/* Background texture/glow */}
+            <div className="absolute top-0 left-0 w-full h-[400px] bg-gradient-to-b from-[#050505] via-[#0A5191]/5 to-transparent pointer-events-none" />
+            
+            <div className="relative z-10 w-full max-w-[1600px] mx-auto px-[20px] md:px-[60px] lg:px-[120px] xl:px-[240px]">
                 {/* Title */}
                 <h2
-                    className="text-center font-bold text-black mb-[44px] md:mb-[56px] lg:mb-[52px]"
+                    className="text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-[#80c0ff] mb-[44px] md:mb-[56px] lg:mb-[64px]"
                     style={{
                         fontFamily: "'Poppins', sans-serif",
-                        fontSize: 'clamp(18px, 2vw, 28px)',
+                        fontSize: 'clamp(24px, 3vw, 36px)',
                         lineHeight: '1.2',
                     }}
                 >
@@ -114,50 +53,60 @@ export const BessSolutions = () => {
                 </h2>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[40px] md:gap-x-[50px] lg:gap-x-[60px] gap-y-[48px] md:gap-y-[56px] lg:gap-y-[44px] mb-[44px] md:mb-[56px] lg:mb-[44px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mb-[44px] md:mb-[56px] lg:mb-[44px]">
                     {solutions.map((item, index) => (
-                        <div key={index} className="flex flex-col items-start elegant-card rounded-[20px] cursor-pointer">
+                        <div key={index} className="flex flex-col group relative rounded-[24px] bg-white/[0.02] border border-white/5 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:bg-white/[0.04] hover:shadow-[0_8px_32px_rgba(10,81,145,0.15)] cursor-pointer">
+                            
+                            {/* Inner glow on hover */}
+                            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A5191]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                            
+                            {/* Glow Border Effect */}
+                            <div className="absolute inset-0 border border-[#0A5191]/0 rounded-[24px] group-hover:border-[#0A5191]/50 transition-colors duration-500 pointer-events-none z-10" />
+
                             {/* Image */}
-                            <div className="relative w-full aspect-square lg:aspect-square lg:h-auto rounded-[20px] overflow-hidden">
+                            <div className="relative w-full aspect-[4/3] lg:aspect-square overflow-hidden">
                                 <Image
                                     src={item.image}
                                     alt={item.alt}
                                     fill
-                                    className="object-cover card-img"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover transition-transform duration-[1500ms] group-hover:scale-[1.03]"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
+                                {/* Bottom gradient on image to blend with card */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/40 to-transparent opacity-80" />
                             </div>
 
-                            {/* Divider Line */}
-                            <div className="elegant-line" style={{ height: '1px' }} />
+                            {/* Content */}
+                            <div className="flex-1 flex flex-col p-6 lg:p-8 relative z-20 -mt-8">
+                                {/* Divider Line (Glowy) */}
+                                <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent mb-5 group-hover:via-[#0A5191]/80 transition-all duration-500" />
 
-                            {/* Label */}
-                            <p
-                                className="font-semibold text-black transition-colors duration-300"
-                                style={{
-                                    fontFamily: "'Poppins', sans-serif",
-                                    fontSize: 'clamp(15px, 1.3vw, 22px)',
-                                    lineHeight: '1.3',
-                                    marginTop: '10px',
-                                }}
-                            >
-                                {item.label}
-                            </p>
-                            {/* Description */}
-                            <p
-                                className="font-medium text-black mt-2"
-                                style={{
-                                    fontFamily: "'Poppins', sans-serif",
-                                    fontSize: 'clamp(13px, 1vw, 15px)',
-                                    lineHeight: '1.5',
-                                }}
-                            >
-                                {item.description}
-                            </p>
+                                {/* Label */}
+                                <h3
+                                    className="font-semibold text-white mb-3 group-hover:text-[#4ca5ff] transition-colors duration-300"
+                                    style={{
+                                        fontFamily: "'Poppins', sans-serif",
+                                        fontSize: 'clamp(17px, 1.4vw, 22px)',
+                                        lineHeight: '1.3',
+                                    }}
+                                >
+                                    {item.label}
+                                </h3>
+                                {/* Description */}
+                                <p
+                                    className="font-medium text-white/60 group-hover:text-white/80 transition-colors duration-300"
+                                    style={{
+                                        fontFamily: "'Poppins', sans-serif",
+                                        fontSize: 'clamp(13px, 1vw, 15px)',
+                                        lineHeight: '1.6',
+                                    }}
+                                >
+                                    {item.description}
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
-
             </div>
         </section>
     );
