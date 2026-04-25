@@ -47,7 +47,7 @@ export default function UtilityBattery4ProductPage() {
 
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
         <div className="mx-auto max-w-[1400px]">
-          <div className="flex flex-col lg:flex-row gap-[32px] lg:gap-[44px] items-start lg:min-h-[128vh]">
+          <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[56px] items-start lg:min-h-[128vh]">
             <div className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
 <FadeIn delay={100} direction="up" className="w-full">
               <div className="relative w-full rounded-[20px] overflow-hidden border border-[#0A5191]/45 card-soft-hover" style={{ aspectRatio: "3/2.2" }}>
@@ -59,8 +59,8 @@ export default function UtilityBattery4ProductPage() {
             </FadeIn>
 </div>
 
-            <div className="flex-1 flex flex-col gap-[26px] lg:gap-[34px] lg:pt-2">
-              <FadeIn delay={160} direction="up" className="lg:min-h-[45vh] lg:flex lg:items-center lg:py-10">
+            <div className="flex-1 flex flex-col gap-[18px] lg:gap-[22px] lg:pt-2">
+              <FadeIn delay={160} direction="up" className="lg:flex lg:flex-col lg:justify-center lg:py-6">
                 <div>
                   <h2 className="font-medium text-[#121010] mb-[20px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(25px, 3vw, 34px)" }}>Product Specifications</h2>
                   <div className="grid grid-cols-2 gap-[10px]">
@@ -73,7 +73,7 @@ export default function UtilityBattery4ProductPage() {
                   </div>
                 </div>
               </FadeIn>
-              <FadeIn delay={240} direction="up" className="lg:min-h-[40vh] lg:flex lg:items-center lg:py-10">
+              <FadeIn delay={240} direction="up" className="lg:flex lg:flex-col lg:justify-center lg:py-6">
                 <div>
                   <h3 className="font-medium text-[#121010] mb-[12px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(17px, 1.8vw, 20px)" }}>Applications</h3>
                   <div className="flex flex-col gap-[10px]">
@@ -89,7 +89,7 @@ export default function UtilityBattery4ProductPage() {
                   </div>
                 </div>
               </FadeIn>
-              <FadeIn delay={320} direction="up" className="lg:min-h-[40vh] lg:flex lg:items-center lg:py-10">
+              <FadeIn delay={320} direction="up" className="lg:flex lg:flex-col lg:justify-center lg:py-6">
                 <div>
                   <h3 className="font-medium text-[#121010] mb-[12px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(17px, 1.8vw, 20px)" }}>Key Merits</h3>
                   <div className="grid grid-cols-2 gap-[10px]">
