@@ -19,52 +19,53 @@ export const OurJourney = () => {
                     </h2>
                 </FadeIn>
 
-                <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-6 md:gap-8 lg:gap-10 items-start">
-                    <div className="space-y-5 sm:space-y-6">
-                        <FadeIn delay={200} direction="right">
-                            <div className="rounded-[20px] sm:rounded-[24px] border border-[#E5EBF2] bg-white p-6 sm:p-7 md:p-8 shadow-[0_10px_24px_rgba(15,23,42,0.05)] section-soft-hover">
-                                <h3
-                                    className="font-semibold text-[#0F172A]"
-                                    style={{
-                                        fontFamily: "'Poppins', sans-serif",
-                                        fontSize: 'clamp(20px, 2.1vw, 34px)',
-                                        lineHeight: '1.2',
-                                    }}
-                                >
-                                    A timeline of our milestones and achievements.
-                                </h3>
-                            </div>
-                        </FadeIn>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch max-w-[1200px] mx-auto mt-4">
+                    <FadeIn delay={200} direction="right" className="h-full">
+                        <div className="p-8 md:p-12 lg:p-16 rounded-[24px] bg-[#F8F9FA] border border-[#E5EBF2] h-full flex items-center justify-center text-center shadow-[0_10px_28px_rgba(15,23,42,0.03)] section-soft-hover">
+                            <h3
+                                className="font-semibold text-[#0F172A]"
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    fontSize: 'clamp(22px, 2.5vw, 36px)',
+                                    lineHeight: '1.3',
+                                }}
+                            >
+                                A timeline of our milestones and achievements.
+                            </h3>
+                        </div>
+                    </FadeIn>
 
-                        <FadeIn delay={300} direction="up">
-                            <div className="rounded-[20px] sm:rounded-[24px] border border-[#E5EBF2] bg-[#FCFDFE] p-6 sm:p-7 md:p-8 shadow-[0_10px_24px_rgba(15,23,42,0.05)] section-soft-hover">
-                                <ul
-                                    className="font-medium text-[#0F172A] list-disc pl-5 space-y-3"
-                                    style={{
-                                        fontFamily: "'Poppins', sans-serif",
-                                        fontSize: 'clamp(13px, 1.1vw, 15px)',
-                                        lineHeight: '1.4',
-                                    }}
-                                >
-                                    <li className="paragraph-hover-float cursor-default"><strong>2019</strong> - Formation of a dedicated design team for EV battery pack development.</li>
-                                    <li className="paragraph-hover-float cursor-default"><strong>2021</strong> - Obtained ARAI certification for 2-wheeler and 3-wheeler EV battery packs.</li>
-                                    <li className="paragraph-hover-float cursor-default"><strong>2023</strong> - Initiated feasibility and market assessment for Energy Storage Systems.</li>
-                                    <li className="paragraph-hover-float cursor-default"><strong>2024</strong> - Commissioned a fully automated 500 MWh EV &amp; ESS assembly line and launched telecom ESS solutions.</li>
-                                    <li className="paragraph-hover-float cursor-default"><strong>2025</strong> - Delivered the first grid-connected 5 MWh BESS project and secured a 100 MWh BESS order.</li>
-                                </ul>
-                            </div>
-                        </FadeIn>
-                    </div>
-
-                    <FadeIn delay={360} direction="left" className="relative w-full">
-                        <div className="relative w-full aspect-[4/3] md:aspect-[16/11] rounded-[20px] sm:rounded-[24px] overflow-hidden group border border-[#E5EBF2] shadow-[0_14px_34px_rgba(15,23,42,0.07)] transition-all duration-500 hover:shadow-[0_18px_40px_rgba(15,23,42,0.1)] hover:-translate-y-1">
-                            <Image
-                                src="/about-solar-field2.png"
-                                alt="Solar field representing company milestones"
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                                sizes="(max-width: 1024px) 100vw, 46vw"
-                            />
+                    <FadeIn delay={300} direction="left" className="h-full">
+                        <div className="p-8 md:p-10 lg:p-12 rounded-[24px] bg-white border border-[#E5EBF2] shadow-[0_10px_28px_rgba(15,23,42,0.05)] h-full section-soft-hover flex flex-col justify-center">
+                            <ul
+                                className="font-medium text-[#475569] space-y-4"
+                                style={{
+                                    fontFamily: "'Poppins', sans-serif",
+                                    fontSize: 'clamp(14px, 1.2vw, 16px)',
+                                    lineHeight: '1.5',
+                                }}
+                            >
+                                <li className="flex items-start gap-4 group point-hover cursor-default">
+                                    <div className="mt-[6px] w-[8px] h-[8px] rounded-full bg-[#0A5191] flex-shrink-0 transition-transform duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgba(10,81,145,0.6)]" />
+                                    <span className="transition-colors duration-300 group-hover:text-[#0F172A] paragraph-hover-float"><strong>2019</strong> - Formation of a dedicated design team for EV battery pack development.</span>
+                                </li>
+                                <li className="flex items-start gap-4 group point-hover cursor-default">
+                                    <div className="mt-[6px] w-[8px] h-[8px] rounded-full bg-[#0A5191] flex-shrink-0 transition-transform duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgba(10,81,145,0.6)]" />
+                                    <span className="transition-colors duration-300 group-hover:text-[#0F172A] paragraph-hover-float"><strong>2021</strong> - Obtained ARAI certification for 2-wheeler and 3-wheeler EV battery packs.</span>
+                                </li>
+                                <li className="flex items-start gap-4 group point-hover cursor-default">
+                                    <div className="mt-[6px] w-[8px] h-[8px] rounded-full bg-[#0A5191] flex-shrink-0 transition-transform duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgba(10,81,145,0.6)]" />
+                                    <span className="transition-colors duration-300 group-hover:text-[#0F172A] paragraph-hover-float"><strong>2023</strong> - Initiated feasibility and market assessment for Energy Storage Systems.</span>
+                                </li>
+                                <li className="flex items-start gap-4 group point-hover cursor-default">
+                                    <div className="mt-[6px] w-[8px] h-[8px] rounded-full bg-[#0A5191] flex-shrink-0 transition-transform duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgba(10,81,145,0.6)]" />
+                                    <span className="transition-colors duration-300 group-hover:text-[#0F172A] paragraph-hover-float"><strong>2024</strong> - Commissioned a fully automated 500 MWh EV &amp; ESS assembly line and launched telecom ESS solutions.</span>
+                                </li>
+                                <li className="flex items-start gap-4 group point-hover cursor-default">
+                                    <div className="mt-[6px] w-[8px] h-[8px] rounded-full bg-[#0A5191] flex-shrink-0 transition-transform duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgba(10,81,145,0.6)]" />
+                                    <span className="transition-colors duration-300 group-hover:text-[#0F172A] paragraph-hover-float"><strong>2025</strong> - Delivered the first grid-connected 5 MWh BESS project and secured a 100 MWh BESS order.</span>
+                                </li>
+                            </ul>
                         </div>
                     </FadeIn>
                 </div>

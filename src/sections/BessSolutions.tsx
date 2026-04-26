@@ -83,8 +83,8 @@ export const BessSolutions = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent opacity-50" />
                             </div>
 
-                            <div className="flex-1 flex flex-col p-6 sm:p-7 lg:p-8 relative z-20 -mt-5 sm:-mt-6">
-                                <div className="w-10 sm:w-12 h-1 rounded-full bg-[#0A5191]/70 mb-4 sm:mb-5 group-hover:w-16 transition-all duration-500" />
+                            <div className="flex-1 flex flex-col items-center text-center p-6 sm:p-7 lg:p-8 relative z-20 -mt-5 sm:-mt-6">
+                                <div className="w-10 sm:w-12 h-1 rounded-full bg-[#0A5191]/70 mb-4 sm:mb-5 group-hover:w-16 transition-all duration-500 mx-auto" />
                                 <h3
                                     className="font-semibold text-[#0F172A] mb-3 group-hover:text-[#0A5191] transition-colors duration-300"
                                     style={{
@@ -96,7 +96,7 @@ export const BessSolutions = () => {
                                     {item.label}
                                 </h3>
                                 <p
-                                    className="font-medium text-[#64748B] group-hover:text-[#475569] transition-colors duration-300"
+                                    className="font-medium text-[#64748B] group-hover:text-[#475569] transition-colors duration-300 line-clamp-2"
                                     style={{
                                         fontFamily: "'Poppins', sans-serif",
                                         fontSize: 'clamp(12px, 0.95vw, 15px)',

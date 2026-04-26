@@ -74,11 +74,6 @@ export const Footer = () => {
                             {/* Delicate Centered Socials */}
                             <div className="flex gap-3 items-center">
                                 <Link href="#" className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-white hover:text-black hover:scale-110 transition-all duration-500 hover:border-white">
-                                    <svg width="15" height="15" viewBox="0 0 27 24" fill="currentColor">
-                                        <path d="M21.2 0H25.3L16.3 10.2L26.9 24H18.6L12.1 15.6L4.7 24H0.6L10.2 13.1L0 0H8.5L14.4 7.7L21.2 0ZM19.7 21.6H22L7.3 2.5H5L19.7 21.6Z" />
-                                    </svg>
-                                </Link>
-                                <Link href="#" className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-white hover:text-black hover:scale-110 transition-all duration-500 hover:border-white">
                                     <svg width="16" height="16" viewBox="0 0 27 27" fill="currentColor">
                                         <path d="M6.04 3.02C6.04 4.69 4.69 6.04 3.02 6.04C1.35 6.04 0 4.69 0 3.02C0 1.35 1.35 0 3.02 0C4.69 0 6.04 1.35 6.04 3.02ZM6.04 8.39H0V27H6.04V8.39ZM14.56 8.39H8.55V27H14.56V17.25C14.56 11.78 21.59 11.3 21.59 17.25V27H27.62V15.16C27.62 5.89 17.01 6.24 14.56 10.82V8.39Z" />
                                     </svg>

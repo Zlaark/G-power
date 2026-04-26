@@ -1,14 +1,11 @@
 import { Navbar } from "@/sections/navbar";
 import { AboutHero } from "@/sections/AboutHero";
-import { EnergyStorage } from "@/sections/EnergyStorage";
-import { FutureStorage } from "@/sections/FutureStorage";
+import { StrategicPartnerships } from "@/sections/StrategicPartnerships";
 import { BessSolutions } from "@/sections/BessSolutions";
-import { AboutBanner } from "@/sections/AboutBanner";
 import { HithiumHiner } from "@/sections/HithiumHiner";
 import { CustomBatteryPacks } from "@/sections/CustomBatteryPacks";
 import { EnergyManagement } from "@/sections/EnergyManagement";
 import { OurJourney } from "@/sections/OurJourney";
-import { WhyGPower } from "@/sections/WhyGPower";
 import { AboutBanner2 } from "@/sections/AboutBanner2";
 import { Footer } from "@/sections/Footer";
 
@@ -17,15 +14,12 @@ export default function AboutPage() {
         <main className="flex min-h-screen flex-col">
             <Navbar />
             <AboutHero />
-            <EnergyStorage />
-            <FutureStorage />
+            <StrategicPartnerships />
             <BessSolutions />
-            <AboutBanner />
             <HithiumHiner />
             <CustomBatteryPacks />
             <EnergyManagement />
             <OurJourney />
-            <WhyGPower />
             <AboutBanner2 />
             <Footer />
         </main>
