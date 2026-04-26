@@ -14,6 +14,7 @@ import { FeaturesCarousel } from "@/sections/FeaturesCarousel";
 // import { ServiceCards } from "@/sections/ServiceCards";
 import { Footer } from "@/sections/Footer";
 import { TurnkeyEnergySolutions } from "@/sections/TurnkeyEnergySolutions";
+import { GlobalPresenceMap } from "@/sections/GlobalPresenceMap";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <SolarHome />
       <GettingToPowerOn />
       <ServiceCards /> */}
+      <GlobalPresenceMap />
       <TurnkeyEnergySolutions />
       <Footer />
     </main>

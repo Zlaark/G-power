@@ -4,26 +4,26 @@ import { TrendingUp, Lightbulb, Users, HeartHandshake } from "lucide-react";
 export function WhyWorkAtGPower() {
   const benefits = [
     {
-      title: "Career Growth",
-      description: "Clear advancement paths and professional development opportunities",
+      title: "Professional Growth",
+      description: "Advance your career with continuous learning, hands-on industry exposure, and opportunities to take ownership of impactful BESS projects.",
       icon: <TrendingUp className="w-10 h-10 text-[#0A5191]" strokeWidth={2.3} />,
       bg: "#EFF6FF",
     },
     {
-      title: "Challenging Work",
-      description: "Work on innovative projects that make a real environmental impact",
+      title: "Innovation-Driven Work",
+      description: "Be part of solving real-world energy challenges through advanced Battery Energy Storage solutions designed for a smarter and more sustainable future.",
       icon: <Lightbulb className="w-10 h-10 text-[#0A5191]" strokeWidth={2.3} />,
       bg: "#EFF6FF",
     },
     {
-      title: "Great Team",
-      description: "Collaborate with industry experts and passionate colleagues",
+      title: "Collaborative Culture",
+      description: "Work alongside experienced professionals, engineers, and industry leaders in an environment built on trust, teamwork, and shared success.",
       icon: <Users className="w-10 h-10 text-[#0A5191]" strokeWidth={2.3} />,
       bg: "#FFF7ED",
     },
     {
-      title: "Benefits",
-      description: "Competitive compensation, health insurance, and work-life balance",
+      title: "Employee Wellbeing",
+      description: "We value our people with competitive benefits, a supportive work environment, and a strong focus on work-life balance and long-term career satisfaction.",
       icon: <HeartHandshake className="w-10 h-10 text-[#0A5191]" strokeWidth={2.3} />,
       bg: "#FAF5FF",
     },
@@ -44,8 +44,7 @@ export function WhyWorkAtGPower() {
               className="paragraph-hover-float text-[#121010]/80 font-medium leading-[1.7]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 18px)" }}
             >
-              Join a team of passionate professionals committed to transforming India&apos;s energy landscape.
-              At GPower, you&apos;ll work on cutting-edge renewable energy projects while growing your career in a supportive, innovative environment.
+              Be part of a team shaping the future of energy storage in India. At GPower, we work on advanced Battery Energy Storage System (BESS) solutions that support cleaner, smarter, and more reliable power infrastructure. Here, your work creates real industry impact while helping you grow in a collaborative and forward-thinking environment.
             </p>
           </div>
         </FadeIn>

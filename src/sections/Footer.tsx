@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FadeIn } from '@/components/FadeIn';
-import { ServiceHighlight } from '@/sections/ServiceHighlight';
 
 export const Footer = () => {
     const quickLinks = [
@@ -21,8 +20,6 @@ export const Footer = () => {
 
     return (
         <div className="flex flex-col w-full bg-[#020203] text-white relative overflow-hidden">
-            <ServiceHighlight />
-            
             {/* The Horizon Gradient - Creates a subtle deep blue sunrise effect at the bottom */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#0A5191]/15 via-[#0A5191]/[0.02] to-transparent pointer-events-none" />
 
@@ -65,12 +62,12 @@ export const Footer = () => {
                                 <Image
                                     src="/logo-clean.png"
                                     alt="G-Power Logo"
-                                    width={180}
-                                    height={90}
-                                    className="h-[54px] w-auto object-contain mb-6 hover:opacity-80 transition-opacity duration-500"
+                                    width={260}
+                                    height={130}
+                                    className="h-[78px] w-auto object-contain mb-6 hover:opacity-80 transition-opacity duration-500"
                                 />
                             </Link>
-                            <p className="text-white/50 leading-[1.65] font-light text-[15px] max-w-[500px] mb-6">
+                            <p className="text-white/50 leading-[1.65] font-light text-[18px] max-w-[500px] mb-6">
                                 Pioneering sustainable energy solutions. We engineer cutting-edge battery storage systems to power a brighter, secure, and uninterrupted tomorrow for industrial and residential applications worldwide.
                             </p>
                             
