@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FadeIn } from '@/components/FadeIn';
+import { AnimatedCounter } from '@/components/AnimatedCounter';
 
 export const CustomBatteryPacks = () => {
     return (
@@ -54,7 +55,7 @@ export const CustomBatteryPacks = () => {
                                             lineHeight: '1',
                                         }}
                                     >
-                                        {stat.value}
+                                        <AnimatedCounter value={stat.value} duration={2000} />
                                     </span>
                                     <span 
                                         className="font-semibold text-[#0A5191]"
