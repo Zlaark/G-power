@@ -12,9 +12,9 @@ export const AboutHero = () => {
                     src="/Banner (About Us Page).webp"
                     alt="About G-Power Background"
                     fill
-                    className="object-cover opacity-40"
+                    className="object-cover opacity-80"
                 />
-                <div className="absolute inset-0 bg-[#121010]/60" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
             </div>
             
             {/* Background Decor */}

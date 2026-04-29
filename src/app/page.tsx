@@ -23,7 +23,6 @@ export default function Home() {
       <Hero3 />
       <BessHero />
       <SaveOnBills />
-      {/* <WhyGPowerHome /> */}
       <SolarMaintenance />
       <GPowerAdvantage />
       <GenerateEnergy />

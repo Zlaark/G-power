@@ -1,6 +1,5 @@
 "use client";
 import { FadeIn } from "@/components/FadeIn";
-import { useState, useEffect } from "react";
 
 const features = [
     {
@@ -30,20 +29,6 @@ const features = [
 ];
 
 export const WhyGPowerHome = () => {
-    const [currentImage, setCurrentImage] = useState(0);
-    const images = [
-        "/Why G-power (Home Page).webp",
-        "/why-gpower-home.webp",
-        "/gpower-advantage.png"
-    ];
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImage((prev) => (prev + 1) % images.length);
-        }, 4000); // Change image every 4 seconds
-
-        return () => clearInterval(interval);
-    }, [images.length]);
 
     return (
         <section className="relative w-full bg-white overflow-hidden">
@@ -61,16 +46,10 @@ export const WhyGPowerHome = () => {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
-                    transition: opacity 1s ease-in-out;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                    transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);
                 }
-                .wgp-img-wrap img.active {
-                    opacity: 1;
-                }
-                .wgp-img-wrap img:not(.active) {
-                    opacity: 0;
+                .wgp-img-wrap:hover img {
+                    transform: scale(1.04);
                 }
                 .wgp-dot {
                     width: 7px;
@@ -91,19 +70,7 @@ export const WhyGPowerHome = () => {
                     background: #0A5191;
                     animation: wgp-bar-in 0.8s cubic-bezier(0.16,1,0.3,1) 0.2s forwards;
                 }
-                .wgp-indicator {
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 50%;
-                    background: rgba(10,81,145,0.3);
-                    transition: all 0.3s ease;
-                    cursor: pointer;
-                }
-                .wgp-indicator.active {
-                    background: #0A5191;
-                    transform: scale(1.2);
-                }
-            `,
+                            `,
                 }}
             />
 
@@ -188,15 +155,11 @@ export const WhyGPowerHome = () => {
                         />
 
                         <FadeIn delay={300} direction="left" className="w-full">
-                            <div className="wgp-img-wrap" style={{ paddingBottom: '75%' }}>
-                                {images.map((image, index) => (
-                                    <img
-                                        key={index}
-                                        src={image}
-                                        alt={`G-power facility ${index + 1}`}
-                                        className={index === currentImage ? 'active' : ''}
-                                    />
-                                ))}
+                            <div className="wgp-img-wrap">
+                                <img
+                                    src="/Why G-power (Home Page).webp"
+                                    alt="G-power engineer at BESS facility"
+                                />
                                 {/* Branded gradient overlay */}
                                 <div
                                     className="absolute inset-0 pointer-events-none"
@@ -204,18 +167,6 @@ export const WhyGPowerHome = () => {
                                         background: "linear-gradient(to top, rgba(10,81,145,0.12) 0%, transparent 50%)",
                                     }}
                                 />
-                            </div>
-                            
-                            {/* Slide indicators */}
-                            <div className="flex justify-center gap-2 mt-4">
-                                {images.map((_, index) => (
-                                    <button
-                                        key={index}
-                                        className={`wgp-indicator ${index === currentImage ? 'active' : ''}`}
-                                        onClick={() => setCurrentImage(index)}
-                                        aria-label={`Go to slide ${index + 1}`}
-                                    />
-                                ))}
                             </div>
                         </FadeIn>
 
