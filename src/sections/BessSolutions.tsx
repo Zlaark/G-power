@@ -2,34 +2,34 @@ import Image from 'next/image';
 
 const solutions = [
     {
-        image: '/about-renewable.png',
-        alt: 'Smart residential energy storage',
-        label: 'PowerPod',
-        description: 'Smart residential energy storage systems designed to provide reliable home power. PowerPod integrates advanced lithium batteries with intelligent inverters to optimize energy usage and ensure uninterrupted power supply.'
+        image: '/Battery Energy Storage Systems (BESS)  (About Us Page).webp',
+        alt: 'Battery Energy Storage Systems (BESS)',
+        label: 'Battery Energy Storage Systems (BESS)',
+        description: 'Grid-scale battery energy storage solutions that support renewable energy integration, improve grid stability, and enable reliable power infrastructure for large-scale applications.'
     },
     {
-        image: '/about-solar-field.png',
+        image: '/Commercial Energy Systems (About Us Page).webp',
         alt: 'Commercial Energy Systems',
         label: 'Commercial Energy Systems',
         description: 'Energy storage solutions designed for offices, institutions, and commercial establishments. Our systems help businesses maintain operational continuity while improving energy efficiency.'
     },
     {
-        image: '/about-solar-field.png',
+        image: '/Industrial Energy Systems (About Us Page).webp',
         alt: 'Industrial Energy Systems',
         label: 'Industrial Energy Systems',
         description: 'High-capacity battery and inverter solutions designed for demanding industrial environments, ensuring operational reliability and energy stability for large-scale facilities.'
     },
     {
-        image: '/about-solar-field.png',
+        image: '/EV Battery Packs  (About Us Page).webp',
         alt: 'EV Battery Packs',
         label: 'EV Battery Packs',
         description: 'Advanced lithium battery solutions designed for a wide range of mobility applications. From electric two-wheelers and three-wheelers to commercial vehicles, trucks, and marine vessels, our battery systems are engineered for high performance, safety, and long lifecycle.'
     },
     {
-        image: '/about-solar-field.png',
-        alt: 'Battery Energy Storage Systems (BESS)',
-        label: 'Battery Energy Storage Systems (BESS)',
-        description: 'Grid-scale battery energy storage solutions that support renewable energy integration, improve grid stability, and enable reliable power infrastructure for large-scale applications.'
+        image: '/about-renewable.png',
+        alt: 'Smart residential energy storage',
+        label: 'PowerPod',
+        description: 'Smart residential energy storage systems designed to provide reliable home power. PowerPod integrates advanced lithium batteries with intelligent inverters to optimize energy usage and ensure uninterrupted power supply.'
     },
 ];
 

@@ -1,10 +1,22 @@
 import { FadeIn } from "@/components/FadeIn";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export const AboutHero = () => {
     return (
         <section className="py-[56px] sm:py-[64px] lg:py-[90px] bg-[#121010] text-white relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/Banner (About Us Page).webp"
+                    alt="About G-Power Background"
+                    fill
+                    className="object-cover opacity-40"
+                />
+                <div className="absolute inset-0 bg-[#121010]/60" />
+            </div>
+            
             {/* Background Decor */}
             <div className="absolute inset-x-0 top-0 h-[1px] bg-white/5"></div>
             <div
