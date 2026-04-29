@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { FadeIn } from "@/components/FadeIn";
 import Image from "next/image";
-import { MapPin, Zap, Calendar, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { MapPin, Zap, Calendar, X } from "lucide-react";
 
 export function FeaturedProjects() {
   const projects = [
@@ -194,7 +194,6 @@ export function FeaturedProjects() {
                     type="button"
                     onClick={() => {
                       setActiveProjectIndex(index);
-                      setActiveSlide(0);
                     }}
                     className="mt-5 inline-flex items-center justify-center rounded-[14px] bg-[#0A5191] text-white px-5 py-2.5 text-[14px] font-semibold transition-colors hover:bg-[#083D6D]"
                     style={{ fontFamily: "'Poppins', sans-serif" }}
