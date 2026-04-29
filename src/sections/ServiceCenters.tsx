@@ -78,7 +78,7 @@ export const ServiceCenters = () => {
                             <button
                                 key={data.region}
                                 onClick={() => setActiveTab(idx)}
-                                className={`px-8 py-3 rounded-full text-base font-medium transition-all duration-300 ${activeTab === idx 
+                                className={`px-8 py-3 rounded-[14px] text-base font-medium transition-all duration-300 ${activeTab === idx 
                                     ? 'bg-[#0A5191] text-white shadow-[0_8px_20px_rgba(10, 81, 145,0.3)] scale-105' 
                                     : 'bg-white text-[#4A4A4A] border border-[#E5E7EB] hover:border-[#0A5191] hover:text-[#0A5191]'}`}
                                 style={{ fontFamily: "'Poppins', sans-serif" }}

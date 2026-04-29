@@ -31,11 +31,11 @@ export const GenerateEnergy = () => {
                     </div>
 
                     {/* Right Side: Image */}
-                    <FadeIn delay={300} direction="left" className="w-full lg:w-1/2 h-[250px] md:h-[320px] lg:h-[450px] group cursor-pointer rounded-t-[20px] overflow-hidden">
+                    <FadeIn delay={300} direction="left" className="w-full lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] group cursor-pointer rounded-[24px] overflow-hidden shadow-2xl shadow-[#0A5191]/10">
                         <img
-                            src="/home3.png"
+                            src="/generate-energy-home.webp"
                             alt="Solar Energy Generation"
-                            className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                         />
                     </FadeIn>
                 </div>

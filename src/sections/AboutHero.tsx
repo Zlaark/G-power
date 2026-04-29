@@ -94,7 +94,7 @@ export const AboutHero = () => {
                     Powering the Next Generation of Energy
                 </p>
                 <div className="animate-hero-reveal-delay-2 mt-8 sm:mt-10">
-                    <a href="#energy-storage" className="px-8 py-3.5 sm:px-10 sm:py-4 bg-[#0A5191] text-white rounded-full font-medium btn-sweep-blue btn-glow flex items-center gap-3 group transition-all duration-300" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                    <a href="#energy-storage" className="px-8 py-3.5 sm:px-10 sm:py-4 bg-[#0A5191] text-white rounded-[14px] font-medium btn-sweep-blue btn-glow flex items-center gap-3 group transition-all duration-300" style={{ fontFamily: "'Poppins', sans-serif" }}>
                         <span>Discover Our Vision</span>
                         <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

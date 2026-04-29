@@ -1,3 +1,5 @@
+import { Button } from '@/components/ui/Button';
+
 export const Hero3 = () => {
     return (
         <section className="relative w-full h-[80vh] md:h-screen min-h-[550px] overflow-hidden">
@@ -57,19 +59,21 @@ export const Hero3 = () => {
 
                 {/* Buttons - bottom area */}
                 <div className="absolute left-[20px] md:left-[86px] right-[20px] md:right-auto bottom-[40px] md:bottom-[10vh] lg:bottom-[120px] flex flex-col md:flex-row items-stretch md:items-center gap-[15px] md:gap-[27px]">
-                    <button
-                        className="animate-hero-reveal-delay-2 btn-sweep border-transparent flex items-center justify-center w-full md:w-[273px] h-[50px] md:h-[57px] border-2 rounded-[5px] text-white font-semibold transition-all hover:text-white hover:border-[#0A5191]"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)', backgroundColor: 'rgba(255, 255, 255, 0.1)', borderColor: 'white' }}
+                    <Button
+                        variant="outline"
+                        size="lg"
+                        className="animate-hero-reveal-delay-2 w-full md:w-[273px] !rounded-[5px]"
                     >
                         Schedule consultation
-                    </button>
+                    </Button>
 
-                    <button
-                        className="animate-hero-reveal-delay-3 btn-sweep flex items-center justify-center w-full md:w-[190px] h-[50px] md:h-[57px] rounded-[5px] text-[#121010] bg-white font-semibold transition-all hover:text-white"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 15px)' }}
+                    <Button
+                        variant="secondary"
+                        size="lg"
+                        className="animate-hero-reveal-delay-3 w-full md:w-[190px] !rounded-[5px]"
                     >
                         Order Now
-                    </button>
+                    </Button>
                 </div>
             </div>
         </section>

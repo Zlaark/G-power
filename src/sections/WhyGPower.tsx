@@ -23,7 +23,7 @@ export const WhyGPower = () => {
                     <FadeIn delay={220} direction="up" className="relative w-full">
                         <div className="relative w-full aspect-[16/7] min-h-[230px] sm:min-h-[280px] md:min-h-[360px] rounded-[22px] sm:rounded-[26px] overflow-hidden border border-[#E5EBF2] shadow-[0_14px_34px_rgba(15,23,42,0.07)]">
                             <Image
-                                src="/why-gpower.png"
+                                src="/why-gpower-home.webp"
                                 alt="Why G-Power visual"
                                 fill
                                 className="object-cover"

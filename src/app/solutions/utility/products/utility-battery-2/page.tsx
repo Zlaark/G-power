@@ -50,7 +50,7 @@ export default function UtilityBattery2ProductPage() {
         <div className="relative z-10 mx-auto max-w-[800px] text-center">
           <FadeIn delay={100} direction="up"><h2 className="text-white font-normal mb-4" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3.4vw, 40px)" }}>Interested in G-Power Cube T28?</h2></FadeIn>
           <FadeIn delay={200} direction="up"><p className="text-white/70 mb-10" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>Contact our sales team for pricing and project consultation</p></FadeIn>
-          <FadeIn delay={300} direction="up"><Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[10px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}>Request a Quote</Link></FadeIn>
+          <FadeIn delay={300} direction="up"><Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[14px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}>Request a Quote</Link></FadeIn>
         </div>
       </section>
       <Footer />

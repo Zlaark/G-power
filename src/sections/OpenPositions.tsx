@@ -97,12 +97,15 @@ export function OpenPositions() {
 
   useEffect(() => {
     if (selectedJob) {
+      document.documentElement.style.overflow = "hidden";
       document.body.style.overflow = "hidden";
     } else {
+      document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
     }
 
     return () => {
+      document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
     };
   }, [selectedJob]);
@@ -161,7 +164,7 @@ export function OpenPositions() {
                   <button
                     type="button"
                     onClick={() => openModal(job)}
-                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[8px] bg-[#0A5191] text-white font-normal hover:bg-[#4a90e2] transition-colors"
+                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[14px] bg-[#0A5191] text-white font-normal hover:bg-[#4a90e2] transition-colors"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                   >
                     Apply Now
@@ -191,7 +194,7 @@ export function OpenPositions() {
               <button
                 type="button"
                 onClick={closeModal}
-                className="shrink-0 w-10 h-10 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#334155] hover:bg-[#F8FAFC]"
+                className="shrink-0 w-10 h-10 rounded-[14px] border border-[#E2E8F0] flex items-center justify-center text-[#334155] hover:bg-[#F8FAFC]"
                 aria-label="Close application form"
               >
                 <X size={18} />
@@ -209,14 +212,14 @@ export function OpenPositions() {
                     <input
                       type="text"
                       required
-                      placeholder="First name"
+                      placeholder="John"
                       className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                     />
                     <input
                       type="text"
                       required
-                      placeholder="Last name"
+                      placeholder="Doe"
                       className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                     />
@@ -225,7 +228,7 @@ export function OpenPositions() {
                   <input
                     type="email"
                     required
-                    placeholder="Email"
+                    placeholder="john.doe@company.com"
                     className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                   />
@@ -233,7 +236,14 @@ export function OpenPositions() {
                   <input
                     type="tel"
                     required
-                    placeholder="Phone"
+                    pattern="[0-9]{10}"
+                    maxLength={10}
+                    onInput={(e) => {
+                        const target = e.target as HTMLInputElement;
+                        target.value = target.value.replace(/[^0-9]/g, '');
+                    }}
+                    placeholder="+91 98765 43210"
+                    title="Please enter a 10-digit phone number"
                     className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
                     style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                   />
@@ -262,7 +272,7 @@ export function OpenPositions() {
                     </p>
                     <textarea
                       rows={5}
-                      placeholder="Write your cover letter"
+                      placeholder="Tell us about your project or how we can help you..."
                       className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F] resize-none"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
                     />
@@ -272,7 +282,7 @@ export function OpenPositions() {
                     <button
                       type="button"
                       onClick={closeModal}
-                      className="w-full rounded-full border border-[#1B2148] px-6 py-3 text-[#1B2148] font-semibold hover:bg-[#F8FAFC] transition-colors"
+                      className="w-full rounded-[14px] border border-[#1B2148] px-6 py-3 text-[#1B2148] font-semibold hover:bg-[#F8FAFC] transition-colors"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
                     >
                       Cancel
@@ -280,7 +290,7 @@ export function OpenPositions() {
 
                     <button
                       type="submit"
-                      className="w-full rounded-full bg-[#11153F] px-6 py-3 text-white font-semibold hover:bg-[#0b1035] transition-colors"
+                      className="w-full rounded-[14px] bg-[#11153F] px-6 py-3 text-white font-semibold hover:bg-[#0b1035] transition-colors"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
                     >
                       Submit application

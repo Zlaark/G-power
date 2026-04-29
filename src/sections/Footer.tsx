@@ -41,7 +41,7 @@ export const Footer = () => {
                         <FadeIn delay={200} direction="up" className="lg:col-span-3 flex flex-col lg:items-start lg:text-left order-2 lg:order-1 lg:pt-4 w-full border-t lg:border-t-0 border-white/5 pt-6 lg:pr-5">
                             <div className="grid grid-cols-2 gap-4 w-full">
                                 <div>
-                                    <h4 className="text-[#0A5191] text-[11px] tracking-[0.35em] uppercase font-bold mb-5">Explorer</h4>
+                                    <h4 className="text-[#0A5191] text-[11px] tracking-[0.35em] uppercase font-bold mb-5">Quick Links</h4>
                                     <ul className="flex flex-col gap-3 w-full">
                                         {quickLinks.map(item => (
                                             <li key={item.name} className="w-full">
@@ -54,7 +54,7 @@ export const Footer = () => {
                                 </div>
 
                                 <div>
-                                    <h4 className="text-[#0A5191] text-[11px] tracking-[0.35em] uppercase font-bold mb-5">Connect</h4>
+                                    <h4 className="text-[#0A5191] text-[11px] tracking-[0.35em] uppercase font-bold mb-5">Connect & Legal</h4>
                                     <ul className="flex flex-col gap-3 w-full">
                                         {legalLinks.map(item => (
                                             <li key={item.name} className="w-full">
@@ -67,18 +67,6 @@ export const Footer = () => {
                                 </div>
                             </div>
 
-                            <div className="w-full mt-6 pt-5 border-t border-white/10">
-                                <h4 className="text-[#0A5191] text-[11px] tracking-[0.35em] uppercase font-bold mb-4">Solutions</h4>
-                                <ul className="flex flex-col gap-3 w-full">
-                                    {solutionLinks.map(item => (
-                                        <li key={item.name} className="w-full">
-                                            <Link href={item.path} className="text-white/60 hover:text-white transition-all duration-500 font-light text-[13px] hover:tracking-widest inline-block whitespace-nowrap">
-                                                {item.name}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
                         </FadeIn>
 
                         {/* Center Hub - Brand Identity */}

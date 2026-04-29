@@ -94,7 +94,6 @@ export function FeaturedProjects() {
   ];
 
   const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null);
-  const [activeSlide, setActiveSlide] = useState(0);
 
   const activeProject = activeProjectIndex !== null ? projects[activeProjectIndex] : null;
 
@@ -103,28 +102,19 @@ export function FeaturedProjects() {
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setActiveProjectIndex(null);
-        setActiveSlide(0);
       }
     };
 
+    document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", handleEscape);
 
     return () => {
+      document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
       window.removeEventListener("keydown", handleEscape);
     };
   }, [activeProjectIndex]);
-
-  const showPreviousSlide = () => {
-    if (!activeProject) return;
-    setActiveSlide((prev) => (prev === 0 ? activeProject.gallery.length - 1 : prev - 1));
-  };
-
-  const showNextSlide = () => {
-    if (!activeProject) return;
-    setActiveSlide((prev) => (prev === activeProject.gallery.length - 1 ? 0 : prev + 1));
-  };
 
   return (
     <section id="featured-projects" className="py-[56px] sm:py-[64px] lg:py-[100px] bg-[#FBFBFB] px-4 sm:px-6 md:px-[90px] lg:px-[120px]">
@@ -206,7 +196,7 @@ export function FeaturedProjects() {
                       setActiveProjectIndex(index);
                       setActiveSlide(0);
                     }}
-                    className="mt-5 inline-flex items-center justify-center rounded-full bg-[#0A5191] text-white px-5 py-2.5 text-[14px] font-semibold transition-colors hover:bg-[#083D6D]"
+                    className="mt-5 inline-flex items-center justify-center rounded-[14px] bg-[#0A5191] text-white px-5 py-2.5 text-[14px] font-semibold transition-colors hover:bg-[#083D6D]"
                     style={{ fontFamily: "'Poppins', sans-serif" }}
                   >
                     View Detail
@@ -220,90 +210,81 @@ export function FeaturedProjects() {
 
       {activeProject && (
         <div
-          className="fixed inset-0 z-[120] bg-black/60 backdrop-blur-[2px] p-4 sm:p-6 md:p-10"
+          className="fixed inset-0 z-[120] bg-black/70 backdrop-blur-[4px] p-4 sm:p-6 md:p-8 flex items-center justify-center overflow-hidden"
           onClick={() => {
             setActiveProjectIndex(null);
-            setActiveSlide(0);
           }}
         >
           <div
-            className="mx-auto w-full max-w-2xl rounded-[20px] bg-white shadow-[0_24px_70px_rgba(0,0,0,0.35)] overflow-hidden"
+            className="w-full max-w-4xl rounded-[32px] bg-white shadow-[0_24px_80px_rgba(0,0,0,0.5)] overflow-hidden animate-badge-pop"
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="flex items-center justify-between px-5 py-4 border-b border-[#E5E7EB]">
-              <h3 className="text-[#121010] font-semibold text-[20px]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                {activeProject.title}
-              </h3>
+            <div className="flex items-center justify-between px-6 md:px-8 py-4 border-b border-[#F1F5F9] relative">
+              <div className="flex-1 text-center">
+                <h3 className="text-[#1B2236] font-bold text-[20px] md:text-[24px]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  {activeProject.title}
+                </h3>
+              </div>
               <button
                 type="button"
                 aria-label="Close details dialog"
                 onClick={() => {
                   setActiveProjectIndex(null);
-                  setActiveSlide(0);
                 }}
-                className="w-9 h-9 inline-flex items-center justify-center rounded-full bg-[#F1F5F9] text-[#334155] hover:bg-[#E2E8F0] transition-colors"
+                className="absolute right-6 md:right-8 w-9 h-9 inline-flex items-center justify-center rounded-[14px] bg-[#F8FAFC] text-[#64748B] hover:bg-[#F1F5F9] hover:text-[#1B2236] transition-all duration-300"
               >
                 <X size={18} />
               </button>
             </div>
 
-            <div className="relative h-[280px] sm:h-[380px] md:h-[480px] bg-[#0B1728]">
-              <Image
-                src={activeProject.gallery[activeSlide]}
-                alt={`${activeProject.title} image ${activeSlide + 1}`}
-                fill
-                className="object-cover"
-              />
-
-              <button
-                type="button"
-                aria-label="Previous image"
-                onClick={showPreviousSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/55 text-white inline-flex items-center justify-center hover:bg-black/75 transition-colors"
-              >
-                <ChevronLeft size={20} />
-              </button>
-              <button
-                type="button"
-                aria-label="Next image"
-                onClick={showNextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/55 text-white inline-flex items-center justify-center hover:bg-black/75 transition-colors"
-              >
-                <ChevronRight size={20} />
-              </button>
-
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
-                {activeProject.gallery.map((_, dotIndex) => (
-                  <button
-                    key={`${activeProject.title}-dot-${dotIndex}`}
-                    type="button"
-                    aria-label={`Go to image ${dotIndex + 1}`}
-                    onClick={() => setActiveSlide(dotIndex)}
-                    className={`h-2.5 rounded-full transition-all ${dotIndex === activeSlide ? "w-7 bg-white" : "w-2.5 bg-white/60"}`}
+            <div className="flex flex-col lg:flex-row">
+              {/* Single Image Section */}
+              <div className="relative w-full lg:w-1/2 p-4 md:p-6 bg-white">
+                <div className="relative w-full h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] rounded-[24px] overflow-hidden shadow-md bg-[#0F172A]">
+                  <Image
+                    src={activeProject.image}
+                    alt={activeProject.title}
+                    fill
+                    className="object-contain"
                   />
-                ))}
+                </div>
               </div>
-            </div>
 
-            <div className="pt-4 px-4 pb-6 sm:pt-5 sm:px-5 sm:pb-7 md:pt-6 md:px-6 md:pb-8 space-y-3">
-              <div className="inline-flex items-center rounded-full bg-[#0A5191] text-white px-4 py-1.5 text-[13px] font-semibold" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                {activeProject.type}
-              </div>
-              <p className="text-[#334155] text-[15px] leading-[1.7]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                {activeProject.description}
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <div className="rounded-[12px] border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3">
-                  <p className="text-[11px] uppercase tracking-[0.1em] text-[#64748B]">Location</p>
-                  <p className="text-[#0F172A] font-semibold text-[14px] mt-1">{activeProject.location}</p>
+              {/* Details Content Section */}
+              <div className="w-full lg:w-1/2 p-8 md:p-10 flex flex-col bg-[#FDFDFE]">
+                <div className="mb-8">
+                  <div className="inline-flex items-center rounded-full bg-[#0A5191]/10 text-[#0A5191] border border-[#0A5191]/20 px-4 py-1.5 text-[12px] font-bold uppercase tracking-wider mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                    {activeProject.type}
+                  </div>
+                  <p className="text-[#475569] text-[16px] leading-[1.8] font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                    {activeProject.description}
+                  </p>
                 </div>
-                <div className="rounded-[12px] border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3">
-                  <p className="text-[11px] uppercase tracking-[0.1em] text-[#64748B]">Capacity</p>
-                  <p className="text-[#0F172A] font-semibold text-[14px] mt-1">{activeProject.capacity}</p>
-                </div>
-                <div className="rounded-[12px] border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3">
-                  <p className="text-[11px] uppercase tracking-[0.1em] text-[#64748B]">Commissioned</p>
-                  <p className="text-[#0F172A] font-semibold text-[14px] mt-1">{activeProject.year}</p>
+
+                <div className="mt-auto space-y-4">
+                  <div className="rounded-[16px] border border-[#F1F5F9] bg-white p-5 shadow-sm">
+                    <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#94A3B8] mb-2">Location</p>
+                    <div className="flex items-center gap-2">
+                      <MapPin size={14} className="text-[#0A5191]" />
+                      <p className="text-[#1B2236] font-bold text-[15px]">{activeProject.location}</p>
+                    </div>
+                  </div>
+                  
+                  <div className="rounded-[16px] border border-[#F1F5F9] bg-white p-5 shadow-sm">
+                    <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#94A3B8] mb-2">Capacity</p>
+                    <div className="flex items-center gap-2">
+                      <Zap size={14} className="text-[#0A5191]" />
+                      <p className="text-[#1B2236] font-bold text-[15px]">{activeProject.capacity}</p>
+                    </div>
+                  </div>
+                  
+                  <div className="rounded-[16px] border border-[#F1F5F9] bg-white p-5 shadow-sm">
+                    <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#94A3B8] mb-2">Commissioned</p>
+                    <div className="flex items-center gap-2">
+                      <Calendar size={14} className="text-[#0A5191]" />
+                      <p className="text-[#1B2236] font-bold text-[15px]">{activeProject.year}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

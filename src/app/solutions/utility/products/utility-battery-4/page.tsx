@@ -131,7 +131,7 @@ export default function UtilityBattery4ProductPage() {
               <div className="px-6 md:px-8 py-6 md:py-7 bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] text-center">
                 <h3 className="text-white font-normal mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 30px)" }}>Need More Details?</h3>
                 <p className="text-white/90 mb-6" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}>View complete technical specifications and download the full datasheet</p>
-                <Link href="/product/utility/utility-battery-4/specs" className="btn-sweep-blue btn-float-hover inline-flex items-center gap-2 bg-[#0A5191] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#083D6D] transition-colors shadow-[0_8px_18px_rgba(10, 81, 145,0.22)]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}>
+                <Link href="/product/utility/utility-battery-4/specs" className="btn-sweep-blue btn-float-hover inline-flex items-center gap-2 bg-[#0A5191] text-white px-7 py-4 rounded-[14px] font-normal hover:bg-[#083D6D] transition-colors shadow-[0_8px_18px_rgba(10, 81, 145,0.22)]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}>
                     <Download className="w-5 h-5" /> View More <ArrowRight className="w-5 h-5 ml-1" />
                 </Link>
               </div>
@@ -153,7 +153,7 @@ export default function UtilityBattery4ProductPage() {
             <p className="text-white/70 mb-10" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>Contact our sales team for pricing and project consultation.</p>
           </FadeIn>
           <FadeIn delay={300} direction="up">
-            <Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[10px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}>
+            <Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[14px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}>
               Request a Quote
             </Link>
           </FadeIn>

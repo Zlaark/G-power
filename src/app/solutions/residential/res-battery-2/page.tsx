@@ -262,7 +262,7 @@ export default function ResidentialBattery2Page() {
 
                 <Link
                   href="/product/residential/res-battery-2/specs"
-                  className="btn-sweep-blue btn-float-hover inline-flex items-center gap-2 bg-[#0A5191] text-white px-7 py-4 rounded-[12px] font-normal hover:bg-[#083D6D] transition-colors shadow-[0_8px_18px_rgba(10, 81, 145,0.22)]"
+                  className="btn-sweep-blue btn-float-hover inline-flex items-center gap-2 bg-[#0A5191] text-white px-7 py-4 rounded-[14px] font-normal hover:bg-[#083D6D] transition-colors shadow-[0_8px_18px_rgba(10, 81, 145,0.22)]"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}
                 >
                   <Download className="w-5 h-5" />
@@ -306,7 +306,7 @@ export default function ResidentialBattery2Page() {
           <FadeIn delay={300} direction="up">
             <Link
               href="/contact"
-              className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[10px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl"
+              className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[14px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}
             >
               Request a Quote

@@ -1,7 +1,79 @@
+'use client';
+
+import { useState } from 'react';
 import { FadeIn } from "@/components/FadeIn";
 import { Mail, Phone, MapPin, Clock, Send, Globe } from "lucide-react";
 
 export const ContactForm = () => {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+    const [errors, setErrors] = useState({
+        email: '',
+        phone: ''
+    });
+
+    const validateEmail = (email: string) => {
+        if (!email) return '';
+        const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        if (!gmailRegex.test(email)) {
+            return 'Please enter a valid @gmail.com email address';
+        }
+        return '';
+    };
+
+    const validatePhone = (phone: string) => {
+        if (!phone) return '';
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(phone)) {
+            return 'Please enter a valid 10-digit phone number';
+        }
+        return '';
+    };
+
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        
+        // Filter non-digits for phone field
+        let processedValue = value;
+        if (name === 'phone') {
+            processedValue = value.replace(/\D/g, '').slice(0, 10);
+        }
+        
+        setFormData(prev => ({ ...prev, [name]: processedValue }));
+        
+        // Clear error when user starts typing
+        if (name === 'email') {
+            setErrors(prev => ({ ...prev, email: '' }));
+        } else if (name === 'phone') {
+            setErrors(prev => ({ ...prev, phone: '' }));
+        }
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        
+        const emailError = validateEmail(formData.email);
+        const phoneError = validatePhone(formData.phone);
+        
+        setErrors({
+            email: emailError,
+            phone: phoneError
+        });
+
+        if (emailError || phoneError) {
+            return;
+        }
+
+        // If validation passes, you can submit the form
+        console.log('Form submitted:', formData);
+        alert('Message sent successfully!');
+    };
+
     return (
         <section className="bg-white py-12 md:py-24 px-4 md:px-6 lg:px-12 xl:px-16 flex justify-center">
             <div className="max-w-[1200px] w-full grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16">
@@ -17,14 +89,17 @@ export const ContactForm = () => {
                                 Fill out the form below and we'll get back to you within 24 hours
                             </p>
 
-                            <form className="space-y-6">
+                            <form className="space-y-6" onSubmit={handleSubmit}>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
                                         <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>First Name *</label>
                                         <input 
                                             type="text" 
+                                            name="firstName"
+                                            value={formData.firstName}
+                                            onChange={handleInputChange}
                                             placeholder="John"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
@@ -33,8 +108,11 @@ export const ContactForm = () => {
                                         <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Last Name *</label>
                                         <input 
                                             type="text" 
+                                            name="lastName"
+                                            value={formData.lastName}
+                                            onChange={handleInputChange}
                                             placeholder="Doe"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
@@ -46,28 +124,38 @@ export const ContactForm = () => {
                                         <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Email Address *</label>
                                         <input 
                                             type="email" 
-                                            placeholder="john.doe@company.com"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleInputChange}
+                                            placeholder="john.doe@gmail.com"
+                                            className={`w-full bg-[#F9FAFB] border ${errors.email ? 'border-red-500' : 'border-[#E5E7EB]'} rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors`}
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
+                                        {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                                     </div>
                                     <div className="space-y-2">
                                         <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone Number *</label>
                                         <input 
                                             type="tel" 
-                                            placeholder="+91 98765 43210"
-                                            className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleInputChange}
+                                            placeholder="9876543210"
+                                            pattern="[0-9]{10}"
+                                            inputMode="numeric"
+                                            className={`w-full bg-[#F9FAFB] border ${errors.phone ? 'border-red-500' : 'border-[#E5E7EB]'} rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors`}
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required
                                         />
+                                        {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
                                     </div>
                                 </div>
 
                                 <div className="space-y-2">
                                     <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>What are you interested in?</label>
                                     <select 
-                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors appearance-none"
+                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors appearance-none"
                                         style={{ fontFamily: "'Poppins', sans-serif" }}
                                     >
                                         <option>General Inquiry</option>
@@ -79,9 +167,12 @@ export const ContactForm = () => {
                                 <div className="space-y-2">
                                     <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Message *</label>
                                     <textarea 
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleInputChange}
                                         placeholder="Tell us about your project or how we can help you..."
                                         rows={5}
-                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-lg px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors resize-none"
+                                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors resize-none"
                                         style={{ fontFamily: "'Poppins', sans-serif" }}
                                         required
                                     ></textarea>
@@ -89,7 +180,7 @@ export const ContactForm = () => {
 
                                 <button 
                                     type="submit"
-                                    className="bg-[#0A5191] text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center space-x-2 hover:bg-[#d63531] transition-all w-full md:w-auto"
+                                    className="bg-[#0A5191] text-white px-8 py-4 rounded-[14px] font-bold flex items-center justify-center space-x-2 hover:bg-[#d63531] transition-all w-full md:w-auto"
                                     style={{ fontFamily: "'Poppins', sans-serif" }}
                                 >
                                     <span>Send Message</span>
@@ -105,7 +196,7 @@ export const ContactForm = () => {
                     <FadeIn delay={200} direction="left">
                         <div className="space-y-8">
                             <div className="flex items-start space-x-4">
-                                <div className="bg-[#0A5191]/10 p-3 rounded-lg">
+                                <div className="bg-[#0A5191]/10 p-3 rounded-[14px]">
                                     <MapPin className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
@@ -115,7 +206,7 @@ export const ContactForm = () => {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="bg-[#0A5191]/10 p-3 rounded-lg">
+                                <div className="bg-[#0A5191]/10 p-3 rounded-[14px]">
                                     <Phone className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
@@ -126,7 +217,7 @@ export const ContactForm = () => {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="bg-[#0A5191]/10 p-3 rounded-lg">
+                                <div className="bg-[#0A5191]/10 p-3 rounded-[14px]">
                                     <Mail className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
@@ -136,7 +227,7 @@ export const ContactForm = () => {
                             </div>
 
                             <div className="flex items-start space-x-4">
-                                <div className="bg-[#0A5191]/10 p-3 rounded-lg">
+                                <div className="bg-[#0A5191]/10 p-3 rounded-[14px]">
                                     <Clock className="text-[#0A5191]" size={24} />
                                 </div>
                                 <div>
