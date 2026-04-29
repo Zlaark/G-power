@@ -5,35 +5,29 @@ import Image from "next/image";
 
 export function BecomePartner() {
   return (
-    <section className="py-[56px] sm:py-[64px] lg:py-[90px] bg-[#121010] text-white relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
-      {/* Background Image */}
+    <section className="relative min-h-[70vh] flex items-center justify-center text-white overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px] py-[72px] sm:py-[80px] lg:py-[100px]">
+      {/* Background Image — fully visible, colourful */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/Banner 2 (Our Partners Page).webp"
           alt="Become a Partner Background"
           fill
-          className="object-cover opacity-30"
+          className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#121010]/80" />
+        {/* Subtle gradient for text readability only */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/25 to-black/15" />
       </div>
-      
-      {/* Background Decor */}
-      <div className="absolute inset-x-0 top-0 h-[1px] bg-white/5"></div>
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#1a1717] rounded-full blur-[100px] pointer-events-none"
-        aria-hidden="true"
-      />
 
       <div className="mx-auto max-w-[1920px] relative z-10 text-center flex flex-col items-center">
         <FadeIn delay={100} direction="up" className="max-w-[1000px] px-2">
           <h2 
-            className="font-semibold text-white mb-[20px] lg:mb-[30px]"
+            className="font-semibold text-white mb-[20px] lg:mb-[30px] drop-shadow-lg"
             style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(32px, 4.5vw, 56px)' }}
           >
             Become a Partner
           </h2>
           <p 
-            className="text-white/90 mb-[40px] lg:mb-[50px] font-medium"
+            className="text-white/95 mb-[40px] lg:mb-[50px] font-medium drop-shadow-md"
             style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(15px, 1.8vw, 20px)' }}
           >
             Join our network of industry-leading partners and grow your business with GPower

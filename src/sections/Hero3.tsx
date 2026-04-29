@@ -1,8 +1,9 @@
 import { Button } from '@/components/ui/Button';
+import Link from 'next/link';
 
 export const Hero3 = () => {
     return (
-        <section className="relative w-full h-[80vh] md:h-screen min-h-[550px] overflow-hidden">
+        <section className="relative w-full h-[90vh] md:h-screen min-h-[700px] overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
@@ -13,28 +14,14 @@ export const Hero3 = () => {
                 />
             </div>
 
-            {/* Overlay 1 — bottom fade */}
-            <div
-                className="absolute z-[1] pointer-events-none inset-0"
-                style={{ background: 'linear-gradient(180deg, rgba(1, 5, 10, 0) 20%, #01050A 100%)', opacity: 0.7 }}
-            />
-
-            {/* Overlay 2 — top black bar */}
-            <div
-                className="absolute z-[1] pointer-events-none"
-                style={{ left: 0, right: 0, top: 0, height: '35%', background: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)', opacity: 0.79 }}
-            />
-
             {/* Red accent bars on the right */}
             <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '0%', bottom: '85.22%', background: '#0A5191', opacity: 0.37 }} />
             <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '16.4%', bottom: '0%', background: '#0A5191', opacity: 0.37 }} />
 
             {/* Content */}
             <div className="absolute inset-0 z-10 w-full max-w-[1920px] mx-auto">
-
-
                 {/* Title & Subtitle - vertically centered */}
-                <div className="absolute left-[20px] md:left-[86px] top-1/2 -translate-y-1/2 w-[calc(100%-40px)] md:w-[490px] flex flex-col items-start gap-4">
+                <div className="absolute left-[20px] md:left-[86px] top-1/2 -translate-y-1/2 w-[70%] md:w-[490px] flex flex-col items-start gap-4">
                     <h1
                         className="animate-hero-reveal text-white font-semibold leading-tight md:leading-[84px] w-full m-0 text-left"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(36px, 6vw, 54px)' }}
@@ -57,23 +44,25 @@ export const Hero3 = () => {
                     </div>
                 </div>
 
-                {/* Buttons - bottom area */}
-                <div className="absolute left-[20px] md:left-[86px] right-[20px] md:right-auto bottom-[40px] md:bottom-[10vh] lg:bottom-[120px] flex flex-col md:flex-row items-stretch md:items-center gap-[15px] md:gap-[27px]">
-                    <Button
-                        variant="outline"
-                        size="lg"
-                        className="animate-hero-reveal-delay-2 w-full md:w-[273px] !rounded-[14px]"
+                {/* Bottom Buttons */}
+                <div className="absolute left-[20px] md:left-[86px] bottom-[40px] md:bottom-[60px] flex flex-col sm:flex-row items-center gap-4 sm:gap-6 animate-hero-reveal-delay-3 w-full sm:w-auto pr-[20px] sm:pr-0">
+                    <Link
+                        href="/contact"
+                        className="inline-flex items-center justify-center px-[24px] py-[12px] md:py-[14px] font-semibold text-white bg-[#0A5191] border border-[#0A5191] rounded-[14px] transition-all hover:bg-[#083D6E] hover:-translate-y-[2px] w-full sm:w-auto shadow-lg shadow-[#0A5191]/20"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
                     >
                         Schedule consultation
-                    </Button>
-
-                    <Button
-                        variant="secondary"
-                        size="lg"
-                        className="animate-hero-reveal-delay-3 w-full md:w-[190px] !rounded-[14px]"
+                        <svg className="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </Link>
+                    
+                    <Link
+                        href="/our-projects"
+                        className="inline-flex items-center justify-center px-[24px] py-[12px] md:py-[14px] font-semibold text-[#121010] bg-white rounded-[14px] transition-all hover:bg-gray-100 hover:-translate-y-[2px] w-full sm:w-auto shadow-lg"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
                     >
                         Order Now
-                    </Button>
+                        <svg className="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </Link>
                 </div>
             </div>
         </section>

@@ -19,9 +19,9 @@ export const ContactForm = () => {
 
     const validateEmail = (email: string) => {
         if (!email) return '';
-        const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-        if (!gmailRegex.test(email)) {
-            return 'Please enter a valid @gmail.com email address';
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email)) {
+            return 'Please enter a valid email address';
         }
         return '';
     };
@@ -127,7 +127,7 @@ export const ContactForm = () => {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            placeholder="john.doe@gmail.com"
+                                            placeholder="john.doe@example.com"
                                             className={`w-full bg-[#F9FAFB] border ${errors.email ? 'border-red-500' : 'border-[#E5E7EB]'} rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors`}
                                             style={{ fontFamily: "'Poppins', sans-serif" }}
                                             required

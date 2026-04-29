@@ -1,7 +1,6 @@
 import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { PartnersHero } from "@/sections/PartnersHero";
-import { StrategicPartnerships } from "@/sections/StrategicPartnerships";
 import { PartnerAdvantages } from "@/sections/PartnerAdvantages";
 import { PartnerCollaborationFlow } from "@/sections/PartnerCollaborationFlow";
 import { PartnerNetwork } from "@/sections/PartnerNetwork";
@@ -18,7 +17,6 @@ export default function PartnersPage() {
     <main className="min-h-screen">
       <Navbar />
       <PartnersHero />
-      <StrategicPartnerships />
       <PartnerAdvantages />
       <PartnerCollaborationFlow />
       <PartnerNetwork />

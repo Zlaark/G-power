@@ -1,5 +1,6 @@
 "use client";
 import { FadeIn } from "@/components/FadeIn";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Compass, PackageCheck, HardHat, Check, ArrowRight, ArrowUpRight } from "lucide-react";
 
@@ -114,9 +115,11 @@ export const TurnkeyEnergySolutions = () => {
                                         ))}
                                     </div>
                                     
-                                    <Button variant="primary" size="lg" className="rounded-[14px]">
-                                        Engineering Capability
-                                    </Button>
+                                    <Link href="/solutions">
+                                        <Button variant="primary" size="lg" className="rounded-[14px]">
+                                            Engineering Capability
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </FadeIn>

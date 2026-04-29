@@ -5,27 +5,20 @@ import Image from "next/image";
 
 export const AboutHero = () => {
     return (
-        <section className="py-[56px] sm:py-[64px] lg:py-[90px] bg-[#121010] text-white relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
+        <section className="py-[80px] sm:py-[100px] lg:py-[120px] text-white relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]" style={{ minHeight: '80vh' }}>
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/Banner (About Us Page).webp"
+                    src="/Banner 2 (Our Partners Page).webp"
                     alt="About G-Power Background"
                     fill
-                    className="object-cover opacity-80"
+                    className="object-cover opacity-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
             </div>
             
-            {/* Background Decor */}
-            <div className="absolute inset-x-0 top-0 h-[1px] bg-white/5"></div>
-            <div
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#1a1717] rounded-full blur-[100px] pointer-events-none"
-                aria-hidden="true"
-            />
-
+            
             <div className="mx-auto max-w-[1920px] relative z-10 text-center flex flex-col items-center">
-                <FadeIn delay={100} direction="up" className="max-w-[1000px] px-2">
+                <FadeIn delay={100} direction="up" className="w-[70%] max-w-[1000px] px-2">
                     <h2 
                         className="font-semibold text-white mb-[20px] lg:mb-[30px]"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(32px, 4.5vw, 56px)' }}
@@ -38,16 +31,6 @@ export const AboutHero = () => {
                     >
                         Powering the Next Generation of Energy
                     </p>
-                    <div className="flex justify-center">
-                        <Link
-                            href="#energy-storage"
-                            className="inline-flex items-center justify-center px-[24px] sm:px-[30px] py-[14px] sm:py-[16px] font-semibold text-white bg-[#0A5191] hover:bg-[#4a90e2] rounded-[14px] transition-all hover:-translate-y-[2px]"
-                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 2vw, 16px)' }}
-                        >
-                            Discover Our Vision
-                            <ArrowRight className="w-5 h-5 ml-[10px]" />
-                        </Link>
-                    </div>
                 </FadeIn>
             </div>
         </section>

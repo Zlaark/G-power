@@ -5,7 +5,6 @@ import { SaveOnBills } from "@/sections/SaveOnBills";
 import { WhyGPowerHome } from "@/sections/WhyGPowerHome";
 import { SolarMaintenance } from "@/sections/SolarMaintenance";
 import { GPowerAdvantage } from "@/sections/GPowerAdvantage";
-import { GenerateEnergy } from "@/sections/GenerateEnergy";
 import { SleekDurable } from "@/sections/SleekDurable";
 import { FeaturesCarousel } from "@/sections/FeaturesCarousel";
 // import { GridGoesDown } from "@/sections/GridGoesDown";
@@ -25,7 +24,6 @@ export default function Home() {
       <SaveOnBills />
       <SolarMaintenance />
       <GPowerAdvantage />
-      <GenerateEnergy />
       <SleekDurable />
       <FeaturesCarousel />
       {/* <GridGoesDown />

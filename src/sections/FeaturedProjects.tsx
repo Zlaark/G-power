@@ -239,12 +239,12 @@ export function FeaturedProjects() {
             <div className="flex flex-col lg:flex-row">
               {/* Single Image Section */}
               <div className="relative w-full lg:w-1/2 p-4 md:p-6 bg-white">
-                <div className="relative w-full h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] rounded-[24px] overflow-hidden shadow-md bg-[#0F172A]">
+                <div className="relative w-full h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] rounded-[24px] overflow-hidden shadow-md">
                   <Image
                     src={activeProject.image}
                     alt={activeProject.title}
                     fill
-                    className="object-contain"
+                    className="object-cover"
                   />
                 </div>
               </div>

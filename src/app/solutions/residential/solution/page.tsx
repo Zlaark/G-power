@@ -407,44 +407,6 @@ export default function ResidentialSolutionsPage() {
         </div>
       </section>
 
-      <section className="py-[72px] lg:py-[110px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#121010]">
-        <div className="mx-auto max-w-[1200px] text-center">
-          <FadeIn delay={120} direction="up">
-            <h2
-              className="text-white font-medium mb-[16px]"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3.2vw, 42px)" }}
-            >
-              Ready to Power Your Home?
-            </h2>
-          </FadeIn>
-          <FadeIn delay={220} direction="up">
-            <p
-              className="text-white/80 font-medium mx-auto mb-[30px] max-w-3xl"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
-            >
-              Get in touch with our experts to design the perfect residential energy storage
-              solution for your needs
-            </p>
-          </FadeIn>
-          <FadeIn delay={300} direction="up" className="flex flex-wrap items-center justify-center gap-[12px]">
-            <Link
-              href="/contact"
-              className="btn-glow inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] bg-[#0A5191] text-white font-semibold hover:bg-[#4a90e2] transition-colors"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
-            >
-              Contact Us
-            </Link>
-            <a
-              href="tel:+911234567890"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-semibold hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}
-            >
-              Call: +91 123 456 7890
-            </a>
-          </FadeIn>
-        </div>
-      </section>
-
       <BecomePartner />
       <Footer />
     </main>

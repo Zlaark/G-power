@@ -24,13 +24,17 @@ const cards = [
 ];
 
 export const FeaturesCarousel = () => {
+    // Duplicate cards for seamless marquee effect
+    const duplicatedCards = [...cards, ...cards];
+
     return (
-        <section className="relative w-full bg-white pt-6 pb-6 md:pt-[40px] md:pb-[30px] lg:pt-[50px] lg:pb-[40px]">
-            <div className="mx-auto max-w-[1920px] relative w-full px-4 md:px-12 lg:px-[102px]">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-                    {cards.map((card, index) => (
-                        <FadeIn key={index} delay={index * 200} direction="right">
-                            <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 group cursor-pointer">
+        <section className="relative w-full bg-white pt-6 pb-6 md:pt-[40px] md:pb-[30px] lg:pt-[50px] lg:pb-[40px] overflow-hidden">
+            <div className="mx-auto max-w-[1920px] relative w-full">
+                {/* Marquee Container */}
+                <div className="flex overflow-hidden">
+                    <div className="flex animate-marquee hover:animation-pause gap-4 md:gap-6 lg:gap-8 px-4 md:px-12 lg:px-[102px]">
+                        {duplicatedCards.map((card, index) => (
+                            <div key={index} className="flex flex-col gap-2 md:gap-3 lg:gap-4 group cursor-pointer w-[280px] sm:w-[320px] md:w-[360px] lg:w-[400px] shrink-0">
                                 {/* Image Card */}
                                 <div className="w-full h-[280px] md:h-[320px] lg:h-[380px] rounded-[14px] overflow-hidden relative bg-white shadow-sm transition-all duration-500 hover:shadow-xl hover:shadow-[#0A5191]/10">
                                     <img
@@ -45,7 +49,7 @@ export const FeaturesCarousel = () => {
                                 </div>
 
                                 {/* Text Content */}
-                                <div className="flex flex-col gap-1 md:gap-2 w-full px-1">
+                                <div className="flex flex-col gap-1 md:gap-2 w-full px-1 whitespace-normal">
                                     <h2
                                         className="font-bold text-sm md:text-base lg:text-[19px] leading-tight text-[#121010] group-hover:text-[#0A5191] transition-colors"
                                         style={{ fontFamily: "'Poppins', sans-serif" }}
@@ -54,8 +58,8 @@ export const FeaturesCarousel = () => {
                                     </h2>
                                 </div>
                             </div>
-                        </FadeIn>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

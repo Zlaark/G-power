@@ -49,10 +49,6 @@ export default function EnterpriseHubSpecsPage() {
               <div className="rounded-[14px] overflow-hidden shadow-[0_10px_22px_rgba(2,8,23,0.1)]">
                 <div className="bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] px-5 md:px-8 py-8 text-center">
                   <h3 className="text-white font-normal mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 2.3vw, 36px)" }}>Download Complete Datasheet</h3>
-                                    <DownloadPdfButton 
-                    targetId="datasheet-content" 
-                    filename="enterprise-hub-Datasheet.pdf" 
-                  />
                   <p
                   className="text-white/90 mb-7 mt-6"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
@@ -68,12 +64,6 @@ export default function EnterpriseHubSpecsPage() {
                   </div>
                 </div>
               </div>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={220} direction="up">
-            <div className="mt-8 flex justify-center">
-              <Link href="/solutions/new-application-business/products/enterprise-hub" className="inline-flex items-center gap-2 text-[#0F172A] hover:text-[#0A5191] transition-colors text-sm md:text-base" style={{ fontFamily: "'Poppins', sans-serif" }}><ArrowLeft className="w-4 h-4" /> Back to Product</Link>
             </div>
           </FadeIn>
         </div>

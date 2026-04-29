@@ -207,74 +207,77 @@ export function OpenPositions() {
                   Your application has been submitted successfully. Our team will contact you soon.
                 </div>
               ) : (
-                <form className="space-y-4" onSubmit={handleApplySubmit}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <input
-                      type="text"
-                      required
-                      placeholder="John"
-                      className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-                    />
-                    <input
-                      type="text"
-                      required
-                      placeholder="Doe"
-                      className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-                    />
+                <form className="space-y-6" onSubmit={handleApplySubmit}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>First Name *</label>
+                      <input
+                        type="text"
+                        required
+                        placeholder="John"
+                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                        style={{ fontFamily: "'Poppins', sans-serif" }}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Last Name *</label>
+                      <input
+                        type="text"
+                        required
+                        placeholder="Doe"
+                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                        style={{ fontFamily: "'Poppins', sans-serif" }}
+                      />
+                    </div>
                   </div>
 
-                  <input
-                    type="email"
-                    required
-                    placeholder="john.doe@company.com"
-                    className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
-                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-                  />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Email Address *</label>
+                      <input
+                        type="email"
+                        required
+                        placeholder="john.doe@example.com"
+                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                        style={{ fontFamily: "'Poppins', sans-serif" }}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone Number *</label>
+                      <input
+                        type="tel"
+                        required
+                        pattern="[0-9]{10}"
+                        maxLength={10}
+                        onInput={(e) => {
+                            const target = e.target as HTMLInputElement;
+                            target.value = target.value.replace(/[^0-9]/g, '');
+                        }}
+                        placeholder="9876543210"
+                        title="Please enter a 10-digit phone number"
+                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                        style={{ fontFamily: "'Poppins', sans-serif" }}
+                      />
+                    </div>
+                  </div>
 
-                  <input
-                    type="tel"
-                    required
-                    pattern="[0-9]{10}"
-                    maxLength={10}
-                    onInput={(e) => {
-                        const target = e.target as HTMLInputElement;
-                        target.value = target.value.replace(/[^0-9]/g, '');
-                    }}
-                    placeholder="+91 98765 43210"
-                    title="Please enter a 10-digit phone number"
-                    className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F]"
-                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-                  />
-
-                  <div>
-                    <p
-                      className="text-[#1E2340] mb-2 font-semibold"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
-                    >
-                      Resume
-                    </p>
+                  <div className="space-y-2">
+                    <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Resume *</label>
                     <input
                       type="file"
                       required
-                      className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-4 py-2.5 text-[#121010] file:mr-4 file:rounded-[12px] file:border file:border-[#6B7280] file:bg-white file:px-5 file:py-2 file:text-[#1F2937] file:font-medium"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
+                      className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-2.5 text-[#121010] file:mr-4 file:rounded-[12px] file:border file:border-[#E5E7EB] file:bg-white file:px-5 file:py-2 file:text-[#1F2937] file:font-medium focus:outline-none focus:border-[#0A5191] transition-colors"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
                     />
                   </div>
 
-                  <div>
-                    <p
-                      className="text-[#1E2340] mb-2 font-semibold"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
-                    >
-                      Cover letter (optional)
-                    </p>
+                  <div className="space-y-2">
+                    <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Cover Letter (optional)</label>
                     <textarea
                       rows={5}
-                      placeholder="Tell us about your project or how we can help you..."
-                      className="w-full rounded-[14px] border border-[#E2E8F0] bg-[#F9FAFB] px-5 py-3 text-[#121010] placeholder-[#94A3B8] focus:outline-none focus:border-[#11153F] resize-none"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
+                      placeholder="Tell us why you'd be a great fit for this role..."
+                      className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors resize-none"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
                     />
                   </div>
 
@@ -282,7 +285,7 @@ export function OpenPositions() {
                     <button
                       type="button"
                       onClick={closeModal}
-                      className="w-full rounded-[14px] border border-[#1B2148] px-6 py-3 text-[#1B2148] font-semibold hover:bg-[#F8FAFC] transition-colors"
+                      className="w-full rounded-[14px] border border-[#E5E7EB] px-6 py-3 text-[#121010] font-semibold hover:bg-[#F9FAFB] transition-colors"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
                     >
                       Cancel
@@ -290,10 +293,10 @@ export function OpenPositions() {
 
                     <button
                       type="submit"
-                      className="w-full rounded-[14px] bg-[#11153F] px-6 py-3 text-white font-semibold hover:bg-[#0b1035] transition-colors"
+                      className="w-full rounded-[14px] bg-[#0A5191] px-6 py-3 text-white font-semibold hover:bg-[#4a90e2] transition-colors"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
                     >
-                      Submit application
+                      Submit Application
                     </button>
                   </div>
                 </form>

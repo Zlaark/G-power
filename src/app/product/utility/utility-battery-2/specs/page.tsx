@@ -55,10 +55,6 @@ export default function UtilityBattery2SpecsPage() {
                   >
                     Download Complete Datasheet
                   </h3>
-                                    <DownloadPdfButton 
-                    targetId="datasheet-content" 
-                    filename="utility-battery-2-Datasheet.pdf" 
-                  />
                   <p
                   className="text-white/90 mb-7 mt-6"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
@@ -80,19 +76,6 @@ export default function UtilityBattery2SpecsPage() {
                   </div>
                 </div>
               </div>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={220} direction="up">
-            <div className="mt-8 flex justify-center">
-              <Link
-                href="/product/utility/utility-battery-2"
-                className="inline-flex items-center gap-2 text-[#0F172A] hover:text-[#0A5191] transition-colors text-sm md:text-base"
-                style={{ fontFamily: "'Poppins', sans-serif" }}
-              >
-                <ArrowLeft className="w-4 h-4" />
-                Back to Product
-              </Link>
             </div>
           </FadeIn>
         </div>

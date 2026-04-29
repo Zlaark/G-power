@@ -4,7 +4,7 @@ import { ProjectsHero } from "@/sections/ProjectsHero";
 
 import { FeaturedProjects } from "@/sections/FeaturedProjects";
 import { ProjectImpact } from "@/sections/ProjectImpact";
-import { ProjectsCta } from "@/sections/ProjectsCta";
+import { BecomePartner } from "@/sections/BecomePartner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,8 +20,8 @@ export default function OurProjectsPage() {
 
       <FeaturedProjects />
       <ProjectImpact />
-      <ProjectsCta />
+      <BecomePartner />
       <Footer />
     </main>
   );
-}
+}

@@ -1,4 +1,5 @@
 import { FadeIn } from '@/components/FadeIn';
+import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { 
     Layout, 
@@ -99,9 +100,11 @@ export const EnergyManagement = () => {
                                     <p className="text-[#64748B] leading-relaxed mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         {services[0].desc}
                                     </p>
-                                    <Button variant="ghost" className="font-bold text-sm tracking-wide uppercase">
-                                        Learn More
-                                    </Button>
+                                    <Link href="/solutions">
+                                        <Button variant="ghost" className="font-bold text-sm tracking-wide uppercase">
+                                            Learn More
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </FadeIn>
