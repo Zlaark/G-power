@@ -45,7 +45,7 @@ export function PartnerCollaborationFlow() {
             <div className="relative mx-auto w-full max-w-[680px] min-h-[320px] sm:min-h-[540px] lg:min-h-[620px]">
               <div className="journey-photo-main group absolute left-0 top-0 w-[78%] h-[360px] sm:h-[400px] lg:h-[450px] rounded-[32px] overflow-hidden border border-[#E2E8F0] shadow-[0_30px_80px_rgba(15,23,42,0.14)] transition-transform duration-700 hover:-translate-y-2 hover:rotate-[-1deg]">
                 <Image
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                  src="/Partnership Journey-1 (Our Partners Page).webp"
                   alt="Partnership discussion"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -56,7 +56,7 @@ export function PartnerCollaborationFlow() {
 
               <div className="journey-photo-secondary group absolute right-0 bottom-0 w-[62%] h-[180px] sm:h-[280px] lg:h-[320px] rounded-[20px] sm:rounded-[28px] overflow-hidden border border-[#E2E8F0] shadow-[0_26px_60px_rgba(15,23,42,0.16)] transition-transform duration-700 hover:translate-y-2 hover:rotate-[1deg]">
                 <Image
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                  src="/Partnership Journey-2 (Our Partners Page).webp"
                   alt="Team collaboration"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

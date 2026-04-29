@@ -1,21 +1,21 @@
 const cards = [
     {
-        image: '/home5.png',
+        image: '/Simple Aesthetic(Home Page).webp',
         title: 'Simple Aesthetic',
         description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
     },
     {
-        image: '/home6.png',
+        image: '/Easy Installation(Home Page).webp',
         title: 'Easy Installation',
         description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
     },
     {
-        image: '/home7.png',
+        image: '/Weather Resistant(Home Page).webp',
         title: 'Weather Resistant',
         description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
     },
     {
-        image: '/home5.png',
+        image: '/Low Profile(Home Page).webp',
         title: 'Low Profile',
         description: 'Rail-free mounting keeps panels close to your roof and panel skirts hide hardware and edges from view.',
     },

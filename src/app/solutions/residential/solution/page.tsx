@@ -1,5 +1,6 @@
 import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
+import { BecomePartner } from "@/sections/BecomePartner";
 import { FadeIn } from "@/components/FadeIn";
 import { ShieldCheck, Zap, Clock3, SlidersHorizontal, CheckCircle2 } from "lucide-react";
 import { Metadata } from "next";
@@ -444,6 +445,7 @@ export default function ResidentialSolutionsPage() {
         </div>
       </section>
 
+      <BecomePartner />
       <Footer />
     </main>
   );

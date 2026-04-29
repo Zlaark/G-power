@@ -6,7 +6,7 @@ export const Hero3 = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/solar-hero-bg.png"
+                    src="/Solar Panels (Home Page).webp"
                     alt=""
                     className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns"
                     style={{ maxWidth: 'none' }}
@@ -62,7 +62,7 @@ export const Hero3 = () => {
                     <Button
                         variant="outline"
                         size="lg"
-                        className="animate-hero-reveal-delay-2 w-full md:w-[273px] !rounded-[5px]"
+                        className="animate-hero-reveal-delay-2 w-full md:w-[273px] !rounded-[14px]"
                     >
                         Schedule consultation
                     </Button>
@@ -70,7 +70,7 @@ export const Hero3 = () => {
                     <Button
                         variant="secondary"
                         size="lg"
-                        className="animate-hero-reveal-delay-3 w-full md:w-[190px] !rounded-[5px]"
+                        className="animate-hero-reveal-delay-3 w-full md:w-[190px] !rounded-[14px]"
                     >
                         Order Now
                     </Button>

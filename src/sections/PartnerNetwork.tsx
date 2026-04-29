@@ -1,4 +1,5 @@
 import { FadeIn } from "@/components/FadeIn";
+import Image from "next/image";
 
 export function PartnerNetwork() {
   const row1Partners = Array.from({ length: 8 }).map((_, i) => ({
@@ -16,8 +17,8 @@ export function PartnerNetwork() {
   const row2 = [...row2Partners, ...row2Partners];
 
   return (
-    <section className="py-[56px] sm:py-[64px] lg:py-[80px] bg-white overflow-hidden">
-      <style dangerouslySetInnerHTML={{
+    <section className="relative py-[56px] sm:py-[64px] lg:py-[80px] bg-white overflow-hidden">
+            <style dangerouslySetInnerHTML={{
         __html: `
         @keyframes scroll-left {
           0% { transform: translateX(0); }

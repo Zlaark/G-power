@@ -37,7 +37,7 @@ export const Footer = () => {
                     {/* Symmetrical 3-Column Layout */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-5 items-start mb-10">
                         
-                        {/* Left Wing - Explorer + Connect */}
+                        {/* Left Wing - Quick Links + Legal */}
                         <FadeIn delay={200} direction="up" className="lg:col-span-3 flex flex-col lg:items-start lg:text-left order-2 lg:order-1 lg:pt-4 w-full border-t lg:border-t-0 border-white/5 pt-6 lg:pr-5">
                             <div className="grid grid-cols-2 gap-4 w-full">
                                 <div>
@@ -54,7 +54,7 @@ export const Footer = () => {
                                 </div>
 
                                 <div>
-                                    <h4 className="text-[#0A5191] text-[11px] tracking-[0.35em] uppercase font-bold mb-5">Connect & Legal</h4>
+                                    <h4 className="text-[#0A5191] text-[11px] tracking-[0.35em] uppercase font-bold mb-5">Legal</h4>
                                     <ul className="flex flex-col gap-3 w-full">
                                         {legalLinks.map(item => (
                                             <li key={item.name} className="w-full">

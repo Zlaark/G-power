@@ -10,7 +10,7 @@ export const SleekDurable = () => {
                 {/* Background Image Container */}
                 <div className="w-full h-[75vh] md:h-[100vh] min-h-[500px] md:min-h-[700px] max-h-[1100px] relative overflow-hidden rounded-none">
                     <img
-                        src="/home4.png"
+                        src="/Sleek and Durable (Home Page).webp"
                         alt="Sleek and Durable Solar Panels"
                         className="w-full h-full object-cover rounded-none"
                     />

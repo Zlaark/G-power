@@ -21,7 +21,7 @@ export const SaveOnBills = () => {
                 <div className="absolute top-0 right-0 w-full md:w-[85%] h-full z-0 hidden md:block">
                     <div className="absolute inset-0 w-[60%] bg-gradient-to-r from-white via-white/90 to-transparent z-10" />
                     <img
-                        src="/home2.webp"
+                        src="/Save On Electricity Bills (Home Page).webp"
                         alt="Solar Panel Field"
                         className="w-full h-full object-cover object-right"
                     />
@@ -31,7 +31,7 @@ export const SaveOnBills = () => {
                 <div className="absolute top-0 right-0 w-full h-[50%] z-0 md:hidden opacity-30">
                     <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-transparent z-10" />
                     <img
-                        src="/home2.webp"
+                        src="/Save On Electricity Bills (Home Page).webp"
                         alt="Solar Panel Field mobile"
                         className="w-full h-full object-cover"
                     />

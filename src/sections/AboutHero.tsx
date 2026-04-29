@@ -1,106 +1,42 @@
+import { FadeIn } from "@/components/FadeIn";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
 export const AboutHero = () => {
     return (
-        <section className="relative w-full h-screen min-h-[600px] max-h-[1080px] bg-[#01050A] overflow-hidden flex justify-center">
-            {/* hero_bg */}
+        <section className="py-[56px] sm:py-[64px] lg:py-[90px] bg-[#121010] text-white relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
+            {/* Background Decor */}
+            <div className="absolute inset-x-0 top-0 h-[1px] bg-white/5"></div>
             <div
-                className="absolute left-0 right-0 top-0 bottom-0 animate-ken-burns"
-                style={{
-                    background: "url('/solar-hero-bg.png')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
-                }}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#1a1717] rounded-full blur-[100px] pointer-events-none"
+                aria-hidden="true"
             />
 
-            {/* Header - bg_gradient */}
-            <div
-                className="absolute left-0 top-0 w-full h-full pointer-events-none"
-                style={{
-                    background: 'linear-gradient(180deg, rgba(1, 5, 10, 0) 20%, #01050A 100%)',
-                    opacity: 0.7
-                }}
-            />
-
-            {/* Rectangle 8 - top gradient */}
-            <div
-                className="absolute pointer-events-none"
-                style={{
-                    width: '100%',
-                    height: '300px',
-                    left: '0px',
-                    top: '0px',
-                    background: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)',
-                    opacity: 0.79,
-                }}
-            />
-
-            {/* Red decorative bars - right side */}
-            <div
-                className="absolute pointer-events-none hidden lg:block"
-                style={{
-                    left: '88.12%',
-                    right: '4.11%',
-                    top: '0%',
-                    bottom: '0%',
-                    opacity: 0.37,
-                }}
-            >
-                {/* Top red bar */}
-                <div
-                    className="absolute"
-                    style={{
-                        left: '0%',
-                        right: '0%',
-                        top: '0%',
-                        bottom: '85.22%',
-                        background: '#0A5191',
-                    }}
-                />
-                {/* Bottom red bar */}
-                <div
-                    className="absolute"
-                    style={{
-                        left: '0%',
-                        right: '0%',
-                        top: '16.4%',
-                        bottom: '0%',
-                        background: '#0A5191',
-                    }}
-                />
-            </div>
-
-            {/* Centered Content */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-                <h1
-                    className="animate-hero-reveal text-white font-bold"
-                    style={{
-                        fontFamily: "'Poppins', sans-serif",
-                        fontSize: 'clamp(36px, 5vw, 72px)',
-                        lineHeight: '1.15',
-                    }}
-                >
-                    About G-Power
-                </h1>
-
-                <p
-                    className="animate-hero-reveal-delay-1 text-white mt-4"
-                    style={{
-                        fontFamily: "'Poppins', sans-serif",
-                        fontWeight: 400,
-                        fontSize: 'clamp(14px, 1.4vw, 20px)',
-                        lineHeight: '1.5',
-                    }}
-                >
-                    Powering the Next Generation of Energy
-                </p>
-                <div className="animate-hero-reveal-delay-2 mt-8 sm:mt-10">
-                    <a href="#energy-storage" className="px-8 py-3.5 sm:px-10 sm:py-4 bg-[#0A5191] text-white rounded-[14px] font-medium btn-sweep-blue btn-glow flex items-center gap-3 group transition-all duration-300" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                        <span>Discover Our Vision</span>
-                        <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                    </a>
-                </div>
+            <div className="mx-auto max-w-[1920px] relative z-10 text-center flex flex-col items-center">
+                <FadeIn delay={100} direction="up" className="max-w-[1000px] px-2">
+                    <h2 
+                        className="font-semibold text-white mb-[20px] lg:mb-[30px]"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(32px, 4.5vw, 56px)' }}
+                    >
+                        About G-Power
+                    </h2>
+                    <p 
+                        className="text-white/90 mb-[40px] lg:mb-[50px] font-medium"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(15px, 1.8vw, 20px)' }}
+                    >
+                        Powering the Next Generation of Energy
+                    </p>
+                    <div className="flex justify-center">
+                        <Link
+                            href="#energy-storage"
+                            className="inline-flex items-center justify-center px-[24px] sm:px-[30px] py-[14px] sm:py-[16px] font-semibold text-white bg-[#0A5191] hover:bg-[#4a90e2] rounded-[14px] transition-all hover:-translate-y-[2px]"
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 2vw, 16px)' }}
+                        >
+                            Discover Our Vision
+                            <ArrowRight className="w-5 h-5 ml-[10px]" />
+                        </Link>
+                    </div>
+                </FadeIn>
             </div>
         </section>
     );

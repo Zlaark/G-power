@@ -29,6 +29,7 @@ const features = [
 ];
 
 export const WhyGPowerHome = () => {
+
     return (
         <section className="relative w-full bg-white overflow-hidden">
             <style
@@ -45,10 +46,16 @@ export const WhyGPowerHome = () => {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
-                    transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);
+                    transition: opacity 1s ease-in-out;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                 }
-                .wgp-img-wrap:hover img {
-                    transform: scale(1.04);
+                .wgp-img-wrap img.active {
+                    opacity: 1;
+                }
+                .wgp-img-wrap img:not(.active) {
+                    opacity: 0;
                 }
                 .wgp-dot {
                     width: 7px;
@@ -68,6 +75,18 @@ export const WhyGPowerHome = () => {
                     border-radius: 4px;
                     background: #0A5191;
                     animation: wgp-bar-in 0.8s cubic-bezier(0.16,1,0.3,1) 0.2s forwards;
+                }
+                .wgp-indicator {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: rgba(10,81,145,0.3);
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+                .wgp-indicator.active {
+                    background: #0A5191;
+                    transform: scale(1.2);
                 }
             `,
                 }}
@@ -156,7 +175,7 @@ export const WhyGPowerHome = () => {
                         <FadeIn delay={300} direction="left" className="w-full">
                             <div className="wgp-img-wrap">
                                 <img
-                                    src="/why-gpower-home.webp"
+                                    src="/Why G-power (Home Page).webp"
                                     alt="G-power engineer at BESS facility"
                                 />
                                 {/* Branded gradient overlay */}

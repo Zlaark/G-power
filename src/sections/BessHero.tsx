@@ -144,17 +144,16 @@ export const BessHero = () => {
                     </div>
 
                     {/* Right Image */}
-                    <div className="flex-1 relative w-full max-w-[650px] flex items-center justify-center" style={{ minHeight: '350px' }}>
+                    <div className="flex-1 relative w-full max-w-[650px] flex items-center justify-center" style={{ minHeight: '450px' }}>
                         {/* Glow backdrop */}
                         <div className="bess-glow absolute inset-0 bg-gradient-to-br from-[#0A5191]/15 via-[#0A5191]/8 to-transparent rounded-[30px] blur-[40px]" />
 
                         <FadeIn delay={400} direction="left" className="w-full">
-                            <div className="bess-float-img relative w-full rounded-[20px] overflow-hidden shadow-[0_20px_60px_rgba(10,81,145,0.2)]">
+                            <div className="bess-float-img relative w-full rounded-[20px] overflow-hidden shadow-[0_20px_60px_rgba(10,81,145,0.2)]" style={{ paddingBottom: '75%' }}>
                                 <img
-                                    src="/bess-hero.png"
+                                    src="/We Provide Reliable BESS Solutions for Your Business (Home Page).webp"
                                     alt="Battery Energy Storage System facility with solar panels"
-                                    className="w-full h-auto object-cover"
-                                    style={{ aspectRatio: '4 / 3' }}
+                                    className="absolute inset-0 w-full h-full object-cover"
                                 />
                                 {/* Image overlay gradient */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A5191]/10 to-transparent pointer-events-none" />

@@ -6,7 +6,7 @@ export function PartnersHero() {
     <section className="relative h-[50vh] min-h-[340px] md:min-h-[440px] flex items-center justify-center bg-[#121010] overflow-hidden pt-20">
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <Image
-          src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjB0ZWFtJTIwbWVldGluZyUyMHByb2Zlc3Npb25hbHN8ZW58MXx8fHwxNzcyMDAzNDUzfDA&ixlib=rb-4.1.0&q=80&w=1920&utm_source=figma&utm_medium=referral"
+          src="/Banner (Our Partners Page).webp"
           alt="Corporate Partners Background"
           fill
           className="object-cover opacity-40 brightness-75"

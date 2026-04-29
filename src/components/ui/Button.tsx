@@ -23,7 +23,7 @@ export const Button = ({
   const variants = {
     primary: "bg-[#0A5191] text-white hover:shadow-xl hover:shadow-[#0A5191]/20 hover:-translate-y-0.5",
     secondary: "bg-white text-[#1B2236] border border-[#E2E8F0] hover:border-[#0A5191]/30 hover:shadow-lg hover:-translate-y-0.5",
-    outline: "bg-transparent text-white border-2 border-white/30 hover:border-white focus:ring-white/50",
+    outline: "bg-transparent text-[#0A5191] border-2 border-[#0A5191]/30 hover:border-[#0A5191] focus:ring-[#0A5191]/50",
     ghost: "bg-transparent text-[#0A5191] hover:bg-[#0A5191]/5 px-0"
   };
 
