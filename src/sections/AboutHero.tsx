@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export const AboutHero = () => {
     return (
-        <section className="py-[80px] sm:py-[100px] lg:py-[120px] text-white relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]" style={{ minHeight: '80vh' }}>
+        <section className="relative h-[70vh] min-h-[480px] md:min-h-[560px] flex items-center justify-center overflow-hidden pt-20 px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
             {/* Background Image */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 select-none pointer-events-none">
                 <Image
                     src="/Banner 2 (Our Partners Page).webp"
                     alt="About G-Power Background"
@@ -17,16 +17,16 @@ export const AboutHero = () => {
             </div>
             
             
-            <div className="mx-auto max-w-[1920px] relative z-10 text-center flex flex-col items-center">
-                <FadeIn delay={100} direction="up" className="w-[70%] max-w-[1000px] px-2">
+            <div className="container relative z-10 px-4 sm:px-6 md:px-10 lg:px-16 mx-auto text-center flex flex-col items-center justify-center h-full max-w-4xl">
+                <FadeIn delay={100} direction="up" className="w-full">
                     <h2 
-                        className="font-semibold text-white mb-[20px] lg:mb-[30px]"
+                        className="font-semibold text-white mb-[20px] lg:mb-[30px] drop-shadow-lg"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(32px, 4.5vw, 56px)' }}
                     >
                         About G-Power
                     </h2>
                     <p 
-                        className="text-white/90 mb-[40px] lg:mb-[50px] font-medium"
+                        className="text-white/90 mb-[40px] lg:mb-[50px] font-medium drop-shadow-md"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(15px, 1.8vw, 20px)' }}
                     >
                         Powering the Next Generation of Energy
