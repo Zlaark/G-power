@@ -29,10 +29,10 @@ export const FeaturesCarousel = () => {
             <div className="mx-auto max-w-[1920px] relative w-full px-4 md:px-12 lg:px-[102px]">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
                     {cards.map((card, index) => (
-                        <FadeIn key={index} delay={index * 150} direction="up">
-                            <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 group">
+                        <FadeIn key={index} delay={index * 200} direction="right">
+                            <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 group cursor-pointer">
                                 {/* Image Card */}
-                                <div className="w-full h-[280px] md:h-[320px] lg:h-[380px] rounded-[14px] overflow-hidden relative bg-white shadow-sm">
+                                <div className="w-full h-[280px] md:h-[320px] lg:h-[380px] rounded-[14px] overflow-hidden relative bg-white shadow-sm transition-all duration-500 hover:shadow-xl hover:shadow-[#0A5191]/10">
                                     <img
                                         src={card.image}
                                         alt={card.title}
@@ -45,7 +45,7 @@ export const FeaturesCarousel = () => {
                                 </div>
 
                                 {/* Text Content */}
-                                <div className="flex flex-col gap-1 md:gap-2 w-full">
+                                <div className="flex flex-col gap-1 md:gap-2 w-full px-1">
                                     <h2
                                         className="font-bold text-sm md:text-base lg:text-[19px] leading-tight text-[#121010] group-hover:text-[#0A5191] transition-colors"
                                         style={{ fontFamily: "'Poppins', sans-serif" }}

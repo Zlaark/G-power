@@ -44,7 +44,7 @@ export const WhyGPowerHome = () => {
                 .wgp-img-wrap img {
                     display: block;
                     width: 100%;
-                    height: auto;
+                    height: 100%;
                     object-fit: cover;
                     transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);
                 }
@@ -81,7 +81,7 @@ export const WhyGPowerHome = () => {
             />
 
             <div className="mx-auto max-w-[1920px] px-[20px] md:px-[60px] lg:pl-[86px] lg:pr-[60px] py-[50px] md:py-[70px] lg:py-[90px] relative z-10">
-                <div className="flex flex-col lg:flex-row items-start gap-[40px] md:gap-[60px] lg:gap-[80px]">
+                <div className="flex flex-col lg:flex-row items-stretch gap-[40px] md:gap-[60px] lg:gap-[80px]">
 
                     {/* ── Left: text content ── */}
                     <div className="flex-1 flex flex-col gap-[22px] max-w-[640px]">
@@ -145,7 +145,7 @@ export const WhyGPowerHome = () => {
                     </div>
 
                     {/* ── Right: image ── */}
-                    <div className="flex-1 w-full max-w-[620px] flex items-start justify-center lg:justify-end lg:pt-[10px] relative">
+                    <div className="flex-1 w-full max-w-[620px] flex items-stretch justify-center lg:justify-end lg:pt-[10px] relative">
                         {/* Glow blob */}
                         <div
                             className="absolute -inset-[30px] rounded-[40px] pointer-events-none"
@@ -155,7 +155,7 @@ export const WhyGPowerHome = () => {
                         />
 
                         <FadeIn delay={300} direction="left" className="w-full">
-                            <div className="wgp-img-wrap">
+                            <div className="wgp-img-wrap h-full">
                                 <img
                                     src="/Why G-power (Home Page).webp"
                                     alt="G-power engineer at BESS facility"

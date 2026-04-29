@@ -43,7 +43,7 @@ export const GPowerAdvantage = () => {
                 .gpa-img-wrap img {
                     display: block;
                     width: 100%;
-                    height: auto;
+                    height: 100%;
                     object-fit: cover;
                     transition: transform 0.7s cubic-bezier(0.16,1,0.3,1);
                 }
@@ -98,7 +98,7 @@ export const GPowerAdvantage = () => {
             />
 
             <div className="mx-auto max-w-[1920px] px-[20px] md:px-[60px] lg:pl-[86px] lg:pr-[60px] py-[50px] md:py-[70px] lg:py-[90px] relative z-10">
-                <div className="flex flex-col lg:flex-row items-start gap-[40px] md:gap-[60px] lg:gap-[80px]">
+                <div className="flex flex-col lg:flex-row items-stretch gap-[40px] md:gap-[60px] lg:gap-[80px]">
 
                     {/* ── Left: text content ── */}
                     <div className="flex-1 flex flex-col gap-[20px] max-w-[640px]">
@@ -178,7 +178,7 @@ export const GPowerAdvantage = () => {
                     </div>
 
                     {/* ── Right: image ── */}
-                    <div className="flex-1 w-full max-w-[620px] flex items-start justify-center lg:justify-end lg:pt-[10px] relative">
+                    <div className="flex-1 w-full max-w-[620px] flex items-stretch justify-center lg:justify-end lg:pt-[10px] relative">
                         {/* Glow blob */}
                         <div
                             className="absolute -inset-[40px] rounded-[50px] pointer-events-none"
@@ -188,9 +188,9 @@ export const GPowerAdvantage = () => {
                         />
 
                         <FadeIn delay={350} direction="left" className="w-full">
-                            <div className="gpa-img-wrap">
+                            <div className="gpa-img-wrap h-full">
                                 <img
-                                    src="/gpower-advantage.png"
+                                    src="/why-gpower-home.webp"
                                     alt="G-power BESS control room monitoring"
                                 />
                                 {/* Brand overlay */}
