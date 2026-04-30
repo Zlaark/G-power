@@ -7,6 +7,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { DownloadPdfButton } from "@/components/DownloadPdfButton";
 import { EnterpriseHubSpecsCoverSection } from "@/sections/EnterpriseHubSpecsCoverSection";
 import { EnterpriseHubSpecsSheetSection } from "@/sections/EnterpriseHubSpecsSheetSection";
+import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
   title: "Technical Specifications | Enterprise Power Hub | GPower",
@@ -44,6 +45,8 @@ export default function EnterpriseHubSpecsPage() {
               <div id="datasheet-content" className="grid grid-cols-1 gap-4 lg:gap-7 max-w-4xl mx-auto w-full">
                 <EnterpriseHubSpecsCoverSection />
                 <EnterpriseHubSpecsSheetSection />
+                <RegulatoryCompliance />
+                <ISOCertifications />
               </div>
 
               <div className="rounded-[14px] overflow-hidden shadow-[0_10px_22px_rgba(2,8,23,0.1)]">

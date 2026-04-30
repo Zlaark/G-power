@@ -7,6 +7,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { DownloadPdfButton } from "@/components/DownloadPdfButton";
 import { ResidentialBattery2SpecsCoverSection } from "@/sections/ResidentialBattery2SpecsCoverSection";
 import { ResidentialBattery2SpecsSheetSection } from "@/sections/ResidentialBattery2SpecsSheetSection";
+import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
   title: "Technical Specifications | BYD Battery-Box Premium LVS | GPower",
@@ -45,6 +46,8 @@ export default function ResidentialBattery2SpecsPage() {
               <div id="datasheet-content" className="grid grid-cols-1 gap-4 lg:gap-7 max-w-4xl mx-auto w-full">
                 <ResidentialBattery2SpecsCoverSection />
                 <ResidentialBattery2SpecsSheetSection />
+                <RegulatoryCompliance />
+                <ISOCertifications />
               </div>
 
               <div className="rounded-[14px] overflow-hidden shadow-[0_10px_22px_rgba(2,8,23,0.1)]">

@@ -7,6 +7,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { DownloadPdfButton } from "@/components/DownloadPdfButton";
 import { UtilityBattery1SpecsCoverSection } from "@/sections/UtilityBattery1SpecsCoverSection";
 import { UtilityBattery1SpecsSheetSection } from "@/sections/UtilityBattery1SpecsSheetSection";
+import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
   title: "Technical Specifications | G-Power Cube Pro C&C | GPower",
@@ -45,6 +46,8 @@ export default function UtilityBattery1SpecsPage() {
               <div id="datasheet-content" className="grid grid-cols-1 gap-4 lg:gap-7 max-w-4xl mx-auto w-full">
                 <UtilityBattery1SpecsCoverSection />
                 <UtilityBattery1SpecsSheetSection />
+                <RegulatoryCompliance />
+                <ISOCertifications />
               </div>
 
               <div className="rounded-[14px] overflow-hidden shadow-[0_10px_22px_rgba(2,8,23,0.1)]">

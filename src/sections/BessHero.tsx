@@ -127,15 +127,15 @@ export const BessHero = () => {
                         </FadeIn>
 
                         {/* CTA Buttons */}
-                        <FadeIn delay={600} direction="up" className="w-full sm:w-auto">
-                            <div className="flex flex-row items-center gap-[10px] sm:gap-[15px] w-full sm:w-auto">
-                                <Link href="/solutions" className="w-1/2 sm:w-auto">
-                                    <Button variant="primary" size="lg" className="w-full sm:w-[220px] !rounded-[14px]">
+                        <FadeIn delay={600} direction="up" className="w-full">
+                            <div className="flex flex-col sm:flex-row items-center gap-4 w-full">
+                                <Link href="/solutions" className="w-full sm:w-auto">
+                                    <Button variant="primary" size="lg" className="w-full sm:w-[220px] !rounded-[14px] py-4">
                                         Explore Solutions
                                     </Button>
                                 </Link>
-                                <Link href="/contact" className="w-1/2 sm:w-auto">
-                                    <Button variant="outline" size="lg" className="w-full sm:w-[220px] !rounded-[14px] !text-[#0A5191] !border-[#0A5191] hover:!text-white">
+                                <Link href="/contact" className="w-full sm:w-auto">
+                                    <Button variant="outline" size="lg" className="w-full sm:w-[220px] !rounded-[14px] !text-[#0A5191] !border-[#0A5191] hover:!text-white py-4">
                                         Contact Us Now
                                     </Button>
                                 </Link>

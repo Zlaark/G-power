@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
+import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
   title: "BYD Battery-Box Premium HVS | Residential Products | GPower",
@@ -144,6 +145,22 @@ export default function ResidentialBattery1ProductPage() {
                 </Link>
               </div>
             </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
+        <div className="mx-auto max-w-[1400px]">
+          <FadeIn delay={100} direction="up">
+             <RegulatoryCompliance />
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-[#F9FAFB]">
+        <div className="mx-auto max-w-[1400px]">
+          <FadeIn delay={100} direction="up">
+             <ISOCertifications />
           </FadeIn>
         </div>
       </section>

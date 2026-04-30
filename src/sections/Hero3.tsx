@@ -45,10 +45,10 @@ export const Hero3 = () => {
                 </div>
 
                 {/* Bottom Buttons */}
-                <div className="absolute left-[20px] md:left-[86px] bottom-[40px] md:bottom-[60px] flex flex-col sm:flex-row items-center gap-4 sm:gap-6 animate-hero-reveal-delay-3 w-full sm:w-auto pr-[20px] sm:pr-0">
+                <div className="absolute left-[20px] md:left-[86px] bottom-[30px] md:bottom-[60px] flex flex-col md:flex-row items-center gap-4 sm:gap-6 animate-hero-reveal-delay-3 w-[calc(100%-40px)] md:w-auto">
                     <Link
                         href="/contact"
-                        className="inline-flex items-center justify-center px-[24px] py-[12px] md:py-[14px] font-semibold text-white bg-[#0A5191] border border-[#0A5191] rounded-[14px] transition-all hover:bg-[#083D6E] hover:-translate-y-[2px] w-full sm:w-auto shadow-lg shadow-[#0A5191]/20"
+                        className="inline-flex items-center justify-center px-[24px] py-[14px] md:py-[16px] font-semibold text-white bg-[#0A5191] border border-[#0A5191] rounded-[14px] transition-all hover:bg-[#083D6E] hover:-translate-y-[2px] w-full md:w-auto shadow-lg shadow-[#0A5191]/20"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
                     >
                         Schedule consultation
@@ -57,7 +57,7 @@ export const Hero3 = () => {
                     
                     <Link
                         href="/our-projects"
-                        className="inline-flex items-center justify-center px-[24px] py-[12px] md:py-[14px] font-semibold text-[#121010] bg-white rounded-[14px] transition-all hover:bg-gray-100 hover:-translate-y-[2px] w-full sm:w-auto shadow-lg"
+                        className="inline-flex items-center justify-center px-[24px] py-[14px] md:py-[16px] font-semibold text-[#121010] bg-white rounded-[14px] transition-all hover:bg-gray-100 hover:-translate-y-[2px] w-full md:w-auto shadow-lg"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
                     >
                         Order Now

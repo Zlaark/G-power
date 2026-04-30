@@ -7,6 +7,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { DownloadPdfButton } from "@/components/DownloadPdfButton";
 import { UtilityBattery2SpecsCoverSection } from "@/sections/UtilityBattery2SpecsCoverSection";
 import { UtilityBattery2SpecsSheetSection } from "@/sections/UtilityBattery2SpecsSheetSection";
+import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
   title: "Technical Specifications | G-Power Cube T28 | GPower",
@@ -45,6 +46,8 @@ export default function UtilityBattery2SpecsPage() {
               <div id="datasheet-content" className="grid grid-cols-1 gap-4 lg:gap-7 max-w-4xl mx-auto w-full">
                 <UtilityBattery2SpecsCoverSection />
                 <UtilityBattery2SpecsSheetSection />
+                <RegulatoryCompliance />
+                <ISOCertifications />
               </div>
 
               <div className="rounded-[14px] overflow-hidden shadow-[0_10px_22px_rgba(2,8,23,0.1)]">

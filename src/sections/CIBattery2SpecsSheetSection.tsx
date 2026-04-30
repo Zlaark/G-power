@@ -72,7 +72,7 @@ export function CIBattery2SpecsSheetSection() {
               className="text-[#475569] transition-transform duration-300 hover:translate-x-2 hover:text-[#0A5191]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
             >
-              2 {term}
+               • {term}
             </p>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import { Navbar } from "@/sections/navbar";import { Footer } from "@/sections/Footer";import { FadeIn } from "@/components/FadeIn";import { Metadata } from "next";import Image from "next/image";import Link from "next/link";import { ArrowRight, Download } from "lucide-react";
+import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = { title: "BYD Battery-Box Commercial | C&I Products | GPower", description: "Scalable energy storage solution for commercial and industrial applications." };
 const specs = [{ label: "Type", value: "Scalable" }, { label: "Chemistry", value: "LFP" }, { label: "Voltage", value: "High Voltage" }, { label: "Protection", value: "IP55" }];
@@ -21,5 +22,21 @@ export default function CIBattery1ProductPage() {
         <div className="px-6 md:px-8 py-6 md:py-7 bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] text-center"><h3 className="text-white font-normal mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 30px)" }}>Need More Details?</h3><p className="text-white/90 mb-6" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}>View complete technical specifications and download the full datasheet</p><Link href="/product/commercial-industrial/ci-battery-1/specs" className="btn-sweep-blue btn-float-hover inline-flex items-center gap-2 bg-[#0A5191] text-white px-7 py-4 rounded-[14px] font-normal hover:bg-[#083D6D] transition-colors shadow-[0_8px_18px_rgba(10, 81, 145,0.22)]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}><Download className="w-5 h-5" /> View More <ArrowRight className="w-5 h-5" /></Link></div></div></FadeIn></div></section>
     <section className="relative py-[80px] lg:py-[112px] px-6 md:px-[60px] lg:px-[100px] overflow-hidden bg-[#0D0D0D]"><div className="absolute inset-0 z-0 pointer-events-none select-none"><Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" alt="C&I storage" fill className="object-cover opacity-20 brightness-75" /><div className="absolute inset-0 bg-gradient-to-br from-[#0D0D0D]/80 via-[#0D0D0D]/60 to-[#0A5191]/10" /></div>
       <div className="relative z-10 mx-auto max-w-[800px] text-center"><FadeIn delay={100} direction="up"><h2 className="text-white font-normal mb-4" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3.4vw, 40px)" }}>Interested in BYD Battery-Box Commercial?</h2></FadeIn><FadeIn delay={200} direction="up"><p className="text-white/70 mb-10" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>Contact our sales team for pricing and project consultation</p></FadeIn><FadeIn delay={300} direction="up"><Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[14px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}>Request a Quote</Link></FadeIn></div></section>
+    
+      <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
+        <div className="mx-auto max-w-[1400px]">
+          <FadeIn delay={100} direction="up">
+             <RegulatoryCompliance />
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-[#F9FAFB]">
+        <div className="mx-auto max-w-[1400px]">
+          <FadeIn delay={100} direction="up">
+             <ISOCertifications />
+          </FadeIn>
+        </div>
+      </section>
     <Footer /></main>);
 }

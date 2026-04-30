@@ -5,6 +5,7 @@ import { ArrowRight, Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
   title: "G-Power Hiner | Utility Products | GPower",
@@ -156,6 +157,22 @@ export default function UtilityBattery4ProductPage() {
             <Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[14px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}>
               Request a Quote
             </Link>
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
+        <div className="mx-auto max-w-[1400px]">
+          <FadeIn delay={100} direction="up">
+             <RegulatoryCompliance />
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-[#F9FAFB]">
+        <div className="mx-auto max-w-[1400px]">
+          <FadeIn delay={100} direction="up">
+             <ISOCertifications />
           </FadeIn>
         </div>
       </section>

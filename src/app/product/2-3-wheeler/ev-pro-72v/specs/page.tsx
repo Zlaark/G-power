@@ -7,6 +7,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { DownloadPdfButton } from "@/components/DownloadPdfButton";
 import { EVPro72VSpecsCoverSection } from "@/sections/EVPro72VSpecsCoverSection";
 import { EVPro72VSpecsSheetSection } from "@/sections/EVPro72VSpecsSheetSection";
+import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
   title: "Technical Specifications | EV Pro Series 72V | GPower",
@@ -44,6 +45,8 @@ export default function EVPro72VSpecsPage() {
               <div id="datasheet-content" className="grid grid-cols-1 gap-4 lg:gap-7 max-w-4xl mx-auto w-full">
                 <EVPro72VSpecsCoverSection />
                 <EVPro72VSpecsSheetSection />
+                <RegulatoryCompliance />
+                <ISOCertifications />
               </div>
 
               <div className="rounded-[14px] overflow-hidden shadow-[0_10px_22px_rgba(2,8,23,0.1)]">

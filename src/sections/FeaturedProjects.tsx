@@ -215,7 +215,7 @@ export function FeaturedProjects() {
           }}
         >
           <div
-            className="w-full max-w-4xl rounded-[32px] bg-white shadow-[0_24px_80px_rgba(0,0,0,0.5)] overflow-hidden animate-badge-pop"
+            className="w-full max-w-4xl rounded-[32px] bg-white shadow-[0_24px_80px_rgba(0,0,0,0.5)] overflow-y-auto max-h-[90vh] md:overflow-hidden md:max-h-none animate-badge-pop"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex items-center justify-between px-6 md:px-8 py-4 border-b border-[#F1F5F9] relative">
