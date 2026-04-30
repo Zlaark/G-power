@@ -7,7 +7,7 @@ export function RegulatoryCompliance() {
       name: "NFPA",
       desc: "Fire Safety",
       icon: (
-        <div className="w-16 h-16 border-2 border-[#1E293B] rounded-[8px] flex flex-col items-center justify-center p-1 relative overflow-hidden bg-white shadow-sm transition-shadow group-hover:shadow-md">
+        <div className="w-16 h-16 border-2 border-[#1E293B] rounded-[8px] flex flex-col items-center justify-center p-1 relative overflow-hidden bg-white">
           <div className="absolute top-0 left-0 w-full h-1.5 bg-[#1E293B]" />
           <Zap className="w-8 h-8 text-[#E11D48] fill-[#E11D48]" />
           <span className="text-[10px] font-bold text-[#1E293B] mt-1">NFPA®</span>
@@ -18,7 +18,7 @@ export function RegulatoryCompliance() {
       name: "RoHS",
       desc: "Hazardous Materials",
       icon: (
-        <div className="w-16 h-16 flex flex-col items-center justify-center p-1 bg-white border border-[#E2E8F0] rounded-[8px] shadow-sm transition-shadow group-hover:shadow-md">
+        <div className="w-16 h-16 flex flex-col items-center justify-center p-1 bg-white border-2 border-[#22C55E]/20 rounded-[8px]">
           <div className="flex items-center gap-1 mb-1">
              <div className="w-5 h-8 bg-[#22C55E] rounded-full rotate-45 flex items-center justify-center">
                 <div className="w-1 h-6 bg-white/30 rounded-full" />
@@ -35,7 +35,7 @@ export function RegulatoryCompliance() {
       name: "UN 38.3",
       desc: "Battery Safety",
       icon: (
-        <div className="w-16 h-16 flex items-center justify-center relative bg-white transition-transform group-hover:scale-105">
+        <div className="w-16 h-16 flex items-center justify-center relative bg-transparent">
           <div 
             className="w-14 h-14 bg-[#1E3A8A] flex flex-col items-center justify-center p-1 text-white shadow-lg"
             style={{ clipPath: "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)" }}
@@ -53,7 +53,7 @@ export function RegulatoryCompliance() {
       name: "UL",
       desc: "Global Standards",
       icon: (
-        <div className="w-16 h-16 flex flex-col items-center justify-center p-1 bg-white border border-[#E2E8F0] rounded-full shadow-sm transition-shadow group-hover:shadow-md">
+        <div className="w-16 h-16 flex flex-col items-center justify-center p-1 bg-white border border-[#E2E8F0] rounded-full">
           <div className="w-11 h-11 border-2 border-[#E11D48] rounded-full flex flex-col items-center justify-center">
             <span className="text-[16px] font-bold text-[#E11D48] leading-none">UL</span>
           </div>
@@ -67,7 +67,7 @@ export function RegulatoryCompliance() {
       name: "IEC",
       desc: "Electrical Quality",
       icon: (
-        <div className="w-16 h-16 bg-[#1D4ED8] flex flex-col items-center justify-center p-1 rounded-[4px] text-white shadow-md transition-shadow group-hover:shadow-lg">
+        <div className="w-16 h-16 bg-[#1D4ED8] flex flex-col items-center justify-center p-1 rounded-[8px] text-white">
           <span className="text-[18px] font-bold leading-none italic">IEC</span>
           <div className="w-10 h-[1px] bg-white/80 my-1" />
           <div className="flex gap-0.5">
@@ -80,32 +80,53 @@ export function RegulatoryCompliance() {
   ];
 
   return (
-    <section className="bg-white rounded-[20px] p-10 md:p-14 border border-[#0A5191]/15 card-shimmer card-soft-hover w-full relative overflow-hidden shadow-[0_20px_50px_rgba(10,81,145,0.05)]">
-      {/* Decorative Brand Accent */}
-      <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#0A5191] via-[#4a90e2] to-[#0A5191]" />
-      
-      <div className="text-center mb-14">
-        <h2 className="text-[#0A5191] font-bold mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 3.5vw, 42px)" }}>
-          Compliance & Standards
-        </h2>
-        <div className="w-20 h-1 bg-[#0A5191] mx-auto rounded-full mb-6" />
-        <p className="text-[#475569] max-w-2xl mx-auto font-medium" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "16px" }}>
-          Our products undergo rigorous testing and certification to meet the highest global safety and quality requirements.
-        </p>
-      </div>
-      
-      <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20">
-        {standards.map((standard) => (
-          <div key={standard.name} className="group flex flex-col items-center gap-4 transition-all duration-300">
-            <div className="transition-transform duration-500 group-hover:-translate-y-2">
-              {standard.icon}
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-[#0F172A] font-bold text-sm tracking-wide" style={{ fontFamily: "'Poppins', sans-serif" }}>{standard.name}</span>
-              <span className="text-[#64748B] text-[10px] font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>{standard.desc}</span>
-            </div>
+    <section className="bg-[#FAFCFF] rounded-[32px] p-8 md:p-14 border border-[#E0EFFF] shadow-xl shadow-[#0A5191]/[0.03] w-full relative overflow-hidden group/section">
+      {/* Abstract Background Elements */}
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#0A5191]/[0.03] rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none transition-transform duration-1000 group-hover/section:scale-110" />
+      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#4CA5FF]/[0.03] rounded-full blur-[60px] translate-y-1/2 -translate-x-1/4 pointer-events-none transition-transform duration-1000 group-hover/section:scale-110" />
+
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+        {/* Left Content */}
+        <div className="lg:w-1/3 relative z-10 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#0A5191]/10 shadow-sm mb-6">
+            <Shield className="w-4 h-4 text-[#0A5191]" />
+            <span className="text-[#0A5191] text-xs font-bold tracking-widest uppercase" style={{ fontFamily: "'Poppins', sans-serif" }}>Global Trust</span>
           </div>
-        ))}
+          <h2 className="text-[#0F172A] font-extrabold mb-5 leading-[1.1]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(32px, 4vw, 44px)" }}>
+            Compliance <br className="hidden lg:block"/>
+            <span className="text-[#0A5191]">& Standards</span>
+          </h2>
+          <p className="text-[#475569] text-base lg:text-lg font-medium leading-relaxed max-w-md" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            Our energy storage solutions undergo rigorous independent testing and certification to guarantee absolute safety, reliability, and regulatory compliance worldwide.
+          </p>
+        </div>
+        
+        {/* Right Content - Cards Grid */}
+        <div className="lg:w-2/3 relative z-10 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5">
+            {standards.map((standard, index) => (
+              <div 
+                key={standard.name} 
+                className="group relative flex flex-col items-center p-5 bg-white rounded-[24px] border border-[#F1F5F9] shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_15px_40px_rgba(10,81,145,0.08)] hover:border-[#0A5191]/20 transition-all duration-500 hover:-translate-y-2"
+                style={{ transitionDelay: `${index * 50}ms` }}
+              >
+                {/* Hover Accent Line */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-[#0A5191] rounded-b-full transition-all duration-500 group-hover:w-1/2 opacity-0 group-hover:opacity-100" />
+                
+                {/* The icon */}
+                <div className="mb-4 transform transition-transform duration-500 group-hover:scale-110">
+                  {standard.icon}
+                </div>
+                
+                {/* Text */}
+                <div className="flex flex-col items-center text-center mt-auto">
+                  <span className="text-[#0F172A] font-bold text-sm mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>{standard.name}</span>
+                  <span className="text-[#64748B] text-[10px] font-medium leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>{standard.desc}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
