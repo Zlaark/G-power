@@ -33,8 +33,7 @@ const MapMarker = ({ left, top, region, countries, position = 'top' }: { left: s
 
 export const GlobalPresenceMap = () => {
     return (
-        <section className="relative bg-[#EEF1FA] py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-12 xl:px-16 overflow-hidden min-h-[500px] md:min-h-[700px] flex items-start">
-            {/* Map image as background */}
+        <section className="relative bg-[#EEF1FA] py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-12 xl:px-16 overflow-hidden md:min-h-[700px] flex items-center md:items-start">
             <div className="absolute inset-y-0 right-0 hidden md:flex items-center justify-end opacity-90 pointer-events-none w-[58%]">
                 <div className="relative w-full h-full">
                     <Image
@@ -91,18 +90,18 @@ export const GlobalPresenceMap = () => {
                 </FadeIn>
 
                 <FadeIn delay={300} direction="up">
-                    <div className="mt-8 lg:mt-14 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10">
+                    <div className="mt-8 lg:mt-14 grid grid-cols-3 gap-2 sm:gap-10">
                         <div className="flex flex-col items-center lg:items-start">
-                            <h3 className="text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>6</h3>
-                            <p className="text-[#4A4A4A] text-base lg:text-lg font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>Continents</p>
+                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>6</h3>
+                            <p className="text-[#4A4A4A] text-xs sm:text-base lg:text-lg font-medium text-center lg:text-left" style={{ fontFamily: "'Poppins', sans-serif" }}>Continents</p>
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
-                            <h3 className="text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>110+</h3>
-                            <p className="text-[#4A4A4A] text-base lg:text-lg font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>Countries and Regions</p>
+                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>110+</h3>
+                            <p className="text-[#4A4A4A] text-xs sm:text-base lg:text-lg font-medium text-center lg:text-left mx-auto max-w-[100px] sm:max-w-none" style={{ fontFamily: "'Poppins', sans-serif" }}>Countries & Regions</p>
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
-                            <h3 className="text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>500+</h3>
-                            <p className="text-[#4A4A4A] text-base lg:text-lg font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>Projects</p>
+                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>500+</h3>
+                            <p className="text-[#4A4A4A] text-xs sm:text-base lg:text-lg font-medium text-center lg:text-left" style={{ fontFamily: "'Poppins', sans-serif" }}>Projects</p>
                         </div>
                     </div>
                 </FadeIn>
