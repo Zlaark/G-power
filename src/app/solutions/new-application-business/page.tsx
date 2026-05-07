@@ -7,8 +7,8 @@ import Image from "next/image";
 import { Lightbulb, Package } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "New Application Business | GPower",
-  description: "Explore energy storage solutions and products for new-age business applications.",
+  title: "Other Applications | GPower",
+  description: "Explore energy storage solutions and products for emerging business applications.",
 };
 
 export default function NewApplicationBusinessHubPage() {
@@ -23,7 +23,7 @@ export default function NewApplicationBusinessHubPage() {
         </div>
         <div className="container relative z-10 px-4 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
           <FadeIn delay={120} direction="up">
-            <p className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}>New Application Business</p>
+            <p className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}>Other Applications</p>
           </FadeIn>
           <FadeIn delay={220} direction="up">
             <h1 className="text-white font-semibold leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 64px)" }}>Power Your Enterprise, Effortlessly</h1>

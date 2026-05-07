@@ -9,7 +9,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Utility Solutions | GPower",
   description:
-    "Grid-scale energy storage systems for renewable integration, stability, and utility-grade performance.",
+    "Utility-scale energy storage systems for renewable integration, stability, and utility-grade performance.",
 };
 
 const utilityBenefits = [
@@ -56,7 +56,7 @@ const productMerits = [
 
 const recommendedProducts = [
   {
-    title: "G-Power Cube Pro C&C",
+    title: "Utility Battery System 1",
     tagline: "2.76 MWh",
     description: "Large-scale containerized energy storage system for utility applications",
     image:
@@ -70,7 +70,7 @@ const recommendedProducts = [
     ],
   },
   {
-    title: "G-Power Cube T28",
+    title: "Utility Battery System 2",
     tagline: "3.44 MWh",
     description: "Next-generation utility-scale energy storage with enhanced energy density",
     image:
@@ -140,7 +140,7 @@ export default function UtilitySolutionsPage() {
               className="text-white font-medium leading-tight mb-5"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 5vw, 48px)" }}
             >
-              Grid-Scale Energy Storage
+              Utility Energy Storage
             </h1>
           </FadeIn>
           <FadeIn delay={600} direction="up" duration={900}>

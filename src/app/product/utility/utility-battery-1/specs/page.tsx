@@ -10,9 +10,9 @@ import { UtilityBattery1SpecsSheetSection } from "@/sections/UtilityBattery1Spec
 import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
-  title: "Technical Specifications | G-Power Cube Pro C&C | GPower",
+  title: "Technical Specifications | Utility Battery System 1 | GPower",
   description:
-    "Complete technical specifications for G-Power Cube Pro C&C utility battery system.",
+    "Complete technical specifications for Utility Battery System 1 utility battery system.",
 };
 
 export default function UtilityBattery1SpecsPage() {
@@ -33,7 +33,7 @@ export default function UtilityBattery1SpecsPage() {
               className="text-white/70"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.2vw, 22px)" }}
             >
-              G-Power Cube Pro C&amp;C - Complete Technical Documentation
+              Utility Battery System 1 - Complete Technical Documentation
             </p>
           </FadeIn>
         </div>
@@ -63,7 +63,7 @@ export default function UtilityBattery1SpecsPage() {
                   className="text-white/90 mb-7 mt-6"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}
                 >
-                  Get the complete 2-page technical datasheet for G-Power Cube Pro C&amp;C in PDF format exactly as shown above, containing all specifications, features, and contact information.
+                  Get the complete 2-page technical datasheet for Utility Battery System 1 in PDF format exactly as shown above, containing all specifications, features, and contact information.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-3">
                   <DownloadPdfButton 

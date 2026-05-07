@@ -143,13 +143,13 @@ export const BessHero = () => {
                         </FadeIn>
                     </div>
 
-                    {/* Right Image */}
-                    <div className="flex-1 relative w-full max-w-[650px] flex items-center justify-center lg:justify-end" style={{ minHeight: '450px' }}>
+                    {/* Right Image - larger and right-aligned */}
+                    <div className="flex-1 relative w-full max-w-[720px] flex items-center justify-center lg:justify-end" style={{ minHeight: '500px' }}>
                         <FadeIn delay={400} direction="left" className="w-full lg:w-auto">
-                            <div className="bess-float-img relative w-full lg:w-[500px] rounded-[20px] overflow-hidden shadow-[0_20px_60px_rgba(10,81,145,0.2)]">
+                            <div className="bess-float-img relative w-full lg:w-[620px] rounded-[20px] overflow-hidden shadow-[0_20px_60px_rgba(10,81,145,0.2)]">
                                 <img
                                     src="/We Provide Reliable BESS Solutions for Your Business (Home Page).webp"
-                                    alt="Battery Energy Storage System facility with solar panels"
+                                    alt="Battery Energy Storage System facility"
                                     className="w-full h-auto object-cover"
                                     style={{ aspectRatio: '4 / 3' }}
                                 />

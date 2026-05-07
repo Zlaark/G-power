@@ -7,9 +7,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "New Application Business | GPower",
+  title: "Other Applications | GPower",
   description:
-    "Advanced energy storage and power solutions for cutting-edge business applications.",
+    "Advanced energy storage and power solutions for emerging business applications.",
 };
 
 const businessBenefits = [

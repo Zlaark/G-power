@@ -3,33 +3,33 @@ import Image from 'next/image';
 const solutions = [
     {
         image: '/Battery Energy Storage Systems (BESS)  (About Us Page).webp',
-        alt: 'Battery Energy Storage Systems (BESS)',
-        label: 'Battery Energy Storage Systems (BESS)',
-        description: 'Grid-scale battery energy storage solutions that support renewable energy integration, improve grid stability, and enable reliable power infrastructure for large-scale applications.'
-    },
-    {
-        image: '/Commercial Energy Systems (About Us Page).webp',
-        alt: 'Commercial Energy Systems',
-        label: 'Commercial Energy Systems',
-        description: 'Energy storage solutions designed for offices, institutions, and commercial establishments. Our systems help businesses maintain operational continuity while improving energy efficiency.'
-    },
-    {
-        image: '/Industrial Energy Systems (About Us Page).webp',
-        alt: 'Industrial Energy Systems',
-        label: 'Industrial Energy Systems',
-        description: 'High-capacity battery and inverter solutions designed for demanding industrial environments, ensuring operational reliability and energy stability for large-scale facilities.'
-    },
-    {
-        image: '/EV Battery Packs  (About Us Page).webp',
-        alt: 'EV Battery Packs',
-        label: 'EV Battery Packs',
-        description: 'Advanced lithium battery solutions designed for a wide range of mobility applications. From electric two-wheelers and three-wheelers to commercial vehicles, trucks, and marine vessels, our battery systems are engineered for high performance, safety, and long lifecycle.'
+        alt: 'Utility Energy Storage',
+        label: 'Utility Energy Storage',
+        description: 'Large-scale battery energy storage solutions that support renewable energy integration, improve grid stability, and enable reliable power infrastructure for utility applications.'
     },
     {
         image: '/about-renewable.png',
-        alt: 'Smart residential energy storage',
-        label: 'PowerPod',
-        description: 'Smart residential energy storage systems designed to provide reliable home power. PowerPod integrates advanced lithium batteries with intelligent inverters to optimize energy usage and ensure uninterrupted power supply.'
+        alt: 'Residential Energy Storage',
+        label: 'Residential Energy Storage',
+        description: 'Smart residential energy storage systems designed to provide reliable home power, integrating advanced lithium batteries with intelligent inverters to optimize energy usage and ensure uninterrupted power supply.'
+    },
+    {
+        image: '/Commercial Energy Systems (About Us Page).webp',
+        alt: 'Commercial & Industrial Energy Storage',
+        label: 'Commercial & Industrial Energy Storage',
+        description: 'High-capacity energy storage solutions designed for offices, institutions, manufacturing plants, and industrial facilities, ensuring operational reliability and energy stability for demanding commercial environments.'
+    },
+    {
+        image: '/EV Battery Packs  (About Us Page).webp',
+        alt: '2 & 3 Wheeler Applications',
+        label: '2 & 3 Wheeler Applications',
+        description: 'Advanced lithium battery solutions designed for electric two-wheelers and three-wheelers. Our battery systems are engineered for high performance, safety, and long lifecycle in mobility applications.'
+    },
+    {
+        image: '/Industrial Energy Systems (About Us Page).webp',
+        alt: 'Other Applications',
+        label: 'Other Applications',
+        description: 'Innovative energy storage solutions for emerging business applications including commercial vehicles, trucks, marine vessels, and specialized industrial use cases requiring reliable power systems.'
     },
 ];
 
@@ -60,7 +60,7 @@ export const BessSolutions = () => {
                             lineHeight: '1.75',
                         }}
                     >
-                        We design energy storage and power systems across residential, commercial, industrial, mobility, and grid-scale applications.
+                        We design energy storage and power systems across residential, commercial, industrial, mobility, and utility applications.
                     </p>
                 </div>
 

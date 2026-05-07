@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '@/components/ui/Button';
+import { Logo } from '@/components/Logo';
 
 export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -67,13 +68,9 @@ export const Navbar = () => {
 
                     {/* Logo */}
                     <Link href="/" className="flex items-center shrink-0">
-                        <Image
-                            src="/logo-clean.png"
-                            alt="G-Power Logo"
-                            width={171}
-                            height={124}
-                            className="h-[60px] lg:h-[95px] w-auto object-contain"
-                            priority
+                        <Logo
+                            variant="light"
+                            className="h-[60px] lg:h-[95px] w-auto"
                         />
                     </Link>
 
@@ -90,21 +87,21 @@ export const Navbar = () => {
                             <div className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Solutions
                             </div>
-                            <div className="absolute left-0 top-full mt-3 w-[280px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+                            <div className="absolute left-0 top-full mt-3 w-[300px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
                                 <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    Utility Solutions
-                                </Link>
-                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    Residential Solutions
+                                    Utility Energy Storage
                                 </Link>
                                 <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Commercial & Industrial
                                 </Link>
+                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    Residential/Portable
+                                </Link>
                                 <Link href="/solutions/2-3-wheeler" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    2 & 3 Wheeler Application
+                                    Mobility
                                 </Link>
                                 <Link href="/solutions/new-application-business" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    New Application Business
+                                    Marine & Other Applications
                                 </Link>
                             </div>
                         </div>
@@ -113,15 +110,21 @@ export const Navbar = () => {
                             <div className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Products
                             </div>
-                            <div className="absolute left-0 top-full mt-3 w-[260px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-                                <Link href="/solutions/utility/products/utility-battery-1" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    G-Power Cube Pro C&amp;C
+                            <div className="absolute left-0 top-full mt-3 w-[280px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+                                <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    Full Load 5.0
                                 </Link>
-                                <Link href="/solutions/utility/products/utility-battery-2" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    G-Power Cube T28
+                                <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    Jumbo 0.25
                                 </Link>
-                                <Link href="/solutions/utility/products/utility-battery-4" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    G-Power Hiner
+                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    Power Pod
+                                </Link>
+                                <Link href="/solutions/2-3-wheeler" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    EVgo
+                                </Link>
+                                <Link href="/solutions/new-application-business" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    Others
                                 </Link>
                             </div>
                         </div>
@@ -165,13 +168,9 @@ export const Navbar = () => {
                     {/* Header inside overlay */}
                     <div className="flex items-center justify-between h-[80px] px-6 border-b border-white/10 relative z-10">
                         <Link href="/" onClick={closeMenu} className="flex items-center shrink-0">
-                            <Image
-                                src="/logo-clean.png"
-                                alt="G-Power Logo"
-                                width={171}
-                                height={124}
-                                className="h-[45px] w-auto object-contain brightness-0 invert"
-                                priority
+                            <Logo
+                                variant="light"
+                                className="h-[45px] w-auto"
                             />
                         </Link>
                         <button
@@ -210,11 +209,11 @@ export const Navbar = () => {
                                 </button>
                                 <div className={`accordion-content ${openAccordion === 'solutions' ? 'open' : ''}`}>
                                     <div className="flex flex-col gap-4 pl-4 border-l-2 border-[#0A5191]/40 mb-3 mt-1">
-                                        <Link href="/solutions/utility" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Utility Solutions</Link>
-                                        <Link href="/solutions/residential" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Residential Solutions</Link>
+                                        <Link href="/solutions/utility" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Utility Energy Storage</Link>
                                         <Link href="/solutions/commercial-industrial" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Commercial & Industrial</Link>
-                                        <Link href="/solutions/2-3-wheeler" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>2 & 3 Wheeler Application</Link>
-                                        <Link href="/solutions/new-application-business" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>New Application Business</Link>
+                                        <Link href="/solutions/residential" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Residential/Portable</Link>
+                                        <Link href="/solutions/2-3-wheeler" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Mobility</Link>
+                                        <Link href="/solutions/new-application-business" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Marine & Other Applications</Link>
                                     </div>
                                 </div>
                             </div>
@@ -233,9 +232,11 @@ export const Navbar = () => {
                                 </button>
                                 <div className={`accordion-content ${openAccordion === 'products' ? 'open' : ''}`}>
                                     <div className="flex flex-col gap-4 pl-4 border-l-2 border-[#0A5191]/40 mb-3 mt-1">
-                                        <Link href="/solutions/utility/products/utility-battery-1" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>G-Power Cube Pro C&amp;C</Link>
-                                        <Link href="/solutions/utility/products/utility-battery-2" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>G-Power Cube T28</Link>
-                                        <Link href="/solutions/utility/products/utility-battery-4" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>G-Power Hiner</Link>
+                                        <Link href="/solutions/utility" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Full Load 5.0</Link>
+                                        <Link href="/solutions/commercial-industrial" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Jumbo 0.25</Link>
+                                        <Link href="/solutions/residential" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Power Pod</Link>
+                                        <Link href="/solutions/2-3-wheeler" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>EVgo</Link>
+                                        <Link href="/solutions/new-application-business" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Others</Link>
                                     </div>
                                 </div>
                             </div>

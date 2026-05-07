@@ -32,7 +32,7 @@ export default function UtilityHubPage() {
             <p className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}>Utility Energy Storage</p>
           </FadeIn>
           <FadeIn delay={220} direction="up">
-            <h1 className="text-white font-semibold leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 64px)" }}>Grid-Scale Energy Storage</h1>
+            <h1 className="text-white font-semibold leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 64px)" }}>Utility Energy Storage</h1>
           </FadeIn>
           <FadeIn delay={340} direction="up">
             <p className="text-white/80 max-w-3xl mx-auto font-medium" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.8vw, 22px)" }}>Choose how you&apos;d like to explore our utility-scale energy storage offerings</p>

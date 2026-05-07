@@ -27,7 +27,7 @@ export function UtilityBattery1SpecsCoverSection() {
           className="text-white font-semibold mb-1"
           style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 3.2vw, 48px)" }}
         >
-          G-Power Cube Pro C&amp;C
+          Utility Battery System 1
         </h2>
         <p
           className="text-white/95"
@@ -41,7 +41,7 @@ export function UtilityBattery1SpecsCoverSection() {
         <div className="relative w-full rounded-[12px] overflow-hidden mb-6" style={{ aspectRatio: "16/5.3" }}>
           <Image
             src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
-            alt="G-Power Cube Pro C&C"
+            alt="Utility Battery System 1"
             fill
             className="object-cover"
           />

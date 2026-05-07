@@ -13,19 +13,19 @@ export const metadata: Metadata = {
 
 const products = [
   {
-    title: "G-Power Cube Pro C&C",
+    title: "Utility Battery System 1",
     capacity: "2.76 MWh",
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     href: "/solutions/utility/products/utility-battery-1",
   },
   {
-    title: "G-Power Cube T28",
+    title: "Utility Battery System 2",
     capacity: "3.44 MWh",
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
     href: "/solutions/utility/products/utility-battery-2",
   },
   {
-    title: "G-Power Hiner",
+    title: "Utility Battery System 3",
     capacity: "261 kWh",
     image: "/about-bess-facility.jpg",
     href: "/solutions/utility/products/utility-battery-4",

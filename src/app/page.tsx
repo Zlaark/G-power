@@ -1,16 +1,12 @@
 import { Navbar } from "@/sections/navbar";
 import { Hero3 } from "@/sections/Hero3";
 import { BessHero } from "@/sections/BessHero";
+import { ProductSlideshow } from "@/sections/ProductSlideshow";
 import { SaveOnBills } from "@/sections/SaveOnBills";
 import { WhyGPowerHome } from "@/sections/WhyGPowerHome";
-import { SolarMaintenance } from "@/sections/SolarMaintenance";
 import { GPowerAdvantage } from "@/sections/GPowerAdvantage";
 import { SleekDurable } from "@/sections/SleekDurable";
 import { FeaturesCarousel } from "@/sections/FeaturesCarousel";
-// import { GridGoesDown } from "@/sections/GridGoesDown";
-// import { SolarHome } from "@/sections/SolarHome";
-// import { GettingToPowerOn } from "@/sections/GettingToPowerOn";
-// import { ServiceCards } from "@/sections/ServiceCards";
 import { Footer } from "@/sections/Footer";
 import { TurnkeyEnergySolutions } from "@/sections/TurnkeyEnergySolutions";
 import { GlobalPresenceMap } from "@/sections/GlobalPresenceMap";
@@ -21,25 +17,15 @@ export default function Home() {
       <Navbar />
       <Hero3 />
       <BessHero />
+      <ProductSlideshow />
       <SaveOnBills />
-      <SolarMaintenance />
+      <WhyGPowerHome />
       <GPowerAdvantage />
       <SleekDurable />
       <FeaturesCarousel />
-      {/* <GridGoesDown />
-      <SolarHome />
-      <GettingToPowerOn />
-      <ServiceCards /> */}
       <GlobalPresenceMap />
       <TurnkeyEnergySolutions />
       <Footer />
     </main>
   );
 }
-
-
-
-
-
-
-

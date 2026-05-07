@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
 
 export const metadata: Metadata = {
-  title: "G-Power Hiner | Utility Products | GPower",
+  title: "Utility Battery System 3 | Utility Products | GPower",
   description: "Highly efficient containerized energy storage system. 261 kWh capacity for diverse applications.",
 };
 
@@ -23,7 +23,7 @@ export default function UtilityBattery4ProductPage() {
       <Navbar />
       <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
-          <Image src="/about-bess-facility.jpg" alt="G-Power Hiner" fill priority className="object-cover brightness-75" />
+          <Image src="/about-bess-facility.jpg" alt="Utility Battery System 3" fill priority className="object-cover brightness-75" />
           <div className="absolute inset-0 bg-black/45" />
         </div>
         <div className="relative z-10 flex flex-col items-center text-center px-6">
@@ -35,7 +35,7 @@ export default function UtilityBattery4ProductPage() {
           </FadeIn>
           <FadeIn delay={200} direction="up">
             <h1 className="text-white font-medium leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.6vw, 64px)" }}>
-              G-Power Hiner
+              Utility Battery System 3
             </h1>
           </FadeIn>
           <FadeIn delay={320} direction="up">
@@ -52,7 +52,7 @@ export default function UtilityBattery4ProductPage() {
             <div className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
 <FadeIn delay={100} direction="up" className="w-full">
               <div className="relative w-full rounded-[20px] overflow-hidden border border-[#0A5191]/45 card-soft-hover" style={{ aspectRatio: "3/2.2" }}>
-                <Image src="/about-bess-facility.jpg" alt="G-Power Hiner" fill className="object-cover" />
+                <Image src="/about-bess-facility.jpg" alt="Utility Battery System 3" fill className="object-cover" />
                 <span className="absolute top-5 right-5 bg-[#0A5191] text-white font-semibold rounded-full px-5 py-2 shadow-lg" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}>
                   261 kWh
                 </span>
@@ -115,7 +115,7 @@ export default function UtilityBattery4ProductPage() {
         <div className="mx-auto max-w-[980px]">
           <FadeIn delay={100} direction="up">
             <h2 className="font-normal text-[#121010] mb-3 text-center" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 3.6vw, 44px)" }}>Technical Parameters</h2>
-            <p className="text-[#475569] mb-[54px] text-center" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.15vw, 18px)" }}>Detailed specifications for G-Power Hiner</p>
+            <p className="text-[#475569] mb-[54px] text-center" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.15vw, 18px)" }}>Detailed specifications for Utility Battery System 3</p>
           </FadeIn>
           <FadeIn delay={180} direction="up">
             <div className="rounded-[20px] overflow-hidden bg-white shadow-[0_12px_28px_rgba(2,8,23,0.10)] section-soft-hover">
@@ -148,7 +148,7 @@ export default function UtilityBattery4ProductPage() {
         </div>
         <div className="relative z-10 mx-auto max-w-[800px] text-center">
           <FadeIn delay={100} direction="up">
-            <h2 className="text-white font-normal mb-4" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3.4vw, 40px)" }}>Interested in G-Power Hiner?</h2>
+            <h2 className="text-white font-normal mb-4" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 3.4vw, 40px)" }}>Interested in Utility Battery System 3?</h2>
           </FadeIn>
           <FadeIn delay={200} direction="up">
             <p className="text-white/70 mb-10" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>Contact our sales team for pricing and project consultation.</p>

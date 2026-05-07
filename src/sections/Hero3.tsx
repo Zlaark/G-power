@@ -1,20 +1,21 @@
-import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 
 export const Hero3 = () => {
     return (
         <section className="relative w-full h-[90vh] md:h-screen min-h-[700px] overflow-hidden">
-            {/* Background Image */}
+            {/* Background Image - BESS facility instead of solar panels */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/Solar Panels (Home Page).webp"
+                    src="/bess-hero-bg.png"
                     alt=""
                     className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns"
                     style={{ maxWidth: 'none' }}
                 />
+                {/* Dark overlay for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#020817]/70 via-[#020817]/40 to-transparent" />
             </div>
 
-            {/* Red accent bars on the right */}
+            {/* Blue accent bars on the right */}
             <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '0%', bottom: '85.22%', background: '#0A5191', opacity: 0.37 }} />
             <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '16.4%', bottom: '0%', background: '#0A5191', opacity: 0.37 }} />
 
@@ -26,14 +27,14 @@ export const Hero3 = () => {
                         className="animate-hero-reveal text-white font-semibold leading-tight md:leading-[84px] w-full m-0 text-left"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(36px, 6vw, 54px)' }}
                     >
-                        Solar Panels
+                        Energy Storage Solutions
                     </h1>
 
                     <p
                         className="animate-hero-reveal-delay-1 text-white font-medium leading-normal md:leading-[34px] w-full m-0 text-left"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 3vw, 22px)' }}
                     >
-                        Save on Energy, Power Your Home
+                        Powering Tomorrow, Reliably Today
                     </p>
 
                     {/* Decorative Arrow Icon */}

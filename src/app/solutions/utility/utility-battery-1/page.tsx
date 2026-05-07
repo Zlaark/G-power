@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "G-Power Cube Pro C&C | Utility Solutions | GPower",
+  title: "Utility Battery System 1 | Utility Solutions | GPower",
   description:
     "Large-scale containerized energy storage system for utility applications. 2.76 MWh capacity, 1.38 MW power, ≥85% efficiency.",
 };
@@ -57,7 +57,7 @@ export default function UtilityBattery1Page() {
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
           <Image
             src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
-            alt="G-Power Cube Pro C&C"
+            alt="Utility Battery System 1"
             fill
             priority
             className="object-cover brightness-75"
@@ -91,7 +91,7 @@ export default function UtilityBattery1Page() {
                 fontSize: "clamp(40px, 6.5vw, 82px)",
               }}
             >
-              G-Power Cube Pro C&amp;C
+              Utility Battery System 1
             </h1>
           </FadeIn>
 
@@ -121,7 +121,7 @@ export default function UtilityBattery1Page() {
               <div className="relative w-full rounded-[20px] overflow-hidden" style={{ aspectRatio: "3/2.2" }}>
                   <Image
                   src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                  alt="G-Power Cube Pro C&C"
+                  alt="Utility Battery System 1"
                   fill
                   className="object-cover"
                 />
@@ -245,7 +245,7 @@ export default function UtilityBattery1Page() {
               className="text-[#475569] mb-[54px] text-center"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.1vw, 18px)" }}
             >
-              Detailed specifications for G-Power Cube Pro C&amp;C
+              Detailed specifications for Utility Battery System 1
             </p>
           </FadeIn>
 
@@ -322,7 +322,7 @@ export default function UtilityBattery1Page() {
               className="text-white font-medium mb-4"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 48px)" }}
             >
-              Interested in G-Power Cube Pro C&amp;C?
+              Interested in Utility Battery System 1?
             </h2>
           </FadeIn>
           <FadeIn delay={200} direction="up">

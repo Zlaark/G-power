@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "New Application Business Products | GPower",
+  title: "Other Applications Products | GPower",
   description: "Browse all enterprise-grade energy storage products from GPower.",
 };
 
@@ -33,7 +33,7 @@ export default function NABProductsPage() {
 
       <section className="pt-[170px] pb-[64px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#121010]">
         <div className="mx-auto max-w-[1200px] text-center">
-          <FadeIn delay={120} direction="up"><p className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}>New Application Business</p></FadeIn>
+          <FadeIn delay={120} direction="up"><p className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}>Other Applications</p></FadeIn>
           <FadeIn delay={220} direction="up"><h1 className="text-white font-semibold mb-[16px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 62px)" }}>All Products</h1></FadeIn>
           <FadeIn delay={320} direction="up"><p className="text-white/80 font-medium mx-auto max-w-3xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}>Browse our complete range of enterprise storage products</p></FadeIn>
         </div>
@@ -59,7 +59,7 @@ export default function NABProductsPage() {
           </div>
           <FadeIn delay={400} direction="up">
             <div className="mt-[48px] flex justify-center">
-              <Link href="/solutions/new-application-business" className="inline-flex items-center gap-2 text-[#475569] hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}><ArrowLeft className="w-4 h-4" /> Back to New Application Business</Link>
+              <Link href="/solutions/new-application-business" className="inline-flex items-center gap-2 text-[#475569] hover:text-[#0A5191] transition-colors" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "15px" }}><ArrowLeft className="w-4 h-4" /> Back to Other Applications</Link>
             </div>
           </FadeIn>
         </div>

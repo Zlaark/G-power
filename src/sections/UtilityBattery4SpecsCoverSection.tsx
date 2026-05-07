@@ -27,7 +27,7 @@ export function UtilityBattery4SpecsCoverSection() {
           className="text-white font-semibold mb-1"
           style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 3.2vw, 48px)" }}
         >
-          G-Power Hiner
+          Utility Battery System 3
         </h2>
         <p
           className="text-white/95"
@@ -41,7 +41,7 @@ export function UtilityBattery4SpecsCoverSection() {
         <div className="relative w-full rounded-[12px] overflow-hidden mb-6" style={{ aspectRatio: "16/5.3" }}>
           <Image
             src="/about-bess-facility.jpg"
-            alt="G-Power Hiner"
+            alt="Utility Battery System 3"
             fill
             className="object-cover"
           />
