@@ -85,12 +85,6 @@ export const Navbar = () => {
                         <Link href="/about" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             About Us
                         </Link>
-                        <Link href="/partners" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                            Partners
-                        </Link>
-                        <Link href="/our-projects" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                            Our Projects
-                        </Link>
 
                         <div className="relative group">
                             <div className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -131,6 +125,13 @@ export const Navbar = () => {
                                 </Link>
                             </div>
                         </div>
+
+                        <Link href="/partners" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            Partners
+                        </Link>
+                        <Link href="/our-projects" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            Our Projects
+                        </Link>
                         <Link href="/careers" className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Careers
                         </Link>
@@ -194,12 +195,6 @@ export const Navbar = () => {
                             <Link href="/about" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 About Us
                             </Link>
-                            <Link href="/partners" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                Partners
-                            </Link>
-                            <Link href="/our-projects" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                Our Projects
-                            </Link>
 
                             {/* Solutions Accordion */}
                             <div className="border-b border-white/5">
@@ -245,6 +240,12 @@ export const Navbar = () => {
                                 </div>
                             </div>
 
+                            <Link href="/partners" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                Partners
+                            </Link>
+                            <Link href="/our-projects" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                Our Projects
+                            </Link>
                             <Link href="/careers" onClick={closeMenu} className="block py-3 text-white text-lg font-medium hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Careers
                             </Link>
