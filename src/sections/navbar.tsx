@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '@/components/ui/Button';
-import { Logo } from '@/components/Logo';
 
 export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -68,9 +67,13 @@ export const Navbar = () => {
 
                     {/* Logo */}
                     <Link href="/" className="flex items-center shrink-0">
-                        <Logo
-                            variant="light"
-                            className="h-[60px] lg:h-[95px] w-auto"
+                        <Image
+                            src="/logo-clean.png"
+                            alt="G-Power Logo"
+                            width={171}
+                            height={124}
+                            className="h-[60px] lg:h-[95px] w-auto object-contain"
+                            priority
                         />
                     </Link>
 
@@ -168,9 +171,13 @@ export const Navbar = () => {
                     {/* Header inside overlay */}
                     <div className="flex items-center justify-between h-[80px] px-6 border-b border-white/10 relative z-10">
                         <Link href="/" onClick={closeMenu} className="flex items-center shrink-0">
-                            <Logo
-                                variant="light"
-                                className="h-[45px] w-auto"
+                            <Image
+                                src="/logo-clean.png"
+                                alt="G-Power Logo"
+                                width={171}
+                                height={124}
+                                className="h-[45px] w-auto object-contain"
+                                priority
                             />
                         </Link>
                         <button
