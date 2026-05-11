@@ -157,7 +157,7 @@ export const WhyGPowerHome = () => {
                         <FadeIn delay={300} direction="left" className="w-full">
                             <div className="wgp-img-wrap h-full">
                                 <img
-                                    src="/Why G-power (Home Page).webp"
+                                    src="/whygpower2.webp"
                                     alt="G-power engineer at BESS facility"
                                 />
                                 {/* Branded gradient overlay */}

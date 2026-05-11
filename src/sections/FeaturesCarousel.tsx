@@ -12,7 +12,7 @@ const cards = [
         description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
     },
     {
-        image: '/Weather Resistant(Home Page).webp',
+        image: '/weatherresisteant2.webp',
         title: 'Weather Resistant',
         description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
     },
