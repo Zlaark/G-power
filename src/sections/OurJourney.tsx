@@ -63,8 +63,8 @@ export const OurJourney = () => {
                                         {m.year}
                                     </span>
 
-                                    {/* Card */}
-                                    <div className="bg-white rounded-[16px] border border-[#E5EBF2] p-5 md:p-6 shadow-[0_4px_14px_rgba(15,23,42,0.04)] group-hover:shadow-[0_10px_28px_rgba(10,81,145,0.08)] group-hover:border-[#0A5191]/20 transition-all duration-500 w-full">
+                                    {/* Card - Fixed height for all cards */}
+                                    <div className="bg-white rounded-[16px] border border-[#E5EBF2] p-5 md:p-6 shadow-[0_4px_14px_rgba(15,23,42,0.04)] group-hover:shadow-[0_10px_28px_rgba(10,81,145,0.08)] group-hover:border-[#0A5191]/20 transition-all duration-500 w-full h-[180px] md:h-[200px] flex items-center justify-center">
                                         <p
                                             className="font-medium text-[#475569] text-center group-hover:text-[#0F172A] transition-colors duration-300"
                                             style={{

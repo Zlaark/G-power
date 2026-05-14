@@ -68,11 +68,11 @@ export const Navbar = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center shrink-0">
                         <Image
-                            src="/logo-clean.png"
+                            src="/Screenshot_2026-05-14_160714-removebg-preview.png"
                             alt="G-Power Logo"
-                            width={171}
-                            height={124}
-                            className="h-[60px] lg:h-[95px] w-auto object-contain"
+                            width={220}
+                            height={160}
+                            className="h-[80px] lg:h-[120px] w-auto object-contain"
                             priority
                         />
                     </Link>
@@ -172,11 +172,11 @@ export const Navbar = () => {
                     <div className="flex items-center justify-between h-[80px] px-6 border-b border-white/10 relative z-10">
                         <Link href="/" onClick={closeMenu} className="flex items-center shrink-0">
                             <Image
-                                src="/logo-clean.png"
+                                src="/Screenshot_2026-05-14_160714-removebg-preview.png"
                                 alt="G-Power Logo"
-                                width={171}
-                                height={124}
-                                className="h-[45px] w-auto object-contain"
+                                width={200}
+                                height={145}
+                                className="h-[60px] w-auto object-contain"
                                 priority
                             />
                         </Link>

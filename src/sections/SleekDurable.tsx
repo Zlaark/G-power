@@ -1,6 +1,11 @@
 import { FadeIn } from '@/components/FadeIn';
+import Link from 'next/link';
 
-export const SleekDurable = () => {
+interface SleekDurableProps {
+    showButton?: boolean;
+}
+
+export const SleekDurable = ({ showButton = true }: SleekDurableProps) => {
 
     return (
         <section className="relative w-full overflow-hidden rounded-none">
@@ -18,23 +23,19 @@ export const SleekDurable = () => {
                     {/* Base gradient for general readability */}
                     <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none transition-opacity duration-1000 group-hover:opacity-70" />
 
-                    {/* Interactive Glass Panel for Text */}
-                    <FadeIn delay={200} direction="up" className="absolute left-0 right-0 md:left-[30px] lg:left-[80px] md:right-[30px] lg:right-[80px] bottom-0 px-[20px] md:px-0 pb-[30px] md:pb-[70px] pt-[20px] mb-0 md:mb-[-20px]" style={{ backgroundColor: 'transparent' }}>
-                        <div className="max-w-[1200px] flex flex-col items-start gap-[10px] md:gap-[16px] px-0 md:px-[20px] lg:px-[40px] pt-[10px]">
-                            <h2
-                                className="text-white font-semibold leading-tight md:leading-[49px] w-full cursor-default tracking-wide"
-                                style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(22px, 4.5vw, 32px)' }}
+                    {/* CTA Button at Bottom - Only show if showButton is true */}
+                    {showButton && (
+                        <FadeIn delay={200} direction="up" className="absolute left-0 right-0 bottom-0 px-[20px] md:px-[80px] pb-[40px] md:pb-[70px] flex justify-center md:justify-start">
+                            <Link
+                                href="/about"
+                                className="inline-flex items-center justify-center px-[28px] py-[14px] md:py-[16px] font-semibold text-white bg-[#0A5191] border border-[#0A5191] rounded-[14px] transition-all hover:bg-[#083D6E] hover:-translate-y-[2px] shadow-lg shadow-[#0A5191]/20"
+                                style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
                             >
-                                Sleek and Durable
-                            </h2>
-                            <p
-                                className="text-white/90 font-medium leading-normal md:leading-[34px] w-full md:pr-[140px] cursor-default"
-                                style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2.5vw, 22px)' }}
-                            >
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                        </div>
-                    </FadeIn>
+                                Learn More About Us
+                                <svg className="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </Link>
+                        </FadeIn>
+                    )}
                 </div>
 
             </div>

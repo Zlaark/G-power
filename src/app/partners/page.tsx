@@ -3,7 +3,6 @@ import { Footer } from "@/sections/Footer";
 import { PartnersHero } from "@/sections/PartnersHero";
 import { PartnerAdvantages } from "@/sections/PartnerAdvantages";
 import { PartnerCollaborationFlow } from "@/sections/PartnerCollaborationFlow";
-import { PartnerNetwork } from "@/sections/PartnerNetwork";
 import { BecomePartner } from "@/sections/BecomePartner";
 import { Metadata } from "next";
 
@@ -19,7 +18,6 @@ export default function PartnersPage() {
       <PartnersHero />
       <PartnerAdvantages />
       <PartnerCollaborationFlow />
-      <PartnerNetwork />
       <BecomePartner />
       <Footer />
     </main>

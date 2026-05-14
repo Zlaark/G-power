@@ -6,7 +6,7 @@ import { HithiumHiner } from "@/sections/HithiumHiner";
 import { CustomBatteryPacks } from "@/sections/CustomBatteryPacks";
 import { EnergyManagement } from "@/sections/EnergyManagement";
 import { OurJourney } from "@/sections/OurJourney";
-import { AboutBanner2 } from "@/sections/AboutBanner2";
+import { SleekDurable } from "@/sections/SleekDurable";
 import { Footer } from "@/sections/Footer";
 
 export default function AboutPage() {
@@ -20,7 +20,7 @@ export default function AboutPage() {
             <CustomBatteryPacks />
             <EnergyManagement />
             <OurJourney />
-            <AboutBanner2 />
+            <SleekDurable showButton={false} />
             <Footer />
         </main>
     );

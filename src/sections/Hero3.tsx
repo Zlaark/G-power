@@ -15,27 +15,18 @@ export const Hero3 = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#020817]/70 via-[#020817]/40 to-transparent" />
             </div>
 
-            {/* Blue accent bars on the right */}
-            <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '0%', bottom: '85.22%', background: '#0A5191', opacity: 0.37 }} />
-            <div className="absolute z-[1] hidden lg:block" style={{ left: '88.12%', right: '4.11%', top: '16.4%', bottom: '0%', background: '#0A5191', opacity: 0.37 }} />
+            {/* Blue accent bars on the right - REMOVED */}
 
             {/* Content */}
             <div className="absolute inset-0 z-10 w-full max-w-[1920px] mx-auto">
                 {/* Title & Subtitle - vertically centered */}
-                <div className="absolute left-[20px] md:left-[86px] top-1/2 -translate-y-1/2 w-[70%] md:w-[490px] flex flex-col items-start gap-4">
+                <div className="absolute left-[20px] md:left-[86px] top-1/2 -translate-y-1/2 w-[70%] md:w-[590px] flex flex-col items-start gap-4">
                     <h1
-                        className="animate-hero-reveal text-white font-semibold leading-tight md:leading-[84px] w-full m-0 text-left"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(36px, 6vw, 54px)' }}
+                        className="animate-hero-reveal text-white font-semibold leading-tight md:leading-[64px] w-full m-0 text-left"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(28px, 5vw, 48px)' }}
                     >
-                        Energy Storage Solutions
+                        Storing Energy. Powering Growth. The Future of Industrial Resilience.
                     </h1>
-
-                    <p
-                        className="animate-hero-reveal-delay-1 text-white font-medium leading-normal md:leading-[34px] w-full m-0 text-left"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 3vw, 22px)' }}
-                    >
-                        Powering Tomorrow, Reliably Today
-                    </p>
 
                     {/* Decorative Arrow Icon */}
                     <div className="animate-hero-reveal-delay-2 w-[71px] h-[71px] relative mt-4 animate-float">
@@ -48,20 +39,20 @@ export const Hero3 = () => {
                 {/* Bottom Buttons */}
                 <div className="absolute left-[20px] md:left-[86px] bottom-[30px] md:bottom-[60px] flex flex-col md:flex-row items-center gap-4 sm:gap-6 animate-hero-reveal-delay-3 w-[calc(100%-40px)] md:w-auto">
                     <Link
-                        href="/contact"
+                        href="/solutions"
                         className="inline-flex items-center justify-center px-[24px] py-[14px] md:py-[16px] font-semibold text-white bg-[#0A5191] border border-[#0A5191] rounded-[14px] transition-all hover:bg-[#083D6E] hover:-translate-y-[2px] w-full md:w-auto shadow-lg shadow-[#0A5191]/20"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
                     >
-                        Schedule consultation
+                        Store Now
                         <svg className="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                     </Link>
                     
                     <Link
-                        href="/our-projects"
+                        href="/solutions"
                         className="inline-flex items-center justify-center px-[24px] py-[14px] md:py-[16px] font-semibold text-[#121010] bg-white rounded-[14px] transition-all hover:bg-gray-100 hover:-translate-y-[2px] w-full md:w-auto shadow-lg"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.5vw, 16px)' }}
                     >
-                        Order Now
+                        View Our Products
                         <svg className="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                     </Link>
                 </div>

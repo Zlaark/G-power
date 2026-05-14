@@ -154,9 +154,7 @@ export default function UtilityBattery4ProductPage() {
             <p className="text-white/70 mb-10" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>Contact our sales team for pricing and project consultation.</p>
           </FadeIn>
           <FadeIn delay={300} direction="up">
-            <Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[14px] font-medium hover:bg-white hover:text-[#0A5191] transition-all hover:scale-105 hover:shadow-xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}>
-              Request a Quote
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center"><Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-gradient-to-r from-[#0A5191] to-[#0D6EBD] text-white px-12 py-5 rounded-[14px] font-semibold hover:from-[#0D6EBD] hover:to-[#0A5191] transition-all hover:scale-105 shadow-[0_10px_40px_rgba(10,81,145,0.5)]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.5vw, 18px)" }}>Store Now</Link><Link href="/contact" className="btn-sweep-blue btn-float-hover inline-flex items-center justify-center bg-white text-[#0A5191] border-2 border-[#0A5191] px-10 py-4 rounded-[14px] font-medium hover:bg-[#0A5191] hover:text-white transition-all hover:scale-105 hover:shadow-xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.4vw, 17px)" }}>Request a Quote</Link></div>
           </FadeIn>
         </div>
       </section>

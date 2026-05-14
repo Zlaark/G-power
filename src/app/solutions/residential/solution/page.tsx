@@ -122,9 +122,8 @@ export default function ResidentialSolutionsPage() {
             alt="Residential Solar Installation"
             fill
             priority
-            className="object-cover opacity-50 brightness-75"
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121010] via-[#121010]/65 to-[#121010]/35" />
         </div>
 
         <div className="container relative z-10 px-4 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">

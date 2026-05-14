@@ -117,13 +117,12 @@ export default function UtilitySolutionsPage() {
       <section className="relative h-auto min-h-[380px] sm:min-h-[430px] md:h-[65vh] md:min-h-[520px] flex items-center justify-center bg-[#121010] overflow-hidden pt-[140px] pb-[50px] sm:pt-[150px] sm:pb-[60px] md:pt-20 md:pb-0">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
-            src="https://images.unsplash.com/photo-1725308659447-bf1b10f6635a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            src="/Solution Banner img.webp"
             alt="Utility Scale Energy Storage"
             fill
             priority
-            className="object-cover opacity-50 brightness-75"
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121010] via-[#121010]/65 to-[#121010]/35" />
         </div>
 
         <div className="container relative z-10 px-5 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">

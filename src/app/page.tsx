@@ -4,7 +4,7 @@ import { BessHero } from "@/sections/BessHero";
 import { ProductSlideshow } from "@/sections/ProductSlideshow";
 import { SaveOnBills } from "@/sections/SaveOnBills";
 import { WhyGPowerHome } from "@/sections/WhyGPowerHome";
-import { GPowerAdvantage } from "@/sections/GPowerAdvantage";
+import { OurJourney } from "@/sections/OurJourney";
 import { SleekDurable } from "@/sections/SleekDurable";
 import { FeaturesCarousel } from "@/sections/FeaturesCarousel";
 import { Footer } from "@/sections/Footer";
@@ -20,7 +20,7 @@ export default function Home() {
       <ProductSlideshow />
       <SaveOnBills />
       <WhyGPowerHome />
-      <GPowerAdvantage />
+      <OurJourney />
       <SleekDurable />
       <FeaturesCarousel />
       <GlobalPresenceMap />

@@ -38,21 +38,29 @@ export const SaveOnBills = () => {
                 </div>
 
                 {/* Top Content: Title & Description */}
-                <div className="w-full max-w-[800px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[100px] flex flex-col gap-[15px] md:gap-[23px] relative z-10">
+                <div className="w-full max-w-[900px] px-[20px] md:px-[60px] lg:ml-[86px] lg:px-0 pt-[40px] md:pt-[60px] lg:pt-[100px] flex flex-col gap-[15px] md:gap-[23px] relative z-10">
                     <FadeIn delay={100} direction="right">
                         <h2
                             className="font-semibold leading-tight md:leading-[49px] w-full text-[#121010]"
                             style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(24px, 3vw, 36px)' }}
                         >
-                            Save On Electricity Bills
+                            Battery Energy Storage Systems (BESS)
                         </h2>
                     </FadeIn>
                     <FadeIn delay={300} direction="right">
                         <p
-                            className="text-[#121010] font-medium leading-normal md:leading-[34px] w-full"
+                            className="text-[#121010] font-medium leading-normal md:leading-[28px] w-full"
                             style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.8vw, 18px)' }}
                         >
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            Battery Energy Storage Systems (BESS) help Commercial & Industrial businesses take control of rising energy costs and unpredictable power demand. By intelligently storing and delivering electricity when it&apos;s needed the most, BESS creates a more efficient, stable, and future-ready energy ecosystem.
+                        </p>
+                    </FadeIn>
+                    <FadeIn delay={400} direction="right">
+                        <p
+                            className="text-[#121010] font-medium leading-normal md:leading-[28px] w-full"
+                            style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(14px, 1.8vw, 18px)' }}
+                        >
+                            From manufacturing plants and warehouses to commercial buildings and large facilities, BESS enables businesses to maximize energy usage without compromising operations.
                         </p>
                     </FadeIn>
                 </div>
@@ -84,9 +92,9 @@ export const SaveOnBills = () => {
                                         className="card-title text-[#121010] font-medium leading-tight md:leading-[34px] w-full max-w-[656px] transition-colors duration-500 group-hover:text-[#0A5191]"
                                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(17px, 3vw, 22px)' }}
                                     >
-                                        {activeIndex === 0 && "Monthly Bill Savings"}
-                                        {activeIndex === 1 && "Energy Independence"}
-                                        {activeIndex === 2 && "Sustainable Future"}
+                                        {activeIndex === 0 && "Reduce Peak Demand Costs"}
+                                        {activeIndex === 1 && "Ensure Reliable & Uninterrupted Operations"}
+                                        {activeIndex === 2 && "Maximize Renewable Energy Efficiency"}
                                     </h3>
 
                                     {/* Body Text */}
@@ -94,9 +102,9 @@ export const SaveOnBills = () => {
                                         className="card-body mt-[15px] md:mt-[19px] text-[#121010]/80 font-normal leading-normal md:leading-[22px] w-full max-w-[656px]"
                                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(12px, 2vw, 15px)' }}
                                     >
-                                        {activeIndex === 0 && "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
-                                        {activeIndex === 1 && "Generating your own solar power means you are less reliant on the traditional utility grid. You can protect yourself against unpredictable electricity rate increases and enjoy peace of mind."}
-                                        {activeIndex === 2 && "By switching to solar panels, you reduce your carbon footprint and help contribute to a much cleaner, healthier environment for future generations by utilizing completely renewable clean energy."}
+                                        {activeIndex === 0 && "Store energy during low-tariff hours and utilize it during peak demand periods to reduce maximum demand charges and optimize monthly electricity expenses."}
+                                        {activeIndex === 1 && "BESS provides instant backup support during power outages and voltage fluctuations, helping industries maintain smooth operations without downtime or productivity loss."}
+                                        {activeIndex === 2 && "Seamlessly integrate with solar power systems to store excess generated energy and utilize it when required, improving renewable energy consumption and reducing grid dependency."}
                                     </p>
                                 </div>
                             </div>
