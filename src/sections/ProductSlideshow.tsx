@@ -261,20 +261,23 @@ export const ProductSlideshow = () => {
 
                     {/* Right: Product image */}
                     <div className="flex-1 relative w-full max-w-[620px] flex items-center justify-center lg:justify-end">
-                        <div className="ps-img-float relative w-full lg:w-[520px] rounded-[24px] overflow-hidden shadow-[0_20px_60px_rgba(10,81,145,0.15)] bg-white">
-                            <img
-                                key={activeIndex}
-                                src={product.image}
-                                alt={product.name}
-                                className={`w-full h-auto object-cover ${
-                                    isTransitioning ? "ps-fade-out" : "ps-animate-in"
-                                }`}
-                                style={{ aspectRatio: "4 / 3" }}
-                            />
+                        <div className="ps-img-float relative w-full lg:w-[520px] bg-white">
+                            <div className="relative rounded-[24px] overflow-hidden shadow-[0_20px_60px_rgba(10,81,145,0.15)]">
+                                <img
+                                    key={activeIndex}
+                                    src={product.image}
+                                    alt={product.name}
+                                    className={`w-full h-auto object-cover ${
+                                        isTransitioning ? "ps-fade-out" : "ps-animate-in"
+                                    }`}
+                                    style={{ aspectRatio: "4 / 3" }}
+                                />
+                            </div>
+
+                            {/* Decorative corner accents (positioned relative to image container) */}
+                            <div className="absolute -bottom-[8px] -right-[8px] w-[60px] h-[60px] border-b-[3px] border-r-[3px] border-[#0A5191]/20 rounded-br-[16px] hidden lg:block" />
+                            <div className="absolute -top-[8px] -left-[8px] w-[60px] h-[60px] border-t-[3px] border-l-[3px] border-[#0A5191]/20 rounded-tl-[16px] hidden lg:block" />
                         </div>
-                        {/* Decorative corner accents */}
-                        <div className="absolute -bottom-[8px] -right-[8px] w-[60px] h-[60px] border-b-[3px] border-r-[3px] border-[#0A5191]/20 rounded-br-[16px] hidden lg:block" />
-                        <div className="absolute -top-[8px] -left-[8px] w-[60px] h-[60px] border-t-[3px] border-l-[3px] border-[#0A5191]/20 rounded-tl-[16px] hidden lg:block" />
                     </div>
                 </div>
             </div>

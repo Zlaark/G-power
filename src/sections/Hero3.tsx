@@ -22,8 +22,8 @@ export const Hero3 = () => {
                 {/* Title & Subtitle - vertically centered */}
                 <div className="absolute left-[20px] md:left-[86px] top-1/2 -translate-y-1/2 w-[70%] md:w-[590px] flex flex-col items-start gap-4">
                     <h1
-                        className="animate-hero-reveal text-white font-semibold leading-tight md:leading-[64px] w-full m-0 text-left"
-                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(28px, 5vw, 48px)' }}
+                        className="animate-hero-reveal text-white font-bold leading-tight md:leading-[64px] w-full m-0 text-left"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(28px, 5vw, 48px)', textShadow: '0 4px 12px rgba(0, 0, 0, 0.9)' }}
                     >
                         Storing Energy. Powering Growth. The Future of Industrial Resilience.
                     </h1>

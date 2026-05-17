@@ -62,11 +62,16 @@ export const Navbar = () => {
                     .chevron.open {
                         transform: rotate(180deg);
                     }
+                    
+                    /* Text Shadow for Nav Links */
+                    .nav-link, .nav-dropdown {
+                        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+                    }
                 `}} />
                 <div className="flex items-center justify-between h-[80px] lg:h-[120px]">
 
                     {/* Logo */}
-                    <Link href="/" className="flex items-center shrink-0">
+                    <Link href="/" className="flex items-center shrink-0" style={{ filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8))' }}>
                         <Image
                             src="/Screenshot_2026-05-14_160714-removebg-preview.png"
                             alt="G-Power Logo"
@@ -87,7 +92,7 @@ export const Navbar = () => {
                         </Link>
 
                         <div className="relative group">
-                            <div className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <div className="nav-link nav-dropdown text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Solutions
                             </div>
                             <div className="absolute left-0 top-full mt-3 w-[300px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
@@ -110,7 +115,7 @@ export const Navbar = () => {
                         </div>
 
                         <div className="relative group">
-                            <div className="nav-link text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <div className="nav-link nav-dropdown text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Products
                             </div>
                             <div className="absolute left-0 top-full mt-3 w-[280px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
@@ -170,7 +175,7 @@ export const Navbar = () => {
 
                     {/* Header inside overlay */}
                     <div className="flex items-center justify-between h-[80px] px-6 border-b border-white/10 relative z-10">
-                        <Link href="/" onClick={closeMenu} className="flex items-center shrink-0">
+                        <Link href="/" onClick={closeMenu} className="flex items-center shrink-0" style={{ filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8))' }}>
                             <Image
                                 src="/Screenshot_2026-05-14_160714-removebg-preview.png"
                                 alt="G-Power Logo"

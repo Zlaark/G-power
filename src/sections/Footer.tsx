@@ -142,9 +142,7 @@ export const Footer = () => {
                         <p className="text-white/30 text-[14px] font-light tracking-wide text-center">
                             © {(new Date()).getFullYear()} G-POWER SOLUTIONS. ALL RIGHTS RESERVED.
                         </p>
-                        <p className="text-white/20 text-[12px] font-light tracking-[0.3em] uppercase text-center mt-1">
-                            Engineered for the Future
-                        </p>
+                        
                     </FadeIn>
                 </div>
             </footer>
