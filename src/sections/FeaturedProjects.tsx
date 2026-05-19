@@ -115,13 +115,34 @@ export function FeaturedProjects() {
       type: "Industrial",
       description: "1) 7.5KVA UPS with 9.6KWh Battery (192V 50AH Battery pack (9.6kWh))\n2) 20KVA UPS with 24kWh Battery (240V 100AH Battery pack (24kWh))",
       image: "/Kawman Pharma, Cuddalore Tamil Nadu (2022)-2 copy.webp",
-      gallery: [],
+      gallery: [
+        "/Kawman Pharma, Chennai, Tamil Nadu (2022).webp",
+        "/Kawman Pharma, Cuddalore Tamil Nadu (2022)-1 copy.webp"
+      ],
     },
   ];
 
   const [activeProjectIndex, setActiveProjectIndex] = useState<number | null>(null);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const activeProject = activeProjectIndex !== null ? projects[activeProjectIndex] : null;
+  const carouselImages = activeProject ? [activeProject.image, ...(activeProject.gallery || [])] : [];
+
+  useEffect(() => {
+    if (activeProjectIndex !== null) {
+      setCurrentSlideIndex(0);
+    }
+  }, [activeProjectIndex]);
+
+  useEffect(() => {
+    if (activeProjectIndex === null || carouselImages.length <= 1) return;
+
+    const timer = setInterval(() => {
+      setCurrentSlideIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [activeProjectIndex, carouselImages.length]);
 
   useEffect(() => {
     if (activeProjectIndex === null) return;
@@ -263,15 +284,36 @@ export function FeaturedProjects() {
             </div>
 
             <div className="flex flex-col lg:flex-row">
-              {/* Single Image Section */}
-              <div className="relative w-full lg:w-1/2 p-4 md:p-6 bg-white">
-                <div className="relative w-full h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] rounded-[24px] overflow-hidden shadow-md">
-                  <Image
-                    src={activeProject.image}
-                    alt={activeProject.title}
-                    fill
-                    className="object-cover"
-                  />
+              {/* Image Carousel Section */}
+              <div className="relative w-full lg:w-1/2 p-4 md:p-6 bg-white flex flex-col justify-center">
+                <div className="relative w-full h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] rounded-[24px] overflow-hidden shadow-md bg-gray-100">
+                  {carouselImages.map((src, idx) => (
+                    <Image
+                      key={idx}
+                      src={src}
+                      alt={`${activeProject.title} - Image ${idx + 1}`}
+                      fill
+                      className={`object-cover transition-opacity duration-1000 ease-in-out absolute inset-0 ${idx === currentSlideIndex ? 'opacity-100' : 'opacity-0'}`}
+                    />
+                  ))}
+                  
+                  {/* Carousel Indicators */}
+                  {carouselImages.length > 1 && (
+                    <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+                      {carouselImages.map((_, idx) => (
+                        <button
+                          key={idx}
+                          type="button"
+                          aria-label={`Go to slide ${idx + 1}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setCurrentSlideIndex(idx);
+                          }}
+                          className={`h-2 rounded-full transition-all duration-300 ${idx === currentSlideIndex ? 'w-6 bg-[#0A5191] shadow-sm' : 'w-2 bg-white/70 hover:bg-white shadow-sm'}`}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
 
