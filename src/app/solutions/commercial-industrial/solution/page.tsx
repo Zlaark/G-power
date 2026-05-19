@@ -117,7 +117,7 @@ export default function CommercialIndustrialSolutionsPage() {
       <section className="relative h-auto min-h-[380px] sm:min-h-[430px] md:h-[65vh] md:min-h-[520px] flex items-center justify-center bg-[#121010] overflow-hidden pt-[140px] pb-[50px] sm:pt-[150px] sm:pb-[60px] md:pt-20 md:pb-0">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
-            src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            src="/Solution Banner img.webp"
             alt="C&I Energy Storage"
             fill
             priority

@@ -15,13 +15,13 @@ const products = [
   {
     title: "Utility Battery System 1",
     capacity: "2.76 MWh",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/More Products-3.webp",
     href: "/solutions/utility/products/utility-battery-1",
   },
   {
     title: "Utility Battery System 2",
     capacity: "3.44 MWh",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/Solutions.webp",
     href: "/solutions/utility/products/utility-battery-2",
   },
   {

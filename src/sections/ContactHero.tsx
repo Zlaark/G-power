@@ -2,14 +2,14 @@ import { FadeIn } from "@/components/FadeIn";
 
 export const ContactHero = () => {
     return (
-        <section className="relative w-full h-[60vh] min-h-[450px] bg-[#01050A] overflow-hidden flex justify-center">
+        <section className="relative w-full h-[85vh] min-h-[600px] bg-[#01050A] overflow-hidden flex justify-center">
             {/* hero_bg */}
             <div
-                className="absolute left-0 right-0 top-0 bottom-0 animate-ken-burns"
+                className="absolute left-0 right-0 top-0 bottom-0"
                 style={{
-                    background: "url('/solar-hero-bg.png')",
+                    background: "url('/Get In Touch Banner.webp')",
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'center center',
                     backgroundRepeat: 'no-repeat'
                 }}
             />

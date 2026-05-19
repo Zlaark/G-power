@@ -15,13 +15,13 @@ const products = [
   {
     title: "BYD Battery-Box Commercial",
     capacity: "Scalable",
-    image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/More Products.webp",
     href: "/solutions/commercial-industrial/products/ci-battery-1",
   },
   {
     title: "BYD MC Cube",
     capacity: "Containerized",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/Solutions-1.webp",
     href: "/solutions/commercial-industrial/products/ci-battery-2",
   },
 ];

@@ -15,13 +15,13 @@ const products = [
   {
     title: "BYD Battery-Box Premium HVS",
     capacity: "16.6 kWh",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/More Products-1.webp",
     href: "/solutions/residential/products/res-battery-1",
   },
   {
     title: "BYD Battery-Box Premium LVS",
     capacity: "12.8 kWh",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/Solutions-2.webp",
     href: "/solutions/residential/products/res-battery-2",
   },
 ];

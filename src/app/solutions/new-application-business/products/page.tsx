@@ -15,13 +15,13 @@ const products = [
   {
     title: "Core Business Station",
     capacity: "50 kWh",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/More Products.png",
     href: "/solutions/new-application-business/products/core-station",
   },
   {
     title: "Enterprise Power Hub",
     capacity: "250 kWh",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/Solutions.png",
     href: "/solutions/new-application-business/products/enterprise-hub",
   },
 ];

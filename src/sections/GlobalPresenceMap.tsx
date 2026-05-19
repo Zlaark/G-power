@@ -34,10 +34,10 @@ const MapMarker = ({ left, top, region, countries, position = 'top' }: { left: s
 export const GlobalPresenceMap = () => {
     return (
         <section className="relative bg-[#EEF1FA] py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-12 xl:px-16 overflow-hidden md:min-h-[700px] flex items-center md:items-start">
-            <div className="absolute inset-y-0 right-0 hidden md:flex items-center justify-end opacity-90 pointer-events-none w-[58%]">
-                <div className="relative w-full h-full">
+            <div className="absolute inset-y-0 right-0 hidden md:flex items-center justify-end opacity-90 pointer-events-none w-[65%] lg:w-[60%] mr-[-2%]">
+                <div className="relative w-full h-[120%] scale-110 lg:scale-[1.15] origin-right">
                     <Image
-                        src="/map-banner-pc.png"
+                        src="/Map.webp"
                         alt="Global Presence Map"
                         fill
                         className="object-contain object-right"
@@ -45,41 +45,7 @@ export const GlobalPresenceMap = () => {
                 </div>
             </div>
 
-            {/* Blue location dots - hidden on mobile */}
-            <div className="hidden lg:block">
-            {/* Americas */}
-            <MapMarker 
-                left="44%" 
-                top="55%" 
-                region="Americas" 
-                countries={['United States', 'Panama', 'Chile', 'Brazil', 'Uruguay', 'Canada']} 
-                position="top"
-            />
-            {/* Europe */}
-            <MapMarker 
-                left="67%" 
-                top="33%" 
-                region="Europe" 
-                countries={['Spain', 'France', 'Switzerland', 'Germany', 'Austria', 'Italy', 'Hungary', 'Netherlands', 'Poland', 'Belgium', 'U.K.']} 
-                position="top"
-            />
-            {/* Asia Pacific */}
-            <MapMarker 
-                left="85%" 
-                top="55%" 
-                region="Asia Pacific" 
-                countries={['China', 'Korea', 'Japan', 'Australia']} 
-                position="top"
-            />
-            {/* Middle East & Africa */}
-            <MapMarker 
-                left="68%" 
-                top="72%" 
-                region="Middle East & Africa" 
-                countries={['Saudi Arabia', 'Senegal', 'Qatar', 'South Africa', 'D.R.C']} 
-                position="top"
-            />
-            </div>
+            {/* Blue location dots removed as per request */}
 
             {/* Content overlay */}
             <div className="relative z-10 max-w-[640px] w-full text-center lg:text-left mx-auto lg:mx-0" style={{ marginLeft: 'clamp(0px, 3vw, 48px)' }}>

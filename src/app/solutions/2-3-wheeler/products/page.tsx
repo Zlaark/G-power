@@ -15,13 +15,13 @@ const products = [
   {
     title: "EV Pro Series 72V",
     capacity: "3.2 kWh",
-    image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/More Products-2.webp",
     href: "/solutions/2-3-wheeler/products/ev-pro-72v",
   },
   {
     title: "EV Cargo Series 48V",
     capacity: "4.8 kWh",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+    image: "/Solutions-3.webp",
     href: "/solutions/2-3-wheeler/products/ev-cargo-48v",
   },
 ];

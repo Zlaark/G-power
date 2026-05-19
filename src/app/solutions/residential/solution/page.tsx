@@ -118,7 +118,7 @@ export default function ResidentialSolutionsPage() {
       <section className="relative h-[52vh] min-h-[360px] sm:min-h-[430px] md:h-[70vh] md:min-h-[560px] flex items-center justify-center bg-[#121010] overflow-hidden pt-20">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
-            src="https://images.unsplash.com/photo-1771479755134-9c1e3143c110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            src="/Solution Banner img.webp"
             alt="Residential Solar Installation"
             fill
             priority
