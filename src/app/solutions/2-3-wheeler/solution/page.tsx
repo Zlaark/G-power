@@ -117,7 +117,7 @@ export default function TwoThreeWheelerSolutionsPage() {
       <section className="relative h-auto min-h-[380px] sm:min-h-[430px] md:h-[65vh] md:min-h-[520px] flex items-center justify-center bg-[#121010] overflow-hidden pt-[140px] pb-[50px] sm:pt-[150px] sm:pb-[60px] md:pt-20 md:pb-0">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
-            src="/Solution Banner img.webp"
+            src="/Solution Banner img copy.webp"
             alt="Electric Two and Three Wheeler Background"
             fill
             priority
@@ -128,24 +128,24 @@ export default function TwoThreeWheelerSolutionsPage() {
         <div className="container relative z-10 px-5 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
           <FadeIn delay={200} direction="up" duration={900}>
             <p
-              className="text-white/85 font-normal tracking-[0.16em] uppercase mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
+              className="text-white/85 font-normal tracking-[0.16em] uppercase mb-5 drop-shadow-md"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
             >
               2 & 3 Wheeler Energy Storage
             </p>
           </FadeIn>
           <FadeIn delay={400} direction="up" duration={900}>
             <h1
-              className="text-white font-medium leading-tight mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 5vw, 48px)" }}
+              className="text-white font-medium leading-tight mb-5 drop-shadow-xl"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 5vw, 48px)", textShadow: "0 4px 12px rgba(0,0,0,0.8)" }}
             >
               Power Your EV, Reliably
             </h1>
           </FadeIn>
           <FadeIn delay={600} direction="up" duration={900}>
             <p
-              className="text-white/80 max-w-3xl mx-auto font-medium"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.5vw, 18px)" }}
+              className="text-white/80 max-w-3xl mx-auto font-medium drop-shadow-md"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.5vw, 18px)", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
             >
               Advanced energy storage and power solutions tailored specifically for the rigorous demands of electric two and three-wheelers.
             </p>

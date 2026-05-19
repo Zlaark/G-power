@@ -96,19 +96,19 @@ export const Navbar = () => {
                                 Solutions
                             </div>
                             <div className="absolute left-0 top-full mt-3 w-[300px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-                                <Link href="/solutions/utility" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                <Link href="/solutions/utility/solution" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Utility Energy Storage
                                 </Link>
-                                <Link href="/solutions/commercial-industrial" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                <Link href="/solutions/commercial-industrial/solution" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Commercial & Industrial
                                 </Link>
-                                <Link href="/solutions/residential" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                <Link href="/solutions/residential/solution" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Residential/Portable
                                 </Link>
-                                <Link href="/solutions/2-3-wheeler" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                <Link href="/solutions/2-3-wheeler/solution" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Mobility
                                 </Link>
-                                <Link href="/solutions/new-application-business" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                <Link href="/solutions/new-application-business/solution" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Marine & Other Applications
                                 </Link>
                             </div>
@@ -221,11 +221,11 @@ export const Navbar = () => {
                                 </button>
                                 <div className={`accordion-content ${openAccordion === 'solutions' ? 'open' : ''}`}>
                                     <div className="flex flex-col gap-4 pl-4 border-l-2 border-[#0A5191]/40 mb-3 mt-1">
-                                        <Link href="/solutions/utility" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Utility Energy Storage</Link>
-                                        <Link href="/solutions/commercial-industrial" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Commercial & Industrial</Link>
-                                        <Link href="/solutions/residential" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Residential/Portable</Link>
-                                        <Link href="/solutions/2-3-wheeler" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Mobility</Link>
-                                        <Link href="/solutions/new-application-business" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Marine & Other Applications</Link>
+                                        <Link href="/solutions/utility/solution" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Utility Energy Storage</Link>
+                                        <Link href="/solutions/commercial-industrial/solution" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Commercial & Industrial</Link>
+                                        <Link href="/solutions/residential/solution" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Residential/Portable</Link>
+                                        <Link href="/solutions/2-3-wheeler/solution" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Mobility</Link>
+                                        <Link href="/solutions/new-application-business/solution" onClick={closeMenu} className="text-white/70 text-[15px] hover:text-white transition-colors" style={{ fontFamily: "'Poppins', sans-serif" }}>Marine & Other Applications</Link>
                                     </div>
                                 </div>
                             </div>
