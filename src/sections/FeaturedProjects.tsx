@@ -105,7 +105,10 @@ export function FeaturedProjects() {
       type: "Commercial",
       description: "Hybrid Inverter 10kW with 40kWh Battery Pack (8 Battery JEEVA5000(5.12kWh Total 40.96kWh))",
       image: "/Premier Shuttlers Academy (2024) -1.webp",
-      gallery: [],
+      gallery: [
+        "/Premier Shuttlers Academy (2024) -2.webp",
+        "/Premier Shuttlers Academy (2024) -3.webp"
+      ],
     },
     {
       title: "Kawman Pharma, Cuddalore",
