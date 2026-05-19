@@ -1,16 +1,20 @@
 import { FadeIn } from "@/components/FadeIn";
 import Link from "next/link";
+import Image from "next/image";
 
 export function CareersCta() {
   return (
-    <section className="py-[56px] sm:py-[64px] lg:py-[100px] bg-[#121010] relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
-      <div
-        className="absolute inset-0 z-0 opacity-[0.08]"
-        style={{
-          backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }}
-      />
+    <section className="py-[56px] sm:py-[64px] lg:py-[100px] relative overflow-hidden px-4 sm:px-6 lg:px-[80px] xl:px-[120px]">
+      <div className="absolute inset-0 z-0 select-none pointer-events-none">
+        <Image
+          src="/Banner 2.webp"
+          alt="Background"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
 
       <div className="mx-auto max-w-[1100px] relative z-10 text-center">
         <FadeIn delay={100} direction="up">
