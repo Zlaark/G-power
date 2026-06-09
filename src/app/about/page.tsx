@@ -22,7 +22,7 @@ export default function AboutPage() {
             <EnergyManagement />
             <OurJourney />
             <Leadership />
-            <SleekDurable showButton={false} />
+            {/* <SleekDurable showButton={false} /> */}
             <Footer />
         </main>
     );

@@ -1,14 +1,30 @@
 "use client";
 
 import { FadeIn } from "@/components/FadeIn";
-import { MapPin, Briefcase, X } from "lucide-react";
-import { FormEvent, useEffect, useState } from "react";
+import { MapPin, Briefcase, X, Search, Filter, Loader2 } from "lucide-react";
+import { FormEvent, useEffect, useState, useMemo } from "react";
+
+type Job = {
+  title: string;
+  location: string;
+  type: string;
+  department: string;
+  experience: string;
+  summary: string;
+  responsibilities: string[];
+};
 
 export function OpenPositions() {
   const [selectedJob, setSelectedJob] = useState<Job | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  
+  // Search and Filter States
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedDept, setSelectedDept] = useState("All Departments");
+  const [selectedLoc, setSelectedLoc] = useState("All Locations");
 
-  const jobs = [
+  const jobs: Job[] = [
     {
       title: "Solar Installation Technician",
       location: "Mumbai, Maharashtra",
@@ -95,6 +111,21 @@ export function OpenPositions() {
     },
   ];
 
+  // Derived Filter Data
+  const departments = ["All Departments", ...Array.from(new Set(jobs.map(j => j.department)))];
+  const locations = ["All Locations", ...Array.from(new Set(jobs.map(j => j.location)))];
+
+  const filteredJobs = useMemo(() => {
+    return jobs.filter(job => {
+      const matchesSearch = job.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                           job.summary.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesDept = selectedDept === "All Departments" || job.department === selectedDept;
+      const matchesLoc = selectedLoc === "All Locations" || job.location === selectedLoc;
+      
+      return matchesSearch && matchesDept && matchesLoc;
+    });
+  }, [searchQuery, selectedDept, selectedLoc, jobs]);
+
   useEffect(() => {
     if (selectedJob) {
       document.documentElement.style.overflow = "hidden";
@@ -118,185 +149,299 @@ export function OpenPositions() {
   const closeModal = () => {
     setSelectedJob(null);
     setSubmitted(false);
+    setIsSubmitting(false);
   };
 
-  const handleApplySubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleApplySubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSubmitting(true);
+    
+    // Simulate API call and file upload
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    setIsSubmitting(false);
     setSubmitted(true);
   };
 
   return (
     <>
       <section className="py-[56px] sm:py-[64px] lg:py-[100px] bg-white px-4 sm:px-8 lg:px-[120px] xl:px-[170px]">
-      <div className="mx-auto max-w-[1920px]">
-        <FadeIn delay={100} direction="up">
-          <h2
-            className="text-center font-normal text-[#121010] mb-[34px] lg:mb-[44px]"
-            style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
-          >
-            Open Positions
-          </h2>
-        </FadeIn>
+        <div className="mx-auto max-w-[1920px]">
+          <FadeIn delay={100} direction="up">
+            <h2
+              className="text-center font-bold text-[#121010] mb-[34px] lg:mb-[44px]"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
+            >
+              Open Positions
+            </h2>
+          </FadeIn>
 
-        <div className="max-w-[1260px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[12px] sm:gap-[14px] md:gap-[22px] lg:gap-[26px]">
-          {jobs.map((job, index) => (
-            <FadeIn delay={180 + (index % 2) * 100} direction="up" key={job.title}>
-              <div className="career-card-scan w-full max-w-[560px] md:max-w-none mx-auto bg-white rounded-[14px] border border-[#D6D9E0] px-4 py-4 sm:px-[20px] sm:py-[20px] lg:px-[24px] lg:py-[22px] h-full flex flex-col gap-[10px]">
-                <h3
-                  className="font-medium text-[#121010]"
-                  style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.9vw, 28px)" }}
-                >
-                  {job.title}
-                </h3>
-
-                <div className="flex flex-wrap items-center gap-[14px] text-[#475569]">
-                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-light">
-                    <MapPin size={16} className="text-[#0A5191]" />
-                    {job.location}
-                  </span>
-                  <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-light">
-                    <Briefcase size={16} className="text-[#0A5191]" />
-                    {job.type}
-                  </span>
+          {/* Search and Filters */}
+          <FadeIn delay={150} direction="up">
+            <div className="max-w-[1260px] mx-auto mb-10 bg-[#F8FAFC] p-6 rounded-[24px] border border-[#E2E8F0] shadow-sm">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Search */}
+                <div className="relative">
+                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[#94a3b8] w-5 h-5" />
+                  <input 
+                    type="text" 
+                    placeholder="Search roles or keywords..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full pl-12 pr-4 py-3 bg-white border border-[#E2E8F0] rounded-[16px] text-[#1e293b] focus:outline-none focus:border-[#0A5191] transition-all"
+                    style={{ fontFamily: "'Poppins', sans-serif" }}
+                  />
                 </div>
 
-                <div className="mt-auto flex flex-wrap items-center gap-[10px]">
-                  <button
-                    type="button"
-                    onClick={() => openModal(job)}
-                    className="inline-flex items-center justify-center px-[18px] py-[10px] rounded-[14px] bg-[#0A5191] text-white font-normal hover:bg-[#4a90e2] transition-colors"
-                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
+                {/* Department Filter */}
+                <div className="relative">
+                  <Filter className="absolute left-4 top-1/2 -translate-y-1/2 text-[#94a3b8] w-4 h-4" />
+                  <select 
+                    value={selectedDept}
+                    onChange={(e) => setSelectedDept(e.target.value)}
+                    className="w-full pl-10 pr-4 py-3 bg-white border border-[#E2E8F0] rounded-[16px] text-[#1e293b] focus:outline-none focus:border-[#0A5191] transition-all appearance-none cursor-pointer"
+                    style={{ fontFamily: "'Poppins', sans-serif" }}
                   >
-                    Apply Now
-                  </button>
+                    {departments.map(dept => (
+                      <option key={dept} value={dept}>{dept}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Location Filter */}
+                <div className="relative">
+                  <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-[#94a3b8] w-4 h-4" />
+                  <select 
+                    value={selectedLoc}
+                    onChange={(e) => setSelectedLoc(e.target.value)}
+                    className="w-full pl-10 pr-4 py-3 bg-white border border-[#E2E8F0] rounded-[16px] text-[#1e293b] focus:outline-none focus:border-[#0A5191] transition-all appearance-none cursor-pointer"
+                    style={{ fontFamily: "'Poppins', sans-serif" }}
+                  >
+                    {locations.map(loc => (
+                      <option key={loc} value={loc}>{loc}</option>
+                    ))}
+                  </select>
                 </div>
               </div>
-            </FadeIn>
-          ))}
+            </div>
+          </FadeIn>
+
+          <div className="max-w-[1260px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[12px] sm:gap-[14px] md:gap-[22px] lg:gap-[26px]">
+            {filteredJobs.length > 0 ? (
+              filteredJobs.map((job, index) => (
+                <FadeIn delay={180 + (index % 2) * 100} direction="up" key={job.title}>
+                  <div className="w-full max-w-[560px] md:max-w-none mx-auto bg-white rounded-[14px] border border-[#D6D9E0] px-4 py-4 sm:px-[20px] sm:py-[20px] lg:px-[24px] lg:py-[22px] h-full flex flex-col gap-[10px] hover:shadow-[0_10px_30px_rgba(10,81,145,0.06)] hover:border-[#0A5191]/30 transition-all duration-300">
+                    <div className="flex justify-between items-start gap-4">
+                      <h3
+                        className="font-bold text-[#121010]"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.9vw, 24px)" }}
+                      >
+                        {job.title}
+                      </h3>
+                      <span className="shrink-0 px-3 py-1 bg-[#0A5191]/5 text-[#0A5191] text-[11px] font-bold rounded-full uppercase tracking-wider" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                        {job.department}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-[14px] text-[#475569]">
+                      <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-medium">
+                        <MapPin size={16} className="text-[#0A5191]" />
+                        {job.location}
+                      </span>
+                      <span className="inline-flex items-center gap-[7px] text-[13px] lg:text-[14px] font-medium">
+                        <Briefcase size={16} className="text-[#0A5191]" />
+                        {job.type}
+                      </span>
+                    </div>
+
+                    <p className="text-[14px] text-[#121010]/80 leading-relaxed line-clamp-2 my-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                      {job.summary}
+                    </p>
+
+                    <div className="mt-auto flex flex-wrap items-center gap-[10px]">
+                      <button
+                        type="button"
+                        onClick={() => openModal(job)}
+                        className="inline-flex items-center justify-center px-[22px] py-[10px] rounded-[14px] bg-[#0A5191] text-white font-bold hover:bg-[#0A5191]/90 shadow-[0_4px_14px_rgba(10,81,145,0.25)] transition-all"
+                        style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
+                      >
+                        Apply Now
+                      </button>
+                    </div>
+                  </div>
+                </FadeIn>
+              ))
+            ) : (
+              <div className="col-span-full py-20 text-center">
+                <p className="text-[#64748b] text-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>No positions found matching your search criteria.</p>
+                <button 
+                  onClick={() => { setSearchQuery(""); setSelectedDept("All Departments"); setSelectedLoc("All Locations"); }}
+                  className="mt-4 text-[#0A5191] font-bold hover:underline"
+                >
+                  Clear all filters
+                </button>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
       </section>
 
       {selectedJob && (
         <div
-          className="fixed inset-0 z-[120] bg-black/55 backdrop-blur-[1px] flex items-center justify-center p-4"
+          className="fixed inset-0 z-[120] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={closeModal}
         >
           <div
-            className="w-full max-w-[760px] max-h-[90vh] overflow-y-auto rounded-[18px] bg-white border border-[#E2E8F0] shadow-2xl"
+            className="w-full max-w-[760px] max-h-[90vh] overflow-y-auto rounded-[24px] bg-white border border-[#E2E8F0] shadow-2xl"
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="sticky top-0 bg-white/95 backdrop-blur border-b border-[#E2E8F0] px-6 md:px-8 py-4 flex items-center justify-between gap-4 z-10">
-              <h3 className="text-[#121010] font-medium" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(16px, 1.7vw, 24px)" }}>
-                Apply for {selectedJob.title}
-              </h3>
+            <div className="sticky top-0 bg-white/95 backdrop-blur border-b border-[#E2E8F0] px-6 md:px-8 py-5 flex items-center justify-between gap-4 z-10">
+              <div>
+                <h3 className="text-[#121010] font-bold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.7vw, 24px)" }}>
+                  Apply for {selectedJob.title}
+                </h3>
+                <p className="text-[#475569] text-sm font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>{selectedJob.department} • {selectedJob.location}</p>
+              </div>
 
               <button
                 type="button"
                 onClick={closeModal}
-                className="shrink-0 w-10 h-10 rounded-[14px] border border-[#E2E8F0] flex items-center justify-center text-[#334155] hover:bg-[#F8FAFC]"
+                className="shrink-0 w-10 h-10 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748b] hover:bg-[#F8FAFC] hover:text-[#0A5191] transition-all"
                 aria-label="Close application form"
               >
-                <X size={18} />
+                <X size={20} />
               </button>
             </div>
 
-            <div className="px-6 md:px-8 py-5 md:py-6">
+            <div className="px-6 md:px-8 py-6 md:py-8">
               {submitted ? (
-                <div className="rounded-[12px] border border-emerald-200 bg-emerald-50 px-4 py-4 text-emerald-800 font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                  Your application has been submitted successfully. Our team will contact you soon.
+                <div className="text-center py-10">
+                  <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <CheckCircle2 className="w-10 h-10 text-emerald-600" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-[#0A5191] mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>Application Received!</h4>
+                  <p className="text-[#64748b] font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                    Thank you for applying. Our HR team will review your profile and get back to you shortly.
+                  </p>
+                  <button 
+                    onClick={closeModal}
+                    className="mt-8 px-8 py-3 bg-[#0A5191] text-white rounded-[14px] font-bold shadow-lg"
+                  >
+                    Close
+                  </button>
                 </div>
               ) : (
-                <form className="space-y-6" onSubmit={handleApplySubmit}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>First Name *</label>
-                      <input
-                        type="text"
-                        required
-                        placeholder="John"
-                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
-                        style={{ fontFamily: "'Poppins', sans-serif" }}
-                      />
+                <form className="space-y-8" onSubmit={handleApplySubmit}>
+                  {/* Personal Info */}
+                  <div className="space-y-6">
+                    <h4 className="text-sm font-bold text-[#121010] uppercase tracking-wider" style={{ fontFamily: "'Poppins', sans-serif" }}>Personal Information</h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-sm font-bold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>First Name *</label>
+                        <input
+                          type="text"
+                          required
+                          placeholder="e.g. Rahul"
+                          className="w-full bg-white border border-[#E2E8F0] rounded-[16px] px-4 py-3 text-[#121010] placeholder-gray-400 focus:outline-none focus:border-[#0A5191] focus:ring-4 focus:ring-[#0A5191]/5 transition-all"
+                          style={{ fontFamily: "'Poppins', sans-serif" }}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-sm font-bold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Last Name *</label>
+                        <input
+                          type="text"
+                          required
+                          placeholder="e.g. Sharma"
+                          className="w-full bg-white border border-[#E2E8F0] rounded-[16px] px-4 py-3 text-[#121010] placeholder-gray-400 focus:outline-none focus:border-[#0A5191] focus:ring-4 focus:ring-[#0A5191]/5 transition-all"
+                          style={{ fontFamily: "'Poppins', sans-serif" }}
+                        />
+                      </div>
                     </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-sm font-bold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Email Address *</label>
+                        <input
+                          type="email"
+                          required
+                          placeholder="e.g. rahul.sharma@email.com"
+                          className="w-full bg-white border border-[#E2E8F0] rounded-[16px] px-4 py-3 text-[#121010] placeholder-gray-400 focus:outline-none focus:border-[#0A5191] focus:ring-4 focus:ring-[#0A5191]/5 transition-all"
+                          style={{ fontFamily: "'Poppins', sans-serif" }}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-sm font-bold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone Number *</label>
+                        <input
+                          type="tel"
+                          required
+                          pattern="[0-9]{10}"
+                          maxLength={10}
+                          placeholder="e.g. 9876543210"
+                          title="Please enter a 10-digit phone number"
+                          className="w-full bg-white border border-[#E2E8F0] rounded-[16px] px-4 py-3 text-[#121010] placeholder-gray-400 focus:outline-none focus:border-[#0A5191] focus:ring-4 focus:ring-[#0A5191]/5 transition-all"
+                          style={{ fontFamily: "'Poppins', sans-serif" }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Documents */}
+                  <div className="space-y-6">
+                    <h4 className="text-sm font-bold text-[#121010] uppercase tracking-wider" style={{ fontFamily: "'Poppins', sans-serif" }}>Application Documents</h4>
                     <div className="space-y-2">
-                      <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Last Name *</label>
-                      <input
-                        type="text"
-                        required
-                        placeholder="Doe"
-                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
+                      <label className="text-sm font-bold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Resume / CV * (PDF, DOCX)</label>
+                      <div className="relative">
+                        <input
+                          type="file"
+                          required
+                          accept=".pdf,.doc,.docx"
+                          className="w-full bg-[#F8FAFC] border-2 border-dashed border-[#E2E8F0] rounded-[16px] px-4 py-8 text-center text-[#64748b] file:hidden cursor-pointer hover:border-[#0A5191]/50 hover:bg-[#0A5191]/5 transition-all"
+                          style={{ fontFamily: "'Poppins', sans-serif" }}
+                        />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+                          <Briefcase className="w-8 h-8 text-[#94a3b8] mb-2" />
+                          <p className="text-sm font-medium">Click to upload or drag and drop</p>
+                          <p className="text-xs text-[#94a3b8] mt-1">Maximum file size: 5MB</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Why are you interested in G-Power? (Optional)</label>
+                      <textarea
+                        rows={4}
+                        placeholder="Tell us about your passion for renewable energy..."
+                        className="w-full bg-white border border-[#E2E8F0] rounded-[16px] px-4 py-3 text-[#121010] placeholder-gray-400 focus:outline-none focus:border-[#0A5191] focus:ring-4 focus:ring-[#0A5191]/5 transition-all resize-none"
                         style={{ fontFamily: "'Poppins', sans-serif" }}
                       />
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Email Address *</label>
-                      <input
-                        type="email"
-                        required
-                        placeholder="john.doe@example.com"
-                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
-                        style={{ fontFamily: "'Poppins', sans-serif" }}
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Phone Number *</label>
-                      <input
-                        type="tel"
-                        required
-                        pattern="[0-9]{10}"
-                        maxLength={10}
-                        onInput={(e) => {
-                            const target = e.target as HTMLInputElement;
-                            target.value = target.value.replace(/[^0-9]/g, '');
-                        }}
-                        placeholder="9876543210"
-                        title="Please enter a 10-digit phone number"
-                        className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors"
-                        style={{ fontFamily: "'Poppins', sans-serif" }}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Resume *</label>
-                    <input
-                      type="file"
-                      required
-                      className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-2.5 text-[#121010] file:mr-4 file:rounded-[12px] file:border file:border-[#E5E7EB] file:bg-white file:px-5 file:py-2 file:text-[#1F2937] file:font-medium focus:outline-none focus:border-[#0A5191] transition-colors"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="text-sm font-semibold text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Cover Letter (optional)</label>
-                    <textarea
-                      rows={5}
-                      placeholder="Tell us why you'd be a great fit for this role..."
-                      className="w-full bg-[#F9FAFB] border border-[#E5E7EB] rounded-[14px] px-4 py-3 text-[#121010] placeholder-gray-500 focus:outline-none focus:border-[#0A5191] transition-colors resize-none"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
-                    />
-                  </div>
-
-                  <div className="pt-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {/* Actions */}
+                  <div className="pt-4 flex flex-col sm:flex-row gap-4">
                     <button
                       type="button"
                       onClick={closeModal}
-                      className="w-full rounded-[14px] border border-[#E5E7EB] px-6 py-3 text-[#121010] font-semibold hover:bg-[#F9FAFB] transition-colors"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
+                      className="flex-1 rounded-[16px] border border-[#E2E8F0] px-6 py-4 text-[#64748b] font-bold hover:bg-[#F8FAFC] transition-all"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
                     >
                       Cancel
                     </button>
 
                     <button
                       type="submit"
-                      className="w-full rounded-[14px] bg-[#0A5191] px-6 py-3 text-white font-semibold hover:bg-[#4a90e2] transition-colors"
-                      style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 0.75vw, 15px)" }}
+                      disabled={isSubmitting}
+                      className="flex-[2] rounded-[16px] bg-[#0A5191] px-6 py-4 text-white font-bold hover:bg-[#0A5191]/90 shadow-[0_10px_25px_rgba(10,81,145,0.3)] disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-3 transition-all"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
                     >
-                      Submit Application
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="w-5 h-5 animate-spin" />
+                          <span>Submitting...</span>
+                        </>
+                      ) : (
+                        "Submit Application"
+                      )}
                     </button>
                   </div>
                 </form>
@@ -309,12 +454,5 @@ export function OpenPositions() {
   );
 }
 
-type Job = {
-  title: string;
-  location: string;
-  type: string;
-  department: string;
-  experience: string;
-  summary: string;
-  responsibilities: string[];
-};
+// Add the missing icon import
+import { CheckCircle2 } from "lucide-react";
