@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { LegalBreadcrumbs } from "@/components/LegalBreadcrumbs";
 
 export const metadata: Metadata = {
   title: "Residential Products | GPower",
@@ -31,16 +32,45 @@ export default function ResidentialProductsPage() {
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      <section className="pt-[170px] pb-[64px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#121010]">
-        <div className="mx-auto max-w-[1200px] text-center">
-          <FadeIn delay={120} direction="up">
-            <p className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}>Residential</p>
+      <section className="relative h-auto min-h-[380px] sm:min-h-[430px] md:h-[65vh] md:min-h-[520px] flex items-center justify-center bg-[#121010] overflow-hidden pt-[140px] pb-[50px] sm:pt-[150px] sm:pb-[60px] md:pt-20 md:pb-0">
+        <div className="absolute inset-0 z-0 select-none pointer-events-none">
+          <Image
+            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
+            alt="Residential Energy Storage"
+            fill
+            priority
+            className="object-cover brightness-50"
+          />
+          <div className="absolute inset-0 bg-black/45" />
+        </div>
+
+        <div className="container relative z-10 px-5 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
+          <FadeIn delay={50} direction="up">
+            <LegalBreadcrumbs currentPage="Residential Products" />
           </FadeIn>
-          <FadeIn delay={220} direction="up">
-            <h1 className="text-white font-semibold mb-[16px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 62px)" }}>All Products</h1>
+          <FadeIn delay={200} direction="up" duration={900}>
+            <p
+              className="text-white font-medium tracking-[0.16em] uppercase mb-5"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
+            >
+              Residential
+            </p>
           </FadeIn>
-          <FadeIn delay={320} direction="up">
-            <p className="text-white/80 font-medium mx-auto max-w-3xl" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}>Browse our complete range of residential energy storage products</p>
+          <FadeIn delay={300} direction="up" duration={900}>
+            <h1
+              className="text-white font-semibold mb-6"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5vw, 62px)" }}
+            >
+              All Products
+            </h1>
+          </FadeIn>
+          <FadeIn delay={400} direction="up" duration={900}>
+            <p
+              className="text-white/80 font-medium mx-auto max-w-3xl"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
+            >
+              Browse our complete range of residential energy storage products
+            </p>
           </FadeIn>
         </div>
       </section>

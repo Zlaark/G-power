@@ -6,6 +6,7 @@ import { ShieldCheck, Zap, Clock3, SlidersHorizontal, CheckCircle2 } from "lucid
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { LegalBreadcrumbs } from "@/components/LegalBreadcrumbs";
 
 export const metadata: Metadata = {
   title: "Residential Solutions | GPower",
@@ -118,19 +119,23 @@ export default function ResidentialSolutionsPage() {
       <section className="relative h-[52vh] min-h-[360px] sm:min-h-[430px] md:h-[70vh] md:min-h-[560px] flex items-center justify-center bg-[#121010] overflow-hidden pt-20">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
-            src="/Solution Banner img copy.webp"
+            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
             alt="Residential Solar Installation"
             fill
             priority
-            className="object-cover"
+            className="object-cover brightness-50"
           />
+          <div className="absolute inset-0 bg-black/45" />
         </div>
 
         <div className="container relative z-10 px-4 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
+          <FadeIn delay={50} direction="up">
+            <LegalBreadcrumbs currentPage="Residential Storage" />
+          </FadeIn>
           <FadeIn delay={120} direction="up">
             <p
-              className="text-white/85 font-medium tracking-[0.16em] uppercase mb-5 drop-shadow-md"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
+              className="text-white font-medium tracking-[0.16em] uppercase mb-5"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
             >
               Residential Energy Storage Solutions
             </p>
@@ -260,7 +265,7 @@ export default function ResidentialSolutionsPage() {
                       {item.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-medium leading-[1.6]"
+                      className="text-[#4A4A4A] font-medium leading-[1.6]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                     >
                       {item.description}
@@ -287,7 +292,7 @@ export default function ResidentialSolutionsPage() {
           </FadeIn>
           <FadeIn delay={130} direction="up">
             <p
-              className="text-[#121010]/75 font-medium text-center mb-[36px] lg:mb-[48px]"
+              className="text-[#4A4A4A] font-medium text-center mb-[36px] lg:mb-[48px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
             >
               Our premium residential battery systems designed for your home
@@ -313,7 +318,7 @@ export default function ResidentialSolutionsPage() {
                       {product.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-normal leading-[1.65] mb-[22px]"
+                      className="text-[#4A4A4A] font-normal leading-[1.65] mb-[22px]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}
                     >
                       {product.description}
@@ -322,7 +327,7 @@ export default function ResidentialSolutionsPage() {
                       {product.specs.map((spec) => (
                         <div key={spec.label} className="border-l-2 border-[#0A5191] pl-3">
                           <p
-                            className="text-[#64748B] font-normal leading-[1.1]"
+                            className="text-[#4A4A4A] font-normal leading-[1.1]"
                             style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
                           >
                             {spec.label}
@@ -365,7 +370,7 @@ export default function ResidentialSolutionsPage() {
           </FadeIn>
           <FadeIn delay={130} direction="up">
             <p
-              className="text-[#121010]/75 font-medium text-center mb-[36px] lg:mb-[48px]"
+              className="text-[#4A4A4A] font-medium text-center mb-[36px] lg:mb-[48px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.6vw, 18px)" }}
             >
               Real-world implementations of our residential energy storage solutions
@@ -387,13 +392,13 @@ export default function ResidentialSolutionsPage() {
                       {item.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-medium leading-[1.65]"
+                      className="text-[#4A4A4A] font-medium leading-[1.65]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                     >
                       Capacity:{item.capacity}
                     </p>
                     <p
-                      className="text-[#475569] font-medium leading-[1.65]"
+                      className="text-[#4A4A4A] font-medium leading-[1.65]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                     >
                       Result:{item.result}

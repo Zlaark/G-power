@@ -56,7 +56,7 @@ export default function UtilityBattery4ProductPage() {
             <div className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
 <FadeIn delay={100} direction="up" className="w-full">
               <div className="relative w-full rounded-[20px] overflow-hidden border border-[#0A5191]/45 card-soft-hover" style={{ aspectRatio: "3/2.2" }}>
-                <Image src="/about-bess-facility.jpg" alt="Utility Battery System 3" fill className="object-cover" />
+                <Image src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" alt="Utility Battery System 3" fill className="object-cover" />
                 <span className="absolute top-5 right-5 bg-[#0A5191] text-white font-semibold rounded-full px-5 py-2 shadow-lg" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}>
                   261 kWh
                 </span>
@@ -71,7 +71,7 @@ export default function UtilityBattery4ProductPage() {
                   <div className="grid grid-cols-2 gap-[10px]">
                     {specs.map((s) => (
                       <div key={s.label} className="rounded-[10px] border border-[#E2E8F0] bg-white px-3 py-5 flex flex-col card-soft-hover">
-                        <span className="text-[#64748B] mb-[4px] font-light" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>{s.label}</span>
+                        <span className="text-[#4A4A4A] mb-[4px] font-light" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>{s.label}</span>
                         <span className="text-[#121010] font-semibold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.5vw, 19px)" }}>{s.value}</span>
                       </div>
                     ))}
@@ -88,7 +88,7 @@ export default function UtilityBattery4ProductPage() {
                           <circle cx="10" cy="10" r="9" stroke="#0A5191" strokeWidth="1.6" />
                           <path d="M6.5 10.2l2.3 2.3 4.7-4.7" stroke="#0A5191" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                        <span className="text-[#334155]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.3vw, 17px)" }}>{a.label}</span>
+                        <span className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.3vw, 17px)" }}>{a.label}</span>
                       </div>
                     ))}
                   </div>
@@ -104,7 +104,7 @@ export default function UtilityBattery4ProductPage() {
                           <circle cx="10" cy="10" r="9" stroke="#0A5191" strokeWidth="1.6" />
                           <path d="M6.5 10.2l2.3 2.3 4.7-4.7" stroke="#0A5191" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                        <span className="text-[#334155]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.05vw, 14px)" }}>{m.label}</span>
+                        <span className="text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.05vw, 14px)" }}>{m.label}</span>
                       </div>
                     ))}
                   </div>
@@ -119,7 +119,7 @@ export default function UtilityBattery4ProductPage() {
         <div className="mx-auto max-w-[980px]">
           <FadeIn delay={100} direction="up">
             <h2 className="font-normal text-[#121010] mb-3 text-center" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 3.6vw, 44px)" }}>Technical Parameters</h2>
-            <p className="text-[#475569] mb-[54px] text-center" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.15vw, 18px)" }}>Detailed specifications for Utility Battery System 3</p>
+            <p className="text-[#4A4A4A] mb-[54px] text-center" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.15vw, 18px)" }}>Detailed specifications for Utility Battery System 3</p>
           </FadeIn>
           <FadeIn delay={180} direction="up">
             <div className="rounded-[20px] overflow-hidden bg-white shadow-[0_12px_28px_rgba(2,8,23,0.10)] section-soft-hover">
@@ -127,8 +127,8 @@ export default function UtilityBattery4ProductPage() {
                 <tbody>
                   {technicalParams.map((row, i) => (
                     <tr key={row.param} className={i % 2 === 0 ? "bg-[#F8FAFC]" : "bg-[#F1F5F9]"}>
-                      <td className="px-7 py-4 border-r border-white/70 text-[#0F172A] font-normal w-1/2" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.35vw, 20px)" }}>{row.param}</td>
-                      <td className="px-7 py-4 text-[#334155]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.35vw, 20px)" }}>{row.value}</td>
+                      <td className="px-7 py-4 border-r border-white/70 text-[#121010] font-normal w-1/2" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.35vw, 20px)" }}>{row.param}</td>
+                      <td className="px-7 py-4 text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.35vw, 20px)" }}>{row.value}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -147,7 +147,7 @@ export default function UtilityBattery4ProductPage() {
 
       <section className="relative py-[80px] lg:py-[112px] px-6 md:px-[60px] lg:px-[100px] overflow-hidden bg-[#0D0D0D]">
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
-          <Image src="/about-bess-facility.jpg" alt="Utility storage" fill className="object-cover opacity-20 brightness-75" />
+          <Image src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" alt="Utility storage" fill className="object-cover opacity-20 brightness-75" />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D0D]/80 via-[#0D0D0D]/60 to-[#0A5191]/10" />
         </div>
         <div className="relative z-10 mx-auto max-w-[800px] text-center">

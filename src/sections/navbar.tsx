@@ -117,9 +117,9 @@ export const Navbar = () => {
                         </div>
 
                         <div className="relative group">
-                            <div className="nav-link nav-dropdown text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <Link href="/products" className="nav-link nav-dropdown text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Products
-                            </div>
+                            </Link>
                             <div className="absolute left-0 top-full mt-3 w-[300px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
                                 <Link href="/solutions/utility/products" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     Utility Storage

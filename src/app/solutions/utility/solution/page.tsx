@@ -5,6 +5,7 @@ import { ShieldCheck, Zap, Activity, Gauge, CheckCircle2 } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { LegalBreadcrumbs } from "@/components/LegalBreadcrumbs";
 
 export const metadata: Metadata = {
   title: "Utility Sustainability | GPower",
@@ -117,19 +118,23 @@ export default function UtilitySolutionsPage() {
       <section className="relative h-auto min-h-[380px] sm:min-h-[430px] md:h-[65vh] md:min-h-[520px] flex items-center justify-center bg-[#121010] overflow-hidden pt-[140px] pb-[50px] sm:pt-[150px] sm:pb-[60px] md:pt-20 md:pb-0">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image
-            src="/Solution Banner img copy.webp"
+            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
             alt="Utility Scale Energy Storage"
             fill
             priority
-            className="object-cover"
+            className="object-cover brightness-50"
           />
+          <div className="absolute inset-0 bg-black/45" />
         </div>
 
         <div className="container relative z-10 px-5 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
+          <FadeIn delay={50} direction="up">
+            <LegalBreadcrumbs currentPage="Utility Energy Storage" />
+          </FadeIn>
           <FadeIn delay={200} direction="up" duration={900}>
             <p
-              className="text-white/85 font-normal tracking-[0.16em] uppercase mb-5 drop-shadow-md"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
+              className="text-white font-medium tracking-[0.16em] uppercase mb-5"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
             >
               Utility Sustainability
             </p>
@@ -164,7 +169,7 @@ export default function UtilitySolutionsPage() {
                 Complete Utility-Scale Solution
               </h2>
               <p
-                className="text-[#121010]/75 font-normal leading-[1.75]"
+                className="text-[#4A4A4A] font-normal leading-[1.75]"
                 style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}
               >
                 Our utility-scale energy storage systems provide operators with flexible, reliable, and cost-effective solutions for managing grid stability.
@@ -187,13 +192,13 @@ export default function UtilitySolutionsPage() {
             <FadeIn delay={400} direction="right" duration={900}>
               <div className="w-full">
                 <h3
-                  className="font-normal text-[#111827] mb-5"
+                  className="font-normal text-[#121010] mb-5"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.8vw, 28px)" }}
                 >
                   Architected for the Grid
                 </h3>
                 <p
-                  className="text-[#475569] font-normal leading-[1.75] mb-[24px]"
+                  className="text-[#4A4A4A] font-normal leading-[1.75] mb-[24px]"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.35vw, 16px)" }}
                 >
                   Our utility solutions combine cutting-edge lithium-ion storage with state-of-the-art power conversion and management systems to respond instantly to grid fluctuations.
@@ -206,13 +211,13 @@ export default function UtilitySolutionsPage() {
                         <CheckCircle2 className="w-[19px] h-[19px] mt-[4px] text-[#0A5191]" strokeWidth={2.2} />
                         <div>
                           <h4
-                            className="text-[#111827] font-normal leading-[1.35]"
+                            className="text-[#121010] font-normal leading-[1.35]"
                             style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.3vw, 20px)" }}
                           >
                             {item.title}
                           </h4>
                           <p
-                            className="text-[#475569] font-normal leading-[1.65]"
+                            className="text-[#4A4A4A] font-normal leading-[1.65]"
                             style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 1.1vw, 16px)" }}
                           >
                             {item.description}
@@ -255,7 +260,7 @@ export default function UtilitySolutionsPage() {
                       {item.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-normal leading-[1.6]"
+                      className="text-[#4A4A4A] font-normal leading-[1.6]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.2vw, 15px)" }}
                     >
                       {item.description}
@@ -282,7 +287,7 @@ export default function UtilitySolutionsPage() {
           </FadeIn>
           <FadeIn delay={250} direction="up" duration={900}>
             <p
-              className="text-[#121010]/75 font-normal text-center mb-[24px] sm:mb-[36px] lg:mb-[48px]"
+              className="text-[#4A4A4A] font-normal text-center mb-[24px] sm:mb-[36px] lg:mb-[48px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}
             >
               Industry-leading containerized storage systems for grid stability
@@ -308,7 +313,7 @@ export default function UtilitySolutionsPage() {
                       {product.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-normal leading-[1.65] mb-[16px] sm:mb-[22px]"
+                      className="text-[#4A4A4A] font-normal leading-[1.65] mb-[16px] sm:mb-[22px]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 16px)" }}
                     >
                       {product.description}
@@ -317,7 +322,7 @@ export default function UtilitySolutionsPage() {
                       {product.specs.map((spec) => (
                         <div key={spec.label} className="border-l-2 border-[#0A5191] pl-3">
                           <p
-                            className="text-[#64748B] font-normal leading-[1.1]"
+                            className="text-[#4A4A4A] font-normal leading-[1.1]"
                             style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
                           >
                             {spec.label}
@@ -360,7 +365,7 @@ export default function UtilitySolutionsPage() {
           </FadeIn>
           <FadeIn delay={250} direction="up" duration={900}>
             <p
-              className="text-[#121010]/75 font-normal text-center mb-[24px] sm:mb-[36px] lg:mb-[48px]"
+              className="text-[#4A4A4A] font-normal text-center mb-[24px] sm:mb-[36px] lg:mb-[48px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}
             >
               Global deployments proving our scale and reliability
@@ -382,13 +387,13 @@ export default function UtilitySolutionsPage() {
                       {item.title}
                     </h3>
                     <p
-                      className="text-[#475569] font-normal leading-[1.65]"
+                      className="text-[#4A4A4A] font-normal leading-[1.65]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                     >
                       Capacity: {item.capacity}
                     </p>
                     <p
-                      className="text-[#475569] font-normal leading-[1.65]"
+                      className="text-[#4A4A4A] font-normal leading-[1.65]"
                       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
                     >
                       Result: {item.result}

@@ -6,9 +6,6 @@ import { FadeIn } from "@/components/FadeIn";
 import { Zap, ShieldCheck, Clock, Settings, ArrowRight, ChevronRight, Home } from "lucide-react";
 import Link from "next/link";
 
-import { LegalBreadcrumbs } from "@/components/LegalBreadcrumbs";
-import Image from "next/image";
-
 const productCategories = [
     {
         title: "Full Load 5.0 – BESS Utility Scale",
@@ -110,32 +107,51 @@ export default function ProductsPage() {
         <main className="min-h-screen bg-white">
             <Navbar />
             
-            {/* Hero Section */}
-            <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
-                <div className="absolute inset-0 z-0 pointer-events-none select-none">
-                    <Image
-                        src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
-                        alt="G-Power Products"
-                        fill
-                        priority
-                        className="object-cover brightness-50"
-                    />
-                    <div className="absolute inset-0 bg-black/45" />
-                </div>
-                
-                <div className="relative z-10 flex flex-col items-center text-center px-6">
-                    <FadeIn delay={50} direction="up">
-                        <LegalBreadcrumbs currentPage="Products" />
-                    </FadeIn>
-                    <FadeIn delay={200} direction="up">
-                        <h1 className="text-white font-medium leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.6vw, 64px)" }}>
+            {/* Header Section with Background Image */}
+            <section className="relative pt-32 pb-16 min-h-[400px] flex items-center overflow-hidden">
+                {/* Background Image */}
+                <div 
+                    className="absolute inset-0 z-0 animate-ken-burns"
+                    style={{
+                        background: "url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=1920')", // High-quality industrial/tech background
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                />
+                {/* Overlay to ensure text readability */}
+                <div className="absolute inset-0 bg-[#0A5191]/80 backdrop-blur-[2px] z-10" />
+
+                <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 relative z-20 text-white">
+                    <FadeIn delay={100} direction="up">
+                        <nav className="flex items-center space-x-2 text-white/70 text-sm mb-6" aria-label="Breadcrumb">
+                            <Link href="/" className="hover:text-white transition-colors flex items-center gap-1">
+                                <Home size={14} />
+                                <span>Home</span>
+                            </Link>
+                            <ChevronRight size={14} className="text-white/30" />
+                            <span className="text-white font-medium">Products</span>
+                        </nav>
+                        <h1 className="text-4xl md:text-6xl font-bold mb-8" style={{ fontFamily: "'Poppins', sans-serif" }}>
                             Our Products
                         </h1>
-                    </FadeIn>
-                    <FadeIn delay={320} direction="up">
-                        <p className="text-white/80 max-w-[700px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>
-                            Explore our comprehensive range of battery energy storage solutions for every scale and application
-                        </p>
+                        
+                        {/* Subheading Navigation (Same order as Sustainability/Categories) */}
+                        <div className="flex flex-wrap gap-x-8 gap-y-4 pt-4 border-t border-white/10">
+                            {productCategories.map((cat, idx) => (
+                                <button 
+                                    key={idx}
+                                    onClick={() => {
+                                        const element = document.getElementById(`category-${idx}`);
+                                        element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                    }}
+                                    className="text-white/70 hover:text-white text-sm font-semibold uppercase tracking-widest transition-all hover:translate-x-1 flex items-center gap-2 group"
+                                    style={{ fontFamily: "'Poppins', sans-serif" }}
+                                >
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#0A5191] border border-white/30 group-hover:bg-white transition-colors" />
+                                    {cat.title.split(' – ')[0].split(' (')[0]}
+                                </button>
+                            ))}
+                        </div>
                     </FadeIn>
                 </div>
             </section>

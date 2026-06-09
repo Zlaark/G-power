@@ -72,7 +72,7 @@ export const DownloadPdfButton = ({ targetId, filename }: Props) => {
     <button
       onClick={handleDownload}
       disabled={isDownloading}
-      className={`btn-sweep btn-glow btn-float-hover mt-4 text-white font-semibold flex items-center justify-center gap-2 px-6 py-3 rounded-[14px] shadow-md transition-all duration-300 w-full sm:w-auto ${isDownloading ? 'opacity-70 cursor-not-allowed' : ''}`}
+      className={`btn-sweep-blue mt-4 text-[#121010] border border-[#121010] font-semibold flex items-center justify-center gap-3 px-8 py-4 rounded-[16px] transition-all duration-300 w-full sm:w-auto hover:text-white ${isDownloading ? 'opacity-70 cursor-not-allowed' : ''}`}
       style={{ fontFamily: "'Poppins', sans-serif", fontSize: "16px" }}
     >
       {isDownloading ? <Loader2 className="animate-spin w-5 h-5" /> : <Download className="w-5 h-5" />}
