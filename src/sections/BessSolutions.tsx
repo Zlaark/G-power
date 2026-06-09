@@ -38,11 +38,11 @@ export const BessSolutions = () => {
         <section className="relative w-full bg-white pt-[64px] sm:pt-[72px] md:pt-[92px] lg:pt-[112px] pb-[56px] sm:pb-[64px] md:pb-[84px] lg:pb-[104px] overflow-hidden">
             <div className="relative z-10 w-full max-w-[1600px] mx-auto px-[24px] sm:px-[40px] md:px-[60px] lg:px-[100px] xl:px-[160px]">
             <div className="max-w-[980px] mx-auto text-center mb-[36px] sm:mb-[42px] md:mb-[56px] lg:mb-[72px]">
-                    <span className="inline-flex items-center rounded-full border border-[#D8E2EC] bg-white px-5 py-2 text-[#0A5191] font-medium uppercase tracking-[0.18em]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '12px' }}>
+                    <span className="inline-flex items-center rounded-full border border-[#D8E2EC] bg-white px-5 py-2 text-[#121010] font-bold uppercase tracking-[0.18em]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '12px' }}>
                         Sustainability
                     </span>
                     <h2
-                        className="mt-6 font-bold text-[#0A5191]"
+                        className="mt-6 font-bold text-[#121010]"
                         style={{
                             fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(26px, 3.2vw, 40px)',
@@ -53,7 +53,7 @@ export const BessSolutions = () => {
                         We design energy storage and power systems across residential, commercial, industrial, mobility, and utility sustainability.
                     </h2>
                     <p
-                        className="mt-4 text-[#0A5191]/80 font-medium"
+                        className="mt-4 text-[#475569] font-medium"
                         style={{
                             fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(14px, 1.2vw, 18px)',
@@ -86,7 +86,7 @@ export const BessSolutions = () => {
                             <div className="flex-1 flex flex-col items-center text-center p-6 sm:p-7 lg:p-8 relative z-20 -mt-5 sm:-mt-6 transition-colors duration-500 group-hover:bg-[#0A5191]/5">
                                 <div className="w-10 sm:w-12 h-1 rounded-full bg-[#0A5191]/70 mb-4 sm:mb-5 group-hover:w-16 transition-all duration-500 mx-auto" />
                                 <h3
-                                    className="font-bold text-[#0A5191] mb-3"
+                                    className="font-bold text-[#121010] mb-3"
                                     style={{
                                         fontFamily: "'Poppins', sans-serif",
                                         fontSize: 'clamp(18px, 2vw, 24px)',
@@ -96,7 +96,7 @@ export const BessSolutions = () => {
                                     {item.label}
                                 </h3>
                                 <p
-                                    className="text-[#0A5191]/70 font-medium leading-relaxed"
+                                    className="text-[#475569] font-medium leading-relaxed"
                                     style={{
                                         fontFamily: "'Poppins', sans-serif",
                                         fontSize: 'clamp(13px, 1.1vw, 15px)',

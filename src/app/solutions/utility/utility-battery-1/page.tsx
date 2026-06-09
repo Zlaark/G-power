@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
+import { LegalBreadcrumbs } from "@/components/LegalBreadcrumbs";
 
 export const metadata: Metadata = {
   title: "Utility Battery System 1 | Utility Solutions | GPower",
@@ -56,17 +57,22 @@ export default function UtilityBattery1Page() {
         {/* Full-bleed background image */}
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
           <Image
-            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
             alt="Utility Battery System 1"
             fill
             priority
-            className="object-cover brightness-75"
+            className="object-cover brightness-50"
           />
           <div className="absolute inset-0 bg-black/45" />
         </div>
 
         {/* Centered content */}
         <div className="relative z-10 flex flex-col items-center text-center px-6">
+          {/* Breadcrumbs */}
+          <FadeIn delay={50} direction="up">
+            <LegalBreadcrumbs currentPage="Utility Battery System 1" />
+          </FadeIn>
+
           {/* Pill badge — bordered, no fill */}
           <FadeIn delay={100} direction="up">
             <div

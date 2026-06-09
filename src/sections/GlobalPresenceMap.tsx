@@ -49,6 +49,15 @@ export const GlobalPresenceMap = () => {
 
             {/* Content overlay */}
             <div className="relative z-10 max-w-[640px] w-full text-center lg:text-left mx-auto lg:mx-0" style={{ marginLeft: 'clamp(0px, 3vw, 48px)' }}>
+                <FadeIn delay={50} direction="up">
+                    <div className="flex items-center gap-2 mb-4 justify-center lg:justify-start">
+                        <span className="relative flex h-2.5 w-2.5">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
+                        </span>
+                        <span className="text-[11px] font-bold text-red-600 uppercase tracking-[0.2em]" style={{ fontFamily: "'Poppins', sans-serif" }}>Live Global Presence</span>
+                    </div>
+                </FadeIn>
                 <FadeIn delay={100} direction="up">
                     <h2 className="text-3xl lg:text-5xl font-semibold text-[#121010] mb-6 lg:mb-10" style={{ fontFamily: "'Poppins', sans-serif" }}>
                         Our Presence
@@ -58,15 +67,15 @@ export const GlobalPresenceMap = () => {
                 <FadeIn delay={300} direction="up">
                     <div className="mt-8 lg:mt-14 grid grid-cols-3 gap-2 sm:gap-10">
                         <div className="flex flex-col items-center lg:items-start">
-                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>6</h3>
+                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#121010] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>6</h3>
                             <p className="text-[#4A4A4A] text-xs sm:text-base lg:text-lg font-medium text-center lg:text-left" style={{ fontFamily: "'Poppins', sans-serif" }}>Continents</p>
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
-                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>110+</h3>
+                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#121010] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>110+</h3>
                             <p className="text-[#4A4A4A] text-xs sm:text-base lg:text-lg font-medium text-center lg:text-left mx-auto max-w-[100px] sm:max-w-none" style={{ fontFamily: "'Poppins', sans-serif" }}>Countries & Regions</p>
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
-                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#0A5191] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>500+</h3>
+                            <h3 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-[#121010] mb-1 sm:mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>500+</h3>
                             <p className="text-[#4A4A4A] text-xs sm:text-base lg:text-lg font-medium text-center lg:text-left" style={{ fontFamily: "'Poppins', sans-serif" }}>Projects</p>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ export const EnergyStorage = () => {
             <div className="relative z-10 w-full max-w-[1920px] mx-auto px-[24px] sm:px-[40px] md:px-[60px] lg:px-[100px]">
                 <FadeIn delay={100} direction="up">
                     <div className="mx-auto max-w-[900px] text-center">
-                        <span className="inline-flex items-center justify-center rounded-full border border-[#D7E0EA] bg-white px-5 py-2 text-[#0A5191] font-medium tracking-[0.18em] uppercase" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '12px' }}>
+                        <span className="inline-flex items-center justify-center rounded-full border border-[#D7E0EA] bg-white px-5 py-2 text-[#121010] font-bold tracking-[0.18em] uppercase" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '12px' }}>
                             Who We Are
                         </span>
                         <h2

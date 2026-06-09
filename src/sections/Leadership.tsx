@@ -32,7 +32,7 @@ export const Leadership = () => {
                             Leadership
                         </span>
                         <h2
-                            className="font-bold text-[#0A5191] mb-4"
+                            className="font-bold text-[#121010] mb-4"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(24px, 3vw, 40px)',
@@ -42,7 +42,7 @@ export const Leadership = () => {
                             Meet Our Visionaries
                         </h2>
                         <p
-                            className="font-medium text-[#64748B]"
+                            className="font-medium text-[#475569]"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(16px, 1.3vw, 20px)',
@@ -77,7 +77,7 @@ export const Leadership = () => {
                                 </div>
                                 <div className="text-center">
                                     <h3 
-                                        className="font-bold text-[#0A5191] mb-1"
+                                        className="font-bold text-[#121010] mb-1"
                                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: '22px' }}
                                     >
                                         {leader.name}
@@ -89,7 +89,7 @@ export const Leadership = () => {
                                         {leader.role}
                                     </p>
                                     <p 
-                                        className="text-[#64748B] text-sm leading-relaxed max-w-[280px] mx-auto"
+                                        className="text-[#475569] text-sm leading-relaxed max-w-[280px] mx-auto"
                                         style={{ fontFamily: "'Poppins', sans-serif" }}
                                     >
                                         {leader.bio}

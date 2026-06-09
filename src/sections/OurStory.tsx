@@ -11,7 +11,7 @@ export const OurStory = () => {
                                 Our Story
                             </span>
                             <h2
-                                className="font-bold text-[#0A5191] mb-8"
+                                className="font-bold text-[#121010] mb-8"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: 'clamp(32px, 4vw, 52px)',

@@ -33,11 +33,11 @@ export const Features = () => {
         <section className="py-24 bg-white dark:bg-[#0A0A0A] sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-blue-600 dark:text-blue-400">Everything you need</h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                    <h2 className="text-base font-bold leading-7 text-[#121010] dark:text-white uppercase tracking-widest">Everything you need</h2>
+                    <p className="mt-2 text-3xl font-bold tracking-tight text-[#121010] dark:text-white sm:text-4xl">
                         A Better Way to Architect Frontends
                     </p>
-                    <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
+                    <p className="mt-6 text-lg leading-8 text-[#4A4A4A] dark:text-gray-400">
                         Skip the boilerplate and start shipping immediately. With our modern structure, you focus on business logic rather than wiring up routing.
                     </p>
                 </div>

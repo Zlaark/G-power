@@ -169,7 +169,7 @@ export function OpenPositions() {
         <div className="mx-auto max-w-[1920px]">
           <FadeIn delay={100} direction="up">
             <h2
-              className="text-center font-bold text-[#0A5191] mb-[34px] lg:mb-[44px]"
+              className="text-center font-bold text-[#121010] mb-[34px] lg:mb-[44px]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 42px)" }}
             >
               Open Positions
@@ -233,7 +233,7 @@ export function OpenPositions() {
                   <div className="w-full max-w-[560px] md:max-w-none mx-auto bg-white rounded-[14px] border border-[#D6D9E0] px-4 py-4 sm:px-[20px] sm:py-[20px] lg:px-[24px] lg:py-[22px] h-full flex flex-col gap-[10px] hover:shadow-[0_10px_30px_rgba(10,81,145,0.06)] hover:border-[#0A5191]/30 transition-all duration-300">
                     <div className="flex justify-between items-start gap-4">
                       <h3
-                        className="font-bold text-[#0A5191]"
+                        className="font-bold text-[#121010]"
                         style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.9vw, 24px)" }}
                       >
                         {job.title}
@@ -297,10 +297,10 @@ export function OpenPositions() {
           >
             <div className="sticky top-0 bg-white/95 backdrop-blur border-b border-[#E2E8F0] px-6 md:px-8 py-5 flex items-center justify-between gap-4 z-10">
               <div>
-                <h3 className="text-[#0A5191] font-bold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.7vw, 24px)" }}>
+                <h3 className="text-[#121010] font-bold" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(18px, 1.7vw, 24px)" }}>
                   Apply for {selectedJob.title}
                 </h3>
-                <p className="text-[#64748b] text-sm font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>{selectedJob.department} • {selectedJob.location}</p>
+                <p className="text-[#475569] text-sm font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>{selectedJob.department} • {selectedJob.location}</p>
               </div>
 
               <button
@@ -334,7 +334,7 @@ export function OpenPositions() {
                 <form className="space-y-8" onSubmit={handleApplySubmit}>
                   {/* Personal Info */}
                   <div className="space-y-6">
-                    <h4 className="text-sm font-bold text-[#0A5191] uppercase tracking-wider" style={{ fontFamily: "'Poppins', sans-serif" }}>Personal Information</h4>
+                    <h4 className="text-sm font-bold text-[#121010] uppercase tracking-wider" style={{ fontFamily: "'Poppins', sans-serif" }}>Personal Information</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label className="text-sm font-bold text-[#1e293b]" style={{ fontFamily: "'Poppins', sans-serif" }}>First Name *</label>
@@ -431,8 +431,7 @@ export function OpenPositions() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="flex-[2] rounded-[16px] bg-[#0A5191] px-6 py-4 text-white font-bold hover:bg-[#0A5191]/90 shadow-[0_10px_25px_rgba(10,81,145,0.3)] disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-3 transition-all"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
+                      className="w-full py-4 bg-[#0A5191] text-white rounded-[16px] font-bold shadow-lg hover:bg-[#0A5191]/90 disabled:opacity-70 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <>
@@ -440,7 +439,7 @@ export function OpenPositions() {
                           <span>Submitting...</span>
                         </>
                       ) : (
-                        "Submit Application"
+                        <span>Submit Application</span>
                       )}
                     </button>
                   </div>

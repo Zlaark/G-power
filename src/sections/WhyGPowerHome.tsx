@@ -92,21 +92,21 @@ export const WhyGPowerHome = () => {
                         {/* Heading */}
                         <FadeIn delay={100} direction="right">
                             <h2
-                                className="font-bold text-[#0e1117]"
+                                className="font-bold text-[#121010]"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: "clamp(22px, 2.5vw, 36px)",
                                     lineHeight: "1.2",
                                 }}
                             >
-                                Why <span className="text-[#0A5191]">Trust</span> G-power?
+                                Why <span className="text-[#121010]">Trust</span> G-power?
                             </h2>
                         </FadeIn>
 
                         {/* Intro sentence */}
                         <FadeIn delay={200} direction="right">
                             <p
-                                className="text-[#3a3f47] font-medium"
+                                className="text-[#4A4A4A] font-medium"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: "clamp(13px, 1.4vw, 16px)",
@@ -118,24 +118,24 @@ export const WhyGPowerHome = () => {
                         </FadeIn>
 
                         {/* Divider */}
-                        <div className="w-full h-[1px] bg-gradient-to-r from-[#0A5191]/25 to-transparent" />
+                        <div className="w-full h-[1px] bg-gradient-to-r from-[#DDE3EC] to-transparent" />
 
                         {/* Feature list */}
                         <div className="flex flex-col gap-[18px] md:gap-[20px]">
                             {features.map((f, i) => (
                                 <FadeIn key={i} delay={250 + i * 80} direction="right">
                                     <div className="flex items-start gap-[12px]">
-                                        <div className="wgp-dot" />
+                                        <div className="wgp-dot bg-[#121010]" />
                                         <p
                                             style={{
                                                 fontFamily: "'Poppins', sans-serif",
                                                 fontSize: "clamp(12px, 1.2vw, 14px)",
                                                 lineHeight: "1.65",
-                                                color: "#222",
+                                                color: "#4A4A4A",
                                             }}
                                         >
-                                            <strong className="text-[#0e1117]">{f.title}. </strong>
-                                            <span className="text-[#4a5060]">{f.body}</span>
+                                            <strong className="text-[#121010]">{f.title}. </strong>
+                                            <span className="text-[#4A4A4A]">{f.body}</span>
                                         </p>
                                     </div>
                                 </FadeIn>

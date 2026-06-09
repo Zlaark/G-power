@@ -1,5 +1,6 @@
 import { Navbar } from "@/sections/navbar";import { Footer } from "@/sections/Footer";import { FadeIn } from "@/components/FadeIn";import { Metadata } from "next";import Image from "next/image";import Link from "next/link";import { ArrowRight, Download } from "lucide-react";
 import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
+import { LegalBreadcrumbs } from "@/components/LegalBreadcrumbs";
 
 export const metadata: Metadata = { title: "EV Pro Series 72V | 2 & 3 Wheeler Products | GPower", description: "High-performance swappable battery pack for electric scooters and motorcycles. 3.2 kWh, 72V." };
 const specs = [{ label: "Capacity", value: "3.2 kWh" }, { label: "Voltage", value: "72 VDC" }, { label: "Max Discharge", value: "60 A" }, { label: "Weight", value: "18.5 kg" }];
@@ -9,8 +10,21 @@ const technicalParams = [{ param: "Capacity", value: "3.2 kWh" }, { param: "Volt
 
 export default function EVPro72VProductPage() {
   return (<main className="min-h-screen bg-white"><Navbar />
-    <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden"><div className="absolute inset-0 z-0 pointer-events-none select-none"><Image src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" alt="EV Pro Series 72V" fill priority className="object-cover brightness-75" /><div className="absolute inset-0 bg-black/45" /></div>
-      <div className="relative z-10 flex flex-col items-center text-center px-6"><FadeIn delay={100} direction="up"><div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm"><span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" /><span className="text-white font-medium uppercase tracking-[0.18em]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}>2 & 3 Wheeler</span></div></FadeIn><FadeIn delay={200} direction="up"><h1 className="text-white font-medium leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.6vw, 64px)" }}>EV Pro Series 72V</h1></FadeIn><FadeIn delay={320} direction="up"><p className="text-white/80 max-w-[700px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>High-performance swappable battery pack for electric scooters and motorcycles</p></FadeIn></div></section>
+    <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none select-none">
+        <Image src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" alt="EV Pro Series 72V" fill priority className="object-cover brightness-50" />
+        <div className="absolute inset-0 bg-black/45" />
+      </div>
+      <div className="relative z-10 flex flex-col items-center text-center px-6">
+        <FadeIn delay={50} direction="up">
+          <LegalBreadcrumbs currentPage="EV Pro Series 72V" />
+        </FadeIn>
+        <FadeIn delay={100} direction="up">
+          <div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm">
+            <span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" />
+            <span className="text-white font-medium uppercase tracking-[0.18em]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}>2 & 3 Wheeler</span>
+          </div>
+        </FadeIn><FadeIn delay={200} direction="up"><h1 className="text-white font-medium leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.6vw, 64px)" }}>EV Pro Series 72V</h1></FadeIn><FadeIn delay={320} direction="up"><p className="text-white/80 max-w-[700px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>High-performance swappable battery pack for electric scooters and motorcycles</p></FadeIn></div></section>
     <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white"><div className="mx-auto max-w-[1400px]"><div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[56px] items-start lg:min-h-[102vh]"><div className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
 <FadeIn delay={100} direction="up" className="w-full"><div className="relative w-full rounded-[20px] overflow-hidden border border-[#0A5191]/45 card-soft-hover" style={{ aspectRatio: "3/2.2" }}><Image src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="EV Pro Series 72V" fill className="object-cover" /><span className="absolute top-5 right-5 bg-[#0A5191] text-white font-semibold rounded-full px-5 py-2 shadow-lg" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}>3.2 kWh</span></div></FadeIn>
 </div>

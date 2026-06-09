@@ -48,7 +48,7 @@ export const AboutUsStats = () => {
                         </FadeIn>
                         <FadeIn delay={200} direction="right">
                             <h2
-                                className="font-bold text-[#0e1117] mb-8"
+                                className="font-bold text-[#121010] mb-8"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: "clamp(32px, 4.5vw, 56px)",
@@ -60,7 +60,7 @@ export const AboutUsStats = () => {
                         </FadeIn>
                         <FadeIn delay={300} direction="right">
                             <p
-                                className="text-[#4a5060] font-medium leading-relaxed mb-10"
+                                className="text-[#475569] font-medium leading-relaxed mb-10"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: "clamp(16px, 1.3vw, 20px)",
@@ -74,11 +74,11 @@ export const AboutUsStats = () => {
                             <div className="flex flex-wrap gap-4">
                                 <div className="px-6 py-4 bg-[#f8fafc] rounded-2xl border border-[#e2e8f0]">
                                     <p className="text-[#0A5191] font-bold text-2xl mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>99.9%</p>
-                                    <p className="text-[#64748B] text-sm font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>System Uptime</p>
+                                    <p className="text-[#475569] text-sm font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>System Uptime</p>
                                 </div>
                                 <div className="px-6 py-4 bg-[#f8fafc] rounded-2xl border border-[#e2e8f0]">
                                     <p className="text-[#0A5191] font-bold text-2xl mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>24/7</p>
-                                    <p className="text-[#64748B] text-sm font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>Support Available</p>
+                                    <p className="text-[#475569] text-sm font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>Support Available</p>
                                 </div>
                             </div>
                         </FadeIn>
@@ -95,15 +95,11 @@ export const AboutUsStats = () => {
                                             <div className="w-14 h-14 rounded-2xl bg-[#0A5191]/10 flex items-center justify-center mb-6 group-hover:bg-[#0A5191] transition-colors duration-500">
                                                 <Icon className="w-7 h-7 text-[#0A5191] group-hover:text-white transition-colors duration-500" />
                                             </div>
-                                            <div className="text-[#0e1117] font-bold text-3xl mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                            <div className="text-[#121010] font-bold text-3xl mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                                 <AnimatedCounter value={stat.value} duration={2000} />
                                             </div>
-                                            <p className="text-[#0A5191] font-bold text-sm uppercase tracking-wider mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                                {stat.label}
-                                            </p>
-                                            <p className="text-[#64748B] text-sm leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                                {stat.description}
-                                            </p>
+                                            <p className="text-[#121010] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>{stat.label}</p>
+                                            <p className="text-[#475569] text-sm font-medium leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>{stat.description}</p>
                                         </div>
                                     </FadeIn>
                                 );

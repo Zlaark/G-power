@@ -192,13 +192,13 @@ export const BessHero = () => {
                         {achievements.map((item, index) => (
                             <FadeIn key={index} delay={700 + index * 100} direction="up">
                                 <div className="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_15px_40px_rgba(10,81,145,0.04)] border border-white/50 hover:shadow-[0_25px_50px_rgba(10,81,145,0.08)] transition-all duration-500 hover:-translate-y-1 group">
-                                    <div className="text-[#0A5191] font-bold mb-2 flex items-baseline gap-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(32px, 4vw, 42px)" }}>
+                                    <div className="text-[#121010] font-bold mb-2 flex items-baseline gap-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(32px, 4vw, 42px)" }}>
                                         <AnimatedCounter value={`${item.value}${item.suffix}`} duration={2500} />
                                     </div>
-                                    <h3 className="text-[#0A5191] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    <h3 className="text-[#121010] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         {item.label}
                                     </h3>
-                                    <p className="text-[#0A5191]/70 text-sm leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    <p className="text-[#475569] text-sm leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         {item.description}
                                     </p>
                                 </div>

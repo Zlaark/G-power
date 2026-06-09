@@ -8,13 +8,13 @@ export const Testimonials = () => {
 
             <div className="mx-auto max-w-2xl lg:max-w-4xl">
                 <div className="text-center">
-                    <h2 className="text-sm font-bold tracking-widest text-blue-500 uppercase">Testimonials</h2>
+                    <h2 className="text-sm font-bold tracking-widest text-[#121010] dark:text-white uppercase">Testimonials</h2>
                 </div>
 
                 <figure className="mt-10 pt-10 border-t border-gray-200 dark:border-white/10">
                     <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 dark:text-white sm:text-2xl sm:leading-9">
                         <p>
-                            "Switching to this structured Next.js approach was arguably our best architectural decision this year. We shipped features 40% faster and onboarding new engineers became a breeze."
+                            &ldquo;Switching to this structured Next.js approach was arguably our best architectural decision this year. We shipped features 40% faster and onboarding new engineers became a breeze.&rdquo;
                         </p>
                     </blockquote>
 

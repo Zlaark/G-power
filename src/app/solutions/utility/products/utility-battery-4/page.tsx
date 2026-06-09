@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import { RegulatoryCompliance, ISOCertifications } from "@/sections/ComplianceAndStandards";
+import { LegalBreadcrumbs } from "@/components/LegalBreadcrumbs";
 
 export const metadata: Metadata = {
   title: "Utility Battery System 3 | Utility Products | GPower",
@@ -23,10 +24,13 @@ export default function UtilityBattery4ProductPage() {
       <Navbar />
       <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
         <div className="absolute inset-0 z-0 pointer-events-none select-none">
-          <Image src="/about-bess-facility.jpg" alt="Utility Battery System 3" fill priority className="object-cover brightness-75" />
+          <Image src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" alt="Utility Battery System 3" fill priority className="object-cover brightness-50" />
           <div className="absolute inset-0 bg-black/45" />
         </div>
         <div className="relative z-10 flex flex-col items-center text-center px-6">
+          <FadeIn delay={50} direction="up">
+            <LegalBreadcrumbs currentPage="Utility Battery System 3" />
+          </FadeIn>
           <FadeIn delay={100} direction="up">
             <div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm">
               <span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" />

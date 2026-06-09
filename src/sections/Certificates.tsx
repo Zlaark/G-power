@@ -34,7 +34,7 @@ export const Certificates = () => {
                         <h2 className="text-[#121010] font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif", fontSize: 'clamp(28px, 4vw, 42px)' }}>
                             Certified for Excellence
                         </h2>
-                        <p className="text-[#64748B] font-medium" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '16px' }}>
+                        <p className="text-[#475569] font-medium" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '16px' }}>
                             We adhere to the highest industry standards to ensure safety, reliability, and performance.
                         </p>
                     </div>
@@ -55,7 +55,7 @@ export const Certificates = () => {
                                     <p className="text-[#0A5191] font-bold text-xs uppercase tracking-wider mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         {cert.issuer}
                                     </p>
-                                    <p className="text-[#64748B] text-[15px] leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    <p className="text-[#475569] text-[15px] leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         {cert.desc}
                                     </p>
                                 </div>

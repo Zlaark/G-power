@@ -6,6 +6,7 @@ export const Footer = () => {
     const quickLinks = [
         { name: 'Home', path: '/' },
         { name: 'About Us', path: '/about' },
+        { name: 'Products', path: '/products' },
         { name: 'Partners', path: '/partners' },
         { name: 'Our Projects', path: '/our-projects' },
         { name: 'Careers', path: '/careers' },

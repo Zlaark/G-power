@@ -36,7 +36,7 @@ export const OurJourney = () => {
                 <FadeIn delay={100} direction="up">
                     <div className="text-center max-w-[700px] mx-auto mb-14 md:mb-16">
                         <h2
-                            className="font-bold text-[#0A5191] mb-4"
+                            className="font-bold text-[#121010] mb-4"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(24px, 3vw, 40px)',
@@ -46,7 +46,7 @@ export const OurJourney = () => {
                             Our Journey
                         </h2>
                         <p
-                            className="font-medium text-[#64748B]"
+                            className="font-medium text-[#475569]"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(16px, 1.3vw, 20px)',
@@ -86,7 +86,7 @@ export const OurJourney = () => {
                                     {/* Card - Fixed height for all cards */}
                                     <div className="bg-white rounded-[16px] border border-[#E5EBF2] p-5 md:p-6 shadow-[0_4px_14px_rgba(15,23,42,0.04)] group-hover:shadow-[0_10px_28px_rgba(10,81,145,0.08)] group-hover:border-[#0A5191]/20 transition-all duration-500 w-full h-[200px] md:h-[220px] flex flex-col items-center justify-center text-center">
                                         <h4 
-                                            className="font-bold text-[#0A5191] mb-3 group-hover:text-[#0A5191]"
+                                            className="font-bold text-[#121010] mb-3 group-hover:text-[#0A5191]"
                                             style={{
                                                 fontFamily: "'Poppins', sans-serif",
                                                 fontSize: '16px',
