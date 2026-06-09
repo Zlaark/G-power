@@ -7,17 +7,17 @@ export const PrivacyPolicyContent = () => {
                 <FadeIn delay={100} direction="up">
                     <div className="space-y-8 md:space-y-12">
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Introduction</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Introduction</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                GPower ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                                GPower (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Information We Collect</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Information We Collect</h2>
                             <div className="space-y-6">
                                 <div>
-                                    <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Personal Information</h3>
+                                    <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Personal Information</h3>
                                     <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         We may collect personal information that you voluntarily provide to us when you:
                                     </p>
@@ -30,7 +30,7 @@ export const PrivacyPolicyContent = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Automatically Collected Information</h3>
+                                    <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Automatically Collected Information</h3>
                                     <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         When you visit our website, we may automatically collect:
                                     </p>
@@ -45,7 +45,7 @@ export const PrivacyPolicyContent = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>How We Use Your Information</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>How We Use Your Information</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 We use the information we collect to:
                             </p>
@@ -60,7 +60,7 @@ export const PrivacyPolicyContent = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Information Sharing and Disclosure</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Information Sharing and Disclosure</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 We do not sell your personal information. We may share your information with:
                             </p>
@@ -73,14 +73,14 @@ export const PrivacyPolicyContent = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Data Security</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Data Security</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 We implement appropriate technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet is 100% secure.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Your Rights</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Your Rights</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 You have the right to:
                             </p>
@@ -94,29 +94,28 @@ export const PrivacyPolicyContent = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Cookies</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Cookies</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 We use cookies and similar tracking technologies to enhance your browsing experience. You can control cookie settings through your browser preferences.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Changes to This Policy</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Changes to This Policy</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
+                                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;last updated&quot; date.
                             </p>
                         </section>
 
-                        <section className="pt-8 border-t border-gray-200">
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>Contact Us</h2>
+                        <section>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>Contact Us</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                If you have questions about this Privacy Policy, please contact us at:
+                                If you have any questions about this Privacy Policy, please contact us at:
                             </p>
-                            <div className="mt-4 space-y-2 text-base md:text-lg text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                <p><strong>Email:</strong> <a href="mailto:privacy@gpower.com" className="text-[#121010] hover:underline">privacy@gpower.com</a></p>
-                                <p><strong>Phone:</strong> <a href="tel:+492118765420" className="text-[#121010] hover:underline">+49 211 8765 420</a></p>
-                                <p><strong>Address:</strong> Green Energy Tower, Königsallee 92, 40212 Düsseldorf, Germany</p>
-                            </div>
+                            <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A] mt-2 font-medium" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                Email: privacy@gpower.com<br />
+                                Address: Mumbai, India
+                            </p>
                         </section>
                     </div>
                 </FadeIn>
