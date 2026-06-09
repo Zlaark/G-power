@@ -130,7 +130,7 @@ export const BessHero = () => {
                                 }}
                             >
                                 We Provide Reliable{" "}
-                                <span className="text-[#0A5191]">BESS Solutions</span>{" "}
+                                <span className="text-[#0A5191]">BESS Sustainability</span>{" "}
                                 for Your Business.
                             </h2>
                         </FadeIn>
@@ -138,14 +138,14 @@ export const BessHero = () => {
                         {/* Sub-text */}
                         <FadeIn delay={400} direction="right">
                             <p
-                                className="text-[#3a3f47] font-medium leading-relaxed"
+                                className="text-[#0A5191]/80 font-medium leading-relaxed max-w-[540px]"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
-                                    fontSize: "clamp(13px, 1.4vw, 17px)",
-                                    lineHeight: "1.6",
+                                    fontSize: 'clamp(15px, 1.2vw, 18px)',
+                                    lineHeight: '1.7',
                                 }}
                             >
-                                Power You Can Count On. Every Single Day.
+                                Experience high-performance, containerized battery energy storage systems (BESS) designed to stabilize the grid and maximize renewable integration.
                             </p>
                         </FadeIn>
 
@@ -177,7 +177,7 @@ export const BessHero = () => {
                             <div className="bess-float-img relative w-full lg:w-[620px] rounded-[20px] overflow-hidden shadow-[0_20px_60px_rgba(10,81,145,0.2)]">
                                 <img
                                     src="/We Provide Reliable BESS Solutions for Your Business (Home Page).webp"
-                                    alt="Battery Energy Storage System facility"
+                                    alt="Reliable BESS Sustainability"
                                     className="w-full h-auto object-cover"
                                     style={{ aspectRatio: '4 / 3' }}
                                 />
@@ -195,10 +195,10 @@ export const BessHero = () => {
                                     <div className="text-[#0A5191] font-bold mb-2 flex items-baseline gap-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(32px, 4vw, 42px)" }}>
                                         <AnimatedCounter value={`${item.value}${item.suffix}`} duration={2500} />
                                     </div>
-                                    <h3 className="text-[#0e1117] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    <h3 className="text-[#0A5191] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         {item.label}
                                     </h3>
-                                    <p className="text-[#64748B] text-xs leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                    <p className="text-[#0A5191]/70 text-sm leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                         {item.description}
                                     </p>
                                 </div>

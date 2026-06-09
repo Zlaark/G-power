@@ -2,11 +2,31 @@ import { FadeIn } from '@/components/FadeIn';
 
 export const OurJourney = () => {
     const milestones = [
-        { year: "2019", text: "Formation of a dedicated design team for EV battery pack development." },
-        { year: "2021", text: "Obtained ARAI certification for 2-wheeler and 3-wheeler EV battery packs." },
-        { year: "2023", text: "Initiated feasibility and market assessment for Energy Storage Systems." },
-        { year: "2024", text: "Commissioned a fully automated 500 MWh EV & ESS assembly line and launched telecom ESS solutions." },
-        { year: "2025", text: "Delivered the first grid-connected 5 MWh BESS project and secured a 100 MWh BESS order." },
+        { 
+            year: "2019", 
+            title: "Team Formation",
+            text: "Formation of a dedicated design team for EV battery pack development." 
+        },
+        { 
+            year: "2021", 
+            title: "ARAI Certification",
+            text: "Obtained ARAI certification for 2-wheeler and 3-wheeler EV battery packs." 
+        },
+        { 
+            year: "2023", 
+            title: "Market Assessment",
+            text: "Initiated feasibility and market assessment for Energy Storage Systems." 
+        },
+        { 
+            year: "2024", 
+            title: "Factory Launch",
+            text: "Commissioned a fully automated 500 MWh EV & ESS assembly line and launched telecom ESS solutions." 
+        },
+        { 
+            year: "2025", 
+            title: "Grid Integration",
+            text: "Delivered the first grid-connected 5 MWh BESS project and secured a 100 MWh BESS order." 
+        },
     ];
 
     return (
@@ -16,7 +36,7 @@ export const OurJourney = () => {
                 <FadeIn delay={100} direction="up">
                     <div className="text-center max-w-[700px] mx-auto mb-14 md:mb-16">
                         <h2
-                            className="font-bold text-[#0F172A] mb-4"
+                            className="font-bold text-[#0A5191] mb-4"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
                                 fontSize: 'clamp(24px, 3vw, 40px)',
@@ -54,7 +74,7 @@ export const OurJourney = () => {
 
                                     {/* Year badge */}
                                     <span
-                                        className="inline-block font-bold text-[#0A5191] mb-3 tracking-tight"
+                                        className="inline-block font-bold text-[#0A5191] mb-1 tracking-tight"
                                         style={{
                                             fontFamily: "'Poppins', sans-serif",
                                             fontSize: 'clamp(22px, 2vw, 28px)',
@@ -64,9 +84,18 @@ export const OurJourney = () => {
                                     </span>
 
                                     {/* Card - Fixed height for all cards */}
-                                    <div className="bg-white rounded-[16px] border border-[#E5EBF2] p-5 md:p-6 shadow-[0_4px_14px_rgba(15,23,42,0.04)] group-hover:shadow-[0_10px_28px_rgba(10,81,145,0.08)] group-hover:border-[#0A5191]/20 transition-all duration-500 w-full h-[180px] md:h-[200px] flex items-center justify-center">
+                                    <div className="bg-white rounded-[16px] border border-[#E5EBF2] p-5 md:p-6 shadow-[0_4px_14px_rgba(15,23,42,0.04)] group-hover:shadow-[0_10px_28px_rgba(10,81,145,0.08)] group-hover:border-[#0A5191]/20 transition-all duration-500 w-full h-[200px] md:h-[220px] flex flex-col items-center justify-center text-center">
+                                        <h4 
+                                            className="font-bold text-[#0A5191] mb-3 group-hover:text-[#0A5191]"
+                                            style={{
+                                                fontFamily: "'Poppins', sans-serif",
+                                                fontSize: '16px',
+                                            }}
+                                        >
+                                            {m.title}
+                                        </h4>
                                         <p
-                                            className="font-medium text-[#475569] text-center group-hover:text-[#0F172A] transition-colors duration-300"
+                                            className="font-medium text-[#475569] group-hover:text-[#0A5191]/80 transition-colors duration-300"
                                             style={{
                                                 fontFamily: "'Poppins', sans-serif",
                                                 fontSize: 'clamp(13px, 1vw, 15px)',

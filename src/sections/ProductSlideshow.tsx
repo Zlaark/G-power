@@ -143,7 +143,7 @@ export const ProductSlideshow = () => {
                             Our Products
                         </span>
                         <h2
-                            className="font-bold text-[#0e1117]"
+                            className="font-bold text-[#0A5191]"
                             style={{
                                 fontFamily: "'Poppins', sans-serif",
                                 fontSize: "clamp(24px, 3vw, 40px)",
@@ -156,9 +156,22 @@ export const ProductSlideshow = () => {
                 </FadeIn>
 
                 {/* Main slideshow area */}
-                <div className="flex flex-col lg:flex-row items-center gap-[40px] md:gap-[60px] lg:gap-[80px]">
-                    {/* Left: Product info */}
-                    <div className="flex-1 flex flex-col items-start gap-[20px] md:gap-[30px] max-w-[600px] w-full">
+                <div className="flex flex-col items-center gap-12">
+                    {/* Product Image */}
+                    <div className="relative w-full max-w-[600px] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(10,81,145,0.15)] border border-[#E5EBF2]">
+                        <img
+                            key={activeIndex}
+                            src={product.image}
+                            alt={product.name}
+                            className={`w-full h-auto object-cover transition-opacity duration-500 ${
+                                isTransitioning ? "opacity-0" : "opacity-100"
+                            }`}
+                            style={{ aspectRatio: "4 / 3" }}
+                        />
+                    </div>
+
+                    {/* Product info */}
+                    <div className="w-full max-w-[800px] flex flex-col items-center text-center gap-[20px] md:gap-[30px]">
                         <div
                             key={activeIndex}
                             className={isTransitioning ? "ps-fade-out" : "ps-animate-in"}
@@ -167,7 +180,7 @@ export const ProductSlideshow = () => {
                             <div className="flex items-center gap-3 mb-3">
                                 <div className="w-[4px] h-[36px] rounded-full bg-[#0A5191]" />
                                 <h3
-                                    className="font-bold text-[#0e1117]"
+                                    className="font-bold text-[#0A5191]"
                                     style={{
                                         fontFamily: "'Poppins', sans-serif",
                                         fontSize: "clamp(24px, 2.8vw, 38px)",
@@ -180,7 +193,7 @@ export const ProductSlideshow = () => {
 
                             {/* Tagline */}
                             <p
-                                className="text-[#0A5191] font-semibold mb-4"
+                                className="text-[#0A5191]"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: "clamp(14px, 1.3vw, 18px)",
@@ -191,7 +204,7 @@ export const ProductSlideshow = () => {
 
                             {/* Description - Simplified */}
                             <p
-                                className="text-[#4a5060] font-medium leading-relaxed mb-8"
+                                className="text-[#0A5191]/80 font-medium leading-relaxed mb-8"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: "clamp(13px, 1.1vw, 15px)",
@@ -211,8 +224,8 @@ export const ProductSlideshow = () => {
                                                 <Icon className="w-5 h-5 text-[#0A5191]" />
                                             </div>
                                             <div>
-                                                <p className="text-[11px] font-bold text-[#94a3b8] uppercase tracking-wider leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>{spec.label}</p>
-                                                <p className="text-sm font-bold text-[#1e293b] leading-none" style={{ fontFamily: "'Poppins', sans-serif" }}>{spec.value}</p>
+                                                <p className="text-[11px] font-bold text-[#0A5191]/60 uppercase tracking-wider leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>{spec.label}</p>
+                                                <p className="text-sm font-bold text-[#0A5191] leading-none" style={{ fontFamily: "'Poppins', sans-serif" }}>{spec.value}</p>
                                             </div>
                                         </div>
                                     );
@@ -273,26 +286,7 @@ export const ProductSlideshow = () => {
                         </div>
                     </div>
 
-                    {/* Right: Product image */}
-                    <div className="flex-1 relative w-full max-w-[620px] flex items-center justify-center lg:justify-end">
-                        <div className="ps-img-float relative w-full lg:w-[520px] bg-white">
-                            <div className="relative rounded-[32px] overflow-hidden shadow-[0_30px_70px_rgba(10,81,145,0.18)] border border-white/50">
-                                <img
-                                    key={activeIndex}
-                                    src={product.image}
-                                    alt={product.name}
-                                    className={`w-full h-auto object-cover transition-opacity duration-500 ${
-                                        isTransitioning ? "opacity-0" : "opacity-100 ps-animate-in"
-                                    }`}
-                                    style={{ aspectRatio: "4 / 3" }}
-                                />
-                            </div>
 
-                            {/* Decorative corner accents */}
-                            <div className="absolute -bottom-[12px] -right-[12px] w-[80px] h-[80px] border-b-[4px] border-r-[4px] border-[#0A5191]/20 rounded-br-[24px] hidden lg:block" />
-                            <div className="absolute -top-[12px] -left-[12px] w-[80px] h-[80px] border-t-[4px] border-l-[4px] border-[#0A5191]/20 rounded-tl-[24px] hidden lg:block" />
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

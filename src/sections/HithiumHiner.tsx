@@ -9,7 +9,7 @@ export const HithiumHiner = () => {
                 {/* Centered Top Title */}
                 <FadeIn delay={100} direction="up">
                     <h2
-                        className="text-center font-bold text-[#0F172A] mb-10 md:mb-14 lg:mb-16"
+                        className="text-center font-bold text-[#0A5191] mb-10 md:mb-14 lg:mb-16"
                         style={{
                             fontFamily: "'Poppins', sans-serif",
                             fontSize: 'clamp(24px, 3vw, 36px)',
@@ -22,13 +22,13 @@ export const HithiumHiner = () => {
 
                 {/* Unified Premium Card */}
                 <FadeIn delay={200} direction="up" className="max-w-[1200px] mx-auto">
-                    <div className="rounded-[24px] overflow-hidden border border-[#E5EBF2] shadow-[0_20px_40px_rgba(15,23,42,0.06)] flex flex-col md:flex-row items-stretch bg-white">
+                    <div className="rounded-[24px] overflow-hidden border border-[#E5EBF2] shadow-[0_20px_40px_rgba(10,81,145,0.06)] flex flex-col md:flex-row items-stretch bg-white">
                         
-                        {/* Left Side: High Contrast Dark Panel */}
-                        <div className="md:w-[45%] bg-[#0F172A] p-8 md:p-12 lg:p-16 flex items-center justify-center relative overflow-hidden group">
+                        {/* Left Side: High Contrast Panel */}
+                        <div className="md:w-[45%] bg-[#0A5191] p-8 md:p-12 lg:p-16 flex items-center justify-center relative overflow-hidden group">
                             {/* Subtle background glow */}
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#0A5191] rounded-full blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700" />
-                            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#0A5191] rounded-full blur-[100px] opacity-10 group-hover:opacity-30 transition-opacity duration-700" />
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700" />
+                            <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-[100px] opacity-10 group-hover:opacity-30 transition-opacity duration-700" />
                             
                             <h3
                                 className="font-semibold text-white relative z-10 leading-[1.35]"
@@ -38,7 +38,7 @@ export const HithiumHiner = () => {
                                 }}
                             >
                                 At G-Power, engineering innovation drives every solution we deliver.
-                                <div className="mt-8 w-12 h-1.5 bg-[#0A5191] rounded-full" />
+                                <div className="mt-8 w-12 h-1.5 bg-white/30 rounded-full" />
                             </h3>
                         </div>
 
@@ -51,7 +51,7 @@ export const HithiumHiner = () => {
                                 lineHeight: '1.6',
                             }}
                         >
-                            <h4 className="mb-8 text-[#0F172A] text-xl lg:text-2xl font-semibold tracking-tight">Our core capabilities:</h4>
+                            <h4 className="mb-8 text-[#0A5191] text-xl lg:text-2xl font-semibold tracking-tight">Our core capabilities:</h4>
                             <ul className="space-y-5">
                                 {[
                                     "State-of-the-art lithium battery assembly facility in India",
@@ -63,7 +63,7 @@ export const HithiumHiner = () => {
                                     <li key={i} className="flex items-start gap-5 group cursor-default">
                                         <div className="mt-[6px] flex items-center justify-center w-[24px] h-[24px] rounded-full bg-[#F1F5F9] border border-[#E2E8F0] group-hover:bg-[#0A5191] group-hover:border-[#0A5191] transition-colors duration-300 flex-shrink-0">
                                             <svg width="10" height="10" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#0A5191] group-hover:text-white transition-colors duration-300">
-                                                <path d="M1 7L4.5 10.5L13 1.5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M1 7L4.5 10.5L13 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                             </svg>
                                         </div>
                                         <span className="transition-colors duration-300 group-hover:text-[#0F172A] pt-0.5">{item}</span>

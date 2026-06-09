@@ -38,9 +38,9 @@ export const GlobalPresenceMap = () => {
                 <div className="relative w-full h-[120%] scale-110 lg:scale-[1.15] origin-right">
                     <Image
                         src="/Map.webp"
-                        alt="Our Presence Map"
+                        alt="Global Presence Map"
                         fill
-                        className="object-contain object-right"
+                        className="object-contain opacity-60 brightness-105"
                     />
                 </div>
             </div>

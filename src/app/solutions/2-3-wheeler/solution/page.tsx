@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "2 & 3 Wheeler Applications | GPower",
+  title: "2 & 3 Wheeler Sustainability | GPower",
   description:
     "Advanced energy storage and power solutions for 2 and 3 wheeler electric vehicles, built for durability and range.",
 };
@@ -131,7 +131,7 @@ export default function TwoThreeWheelerSolutionsPage() {
               className="text-white/85 font-normal tracking-[0.16em] uppercase mb-5 drop-shadow-md"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
             >
-              2 & 3 Wheeler Energy Storage
+              2 & 3 Wheeler Sustainability
             </p>
           </FadeIn>
           <FadeIn delay={400} direction="up" duration={900}>
@@ -196,7 +196,7 @@ export default function TwoThreeWheelerSolutionsPage() {
                   className="text-[#475569] font-normal leading-[1.75] mb-[24px]"
                   style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.35vw, 16px)" }}
                 >
-                  Whether it's a personal e-scooter or a commercial e-rickshaw fleet, our power packs guarantee consistent performance, drastically reduced downtime, and maximum safety on the road.
+                  Whether it&apos;s a personal e-scooter or a commercial e-rickshaw fleet, our power packs guarantee consistent performance, drastically reduced downtime, and maximum safety on the road.
                 </p>
 
                 <div className="space-y-[16px] sm:space-y-[22px]">
@@ -427,12 +427,12 @@ export default function TwoThreeWheelerSolutionsPage() {
             >
               Contact Us
             </Link>
-            <a
-              href="tel:+911234567890"
+            <a 
+              href="tel:+919894277915"
               className="inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-medium transition-all duration-500 ease-in-out hover:bg-white/10 hover:border-white md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-lg"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
-              Call: +91 123 456 7890
+              Call: +91 9894277915
             </a>
           </FadeIn>
         </div>

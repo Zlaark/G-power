@@ -64,7 +64,7 @@ export const TurnkeyEnergySolutions = () => {
                                 lineHeight: "1.15",
                             }}
                         >
-                            Turnkey <span className="text-[#0A5191]">Energy Solutions</span>
+                            Turnkey <span className="text-[#0A5191]">Energy Sustainability</span>
                         </h2>
                     </FadeIn>
                     <FadeIn delay={200} direction="up">

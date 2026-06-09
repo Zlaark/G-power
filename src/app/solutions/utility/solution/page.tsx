@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Utility Solutions | GPower",
+  title: "Utility Sustainability | GPower",
   description:
     "Utility-scale energy storage systems for renewable integration, stability, and utility-grade performance.",
 };
@@ -131,7 +131,7 @@ export default function UtilitySolutionsPage() {
               className="text-white/85 font-normal tracking-[0.16em] uppercase mb-5 drop-shadow-md"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
             >
-              Utility Solutions
+              Utility Sustainability
             </p>
           </FadeIn>
           <FadeIn delay={400} direction="up" duration={900}>
@@ -427,12 +427,12 @@ export default function UtilitySolutionsPage() {
             >
               Contact Us
             </Link>
-            <a
-              href="tel:+911234567890"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[14px] border border-white/35 text-white font-medium transition-all duration-500 ease-in-out hover:bg-white/10 hover:border-white md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-lg"
+            <a 
+              href="tel:+919894277915"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-[28px] py-[13px] rounded-[8px] border border-white/35 text-white font-medium transition-all duration-500 ease-in-out hover:bg-white/10 hover:border-white md:hover:scale-105 md:hover:-translate-y-1 hover:shadow-lg"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "14px" }}
             >
-              Call: +91 123 456 7890
+              Call: +91 9894277915
             </a>
           </FadeIn>
         </div>

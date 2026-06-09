@@ -71,7 +71,7 @@ export const EnergyManagement = () => {
                                     lineHeight: '1.1',
                                 }}
                             >
-                                End-to-End <span className="text-[#0A5191]">Energy Storage</span> Solutions
+                                End-to-End <span className="text-[#0A5191]">Energy Storage</span> Sustainability
                             </h2>
                             <p
                                 className="text-[#64748B] mb-12 max-w-[500px]"
@@ -91,7 +91,7 @@ export const EnergyManagement = () => {
                                         <div className="w-14 h-14 rounded-[16px] bg-[#0A5191] flex items-center justify-center mb-8 shadow-lg shadow-[#0A5191]/20">
                                             {(() => {
                                                 const Icon = services[0].icon;
-                                                return <Icon className="text-white w-7 h-7" />;
+                                                return <Icon className="text-white w-7 h-7" strokeWidth={1.5} />;
                                             })()}
                                         </div>
                                         <h3 className="text-[#0F172A] font-bold text-2xl mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -118,7 +118,7 @@ export const EnergyManagement = () => {
                                     <div className="w-12 h-12 rounded-[14px] bg-[#F1F5F9] border border-[#E2E8F0] flex items-center justify-center mb-6 group-hover:bg-[#0A5191]/10 group-hover:border-[#0A5191]/20 transition-all duration-400">
                                         {(() => {
                                             const Icon = service.icon;
-                                            return <Icon className="w-6 h-6 text-[#64748B] group-hover:text-[#0A5191] transition-colors" />;
+                                            return <Icon className="w-6 h-6 text-[#64748B] group-hover:text-[#0A5191] transition-colors" strokeWidth={1.5} />;
                                         })()}
                                     </div>
                                     <h4
@@ -139,11 +139,6 @@ export const EnergyManagement = () => {
                                     >
                                         {service.desc}
                                     </p>
-                                    <div className="mt-8 pt-6 border-t border-transparent group-hover:border-[#F1F5F9] transition-all">
-                                        <div className="w-8 h-8 rounded-full border border-[#E2E8F0] flex items-center justify-center opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-500">
-                                            <ArrowUpRight className="w-4 h-4 text-[#0A5191]" />
-                                        </div>
-                                    </div>
                                 </div>
                             </FadeIn>
                         ))}

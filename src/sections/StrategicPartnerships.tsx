@@ -18,17 +18,17 @@ export function StrategicPartnerships() {
     {
       title: "Technology Partners",
       desc: "Leading solar panel and battery storage manufacturers providing cutting-edge technology",
-      icon: <Handshake className="w-10 h-10 text-[#0A5191]" strokeWidth={2.5} />,
+      icon: <Handshake className="w-10 h-10 text-[#0A5191]" strokeWidth={1.5} />,
     },
     {
       title: "Service Partners",
       desc: "Certified installation and maintenance partners ensuring quality service delivery",
-      icon: <Award className="w-10 h-10 text-[#0A5191]" strokeWidth={2.5} />,
+      icon: <Award className="w-10 h-10 text-[#0A5191]" strokeWidth={1.5} />,
     },
     {
       title: "Global Alliances",
       desc: "International partnerships bringing world-class expertise to India",
-      icon: <Globe className="w-10 h-10 text-[#0A5191]" strokeWidth={2.5} />,
+      icon: <Globe className="w-10 h-10 text-[#0A5191]" strokeWidth={1.5} />,
     },
   ];
 

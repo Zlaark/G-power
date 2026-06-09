@@ -95,7 +95,7 @@ export const Navbar = () => {
 
                         <div className="relative group">
                             <div className="nav-link nav-dropdown text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors whitespace-nowrap cursor-pointer" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                Solutions
+                                Sustainability
                             </div>
                             <div className="absolute left-0 top-full mt-3 w-[300px] rounded-[10px] bg-white/10 backdrop-blur-xl border border-white/25 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
                                 <Link href="/solutions/utility/solution" className="block px-4 py-2 text-[15px] text-white/90 hover:bg-white/15 hover:text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
@@ -209,14 +209,14 @@ export const Navbar = () => {
                                 About Us
                             </Link>
 
-                            {/* Solutions Accordion */}
+                            {/* Sustainability Accordion */}
                             <div className="border-b border-white/5">
                                 <button 
                                     onClick={() => toggleAccordion('solutions')} 
                                     className="w-full flex items-center justify-between py-3 text-white text-lg font-medium hover:text-[#0A5191] transition-colors"
                                     style={{ fontFamily: "'Poppins', sans-serif" }}
                                 >
-                                    <span>Solutions</span>
+                                    <span>Sustainability</span>
                                     <svg className={`h-5 w-5 text-white/50 chevron ${openAccordion === 'solutions' ? 'open' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                     </svg>

@@ -83,9 +83,6 @@ export function WhyWorkAtGPower() {
                             return <Icon className="w-5 h-5 lg:w-6 lg:h-6 text-[#64748B] group-hover:text-[#0A5191] transition-colors" />;
                         })()}
                     </div>
-                    <div className="w-8 h-8 rounded-full border border-[#E2E8F0] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-                      <ArrowUpRight className="w-4 h-4 text-[#0A5191]" />
-                    </div>
                   </div>
                   
                   <h4

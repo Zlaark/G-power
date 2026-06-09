@@ -18,9 +18,9 @@ export const Footer = () => {
         { name: 'Disclaimer', path: '/disclaimer' },
     ];
 
-    const solutionLinks = [
-        { name: 'Utility Solutions', path: '/solutions/utility' },
-        { name: 'Residential Solutions', path: '/solutions/residential' },
+    const sustainabilityLinks = [
+        { name: 'Utility Sustainability', path: '/solutions/utility' },
+        { name: 'Residential Sustainability', path: '/solutions/residential' },
         { name: 'Commercial & Industrial', path: '/solutions/commercial-industrial' },
         { name: '2 & 3 Wheeler', path: '/solutions/2-3-wheeler' },
         { name: 'New Application', path: '/solutions/new-application-business' },
