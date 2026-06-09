@@ -42,7 +42,7 @@ export const Button = ({
       {variant !== 'ghost' && (
         <div 
           className={`absolute inset-0 w-full h-full transition-transform duration-500 ease-out -translate-x-full group-hover:translate-x-0 z-0
-            ${variant === 'primary' ? 'bg-[#38BDF8]/20' : 
+            ${variant === 'primary' ? 'bg-white/10' : 
               variant === 'secondary' ? 'bg-[#0A5191]/5' : 
               variant === 'outline' ? 'bg-[#0A5191]' : 'bg-white/10'}`}
         />

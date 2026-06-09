@@ -80,7 +80,7 @@ body {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #4a90e2;
+  background-color: #0A5191;
   z-index: -1;
   transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }

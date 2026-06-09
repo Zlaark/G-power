@@ -189,7 +189,7 @@ export const Navbar = () => {
                         </Link>
                         <button
                             onClick={closeMenu}
-                            className="text-white hover:text-[#4CA5FF] transition-all p-2 bg-white/10 rounded-full border border-white/10"
+                            className="text-white hover:text-[#0A5191] transition-all p-2 bg-white/10 rounded-full border border-white/10"
                         >
                             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -202,10 +202,10 @@ export const Navbar = () => {
                         <div className="flex flex-col gap-1 mt-4">
                             
                             {/* Standard Links */}
-                            <Link href="/" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <Link href="/" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#0A5191] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Home
                             </Link>
-                            <Link href="/about" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <Link href="/about" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#0A5191] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 About Us
                             </Link>
 
@@ -213,7 +213,7 @@ export const Navbar = () => {
                             <div className="border-b border-white/5">
                                 <button 
                                     onClick={() => toggleAccordion('solutions')} 
-                                    className="w-full flex items-center justify-between py-3 text-white text-lg font-medium hover:text-[#4CA5FF] transition-colors"
+                                    className="w-full flex items-center justify-between py-3 text-white text-lg font-medium hover:text-[#0A5191] transition-colors"
                                     style={{ fontFamily: "'Poppins', sans-serif" }}
                                 >
                                     <span>Solutions</span>
@@ -236,7 +236,7 @@ export const Navbar = () => {
                             <div className="border-b border-white/5">
                                 <button 
                                     onClick={() => toggleAccordion('products')} 
-                                    className="w-full flex items-center justify-between py-3 text-white text-lg font-medium hover:text-[#4CA5FF] transition-colors"
+                                    className="w-full flex items-center justify-between py-3 text-white text-lg font-medium hover:text-[#0A5191] transition-colors"
                                     style={{ fontFamily: "'Poppins', sans-serif" }}
                                 >
                                     <span>Products</span>
@@ -255,13 +255,13 @@ export const Navbar = () => {
                                 </div>
                             </div>
 
-                            <Link href="/partners" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <Link href="/partners" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#0A5191] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Partners
                             </Link>
-                            <Link href="/our-projects" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <Link href="/our-projects" onClick={closeMenu} className="block py-3 text-white text-lg font-medium border-b border-white/5 hover:text-[#0A5191] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Our Projects
                             </Link>
-                            <Link href="/careers" onClick={closeMenu} className="block py-3 text-white text-lg font-medium hover:text-[#4CA5FF] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                            <Link href="/careers" onClick={closeMenu} className="block py-3 text-white text-lg font-medium hover:text-[#0A5191] hover:pl-2 transition-all" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Careers
                             </Link>
 
