@@ -86,14 +86,26 @@ export const Footer = () => {
                             
                             {/* Delicate Centered Socials */}
                             <div className="flex gap-3 items-center">
-                                <Link href="#" className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-white hover:text-black hover:scale-110 transition-all duration-500 hover:border-white">
+                                <Link href="#" className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-white hover:text-[#0A5191] hover:scale-110 transition-all duration-500 hover:border-white">
                                     <svg width="16" height="16" viewBox="0 0 27 27" fill="currentColor">
                                         <path d="M6.04 3.02C6.04 4.69 4.69 6.04 3.02 6.04C1.35 6.04 0 4.69 0 3.02C0 1.35 1.35 0 3.02 0C4.69 0 6.04 1.35 6.04 3.02ZM6.04 8.39H0V27H6.04V8.39ZM14.56 8.39H8.55V27H14.56V17.25C14.56 11.78 21.59 11.3 21.59 17.25V27H27.62V15.16C27.62 5.89 17.01 6.24 14.56 10.82V8.39Z" />
                                     </svg>
                                 </Link>
-                                <Link href="#" className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-white hover:text-black hover:scale-110 transition-all duration-500 hover:border-white">
+                                <Link href="#" className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-white hover:text-[#0A5191] hover:scale-110 transition-all duration-500 hover:border-white">
                                     <svg width="18" height="13" viewBox="0 0 31 21" fill="currentColor">
                                         <path d="M30.35 3.29C30 1.93 28.93 0.86 27.57 0.51C25.15 0 15.5 0 15.5 0C15.5 0 5.85 0 3.43 0.51C2.07 0.86 1 1.93 0.65 3.29C0.14 5.71 0.14 10.5 0.14 10.5C0.14 10.5 0.14 15.29 0.65 17.71C1 19.07 2.07 20.14 3.43 20.49C5.85 21 15.5 21 15.5 21C15.5 21 25.15 21 27.57 20.49C28.93 20.14 30 19.07 30.35 17.71C30.86 15.29 30.86 10.5 30.86 10.5C30.86 10.5 30.86 5.71 30.35 3.29ZM12.36 15V6L20.43 10.5L12.36 15Z" />
+                                    </svg>
+                                </Link>
+                                <Link href="#" className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-white hover:text-[#0A5191] hover:scale-110 transition-all duration-500 hover:border-white">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </Link>
+                                <Link href="#" className="w-11 h-11 rounded-full border border-white/10 flex items-center justify-center text-white/50 hover:bg-white hover:text-[#0A5191] hover:scale-110 transition-all duration-500 hover:border-white">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
                                     </svg>
                                 </Link>
                             </div>

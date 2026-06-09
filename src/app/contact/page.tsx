@@ -24,7 +24,6 @@ export default function ContactPage() {
             <ContactHero />
             <ContactForm />
             <ServiceCenters />
-            <GlobalPresenceMap />
             <Footer />
         </main>
     );

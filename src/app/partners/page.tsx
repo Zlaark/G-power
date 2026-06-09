@@ -1,7 +1,9 @@
 import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { PartnersHero } from "@/sections/PartnersHero";
+import { PartnerLogos } from "@/sections/PartnerLogos";
 import { PartnerAdvantages } from "@/sections/PartnerAdvantages";
+import { Certificates } from "@/sections/Certificates";
 import { PartnerCollaborationFlow } from "@/sections/PartnerCollaborationFlow";
 import { BecomePartner } from "@/sections/BecomePartner";
 import { Metadata } from "next";
@@ -16,7 +18,9 @@ export default function PartnersPage() {
     <main className="min-h-screen">
       <Navbar />
       <PartnersHero />
+      <PartnerLogos />
       <PartnerAdvantages />
+      <Certificates />
       <PartnerCollaborationFlow />
       <BecomePartner />
       <Footer />

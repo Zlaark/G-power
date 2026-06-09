@@ -116,9 +116,6 @@ export function PartnerAdvantages() {
                         <div className="w-12 h-12 rounded-[16px] bg-[#0A5191] text-white flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
                           <Icon size={22} />
                         </div>
-                        <div className="w-10 h-10 rounded-full border border-[#CBD5E1] flex items-center justify-center text-[#121010] transition-all duration-500 group-hover:translate-x-1.5 group-hover:-translate-y-1 group-hover:border-[#0A5191]/35 group-hover:text-[#0A5191]">
-                          <ArrowUpRight size={18} />
-                        </div>
                       </div>
 
                       <h3
