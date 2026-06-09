@@ -1,35 +1,60 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { FadeIn } from "@/components/FadeIn";
+import { Zap, ShieldCheck, Clock, Settings } from "lucide-react";
 
 const products = [
     {
         name: "Full Load 5.0",
         tagline: "Industrial-Grade Energy Storage",
         description:
-            "High-capacity 5 kWh battery energy storage system designed for demanding commercial and industrial applications. Delivers consistent power with advanced thermal management and intelligent BMS.",
+            "High-capacity 5 kWh battery energy storage system designed for demanding commercial and industrial applications.",
         image: "/full-load-5.png",
+        specs: [
+            { icon: Zap, label: "Capacity", value: "5 kWh" },
+            { icon: ShieldCheck, label: "Efficiency", value: "98%" },
+            { icon: Clock, label: "Lifespan", value: "15+ Years" },
+            { icon: Settings, label: "BMS", value: "Intelligent" },
+        ],
     },
     {
         name: "Jumbo 0.25",
         tagline: "Compact. Powerful. Reliable.",
         description:
-            "A versatile 0.25 kWh lithium battery module built for modular deployments. Ideal for small-scale energy storage, telecom towers, and distributed power applications.",
+            "A versatile 0.25 kWh lithium battery module built for modular deployments and small-scale energy storage.",
         image: "/jumbo-025.png",
+        specs: [
+            { icon: Zap, label: "Capacity", value: "0.25 kWh" },
+            { icon: ShieldCheck, label: "Efficiency", value: "96%" },
+            { icon: Clock, label: "Lifespan", value: "10+ Years" },
+            { icon: Settings, label: "Design", value: "Modular" },
+        ],
     },
     {
         name: "PowerPod",
         tagline: "Home Energy, Reimagined",
         description:
-            "Smart residential energy storage system that pairs seamlessly with your home energy setup. Intelligent inverter integration, real-time monitoring, and whisper-quiet operation.",
+            "Smart residential energy storage system that pairs seamlessly with your home energy setup.",
         image: "/powerpod.png",
+        specs: [
+            { icon: Zap, label: "Capacity", value: "10 kWh" },
+            { icon: ShieldCheck, label: "Efficiency", value: "97%" },
+            { icon: Clock, label: "Lifespan", value: "12+ Years" },
+            { icon: Settings, label: "Integration", value: "Smart" },
+        ],
     },
     {
         name: "EVgo",
         tagline: "Powering the Future of Mobility",
         description:
-            "High-performance lithium battery packs engineered for electric vehicles. From 2-wheelers to commercial fleets — built for range, safety, and longevity.",
+            "High-performance lithium battery packs engineered for electric vehicles and commercial fleets.",
         image: "/evgo.png",
+        specs: [
+            { icon: Zap, label: "Range", value: "High" },
+            { icon: ShieldCheck, label: "Safety", value: "Certified" },
+            { icon: Clock, label: "Cycles", value: "6000+" },
+            { icon: Settings, label: "Application", value: "EVs" },
+        ],
     },
 ];
 
@@ -44,7 +69,7 @@ export const ProductSlideshow = () => {
             setTimeout(() => {
                 setActiveIndex(index);
                 setTimeout(() => setIsTransitioning(false), 50);
-            }, 300);
+            }, 400); // Slightly longer for smoother fade
         },
         [isTransitioning, activeIndex]
     );
@@ -59,7 +84,7 @@ export const ProductSlideshow = () => {
 
     // Auto-advance
     useEffect(() => {
-        const timer = setInterval(goNext, 5000);
+        const timer = setInterval(goNext, 6000);
         return () => clearInterval(timer);
     }, [goNext]);
 
@@ -70,24 +95,24 @@ export const ProductSlideshow = () => {
             <style
                 dangerouslySetInnerHTML={{
                     __html: `
-                @keyframes ps-slide-up {
-                    from { opacity: 0; transform: translateY(24px); }
+                @keyframes ps-fade-in {
+                    from { opacity: 0; transform: translateY(10px); }
                     to   { opacity: 1; transform: translateY(0); }
                 }
                 .ps-animate-in {
-                    animation: ps-slide-up 0.55s cubic-bezier(0.22,0.61,0.36,1) forwards;
+                    animation: ps-fade-in 0.6s cubic-bezier(0.22,0.61,0.36,1) forwards;
                 }
                 .ps-fade-out {
                     opacity: 0;
-                    transform: translateY(-12px);
-                    transition: opacity 0.3s ease, transform 0.3s ease;
+                    transform: translateY(-5px);
+                    transition: opacity 0.4s ease, transform 0.4s ease;
                 }
                 @keyframes ps-progress {
                     from { width: 0%; }
                     to   { width: 100%; }
                 }
                 .ps-progress-active {
-                    animation: ps-progress 5s linear forwards;
+                    animation: ps-progress 6s linear forwards;
                 }
                 .ps-img-float {
                     animation: bess-float 5s ease-in-out infinite;
@@ -125,23 +150,18 @@ export const ProductSlideshow = () => {
                                 lineHeight: "1.2",
                             }}
                         >
-                            Built to{" "}
-                            <span className="text-[#0A5191]">Perform</span>,
-                            Designed to{" "}
-                            <span className="text-[#0A5191]">Last</span>
+                            Built to <span className="text-[#0A5191]">Perform</span>, Designed to <span className="text-[#0A5191]">Last</span>
                         </h2>
                     </div>
                 </FadeIn>
 
                 {/* Main slideshow area */}
-                <div className="flex flex-col lg:flex-row items-center gap-[30px] md:gap-[50px] lg:gap-[70px]">
+                <div className="flex flex-col lg:flex-row items-center gap-[40px] md:gap-[60px] lg:gap-[80px]">
                     {/* Left: Product info */}
-                    <div className="flex-1 flex flex-col items-start gap-[18px] md:gap-[24px] max-w-[560px] w-full">
+                    <div className="flex-1 flex flex-col items-start gap-[20px] md:gap-[30px] max-w-[600px] w-full">
                         <div
                             key={activeIndex}
-                            className={
-                                isTransitioning ? "ps-fade-out" : "ps-animate-in"
-                            }
+                            className={isTransitioning ? "ps-fade-out" : "ps-animate-in"}
                         >
                             {/* Product name */}
                             <div className="flex items-center gap-3 mb-3">
@@ -160,7 +180,7 @@ export const ProductSlideshow = () => {
 
                             {/* Tagline */}
                             <p
-                                className="text-[#0A5191] font-semibold mb-2"
+                                className="text-[#0A5191] font-semibold mb-4"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: "clamp(14px, 1.3vw, 18px)",
@@ -169,21 +189,39 @@ export const ProductSlideshow = () => {
                                 {product.tagline}
                             </p>
 
-                            {/* Description */}
+                            {/* Description - Simplified */}
                             <p
-                                className="text-[#4a5060] font-medium leading-relaxed"
+                                className="text-[#4a5060] font-medium leading-relaxed mb-8"
                                 style={{
                                     fontFamily: "'Poppins', sans-serif",
                                     fontSize: "clamp(13px, 1.1vw, 15px)",
-                                    lineHeight: "1.7",
+                                    lineHeight: "1.6",
                                 }}
                             >
                                 {product.description}
                             </p>
+
+                            {/* Product Specs with Icons */}
+                            <div className="grid grid-cols-2 gap-4 mb-8">
+                                {product.specs.map((spec, i) => {
+                                    const Icon = spec.icon;
+                                    return (
+                                        <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-white border border-[#E5EBF2] shadow-sm">
+                                            <div className="w-10 h-10 rounded-lg bg-[#0A5191]/10 flex items-center justify-center">
+                                                <Icon className="w-5 h-5 text-[#0A5191]" />
+                                            </div>
+                                            <div>
+                                                <p className="text-[11px] font-bold text-[#94a3b8] uppercase tracking-wider leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif" }}>{spec.label}</p>
+                                                <p className="text-sm font-bold text-[#1e293b] leading-none" style={{ fontFamily: "'Poppins', sans-serif" }}>{spec.value}</p>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
                         </div>
 
                         {/* Progress dots / indicators */}
-                        <div className="flex items-center gap-3 mt-2">
+                        <div className="flex items-center gap-3">
                             {products.map((p, i) => (
                                 <button
                                     key={i}
@@ -217,44 +255,20 @@ export const ProductSlideshow = () => {
                         </div>
 
                         {/* Arrow nav */}
-                        <div className="flex items-center gap-3 mt-4">
+                        <div className="flex items-center gap-3 mt-2">
                             <button
                                 onClick={goPrev}
-                                className="w-[44px] h-[44px] rounded-full border border-[#d1d5db] flex items-center justify-center hover:bg-[#0A5191] hover:border-[#0A5191] hover:text-white text-[#334155] transition-all duration-300"
+                                className="w-[44px] h-[44px] rounded-full border border-[#d1d5db] flex items-center justify-center hover:bg-[#0A5191] hover:border-[#0A5191] hover:text-white text-[#334155] transition-all duration-300 shadow-sm"
                                 aria-label="Previous product"
                             >
-                                <svg
-                                    width="18"
-                                    height="18"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <path d="M19 12H5" />
-                                    <path d="m12 19-7-7 7-7" />
-                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5" /><path d="m12 19-7-7 7-7" /></svg>
                             </button>
                             <button
                                 onClick={goNext}
-                                className="w-[44px] h-[44px] rounded-full border border-[#d1d5db] flex items-center justify-center hover:bg-[#0A5191] hover:border-[#0A5191] hover:text-white text-[#334155] transition-all duration-300"
+                                className="w-[44px] h-[44px] rounded-full border border-[#d1d5db] flex items-center justify-center hover:bg-[#0A5191] hover:border-[#0A5191] hover:text-white text-[#334155] transition-all duration-300 shadow-sm"
                                 aria-label="Next product"
                             >
-                                <svg
-                                    width="18"
-                                    height="18"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <path d="M5 12h14" />
-                                    <path d="m12 5 7 7-7 7" />
-                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                             </button>
                         </div>
                     </div>
@@ -262,21 +276,21 @@ export const ProductSlideshow = () => {
                     {/* Right: Product image */}
                     <div className="flex-1 relative w-full max-w-[620px] flex items-center justify-center lg:justify-end">
                         <div className="ps-img-float relative w-full lg:w-[520px] bg-white">
-                            <div className="relative rounded-[24px] overflow-hidden shadow-[0_20px_60px_rgba(10,81,145,0.15)]">
+                            <div className="relative rounded-[32px] overflow-hidden shadow-[0_30px_70px_rgba(10,81,145,0.18)] border border-white/50">
                                 <img
                                     key={activeIndex}
                                     src={product.image}
                                     alt={product.name}
-                                    className={`w-full h-auto object-cover ${
-                                        isTransitioning ? "ps-fade-out" : "ps-animate-in"
+                                    className={`w-full h-auto object-cover transition-opacity duration-500 ${
+                                        isTransitioning ? "opacity-0" : "opacity-100 ps-animate-in"
                                     }`}
                                     style={{ aspectRatio: "4 / 3" }}
                                 />
                             </div>
 
-                            {/* Decorative corner accents (positioned relative to image container) */}
-                            <div className="absolute -bottom-[8px] -right-[8px] w-[60px] h-[60px] border-b-[3px] border-r-[3px] border-[#0A5191]/20 rounded-br-[16px] hidden lg:block" />
-                            <div className="absolute -top-[8px] -left-[8px] w-[60px] h-[60px] border-t-[3px] border-l-[3px] border-[#0A5191]/20 rounded-tl-[16px] hidden lg:block" />
+                            {/* Decorative corner accents */}
+                            <div className="absolute -bottom-[12px] -right-[12px] w-[80px] h-[80px] border-b-[4px] border-r-[4px] border-[#0A5191]/20 rounded-br-[24px] hidden lg:block" />
+                            <div className="absolute -top-[12px] -left-[12px] w-[80px] h-[80px] border-t-[4px] border-l-[4px] border-[#0A5191]/20 rounded-tl-[24px] hidden lg:block" />
                         </div>
                     </div>
                 </div>

@@ -38,7 +38,7 @@ export const GlobalPresenceMap = () => {
                 <div className="relative w-full h-[120%] scale-110 lg:scale-[1.15] origin-right">
                     <Image
                         src="/Map.webp"
-                        alt="Global Presence Map"
+                        alt="Our Presence Map"
                         fill
                         className="object-contain object-right"
                     />
@@ -51,7 +51,7 @@ export const GlobalPresenceMap = () => {
             <div className="relative z-10 max-w-[640px] w-full text-center lg:text-left mx-auto lg:mx-0" style={{ marginLeft: 'clamp(0px, 3vw, 48px)' }}>
                 <FadeIn delay={100} direction="up">
                     <h2 className="text-3xl lg:text-5xl font-semibold text-[#121010] mb-6 lg:mb-10" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                        Global Presence
+                        Our Presence
                     </h2>
                 </FadeIn>
 

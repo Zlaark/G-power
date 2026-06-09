@@ -15,7 +15,7 @@ export const WhyGPower = () => {
                             lineHeight: '1.2',
                         }}
                     >
-                        Why G-Power
+                        Why <span className="text-[#0A5191]">Trust</span> G-Power?
                     </h2>
                 </FadeIn>
 

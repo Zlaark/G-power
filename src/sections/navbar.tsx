@@ -71,16 +71,18 @@ export const Navbar = () => {
                 <div className="flex items-center justify-between h-[80px] lg:h-[120px]">
 
                     {/* Logo */}
-                    <Link href="/" className="flex items-center shrink-0" style={{ filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8))' }}>
-                        <Image
-                            src="/Screenshot_2026-05-14_160714-removebg-preview.png"
-                            alt="G-Power Logo"
-                            width={220}
-                            height={160}
-                            className="h-[80px] lg:h-[120px] w-auto object-contain"
-                            priority
-                        />
-                    </Link>
+                    <div className="bg-white/95 backdrop-blur-sm px-5 py-2 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] border border-white/20 transition-transform hover:scale-[1.02]">
+                        <Link href="/" className="flex items-center shrink-0">
+                            <Image
+                                src="/Screenshot_2026-05-14_160714-removebg-preview.png"
+                                alt="G-Power Logo"
+                                width={200}
+                                height={140}
+                                className="h-[50px] lg:h-[75px] w-auto object-contain"
+                                priority
+                            />
+                        </Link>
+                    </div>
 
                     {/* Desktop Navigation */}
                     <div className="hidden xl:flex items-center gap-7 2xl:gap-8">

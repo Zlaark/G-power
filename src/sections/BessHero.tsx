@@ -2,6 +2,34 @@
 import { FadeIn } from "@/components/FadeIn";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
+
+const achievements = [
+    {
+        label: "Batteries Delivered",
+        value: 1000,
+        suffix: "+",
+        description: "Reliable energy storage units shipped worldwide."
+    },
+    {
+        label: "Projects Completed",
+        value: 500,
+        suffix: "+",
+        description: "Successful installations across various industries."
+    },
+    {
+        label: "Years in Business",
+        value: 10,
+        suffix: "+",
+        description: "Decades of expertise in energy solutions."
+    },
+    {
+        label: "Megawatts Installed",
+        value: 50,
+        suffix: "+",
+        description: "Total power capacity deployed globally."
+    }
+];
 
 export const BessHero = () => {
     return (
@@ -129,9 +157,9 @@ export const BessHero = () => {
                         {/* CTA Buttons */}
                         <FadeIn delay={600} direction="up" className="w-full">
                             <div className="flex flex-col sm:flex-row items-center gap-4 w-full">
-                                <Link href="/solutions" className="w-full sm:w-auto">
+                                <Link href="/solutions/utility/products" className="w-full sm:w-auto">
                                     <Button variant="primary" size="lg" className="w-full sm:w-[220px] !rounded-[14px] py-4">
-                                        Explore Solutions
+                                        Explore Solution
                                     </Button>
                                 </Link>
                                 <Link href="/contact" className="w-full sm:w-auto">
@@ -155,6 +183,27 @@ export const BessHero = () => {
                                 />
                             </div>
                         </FadeIn>
+                    </div>
+                </div>
+
+                {/* Milestones / Achievements Section */}
+                <div className="mt-[40px] md:mt-[60px] px-[20px] md:px-[60px] lg:px-[86px] pb-[60px] md:pb-[80px]">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                        {achievements.map((item, index) => (
+                            <FadeIn key={index} delay={700 + index * 100} direction="up">
+                                <div className="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_15px_40px_rgba(10,81,145,0.04)] border border-white/50 hover:shadow-[0_25px_50px_rgba(10,81,145,0.08)] transition-all duration-500 hover:-translate-y-1 group">
+                                    <div className="text-[#0A5191] font-bold mb-2 flex items-baseline gap-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(32px, 4vw, 42px)" }}>
+                                        <AnimatedCounter value={`${item.value}${item.suffix}`} duration={2500} />
+                                    </div>
+                                    <h3 className="text-[#0e1117] font-bold text-lg mb-2" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                        {item.label}
+                                    </h3>
+                                    <p className="text-[#64748B] text-xs leading-relaxed" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </FadeIn>
+                        ))}
                     </div>
                 </div>
             </div>

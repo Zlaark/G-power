@@ -99,8 +99,7 @@ export const WhyGPowerHome = () => {
                                     lineHeight: "1.2",
                                 }}
                             >
-                                Why{" "}
-                                <span className="text-[#0A5191]">G-power?</span>
+                                Why <span className="text-[#0A5191]">Trust</span> G-power?
                             </h2>
                         </FadeIn>
 

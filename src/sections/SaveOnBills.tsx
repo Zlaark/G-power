@@ -14,27 +14,10 @@ export const SaveOnBills = () => {
 
     return (
         <section className="relative w-full bg-white overflow-hidden">
-            <div className="mx-auto max-w-[1920px] relative">
-
-
-                {/* Background Image Container */}
-                <div className="absolute top-0 right-0 w-full md:w-[85%] h-full z-0 hidden md:block">
-                    <div className="absolute inset-0 w-[60%] bg-gradient-to-r from-white via-white/90 to-transparent z-10" />
-                    <img
-                        src="/Save On Electricity Bills (Home Page).webp"
-                        alt="Solar Panel Field"
-                        className="w-full h-full object-cover object-right"
-                    />
-                </div>
-
-                {/* Mobile Background Image (visible only on small screens) */}
-                <div className="absolute top-0 right-0 w-full h-[50%] z-0 md:hidden opacity-30">
-                    <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-transparent z-10" />
-                    <img
-                        src="/Save On Electricity Bills (Home Page).webp"
-                        alt="Solar Panel Field mobile"
-                        className="w-full h-full object-cover"
-                    />
+            <div className="mx-auto max-w-[1920px] relative py-12 md:py-20">
+                {/* Background Pattern instead of image */}
+                <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                    <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#0A5191 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
                 </div>
 
                 {/* Top Content: Title & Description */}
