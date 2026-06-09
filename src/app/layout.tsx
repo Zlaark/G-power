@@ -25,8 +25,19 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.png", sizes: "192x192", type: "image/png" },
     ],
-    apple: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: [
+      { url: "/favicon.png" },
+      { url: "/favicon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "apple-touch-icon-precomposed",
+        url: "/favicon.png",
+      },
+    ],
   },
 };
 

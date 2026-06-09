@@ -409,6 +409,45 @@ export default function UtilitySolutionsPage() {
         </div>
       </section>
 
+      <section className="relative py-[80px] lg:py-[120px] px-6 md:px-[60px] lg:px-[100px] overflow-hidden bg-[#0D0D0D]">
+        <div className="absolute inset-0 z-0 pointer-events-none select-none">
+          <Image 
+            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=1920" 
+            alt="Utility Grid Background" 
+            fill 
+            className="object-cover opacity-20 brightness-75" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D0D]/80 via-[#0D0D0D]/60 to-[#0A5191]/10" />
+        </div>
+        <div className="relative z-10 mx-auto max-w-[900px] text-center">
+          <FadeIn delay={100} direction="up">
+            <h2 
+              className="text-white font-semibold mb-6" 
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 4vw, 48px)" }}
+            >
+              Ready to Upgrade the Grid?
+            </h2>
+          </FadeIn>
+          <FadeIn delay={200} direction="up">
+            <p 
+              className="text-white/80 mb-10 max-w-3xl mx-auto font-medium" 
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(15px, 1.6vw, 20px)" }}
+            >
+              Get in touch with our utility experts to architect the perfect large-scale storage solution for your network.
+            </p>
+          </FadeIn>
+          <FadeIn delay={300} direction="up">
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center justify-center bg-[#0A5191] text-white px-10 py-4 rounded-[12px] font-semibold hover:bg-[#083D6D] transition-all hover:scale-105 shadow-[0_10px_30px_rgba(10,81,145,0.3)]"
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "16px" }}
+            >
+              Consult an Expert
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
