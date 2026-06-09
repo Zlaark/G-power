@@ -110,53 +110,19 @@ const caseStudies = [
   },
 ];
 
+import { PageHero } from "@/components/PageHero";
+
 export default function NewApplicationBusinessPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      <section className="relative h-auto min-h-[380px] sm:min-h-[430px] md:h-[65vh] md:min-h-[520px] flex items-center justify-center bg-[#121010] overflow-hidden pt-[140px] pb-[50px] sm:pt-[150px] sm:pb-[60px] md:pt-20 md:pb-0">
-        <div className="absolute inset-0 z-0 select-none pointer-events-none">
-          <Image
-            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
-            alt="Modern Business Infrastructure Background"
-            fill
-            priority
-            className="object-cover brightness-50"
-          />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
-
-        <div className="container relative z-10 px-5 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
-          <FadeIn delay={50} direction="up">
-            <LegalBreadcrumbs currentPage="Marine & Other Applications" />
-          </FadeIn>
-          <FadeIn delay={200} direction="up" duration={900}>
-            <p
-              className="text-white font-medium tracking-[0.16em] uppercase mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-            >
-              Business Energy Sustainability
-            </p>
-          </FadeIn>
-          <FadeIn delay={400} direction="up" duration={900}>
-            <h1
-              className="text-white font-medium leading-tight mb-5 drop-shadow-xl"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(28px, 5vw, 48px)", textShadow: "0 4px 12px rgba(0,0,0,0.8)" }}
-            >
-              Power Your Enterprise, Effortlessly
-            </h1>
-          </FadeIn>
-          <FadeIn delay={600} direction="up" duration={900}>
-            <p
-              className="text-white/80 max-w-3xl mx-auto font-medium drop-shadow-md"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.5vw, 18px)", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
-            >
-              Intelligent energy architectures tailored for new-age businesses and cutting-edge industrial applications.
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+      <PageHero 
+        title="Marine & Other Applications" 
+        breadcrumbPage="Marine & Other Applications" 
+        backgroundImage="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" 
+        description="Enterprise-grade storage systems for specialized sectors like marine, drones, and railway infrastructure."
+      />
 
       <section className="py-[40px] sm:py-[56px] lg:py-[92px] px-5 sm:px-6 md:px-[60px] lg:px-[120px] bg-[#F3F4F6]">
         <div className="mx-auto max-w-[1600px]">

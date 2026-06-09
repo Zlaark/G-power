@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
-import { LegalBreadcrumbs } from "@/components/LegalBreadcrumbs";
+import { PageHero } from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Utility Battery System 1 | Utility Solutions | GPower",
@@ -52,69 +52,13 @@ export default function UtilityBattery1Page() {
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
-        {/* Full-bleed background image */}
-        <div className="absolute inset-0 z-0 pointer-events-none select-none">
-          <Image
-            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
-            alt="Utility Battery System 1"
-            fill
-            priority
-            className="object-cover brightness-50"
-          />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
-
-        {/* Centered content */}
-        <div className="relative z-10 flex flex-col items-center text-center px-6">
-          {/* Breadcrumbs */}
-          <FadeIn delay={50} direction="up">
-            <LegalBreadcrumbs currentPage="Utility Battery System 1" />
-          </FadeIn>
-
-          {/* Pill badge — bordered, no fill */}
-          <FadeIn delay={100} direction="up">
-            <div
-              className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm"
-            >
-              <span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" />
-              <span
-                className="text-white font-medium uppercase tracking-[0.18em]"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-              >
-                Utility
-              </span>
-            </div>
-          </FadeIn>
-
-          {/* Title */}
-          <FadeIn delay={200} direction="up">
-            <h1
-              className="text-white font-bold leading-tight mb-5"
-              style={{
-                fontFamily: "'Poppins', sans-serif",
-                fontSize: "clamp(40px, 6.5vw, 82px)",
-              }}
-            >
-              Utility Battery System 1
-            </h1>
-          </FadeIn>
-
-          {/* Subtitle */}
-          <FadeIn delay={320} direction="up">
-            <p
-              className="text-white/80 max-w-[640px]"
-              style={{
-                fontFamily: "'Poppins', sans-serif",
-                fontSize: "clamp(14px, 1.6vw, 19px)",
-              }}
-            >
-              Large-scale containerized energy storage system for utility applications
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+      <PageHero
+        title="Utility Battery System 1"
+        breadcrumbPage="Utility Battery System 1"
+        pillText="Utility"
+        backgroundImage="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
+        description="Large-scale containerized energy storage system for utility applications"
+      />
 
       {/* ── Product Specifications ────────────────────────────── */}
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">

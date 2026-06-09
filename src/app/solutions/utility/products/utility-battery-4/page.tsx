@@ -18,37 +18,18 @@ const applications = [{ label: "Microgrid Support" }, { label: "Renewable integr
 const keyMerits = [{ label: "Compact footprint" }, { label: "High safety LFP cells" }, { label: "Liquid cooling" }, { label: "Plug-and-play" }];
 const technicalParams = [{ param: "Capacity", value: "261 kWh" }, { param: "Power", value: "130 kW" }, { param: "Voltage Range", value: "850-1200 VDC" }, { param: "Enclosure", value: "IP54" }];
 
+import { PageHero } from "@/components/PageHero";
+
 export default function UtilityBattery4ProductPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
-      <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none select-none">
-          <Image src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" alt="Utility Battery System 3" fill priority className="object-cover brightness-50" />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
-        <div className="relative z-10 flex flex-col items-center text-center px-6">
-          <FadeIn delay={50} direction="up">
-            <LegalBreadcrumbs currentPage="Utility Battery System 3" />
-          </FadeIn>
-          <FadeIn delay={100} direction="up">
-            <div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm">
-              <span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" />
-              <span className="text-white font-medium uppercase tracking-[0.18em]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}>Utility</span>
-            </div>
-          </FadeIn>
-          <FadeIn delay={200} direction="up">
-            <h1 className="text-white font-medium leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.6vw, 64px)" }}>
-              Utility Battery System 3
-            </h1>
-          </FadeIn>
-          <FadeIn delay={320} direction="up">
-            <p className="text-white/80 max-w-[700px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>
-              Highly efficient, scalable containerized energy storage for diverse applications
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+      <PageHero 
+        title="Utility Battery System 3" 
+        breadcrumbPage="Utility Battery System 3" 
+        backgroundImage="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" 
+        description="Reliable energy storage for utility-scale applications"
+      />
 
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
         <div className="mx-auto max-w-[1400px]">
@@ -133,12 +114,27 @@ export default function UtilityBattery4ProductPage() {
                   ))}
                 </tbody>
               </table>
-              <div className="px-6 md:px-8 py-6 md:py-7 bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] text-center">
-                <h3 className="text-white font-normal mb-3" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(20px, 2vw, 30px)" }}>Need More Details?</h3>
-                <p className="text-white/90 mb-6" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.05vw, 17px)" }}>View complete technical specifications and download the full datasheet</p>
-                <Link href="/product/utility/utility-battery-4/specs" className="btn-sweep-blue btn-float-hover inline-flex items-center gap-2 bg-[#0A5191] text-white px-7 py-4 rounded-[14px] font-normal hover:bg-[#083D6D] transition-colors shadow-[0_8px_18px_rgba(10, 81, 145,0.22)]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1vw, 16px)" }}>
-                    <Download className="w-5 h-5" /> View More <ArrowRight className="w-5 h-5 ml-1" />
-                </Link>
+              <div className="px-6 md:px-8 py-10 bg-gradient-to-r from-[#081228] via-[#111C32] to-[#132038] text-center">
+                <h3 className="text-white font-normal mb-4" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(24px, 2.3vw, 36px)" }}>Download Complete Datasheet</h3>
+                <p className="text-white/90 mb-8 max-w-2xl mx-auto" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.1vw, 18px)" }}>
+                  Get the complete technical datasheet for Utility Battery System 3 in PDF format, containing all specifications, features, and contact information.
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                  <Link 
+                    href="/product/utility/utility-battery-4/specs"
+                    className="btn-sweep-blue flex items-center justify-center gap-2 bg-[#0A5191] text-white px-8 py-4 rounded-[12px] font-medium hover:bg-[#083D6D] transition-all shadow-[0_4px_14px_rgba(10,81,145,0.25)] w-full sm:w-auto"
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "16px" }}
+                  >
+                    <Download className="w-4 h-4" /> Download PDF Pamphlet
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center bg-white text-[#121010] px-8 py-4 rounded-[12px] font-medium hover:bg-[#F8FAFC] transition-all shadow-[0_4px_14px_rgba(0,0,0,0.1)] w-full sm:w-auto"
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "16px" }}
+                  >
+                    Request More Information
+                  </Link>
+                </div>
               </div>
             </div>
           </FadeIn>

@@ -8,10 +8,17 @@ const applications = [{ label: "Large data centers" }, { label: "Manufacturing p
 const keyMerits = [{ label: "High energy density" }, { label: "Hot-swappable modules" }, { label: "AI-driven diagnostics" }, { label: "24/7 support" }];
 const technicalParams = [{ param: "Capacity", value: "250 kWh" }, { param: "Footprint", value: "3.5 sq meters" }, { param: "Efficiency", value: "98%" }, { param: "Lifespan", value: "15 Years" }];
 
+import { PageHero } from "@/components/PageHero";
+
 export default function EnterpriseHubProductPage() {
   return (<main className="min-h-screen bg-white"><Navbar />
-    <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden"><div className="absolute inset-0 z-0 pointer-events-none select-none"><Image src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" alt="Enterprise Power Hub" fill priority className="object-cover brightness-50" /><div className="absolute inset-0 bg-black/45" /></div>
-      <div className="relative z-10 flex flex-col items-center text-center px-6"><FadeIn delay={50} direction="up"><LegalBreadcrumbs currentPage="Enterprise Power Hub" /></FadeIn><FadeIn delay={100} direction="up"><div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm"><span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" /><span className="text-white font-medium uppercase tracking-[0.18em]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}>Other Applications</span></div></FadeIn><FadeIn delay={200} direction="up"><h1 className="text-white font-medium leading-tight mb-5" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.6vw, 64px)" }}>Enterprise Power Hub</h1></FadeIn><FadeIn delay={320} direction="up"><p className="text-white/80 max-w-[700px]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}>High-density modular storage designed for large-scale operations and data centers</p></FadeIn></div></section>
+    <PageHero 
+      title="Enterprise Power Hub" 
+      breadcrumbPage="Enterprise Power Hub" 
+      pillText="Other Applications"
+      backgroundImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920" 
+      description="High-density modular storage designed for large-scale operations and data centers"
+    />
     <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white"><div className="mx-auto max-w-[1400px]"><div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[56px] items-start lg:min-h-[102vh]"><div className="w-full lg:w-[620px] xl:w-[700px] shrink-0 lg:sticky lg:top-24 self-start">
 <FadeIn delay={100} direction="up" className="w-full"><div className="relative w-full rounded-[20px] overflow-hidden border border-[#0A5191]/45 card-soft-hover" style={{ aspectRatio: "3/2.2" }}><Image src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" alt="Enterprise Power Hub" fill className="object-cover" /><span className="absolute top-5 right-5 bg-[#0A5191] text-white font-semibold rounded-full px-5 py-2 shadow-lg" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(13px, 1.4vw, 16px)" }}>250 kWh</span></div></FadeIn>
 </div>

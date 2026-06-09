@@ -47,65 +47,20 @@ const technicalParams = [
   { param: "Certifications", value: "IEC 62619, UL 9540, CE" },
 ];
 
+import { PageHero } from "@/components/PageHero";
+
 export default function UtilityBattery2Page() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none select-none">
-          <Image
-            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
-            alt="Utility Battery System 2"
-            fill
-            priority
-            className="object-cover brightness-50"
-          />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
-
-        <div className="relative z-10 flex flex-col items-center text-center px-6">
-          <FadeIn delay={50} direction="up">
-            <LegalBreadcrumbs currentPage="Utility Battery System 2" />
-          </FadeIn>
-          
-          <FadeIn delay={100} direction="up">
-            <div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm">
-              <span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" />
-              <span
-                className="text-white font-medium uppercase tracking-[0.18em]"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-              >
-                Utility
-              </span>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={200} direction="up">
-            <h1
-              className="text-white font-bold leading-tight mb-5"
-              style={{
-                fontFamily: "'Poppins', sans-serif",
-                fontSize: "clamp(40px, 6.5vw, 82px)",
-              }}
-            >
-              Utility Battery System 2
-            </h1>
-          </FadeIn>
-
-          <FadeIn delay={320} direction="up">
-            <p
-              className="text-white/80 max-w-[640px]"
-              style={{
-                fontFamily: "'Poppins', sans-serif",
-                fontSize: "clamp(14px, 1.6vw, 19px)",
-              }}
-            >
-              Next-generation utility-scale energy storage with enhanced safety
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+      <PageHero 
+        title="Utility Battery System 2" 
+        breadcrumbPage="Utility Battery System 2" 
+        pillText="Utility"
+        backgroundImage="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" 
+        description="Next-generation utility-scale energy storage with enhanced safety"
+      />
 
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
         <div className="mx-auto max-w-[1400px]">

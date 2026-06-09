@@ -105,7 +105,7 @@ export function CIBattery1SpecsSheetSection() {
           </span>
           <div>
             <p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Phone</p>
-            <p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>+91 123 456 7890</p>
+            <p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>+91 9894277915</p>
           </div>
         </div>
 

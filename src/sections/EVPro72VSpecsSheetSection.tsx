@@ -96,7 +96,7 @@ export function EVPro72VSpecsSheetSection() {
         </div>
         <div className="flex items-start gap-3">
           <span className="w-8 h-8 rounded-[8px] bg-[#E1EBF5] flex items-center justify-center shrink-0"><Phone className="w-4 h-4 text-[#0A5191]" /></span>
-          <div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Phone</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>+91 123 456 7890</p></div>
+          <div><p className="text-[#94A3B8] leading-none mb-1" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "11px" }}>Phone</p><p className="text-[#0F172A]" style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}>+91 9894277915</p></div>
         </div>
         <div className="flex items-start gap-3">
           <span className="w-8 h-8 rounded-[8px] bg-[#E1EBF5] flex items-center justify-center shrink-0"><MapPin className="w-4 h-4 text-[#0A5191]" /></span>

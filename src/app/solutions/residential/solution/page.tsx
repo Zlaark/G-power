@@ -111,54 +111,19 @@ const caseStudies = [
   },
 ];
 
+import { PageHero } from "@/components/PageHero";
+
 export default function ResidentialSolutionsPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      <section className="relative h-[52vh] min-h-[360px] sm:min-h-[430px] md:h-[70vh] md:min-h-[560px] flex items-center justify-center bg-[#121010] overflow-hidden pt-20">
-        <div className="absolute inset-0 z-0 select-none pointer-events-none">
-          <Image
-            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
-            alt="Residential Solar Installation"
-            fill
-            priority
-            className="object-cover brightness-50"
-          />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
-
-        <div className="container relative z-10 px-4 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
-          <FadeIn delay={50} direction="up">
-            <LegalBreadcrumbs currentPage="Residential Storage" />
-          </FadeIn>
-          <FadeIn delay={120} direction="up">
-            <p
-              className="text-white font-medium tracking-[0.16em] uppercase mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "13px" }}
-            >
-              Residential Energy Storage Solutions
-            </p>
-          </FadeIn>
-          <FadeIn delay={220} direction="up">
-            <h1
-              className="text-white font-semibold leading-tight mb-5 drop-shadow-xl"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 6vw, 64px)", textShadow: "0 4px 12px rgba(0,0,0,0.8)" }}
-            >
-              Power Your Home,Sustainably
-            </h1>
-          </FadeIn>
-          <FadeIn delay={340} direction="up">
-            <p
-              className="text-white/80 max-w-3xl mx-auto font-medium drop-shadow-md"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.8vw, 22px)", textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
-            >
-              Transform your home into an energy-independent powerhouse with our advanced
-              residential battery storage solutions
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+      <PageHero 
+        title="Residential Energy Storage" 
+        breadcrumbPage="Residential Storage" 
+        backgroundImage="/Battery Energy Storage Systems (BESS)  (About Us Page).webp" 
+        description="Smart battery systems for energy independence, backup power, and home solar optimization."
+      />
 
       <section className="py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#F3F4F6]">
         <div className="mx-auto max-w-[1600px]">

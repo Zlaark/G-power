@@ -27,53 +27,19 @@ const products = [
   },
 ];
 
+import { PageHero } from "@/components/PageHero";
+
 export default function NABProductsPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      <section className="relative h-auto min-h-[380px] sm:min-h-[430px] md:h-[65vh] md:min-h-[520px] flex items-center justify-center bg-[#121010] overflow-hidden pt-[140px] pb-[50px] sm:pt-[150px] sm:pb-[60px] md:pt-20 md:pb-0">
-        <div className="absolute inset-0 z-0 select-none pointer-events-none">
-          <Image
-            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
-            alt="Enterprise Energy Storage"
-            fill
-            priority
-            className="object-cover brightness-50"
-          />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
-
-        <div className="container relative z-10 px-5 sm:px-6 md:px-[60px] lg:px-[80px] mx-auto text-center max-w-5xl">
-          <FadeIn delay={50} direction="up">
-            <LegalBreadcrumbs currentPage="Other Products" />
-          </FadeIn>
-          <FadeIn delay={200} direction="up" duration={900}>
-            <p
-              className="text-white font-medium tracking-[0.16em] uppercase mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-            >
-              Other Applications
-            </p>
-          </FadeIn>
-          <FadeIn delay={300} direction="up" duration={900}>
-            <h1
-              className="text-white font-semibold mb-6"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5vw, 62px)" }}
-            >
-              All Products
-            </h1>
-          </FadeIn>
-          <FadeIn delay={400} direction="up" duration={900}>
-            <p
-              className="text-white/80 font-medium mx-auto max-w-3xl"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.7vw, 20px)" }}
-            >
-              Browse our complete range of enterprise storage products
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+      <PageHero 
+        title="Other Application Products" 
+        breadcrumbPage="Other Products" 
+        backgroundImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920" 
+        description="Browse our complete range of enterprise storage products"
+      />
 
       <section className="py-[64px] lg:py-[92px] px-4 sm:px-6 md:px-[90px] lg:px-[120px] bg-[#F3F4F6]">
         <div className="mx-auto max-w-[1300px]">

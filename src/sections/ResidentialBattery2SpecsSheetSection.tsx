@@ -123,7 +123,7 @@ export function ResidentialBattery2SpecsSheetSection() {
               className="text-[#0F172A]"
               style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(12px, 0.95vw, 14px)" }}
             >
-              +91 123 456 7890
+              +91 9894277915
             </p>
           </div>
         </div>

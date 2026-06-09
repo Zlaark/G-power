@@ -1,6 +1,7 @@
 import { Navbar } from "@/sections/navbar";
 import { Footer } from "@/sections/Footer";
 import { FadeIn } from "@/components/FadeIn";
+import { PageHero } from "@/components/PageHero";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -52,54 +53,13 @@ export default function CIBattery2Page() {
     <main className="min-h-screen bg-white">
       <Navbar />
 
-      <section className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[540px] flex items-center justify-center bg-[#0D0D0D] overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none select-none">
-          <Image
-            src="/Battery Energy Storage Systems (BESS)  (About Us Page).webp"
-            alt="BYD MC Cube"
-            fill
-            priority
-            className="object-cover brightness-50"
-          />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
-
-        <div className="relative z-10 flex flex-col items-center text-center px-6">
-          <FadeIn delay={50} direction="up">
-            <LegalBreadcrumbs currentPage="BYD MC Cube" />
-          </FadeIn>
-          
-          <FadeIn delay={100} direction="up">
-            <div className="flex items-center gap-[10px] border border-white/40 rounded-full px-[22px] py-[8px] mb-8 backdrop-blur-sm">
-              <span className="w-[7px] h-[7px] rounded-full bg-[#0A5191] shrink-0" />
-              <span
-                className="text-white font-medium uppercase tracking-[0.18em]"
-                style={{ fontFamily: "'Poppins', sans-serif", fontSize: "12px" }}
-              >
-                Commercial Industrial
-              </span>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={200} direction="up">
-            <h1
-              className="text-white font-medium leading-tight mb-5"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(34px, 5.4vw, 64px)" }}
-            >
-              BYD MC Cube
-            </h1>
-          </FadeIn>
-
-          <FadeIn delay={320} direction="up">
-            <p
-              className="text-white/80 max-w-[760px]"
-              style={{ fontFamily: "'Poppins', sans-serif", fontSize: "clamp(14px, 1.5vw, 18px)" }}
-            >
-              Medium-sized containerized solution for commercial applications
-            </p>
-          </FadeIn>
-        </div>
-      </section>
+      <PageHero 
+        title="BYD MC Cube" 
+        breadcrumbPage="BYD MC Cube" 
+        pillText="Commercial Industrial"
+        backgroundImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920" 
+        description="Medium-sized containerized solution for commercial applications"
+      />
 
       <section className="py-[72px] lg:py-[100px] px-6 md:px-[60px] lg:px-[100px] bg-white">
         <div className="mx-auto max-w-[1400px]">

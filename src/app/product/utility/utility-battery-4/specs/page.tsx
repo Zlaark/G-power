@@ -65,15 +65,15 @@ export default function UtilityBattery4SpecsPage() {
                 >
                   Get the complete 2-page technical datasheet for Utility Battery System 3 in PDF format exactly as shown above, containing all specifications, features, and contact information.
                 </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-3">
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                   <DownloadPdfButton 
                     targetId="datasheet-content" 
-                    filename="G-Power-Hiner-Datasheet.pdf" 
+                    filename="G-Power-Utility-Battery-System-3-Datasheet.pdf" 
                   />
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center bg-white text-[#0F172A] px-5 py-3 rounded-[10px] font-medium hover:bg-[#F1F5F9] transition-colors text-sm md:text-base w-full sm:w-auto"
-                    style={{ fontFamily: "'Poppins', sans-serif" }}
+                    className="inline-flex items-center justify-center bg-white text-[#121010] px-6 py-3.5 rounded-[12px] font-medium hover:bg-[#F8FAFC] transition-all shadow-[0_4px_14px_rgba(0,0,0,0.1)] w-full sm:w-auto"
+                    style={{ fontFamily: "'Poppins', sans-serif", fontSize: "16px" }}
                   >
                     Request More Information
                   </Link>

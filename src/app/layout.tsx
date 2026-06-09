@@ -23,10 +23,10 @@ export const metadata: Metadata = {
   description: "G-Power provides high-performance battery energy storage systems (BESS) and turnkey energy solutions for a sustainable future.",
   icons: {
     icon: [
-      { url: "/logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
     ],
-    apple: "/logo.png",
+    apple: "/favicon.png",
   },
 };
 
