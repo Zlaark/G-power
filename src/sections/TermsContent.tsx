@@ -7,14 +7,14 @@ export const TermsContent = () => {
                 <FadeIn delay={100} direction="up">
                     <div className="space-y-8 md:space-y-12">
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>1. Acceptance of Terms</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>1. Acceptance of Terms</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 By accessing and using GPower's website and services, you accept and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our services.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>2. Services</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>2. Services</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 GPower provides renewable energy solutions including but not limited to:
                             </p>
@@ -28,14 +28,14 @@ export const TermsContent = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>3. Quotations and Pricing</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>3. Quotations and Pricing</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 All quotations are valid for 30 days from the date of issue unless otherwise stated. Prices are subject to change based on market conditions, equipment availability, and site-specific requirements.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>4. Payment Terms</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>4. Payment Terms</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Payment terms will be specified in individual service agreements. Standard terms include:
                             </p>
@@ -47,7 +47,7 @@ export const TermsContent = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>5. Warranties</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>5. Warranties</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 We provide warranties as per manufacturer specifications and industry standards:
                             </p>
@@ -60,7 +60,7 @@ export const TermsContent = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>6. Cancellation and Refunds</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>6. Cancellation and Refunds</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 Cancellation terms vary based on project stage:
                             </p>
@@ -71,28 +71,28 @@ export const TermsContent = () => {
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>7. Limitation of Liability</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>7. Limitation of Liability</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 GPower shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of our services. Our total liability shall not exceed the total amount paid by the customer for the specific service.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>8. Force Majeure</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>8. Force Majeure</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 GPower shall not be liable for any failure or delay in performance due to circumstances beyond our reasonable control, including natural disasters, government actions, labor disputes, or supply chain disruptions.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>9. Intellectual Property</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>9. Intellectual Property</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 All content, designs, and materials on our website and in our proposals are the intellectual property of GPower and may not be used without written permission.
                             </p>
                         </section>
 
                         <section>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#121010]" style={{ fontFamily: "'Poppins', sans-serif" }}>10. Governing Law</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#0A5191]" style={{ fontFamily: "'Poppins', sans-serif" }}>10. Governing Law</h2>
                             <p className="text-base md:text-lg leading-relaxed text-[#4A4A4A]" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                 These Terms and Conditions are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of courts in Mumbai, India.
                             </p>
